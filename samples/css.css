@@ -1,0 +1,56 @@
+@media screen and (max-width: 992px) {
+  #Artists {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #Artists h5 {
+    font-size: 1em;
+    color: #515151;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    line-height: 1.3em;
+    margin: 0 0 0.2em;
+  }
+
+  .ArtistsSidebar a {
+    color: #515151;
+    text-decoration: none;
+  }
+
+  .ArtistsSidebar a:hover {
+    color: #3c9a5f;
+  }
+
+  .ArtistsSidebar .album {
+    height: 12em;
+  }
+
+  .ArtistsSidebar .album img {
+    height: 80px;
+    width: 80px;
+    border: 1px solid #777;
+    border-radius: 4px;
+    margin-top: 0.5em;
+  }
+
+  .ArtistsSidebar .album img:hover {
+    border: 1px solid #3c9a5f;
+  }
+
+  .ArtistsSidebar .comment {
+    height: 10.2em;
+  }
+
+  .ArtistsSidebar .comment img {
+    height: 45px;
+    width: 45px;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+}

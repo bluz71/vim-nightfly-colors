@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+  <!-- General font rendering settings -->
+
+  <match target="font" >
+    <edit mode="assign" name="antialias"><bool>true</bool></edit>
+  </match>
+
+  <match target="font" >
+    <edit mode="assign" name="autohint"><bool>false</bool></edit>
+  </match>
+
+  <match target="font" >
+    <edit mode="assign" name="hinting"><bool>true</bool></edit>
+  </match>
+
+  <match target="font" >
+    <edit mode="assign" name="hintstyle"><const>hintslight</const></edit>
+  </match>
+
+  <match target="font">
+    <edit mode="assign" name="lcdfilter"><const>lcddefault</const></edit>
+  </match>
+
+  <match target="font" >
+    <edit mode="assign" name="rgba"><const>rgb</const></edit>
+  </match>
+
+  <!-- Font substitution settings -->
+
+  <match target="pattern">
+    <test qual="any" name="family"><string>Candara</string></test>
+    <edit name="family" mode="assign" binding="same"><string>Linux Biolinum O</string></edit>
+  </match>
+
+  <match target="pattern">
+    <test qual="any" name="family"><string>Comic Sans MS</string></test>
+    <edit name="family" mode="assign" binding="same"><string>TSCu_Comic</string></edit>
+  </match>
+
+  <match target="pattern">
+    <test qual="any" name="family"><string>Consolas</string></test>
+    <edit name="family" mode="assign" binding="same"><string>DejaVu Sans Mono</string></edit>
+  </match>
+
+  <match target="pattern">
+    <test qual="any" name="family"><string>Constantia</string></test>
+    <edit name="family" mode="assign" binding="same"><string>Merriweather</string></edit>
+  </match>
+
+  <match target="pattern">
+    <test qual="any" name="family"><string>Corbel</string></test>
+    <edit name="family" mode="assign" binding="same"><string>Merriweather Sans</string></edit>
+  </match>
+
+  <match target="pattern">
+    <test qual="any" name="family"><string>Georgia</string></test>
+    <edit name="family" mode="assign" binding="same"><string>DejaVu Serif</string></edit>
+  </match>
+
+  <match target="pattern">
+    <test qual="any" name="family"><string>Gotham</string></test>
+    <edit name="family" mode="assign" binding="same"><string>Roboto Light</string></edit>
+  </match>
+
+  <match target="pattern">
+    <test qual="any" name="family"><string>Helvetica</string></test>
+    <edit name="family" mode="assign" binding="same"><string>Liberation Sans</string></edit>
+  </match>
+
+  <match target="pattern">
+    <test qual="any" name="family"><string>Helvetica Neue</string></test>
+    <edit name="family" mode="assign" binding="same"><string>Noto Sans</string></edit>
+  </match>
+
+  <match target="pattern">
+    <test qual="any" name="family"><string>Trebuchet MS</string></test>
+    <edit name="family" mode="assign" binding="same"><string>Fira Sans</string></edit>
+  </match>
+
+  <match target="pattern">
+    <test qual="any" name="family"><string>Verdana</string></test>
+    <edit name="family" mode="assign" binding="same"><string>DejaVu Sans</string></edit>
+  </match>
+
+  <!-- Specific font rendering settings -->
+
+  <match target="font">
+    <test name="family"><string>Arimo</string></test>
+    <edit mode="assign" name="hintstyle"><const>hintfull</const></edit>
+  </match>
+
+  <match target="font">
+    <test name="family"><string>Cousine</string></test>
+    <edit mode="assign" name="hintstyle"><const>hintfull</const></edit>
+  </match>
+
+  <match target="font">
+    <test name="family"><string>DejaVu Sans</string></test>
+    <edit mode="assign" name="hintstyle"><const>hintslight</const></edit>
+  </match>
+
+  <match target="font">
+    <test name="family"><string>Noto Sans</string></test>
+    <edit mode="assign" name="hintstyle"><const>hintfull</const></edit>
+  </match>
+
+  <match target="font">
+    <test name="family"><string>Open Sans</string></test>
+    <edit mode="assign" name="hintstyle"><const>hintfull</const></edit>
+  </match>
+
+  <match target="font">
+    <test name="family"><string>Roboto</string></test>
+    <edit mode="assign" name="hintstyle"><const>hintfull</const></edit>
+  </match>
+
+  <match target="font">
+    <test name="family"><string>Tinos</string></test>
+    <edit mode="assign" name="hintstyle"><const>hintfull</const></edit>
+  </match>
+</fontconfig>

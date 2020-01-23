@@ -1,0 +1,58 @@
+{
+  "name": "platters_app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "0.19.0",
+    "jwt-decode": "^2.2.0",
+    "linkify-lite": "^1.0.0",
+    "local-time": "^2.0.0",
+    "md5": "^2.2.1",
+    "nprogress": "^0.2.0",
+    "numeral": "^2.0.6",
+    "pluralize": "^7.0.0",
+    "query-string": "^6.2.0",
+    "react": "16.8.6",
+    "react-bootstrap": "0.31.5",
+    "react-dom": "16.8.6",
+    "react-fontawesome": "^1.6.1",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "4.3.1",
+    "react-scripts": "3.1.1",
+    "react-toastify": "^4.0.1",
+    "velocity-react": "^1.3.3"
+  },
+  "scripts": {
+    "start": "PORT=4000 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "yarn build && surge -p build -d platters.surge.sh"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "devDependencies": {
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "jest-enzyme": "^7.0.1"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "expect",
+      "fetch",
+      "it",
+      "jest",
+      "localStorage"
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

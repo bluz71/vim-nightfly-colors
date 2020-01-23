@@ -1,0 +1,116 @@
+// Artists index styling.
+//
+#artists {
+  a {
+    text-decoration: none;
+  }
+
+  .artist {
+    padding: 0.5em 0 0.5em 0.5em;
+
+    h2 {
+      margin-top: 0.25em;
+    }
+
+    .icon {
+      font-size: 0.75em;
+    }
+
+    &:hover {
+      background: rgba(0, 0, 0, .025);
+      border-radius: 0.25em;
+    }
+  }
+}
+
+// Artists sidebar styling, displayed as part of the Artists index page. Do
+// not display the sidebar for extra small screen sizes (less than 768px wide).
+//
+@media (max-width: $screen-sm-max) {
+  #artists-sidebar {
+    display: none;
+  }
+}
+@media (min-width: $screen-md-min) {
+  #artists-sidebar {
+    h5 {
+      font-size: 1em;
+      color: $grey-dark;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: center;
+      line-height: 1.3em;
+      margin: 0 0 0.2em;
+    }
+
+    a {
+      color: $grey-dark;
+      text-decoration: none;
+
+      &:hover {
+        color: $green-yeti;
+      }
+    }
+
+    .album {
+      height: 12em;
+
+      img {
+        height: 80px;
+        width: 80px;
+        border: 1px solid $grey-mid-dark;
+        border-radius: 4px;
+        margin-top: 0.5em;
+
+        &:hover {
+          border: 1px solid $green-yeti;
+        }
+      }
+    }
+  }
+}
+
+// Artist show styling.
+//
+#artist {
+  a {
+    text-decoration: none;
+  }
+
+  .description {
+    p {
+      display: inline;
+      color: $grey-dark;
+    }
+  }
+
+  .website {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .albums-order {
+    text-align: center;
+    font-size: 0.9em;
+
+    li {
+      display: inline;
+      margin: 0 1em;
+      font-weight: lighter;
+
+      a {
+        color: $grey-dark;
+
+        &.active {
+          color: $green-yeti;
+          font-weight: bold;
+        }
+
+        &:hover {
+          color: $green-yeti;
+        }
+      }
+    }
+  }
+}
