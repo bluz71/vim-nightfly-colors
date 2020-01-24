@@ -12,15 +12,15 @@ primarily in regards to language and plugin theming.
 Prerequisites
 -------------
 
-_nightfly_ is a GUI-only color scheme.
+_nightfly_ is a **GUI-only** Vim color scheme.
 
-A GUI client, such as gvim, **or** a current terminal version of Vim or Neovim,
-with `termguicolors` in a true-color terminal, will be required. Details
-about the later are listed below.
+A GUI client, such as gvim, **or** a modern terminal version of Vim/Neovim, with
+`termguicolors` enabled in a true-color terminal, will be required. Details
+about true-color terminals are listed below.
 
-Note, this theme does **not** support color terminal versions of Vim due to the
-number of custom colors required. Color terminals only only 16 custom colors. I
-encourage terminal users to use a true-color terminal, such as
+Note, this theme explicitly does **not** support color terminal versions of Vim
+due to the number of custom colors required. Color terminals only allow 16
+custom colors. I encourage terminal users to use a true-color terminal, such as
 [iTerm2](https://iterm2.com) or [GNOME
 Terminal](https://wiki.gnome.org/Apps/Terminal), and enable the `termguicolors`
 option available in modern versions of Vim and Neovim.
