@@ -4,10 +4,11 @@
 _nightfly_ is a dark GUI color scheme for Vim and Neovim heavily inspired by
 Sarah Drasner's [Night Owl](https://github.com/sdras/night-owl-vscode-theme)
 theme mixed with a dash of my own
-[moonfly](https://github.com/bluz71/vim-moonfly-colors) theme.
+[moonfly](https://github.com/bluz71/vim-moonfly-colors) theme, hence the name
+_nightfly_.
 
-Note, the _nightfly_ color scheme does incrementally change from time to time,
-primarily in regards to language and plugin theming.
+Be aware, the _nightfly_ color scheme does incrementally change from time to
+time, primarily with regard to language and plugin theming.
 
 Prerequisites
 -------------
@@ -23,7 +24,7 @@ due to the number of custom colors required. Color terminals only allow 16
 custom colors. I encourage terminal users to use a true-color terminal, such as
 [iTerm2](https://iterm2.com) or [GNOME
 Terminal](https://wiki.gnome.org/Apps/Terminal), and enable the `termguicolors`
-option available in modern versions of Vim and Neovim.
+option available in modern terminal versions of Vim and Neovim.
 
 Primary Colors
 --------------
@@ -91,6 +92,19 @@ Plugins explicity styled
 - [Tagbar](https://github.com/majutsushi/tagbar)
 - [indentLine](https://github.com/Yggdroot/indentLine) (please set `let g:indentLine_setColors = 0` in your _vimrc_)
 
+Installation
+------------
+
+use your favoured plugin manager to install **bluz71/vim-nightfly-guicolors**
+then set the colorscheme in your _vimrc_ file.
+
+If using [vim-plug](https://github.com/junegunn/vim-plug) do the following:
+
+1. Add `Plug 'bluz71/vim-nightfly-guicolors'` to your _vimrc_
+2. Run `:PlugInstall`
+3. Add `colorscheme nightfly` to your _vimrc_, make sure this line appears
+   **after** the _Plug_ declaration.
+
 Status line
 -----------
 
@@ -112,9 +126,9 @@ please add the following to your _vimrc_:
 let g:airline_theme = 'nightfly'
 ```
 
-Alternatively, a simple status line,
+Alternatively,
 [vim-moonfly-statusline](https://github.com/bluz71/vim-moonfly-statusline), is
-available for those that just want an uncomplicated status line. After the
+available for those that want a simple yet informative status line. After the
 _vim-moonfly_statusline_ plugin has been installed, please add the following to
 your _vimrc_:
 
@@ -122,18 +136,9 @@ your _vimrc_:
 let g:moonflyHonorUserDefinedColors = 1
 ```
 
-Installation
-------------
-
-use your favoured plugin manager to install **bluz71/vim-nightfly-guicolors**
-then set the colorscheme in your _vimrc_ file.
-
-If using [vim-plug](https://github.com/junegunn/vim-plug) do the following:
-
-1. Add `Plug 'bluz71/vim-nightfly-guicolors'` to your _vimrc_
-2. Run `:PlugInstall`
-3. Add `colorscheme nightfly` to your _vimrc_, make sure this line appears
-   **after** the _Plug_ declaration.
+This option will tell _moonfly-statusline_ to not use the default _moonfly_
+colors of that plugin, and instead use the specified `statusline` colors defined
+by this _nightfly_ theme.
 
 Options
 -------
@@ -222,20 +227,30 @@ endif
 True Color Terminals
 --------------------
 
-Many terminal programs, such as [iTerm2](http://www.iterm2.com) and
-[GNOME Terminal](https://wiki.gnome.org/Apps/Terminal), support
-[24-bit true colors](https://gist.github.com/XVilka/8346728). Modern versions
-of Vim and Neovim, on such terminals, support true colors when
-`set termguicolors` is enabled.
+Many modern terminal programs support [24-bit true
+colors](https://gist.github.com/XVilka/8346728). Current versions of Vim and
+Neovim, on such terminals, support true colors when `set termguicolors` is
+enabled.
 
-Caveat, _Terminal.app_ on macOS and _xterm_ on Unix do **not** support true
+A list of common terminals that support true colors:
+
+- [iTerm2](http://www.iterm2.com)
+- [GNOME Terminal](https://wiki.gnome.org/Apps/Terminal)
+- [Windows Terminal](https://github.com/microsoft/terminal)
+- [alacritty](https://github.com/alacritty/alacritty)
+- [kitty](https://sw.kovidgoyal.net/kitty/index.html)
+- [konsole](https://konsole.kde.org)
+- [PuTTY](https://putty.org)
+- [mintty](https://mintty.github.io)
+
+:bomb: _Terminal.app_ on macOS and _xterm_ on Unix do **not** support true
 colors.
 
-On terminals that do support true colors, and when `termguicolors` is set,
-the _nightfly_ color scheme will emit the correct theme colors.
+On terminals that support true colors, and when `termguicolors` is set, the
+_nightfly_ color scheme will emit the correct theme colors.
 
-For the true colors _nightfly_ color scheme to display correctly inside _tmux_
-the following setting will be required in _~/.tmux.conf_:
+For the _nightfly_ color scheme to display correctly inside _tmux_ the following
+setting will be required in _~/.tmux.conf_:
 
 ```
 set -ga terminal-overrides ',xterm-256color:Tc'

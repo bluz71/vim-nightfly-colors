@@ -14,7 +14,7 @@ endif
 let g:colors_name="nightfly"
 
 " * By default do not color the cursor.
-" * By default use the moonfly color palette in the `:terminal`, but not if TUI
+" * By default use the nightly color palette in the `:terminal`, but not if TUI
 "     Neovim can pass through terminal palette colors.
 " * By default do not underline matching parentheses.
 " * By default do use undercurls in GUI versions of Vim, including terminal Vim
