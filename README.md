@@ -32,13 +32,12 @@ Primary Colors
 | Normal     | Color                                                       | Bright     | Color                                                       |
 | ---------- | ----------------------------------------------------------- | -----------| ----------------------------------------------------------- |
 | Background | ![background](https://placehold.it/64/011627/000000?text=+) | Foreground | ![foreground](https://placehold.it/64/c3ccdc/000000?text=+) |
-| Grey       | ![grey](https://placehold.it/64/1d3b53/000000?text=+)       | Peach      | ![peach](https://placehold.it/64/ffcb8b/000000?text=+)      |
 | Red        | ![red](https://placehold.it/64/fc514e/000000?text=+)        | Watermelon | ![watermelon](https://placehold.it/64/ff5874/000000?text=+) |
 | Green      | ![green](https://placehold.it/64/a1cd5e/000000?text=+)      | Emerald    | ![emerald](https://placehold.it/64/21c7a8/000000?text=+)    |
 | Yellow     | ![yellow](https://placehold.it/64/e7d37a/000000?text=+)     | Tan        | ![tan](https://placehold.it/64/ecc48d/000000?text=+)        |
 | Blue       | ![blue](https://placehold.it/64/82aaff/000000?text=+)       | Purple     | ![purple](https://placehold.it/64/ae81ff/000000?text=+)     |
 | Violet     | ![violet](https://placehold.it/64/c792ea/000000?text=+)     | Turquoise  | ![turquoise](https://placehold.it/64/7fdbca/000000?text=+)  |
-| Turquoise  | ![turquoise](https://placehold.it/64/7fdbca/000000?text=+)  | Orange     | ![orange](https://placehold.it/64/f78c6c/000000?text=+)     |
+| Orange     | ![orange](https://placehold.it/64/f78c6c/000000?text=+)     | Peach      | ![peach](https://placehold.it/64/ffcb8b/000000?text=+)      |
 
 Screenshots
 -----------
