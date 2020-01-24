@@ -126,7 +126,7 @@ let g:airline_theme = 'nightfly'
 ```
 
 Alternatively,
-[vim-moonfly-statusline](https://github.com/bluz71/vim-moonfly-statusline), is
+[vim-moonfly-statusline](https://github.com/bluz71/vim-moonfly-statusline) is
 available for those that want a simple yet informative status line. After the
 _vim-moonfly_statusline_ plugin has been installed, please add the following to
 your _vimrc_:
@@ -135,9 +135,10 @@ your _vimrc_:
 let g:moonflyHonorUserDefinedColors = 1
 ```
 
-This option will tell _moonfly-statusline_ to not use the default _moonfly_
-colors of that plugin, and instead use the specified `statusline` colors defined
-by this _nightfly_ theme.
+This option will tell _moonfly-statusline_ to not use the default
+[moonfly](https://github.com/bluz71/vim-moonfly-colors) colors of that plugin,
+but instead use the specified `statusline` colors defined by this _nightfly_
+theme.
 
 Options
 -------
