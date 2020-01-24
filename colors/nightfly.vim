@@ -38,7 +38,7 @@ endif
 let g:nightflyUnderlineMatchParen = get(g:, "nightflyUnderlineMatchParen", 0)
 let g:nightflyUndercurls          = get(g:, "nightflyUndercurls", 1)
 let g:nightflyItalics             = get(g:, "nightflyItalics", 1)
-let g:nightflyFloatingFZF         = get(g:, "nightflyFloatingFZF", 1)
+let g:nightflyFloatingFZF         = get(g:, "nightflyFloatingFZF", 0)
 
 " Background and foreground.
 let s:black      = "#011627"
