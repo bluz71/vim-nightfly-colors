@@ -215,7 +215,7 @@ else
     exec "highlight Cursor guifg=bg guibg=" . s:cadet_blue
 endif
 exec "highlight lCursor guifg=bg guibg=" . s:cadet_blue
-exec "highlight CursorLineNr guibg=" . s:dark_blue . " guifg=" . s:blue . " gui=none"
+exec "highlight CursorLineNr cterm=none guibg=" . s:dark_blue . " guifg=" . s:blue . " gui=none"
 exec "highlight CursorColumn guibg=" . s:dark_blue
 exec "highlight CursorLine cterm=none guibg=" . s:dark_blue
 exec "highlight Folded guibg=" . s:dark_blue . " guifg=". s:green
