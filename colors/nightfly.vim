@@ -707,7 +707,7 @@ exec "highlight User6 guibg=" . s:slate_blue . " guifg=" . s:white      . " gui=
 exec "highlight User7 guibg=" . s:slate_blue . " guifg=" . s:blue       . " gui=none"
 exec "highlight User8 guibg=" . s:slate_blue . " guifg=" . s:watermelon . " gui=none"
 
-" Misc
+" Misc languages and plugins
 exec "highlight bufExplorerHelp guifg=" . s:cadet_blue
 exec "highlight bufExplorerSortBy guifg=" . s:cadet_blue
 exec "highlight CleverFDefaultLabel guifg=" . s:watermelon
@@ -726,5 +726,9 @@ exec "highlight diffIndexLine guifg=" . s:watermelon
 exec "highlight diffLine guifg=" . s:blue
 exec "highlight diffRemoved guifg=" . s:red
 exec "highlight diffSubname guifg=" . s:blue
-exec "highlight MatchWord guifg=" . s:orange
+if g:nightflyUnderlineMatchParen
+    exec "highlight MatchWord gui=underline guisp=" . s:orange
+else
+    exec "highlight MatchWord guifg=" . s:orange
+endif
 exec "highlight MatchWordCur guibg=bg"
