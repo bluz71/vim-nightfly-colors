@@ -146,20 +146,14 @@ then add the following to your _vimrc_:
 let g:nightflyCursorColor = 1
 ```
 
-The `g:nightflyTerminalColors` option specifies whether to use the nightfly color
-palette in `:terminal` windows when `termguicolors` is set. By default this
-option is **enabled** for most versions of Vim, if you prefer not to use the
-nightfly color palette for the first 16 terminal colors then add the following
-to your _vimrc_:
+The `g:nightflyTerminalColors` option specifies whether to use the nightfly
+color palette in `:terminal` windows when `termguicolors` is set. By default
+this option is **enabled**. If you prefer not to use the nightfly color palette
+for the first 16 terminal colors then add the following to your _vimrc_:
 
 ```viml
 let g:nightflyTerminalColors = 0
 ```
-
-:bulb: Neovim 0.5.0 or later in a terminal with `termguicolors` set [passes
-through](https://github.com/neovim/neovim/pull/10994) the terminal palette
-colors, hence, *nightfly* will not enable terminal colors by default, they are
-not needed.
 
 The `g:nightflyUnderlineMatchParen` option specifies whether to underline
 matching parentheses. By default this option is **disabled**. If you want to

@@ -14,8 +14,7 @@ endif
 let g:colors_name="nightfly"
 
 " * By default do not color the cursor.
-" * By default use the nightly color palette in the `:terminal`, but not if TUI
-"     Neovim can pass through terminal palette colors.
+" * By default use the nightly color palette in the `:terminal`
 " * By default do not underline matching parentheses.
 " * By default do use undercurls in GUI versions of Vim, including terminal Vim
 "     with termguicolors set.
@@ -23,18 +22,7 @@ let g:colors_name="nightfly"
 "     with termguicolors set.
 " * By default do not style fzf for display in floating window.
 let g:nightflyCursorColor         = get(g:, "nightflyCursorColor", 0)
-if has("nvim-0.5.0") && &termguicolors && nvim_list_uis()[0]['ext_termcolors']
-    " Neovim 0.5.0 or later in a TUI with termguicolors set allows pass through
-    " of the terminal palette, so do NOT set terminal colors since it will
-    " cause certain problems.
-    "
-    " For reference:
-    "   https://github.com/neovim/neovim/pull/10994
-    "   https://github.com/neovim/neovim/issues/11335
-    let g:nightflyTerminalColors  = get(g:, "nightflyTerminalColors", 0)
-else
-    let g:nightflyTerminalColors  = get(g:, "nightflyTerminalColors", 1)
-endif
+let g:nightflyTerminalColors      = get(g:, "nightflyTerminalColors", 1)
 let g:nightflyUnderlineMatchParen = get(g:, "nightflyUnderlineMatchParen", 0)
 let g:nightflyUndercurls          = get(g:, "nightflyUndercurls", 1)
 let g:nightflyItalics             = get(g:, "nightflyItalics", 1)
