@@ -671,7 +671,7 @@ exec "highlight ALEVirtualTextInfo guibg=" . s:deep_blue . " guifg=" . s:blue
 exec "highlight ALEInfoSign guibg=bg guifg=" . s:blue
 
 " GitGutter plugin
-exec "highlight GitGutterAdd guibg=bg guifg=" . s:green
+exec "highlight GitGutterAdd guibg=bg guifg=" . s:emerald
 exec "highlight GitGutterChange guibg=bg guifg=" . s:purple
 exec "highlight GitGutterChangeDelete guibg=bg guifg=" . s:orange
 exec "highlight GitGutterDelete guibg=bg guifg=" . s:red
