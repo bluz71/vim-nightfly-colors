@@ -13,6 +13,23 @@ if exists("syntax_on")
 endif
 let g:colors_name="nightfly"
 
+" Please check that Vim/Neovim is able to run this true-color theme.
+"
+" If running in a terminal make sure termguicolors exists and is set.
+if has("nvim")
+    if nvim_list_uis()[0]['ext_termcolors'] && !&termguicolors
+         echomsg "The termguicolors option must be set"
+    endif
+else " Vim
+    if !has("gui_running")
+        if !exists('&termguicolors')
+            echomsg "A modern version of Vim with termguicolors is required"
+        elseif !&termguicolors
+            echomsg "The termguicolors option must be set"
+        endif
+    endif
+endif
+
 " * By default do not color the cursor.
 " * By default use the nightly color palette in the `:terminal`
 " * By default do not underline matching parentheses.
