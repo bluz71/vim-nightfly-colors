@@ -297,10 +297,11 @@ function! RelativeNumberActivity(mode)
 endfunction
 
 augroup CustomWindowActivity
+    autocmd!
     autocmd WinEnter * call RelativeNumberActivity("active")
     autocmd WinLeave * call RelativeNumberActivity("inactive")
     if exists('&cursorlineopt')
-         autocmd FileType nerdtree setlocal cursorlineopt=both
+        autocmd FileType nerdtree setlocal cursorlineopt=both
     endif
 augroup END
 ```
