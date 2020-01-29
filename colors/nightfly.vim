@@ -13,20 +13,21 @@ if exists("syntax_on")
 endif
 let g:colors_name="nightfly"
 
-" Please check that Vim/Neovim is able to run this true-color theme.
+" Please check that Vim/Neovim is able to run this true-color only theme.
 "
 " If running in a terminal make sure termguicolors exists and is set.
 if has("nvim")
     if nvim_list_uis()[0]['ext_termcolors'] && !&termguicolors
-         echomsg "The termguicolors option must be set"
+        echomsg "The termguicolors option must be set"
+        finish
     endif
 else " Vim
-    if !has("gui_running")
-        if !exists('&termguicolors')
-            echomsg "A modern version of Vim with termguicolors is required"
-        elseif !&termguicolors
-            echomsg "The termguicolors option must be set"
-        endif
+    if !has("gui_running") && !exists('&termguicolors')
+        echomsg "A modern version of Vim with termguicolors is required"
+        finish
+    elseif !has("gui_running") && !&termguicolors
+        echomsg "The termguicolors option must be set"
+        finish
     endif
 endif
 
