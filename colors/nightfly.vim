@@ -368,6 +368,7 @@ exec "highlight htmlEndTag guifg=" . s:purple
 exec "highlight htmlTag guifg=" . s:green
 exec "highlight htmlTagN guifg=" . s:blue
 exec "highlight htmlTagName guifg=" . s:blue
+exec "highlight htmlUnderline guifg=" . s:white
 if g:nightflyItalics
     exec "highlight htmlBoldItalic guibg=" . s:black . " guifg=" . s:orange . " gui=italic"
     exec "highlight htmlBoldUnderlineItalic guibg=" . s:black . " guifg=" . s:orange . " gui=italic"
@@ -604,6 +605,7 @@ exec "highlight gitCommitHeader guifg=" . s:purple
 exec "highlight gitCommitSelectedFile guifg=" . s:emerald
 exec "highlight gitCommitSelectedType guifg=" . s:blue
 exec "highlight gitCommitUntrackedFile guifg=" . s:watermelon
+exec "highlight gitEmail guifg=" . s:blue
 
 " Tagbar plugin
 exec "highlight TagbarFoldIcon guifg=" . s:cadet_blue
