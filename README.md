@@ -19,10 +19,10 @@ A GUI client, such as gvim, **or** a modern terminal version of Vim/Neovim, with
 `termguicolors` enabled in a true-color terminal, will be required. Details
 about true-color terminals are listed below.
 
-Note, this theme explicitly does **not** support color terminal versions of Vim
-due to the number of custom colors required. Color terminals only allow 16
-custom colors. I encourage terminal users to use a true-color terminal, such as
-[iTerm2](https://iterm2.com) or [GNOME
+_nightfly_ explicitly does **not** support color terminal versions of Vim,
+including 256 `cterm`, due to the number of custom colors required. Color
+terminals only allow 16 custom colors. I encourage terminal users to use a
+true-color terminal, such as [iTerm2](https://iterm2.com) or [GNOME
 Terminal](https://wiki.gnome.org/Apps/Terminal), and enable the `termguicolors`
 option available in modern terminal versions of Vim and Neovim.
 
