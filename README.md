@@ -258,7 +258,7 @@ Repeating, the above `t_8*` settings are **not** required for Neovim.
 Color Values
 ------------
 
-RGB color values for the _nightfly_ colors:
+RGB values for the _nightfly_ colors:
 
 | Name       | Value    | Color
 | ---------- |----------| -----------------------------------------------------------
