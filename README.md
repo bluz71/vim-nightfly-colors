@@ -271,8 +271,7 @@ A couple matching terminal themes are provided:
   please set the _cursor_ and _highlight_ colors by hand, with the appropriate
   color values listed below, in `Preferences` / `Nightfly` / `Colors`.
 
-For other terminals please configure appropriately with the the following
-colors:
+For other terminals please configure appropriately with the following colors:
 
 | Type       | Value      |
 |------------|------------|
