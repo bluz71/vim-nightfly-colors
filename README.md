@@ -258,7 +258,7 @@ Repeating, the above `t_8*` settings are **not** required for Neovim.
 Terminal Themes
 ---------------
 
-Certain matching terminal themes are provided for:
+A couple matching terminal themes are provided:
 
 - _iterm2_ users on macOS can import
   [this](terminal_themes/nightfly.itermcolors) color scheme.
@@ -271,7 +271,8 @@ Certain matching terminal themes are provided for:
   please set the _cursor_ and _highlight_ colors by hand, with the appropriate
   color values listed below, in `Preferences` / `Nightfly` / `Colors`.
 
-For other terminals please use the following colors:
+For other terminals please configure appropriately with the the following
+colors:
 
 | Type       | Value      |
 |------------|------------|
