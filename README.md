@@ -255,6 +255,47 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 Repeating, the above `t_8*` settings are **not** required for Neovim.
 
+Terminal Themes
+---------------
+
+Certain matching terminal themes are provided for:
+
+- _iterm2_ users on macOS can import
+  [this](terminal_themes/nightfly.itermcolors) color scheme.
+
+- _GNOME Terminal_ users can run
+  [this](terminal_themes/gnome-terminal-nightfly.sh) script to create a
+  _Nightfly_ profile. Before executing the script, please install the
+  `dconf-cli` command line utility for modern versions of Gnome (3.28 and
+  later), for example `sudo apt install dconf-cli`. After executing the script,
+  please set the _cursor_ and _highlight_ colors by hand, with the appropriate
+  color values listed below, in `Preferences` / `Nightfly` / `Colors`.
+
+For other terminals please use the following colors:
+
+| Type       | Value    |
+|------------|----------|
+| background | #011627  |
+| foreground | #acb4c2  |
+| cursor     | #9ca1aa  |
+| selection  | #b2ceee  |
+| color0     | #1d3b53  |
+| color1     | #fc514e  |
+| color2     | #a1cd5e  |
+| color3     | #e7d37a  |
+| color4     | #82aaff  |
+| color5     | #c792ea  |
+| color6     | #7fdbca  |
+| color7     | #a1aab8  |
+| color8     | #7c8f8f  |
+| color9     | #ff5874  |
+| color10    | #21c7a8  |
+| color11    | #ecc48d  |
+| color12    | #82aaff  |
+| color13    | #ae81ff  |
+| color14    | #7fdbca  |
+| color15    | #d6deeb  |
+
 Color Values
 ------------
 
