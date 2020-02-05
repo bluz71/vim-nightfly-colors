@@ -226,7 +226,7 @@ Repeating, the above `t_8*` settings are **not** required for Neovim.
 Terminal Themes
 ---------------
 
-A couple matching terminal themes are provided:
+A couple matching _nightfly_-flavoured terminal themes are provided:
 
 - _iterm2_ users on macOS can import
   [this](terminal_themes/nightfly.itermcolors) color scheme.
