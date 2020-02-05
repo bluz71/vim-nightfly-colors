@@ -685,25 +685,22 @@ exec "highlight fzf2 guifg=" . s:blue . " guibg=" . s:slate_blue
 exec "highlight fzf3 guifg=" . s:green . " guibg=" . s:slate_blue
 exec "highlight fzfNormal guifg=" . s:cadet_blue
 exec "highlight fzfFgPlus guifg=" . s:white_blue
+exec "highlight fzfBorder guifg=" . s:slate_blue
 let g:fzf_colors = {
   \  'fg':      ['fg', 'fzfNormal'],
   \  'bg':      ['bg', 'Normal'],
   \  'hl':      ['fg', 'Number'],
   \  'fg+':     ['fg', 'fzfFgPlus'],
-  \  'bg+':     ['bg', 'CursorLine'],
+  \  'bg+':     ['bg', 'Pmenu'],
   \  'hl+':     ['fg', 'Number'],
   \  'info':    ['fg', 'String'],
-  \  'border':  ['fg', 'Conceal'],
+  \  'border':  ['fg', 'fzfBorder'],
   \  'prompt':  ['fg', 'fzf2'],
   \  'pointer': ['fg', 'Exception'],
   \  'marker':  ['fg', 'StorageClass'],
   \  'spinner': ['fg', 'Type'],
   \  'header':  ['fg', 'CursorLineNr']
   \}
-if g:nightflyFloatingFZF
-    let g:fzf_colors['bg']  = ['bg', 'Pmenu']
-    let g:fzf_colors['bg+'] = ['bg', 'Visual']
-endif
 
 " moonfly-statusline plugin
 exec "highlight User1 guibg=" . s:blue       . " guifg=" . s:dark_blue
