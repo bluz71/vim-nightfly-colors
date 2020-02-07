@@ -241,28 +241,29 @@ A couple matching _nightfly_-flavoured terminal themes are provided:
 
 For other terminals please configure appropriately with the following colors:
 
-| Type       | Value      |
-|------------|------------|
-| background | `#011627`  |
-| foreground | `#acb4c2`  |
-| cursor     | `#9ca1aa`  |
-| selection  | `#b2ceee`  |
-| color0     | `#1d3b53`  |
-| color1     | `#fc514e`  |
-| color2     | `#a1cd5e`  |
-| color3     | `#e7d37a`  |
-| color4     | `#82aaff`  |
-| color5     | `#c792ea`  |
-| color6     | `#7fdbca`  |
-| color7     | `#a1aab8`  |
-| color8     | `#7c8f8f`  |
-| color9     | `#ff5874`  |
-| color10    | `#21c7a8`  |
-| color11    | `#ecc48d`  |
-| color12    | `#82aaff`  |
-| color13    | `#ae81ff`  |
-| color14    | `#7fdbca`  |
-| color15    | `#d6deeb`  |
+| Type           | Value      |
+|----------------|------------|
+| background     | `#011627`  |
+| foreground     | `#acb4c2`  |
+| cursor         | `#9ca1aa`  |
+| selection      | `#b2ceee`  |
+| selection text | `#080808`  |
+| color0         | `#1d3b53`  |
+| color1         | `#fc514e`  |
+| color2         | `#a1cd5e`  |
+| color3         | `#e7d37a`  |
+| color4         | `#82aaff`  |
+| color5         | `#c792ea`  |
+| color6         | `#7fdbca`  |
+| color7         | `#a1aab8`  |
+| color8         | `#7c8f8f`  |
+| color9         | `#ff5874`  |
+| color10        | `#21c7a8`  |
+| color11        | `#ecc48d`  |
+| color12        | `#82aaff`  |
+| color13        | `#ae81ff`  |
+| color14        | `#7fdbca`  |
+| color15        | `#d6deeb`  |
 
 Color Values
 ------------
