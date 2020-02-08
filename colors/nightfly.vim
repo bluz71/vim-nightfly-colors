@@ -666,11 +666,11 @@ else
     exec "highlight ALEWarning guibg=bg"
     exec "highlight ALEInfo guibg=bg"
 endif
-exec "highlight ALEVirtualTextError guibg=" . s:deep_blue . " guifg=" . s:red
+exec "highlight ALEVirtualTextError guifg=" . s:steel_blue
 exec "highlight ALEErrorSign guibg=bg guifg=" . s:red
-exec "highlight ALEVirtualTextWarning guibg=" . s:deep_blue . " guifg=" . s:yellow
+exec "highlight ALEVirtualTextWarning guifg=" . s:steel_blue
 exec "highlight ALEWarningSign guibg=bg guifg=" . s:yellow
-exec "highlight ALEVirtualTextInfo guibg=" . s:deep_blue . " guifg=" . s:blue
+exec "highlight ALEVirtualTextInfo guifg=" . s:steel_blue
 exec "highlight ALEInfoSign guibg=bg guifg=" . s:blue
 
 " GitGutter plugin
