@@ -229,7 +229,7 @@ Terminal Themes
 A couple matching _nightfly_-flavoured terminal themes are provided:
 
 - _iterm2_ users on macOS can import
-  [this](terminal_themes/nightfly.itermcolors) color scheme.
+  [this](terminal_themes/nightfly.itermcolors) color scheme
 
 - _GNOME Terminal_ users can run
   [this](terminal_themes/gnome-terminal-nightfly.sh) script to create a
@@ -238,6 +238,9 @@ A couple matching _nightfly_-flavoured terminal themes are provided:
   later), for example `sudo apt install dconf-cli`. After executing the script,
   please set the _cursor_ and _highlight_ colors by hand, with the appropriate
   color values listed below, in `Preferences` / `Nightfly` / `Colors`.
+
+- [kitty](https://sw.kovidgoyal.net/kitty) users can use
+  [this](terminal_themes/kitty-theme.conf) theme
 
 For other terminals please configure appropriately with the following colors:
 
