@@ -723,6 +723,7 @@ exec "highlight jsonKeyword guifg=" . s:blue
 exec "highlight jsonBoolean guifg=" . s:turquoise
 exec "highlight netrwClassify guifg=" . s:watermelon
 exec "highlight netrwDir guifg=" . s:blue
+exec "highlight netrwExe guifg=" . s:tan
 exec "highlight snipLeadingSpaces guibg=bg guifg=fg"
 exec "highlight tagName guifg=" . s:turquoise
 exec "highlight diffAdded guifg=" . s:green
