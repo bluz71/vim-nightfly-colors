@@ -525,12 +525,13 @@ exec "highlight scalaSpecial guifg=" . s:turquoise
 exec "highlight scalaSpecial guifg=" . s:watermelon
 
 " Shell scripts
-exec "highlight shStatement guifg=fg"
-exec "highlight shCommandSub guifg=fg"
-exec "highlight shShellVariables guifg=" . s:green
-exec "highlight shVariable guifg=" . s:turquoise
 exec "highlight shAlias guifg=" . s:turquoise
+exec "highlight shCommandSub guifg=fg"
+exec "highlight shLoop guifg=" . s:violet
 exec "highlight shSetList guifg=" . s:turquoise
+exec "highlight shShellVariables guifg=" . s:green
+exec "highlight shStatement guifg=fg"
+exec "highlight shVariable guifg=" . s:turquoise
 
 " TypeScript (leafgarland/typescript-vim)
 exec "highlight typescriptDOMObjects guifg=" . s:blue
