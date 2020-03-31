@@ -34,7 +34,7 @@ Primary Colors
 | Background | ![background](https://placehold.it/64/011627/000000?text=+) | Foreground | ![foreground](https://placehold.it/64/c3ccdc/000000?text=+) |
 | Red        | ![red](https://placehold.it/64/fc514e/000000?text=+)        | Watermelon | ![watermelon](https://placehold.it/64/ff5874/000000?text=+) |
 | Green      | ![green](https://placehold.it/64/a1cd5e/000000?text=+)      | Emerald    | ![emerald](https://placehold.it/64/21c7a8/000000?text=+)    |
-| Yellow     | ![yellow](https://placehold.it/64/e7d37a/000000?text=+)     | Tan        | ![tan](https://placehold.it/64/ecc48d/000000?text=+)        |
+| Yellow     | ![yellow](https://placehold.it/64/e3d18a/000000?text=+)     | Tan        | ![tan](https://placehold.it/64/ecc48d/000000?text=+)        |
 | Blue       | ![blue](https://placehold.it/64/82aaff/000000?text=+)       | Purple     | ![purple](https://placehold.it/64/ae81ff/000000?text=+)     |
 | Violet     | ![violet](https://placehold.it/64/c792ea/000000?text=+)     | Turquoise  | ![turquoise](https://placehold.it/64/7fdbca/000000?text=+)  |
 | Orange     | ![orange](https://placehold.it/64/f78c6c/000000?text=+)     | Peach      | ![peach](https://placehold.it/64/ffcb8b/000000?text=+)      |
@@ -254,7 +254,7 @@ For other terminals please configure appropriately with the following colors:
 | color0         | `#1d3b53`  |
 | color1         | `#fc514e`  |
 | color2         | `#a1cd5e`  |
-| color3         | `#e7d37a`  |
+| color3         | `#e3d18a`  |
 | color4         | `#82aaff`  |
 | color5         | `#c792ea`  |
 | color6         | `#7fdbca`  |
@@ -277,7 +277,7 @@ RGB values for the _nightfly_ colors:
 | ---------- |----------| -----------------------------------------------------------| ---------- |----------| -----------------------------------------------------------|
 | Red        | `fc514e` | ![background](https://placehold.it/32/fc514e/000000?text=+)| Background | `011627` | ![background](https://placehold.it/32/011627/000000?text=+)|
 | Green      | `a1cd5e` | ![background](https://placehold.it/32/a1cd5e/000000?text=+)| Foreground | `c3ccdc` | ![background](https://placehold.it/32/c3ccdc/000000?text=+)|
-| Yellow     | `e7d37a` | ![background](https://placehold.it/32/e7d37a/000000?text=+)| Black Blue | `081e2f` | ![background](https://placehold.it/32/081e2f/000000?text=+)|
+| Yellow     | `e3d18a` | ![background](https://placehold.it/32/e3d18a/000000?text=+)| Black Blue | `081e2f` | ![background](https://placehold.it/32/081e2f/000000?text=+)|
 | Blue       | `82aaff` | ![background](https://placehold.it/32/82aaff/000000?text=+)| Dark Blue  | `092236` | ![background](https://placehold.it/32/092236/000000?text=+)|
 | Violet     | `c792ea` | ![background](https://placehold.it/32/c792ea/000000?text=+)| Deep Blue  | `0e293f` | ![background](https://placehold.it/32/0e293f/000000?text=+)|
 | Orange     | `f78c6c` | ![background](https://placehold.it/32/f78c6c/000000?text=+)| Slate Blue | `2c3043` | ![background](https://placehold.it/32/2c3043/000000?text=+)|

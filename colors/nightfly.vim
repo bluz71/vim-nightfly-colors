@@ -63,7 +63,7 @@ let s:grey_blue  = "#7c8f8f"
 let s:cadet_blue = "#a1aab8"
 let s:white_blue = "#d6deeb"
 " Core theme colors.
-let s:yellow     = "#e7d37a"
+let s:yellow     = "#e3d18a"
 let s:peach      = "#ffcb8b"
 let s:tan        = "#ecc48d"
 let s:orange     = "#f78c6c"
@@ -82,7 +82,7 @@ if g:nightflyTerminalColors
         let g:terminal_color_0  = "#1d3b53"
         let g:terminal_color_1  = "#fc514e"
         let g:terminal_color_2  = "#a1cd5e"
-        let g:terminal_color_3  = "#e7d37a"
+        let g:terminal_color_3  = "#e3d18a"
         let g:terminal_color_4  = "#82aaff"
         let g:terminal_color_5  = "#c792ea"
         let g:terminal_color_6  = "#7fdbca"
@@ -97,7 +97,7 @@ if g:nightflyTerminalColors
         let g:terminal_color_15 = "#d6deeb"
     else
         let g:terminal_ansi_colors = [
-                    \ "#1d3b53", "#fc514e", "#a1cd5e", "#e7d37a",
+                    \ "#1d3b53", "#fc514e", "#a1cd5e", "#e3d18a",
                     \ "#82aaff", "#c792ea", "#7fdbca", "#a1aab8",
                     \ "#7c8f8f", "#ff5874", "#21c7a8", "#ecc48d",
                     \ "#82aaff", "#ae81ff", "#7fdbca", "#d6deeb"
