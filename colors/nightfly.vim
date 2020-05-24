@@ -645,8 +645,9 @@ exec "highlight NERDTreeGitStatusUntracked guifg=" . s:red
 " vimfiler plugin
 exec "highlight vimfilerClosedFile guifg=" . s:blue
 exec "highlight vimfilerNonMark guifg=" . s:green
-exec "highlight vimfilerOpenedFile guifg=" . s:blue
 exec "highlight vimfilerNormalFile guifg=" . s:white
+exec "highlight vimfilerOpenedFile guifg=" . s:blue
+exec "highlight vimfilerROFile guifg=" . s:grey_blue
 
 " Neomake plugin
 if g:nightflyUndercurls
