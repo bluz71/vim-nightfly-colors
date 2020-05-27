@@ -644,6 +644,7 @@ exec "highlight NERDTreeGitStatusUntracked guifg=" . s:red
 
 " vimfiler plugin
 exec "highlight vimfilerClosedFile guifg=" . s:blue
+exec "highlight vimfilerMarkedFile guifg=" . s:orange
 exec "highlight vimfilerNonMark guifg=" . s:green
 exec "highlight vimfilerNormalFile guifg=" . s:white
 exec "highlight vimfilerOpenedFile guifg=" . s:blue
