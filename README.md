@@ -80,22 +80,22 @@ Languages explicitly styled
 Plugins explicity styled
 ------------------------
 
-- [NERDTree](https://github.com/scrooloose/nerdtree)
 - [ALE](https://github.com/w0rp/ale)
-- [Neomake](https://github.com/neomake/neomake)
-- [GitGutter](https://github.com/airblade/vim-gitgutter)
-- [fzf.vim](https://github.com/junegunn/fzf.vim)
-- [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
 - [BufExplorer](https://github.com/jlanzarotta/bufexplorer)
-- [clever-f](https://github.com/rhysd/clever-f.vim)
+- [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
+- [GitGutter](https://github.com/airblade/vim-gitgutter)
+- [NERDTree](https://github.com/scrooloose/nerdtree)
+- [Neomake](https://github.com/neomake/neomake)
 - [Tagbar](https://github.com/majutsushi/tagbar)
-- [vimfiler](https://github.com/Shougo/vimfiler.vim)
+- [clever-f](https://github.com/rhysd/clever-f.vim)
+- [fzf.vim](https://github.com/junegunn/fzf.vim)
 - [indentLine](https://github.com/Yggdroot/indentLine) (please set `let g:indentLine_setColors = 0` in your _vimrc_)
+- [vimfiler](https://github.com/Shougo/vimfiler.vim)
 
 Installation
 ------------
 
-use your favoured plugin manager to install **bluz71/vim-nightfly-guicolors**
+Use your favoured plugin manager to install **bluz71/vim-nightfly-guicolors**
 then set the colorscheme in your _vimrc_ file.
 
 If using [vim-plug](https://github.com/junegunn/vim-plug) do the following:
@@ -334,9 +334,6 @@ augroup CustomWindowActivity
     autocmd!
     autocmd WinEnter * call RelativeNumberActivity("active")
     autocmd WinLeave * call RelativeNumberActivity("inactive")
-    if exists('&cursorlineopt')
-        autocmd FileType nerdtree setlocal cursorlineopt=both
-    endif
 augroup END
 ```
 
