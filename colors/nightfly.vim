@@ -750,3 +750,4 @@ else
 endif
 exec "highlight MatchWordCur guibg=bg"
 exec "highlight Cheat40Header guifg=" . s:blue
+exec "highlight Beacon guibg=" . s:white
