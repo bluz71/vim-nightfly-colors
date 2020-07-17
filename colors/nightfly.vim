@@ -439,7 +439,7 @@ exec "highlight phpClass guifg=" . s:emerald
 exec "highlight phpClasses guifg=" . s:peach
 exec "highlight phpFunction guifg=" . s:blue
 exec "highlight phpParent guifg=fg"
-exec "highlight phpType guifg=" . s:yellow
+exec "highlight phpType guifg=" . s:violet
 
 " PureScript
 exec "highlight purescriptClass guifg=" . s:peach
