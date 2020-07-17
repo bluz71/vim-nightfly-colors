@@ -474,17 +474,11 @@ exec "highlight rubyMacro guifg=" . s:blue
 exec "highlight rubyModule guifg=" . s:blue
 exec "highlight rubyModuleName guifg=" . s:emerald
 exec "highlight rubyPseudoVariable guifg=" . s:green
-exec "highlight rubyResponse guifg=" . s:turquoise
+exec "highlight rubyResponse guifg=" . s:blue
 exec "highlight rubyRoute guifg=" . s:blue
 exec "highlight rubySharpBang guifg=" . s:cadet_blue
 exec "highlight rubyStringDelimiter guifg=" . s:tan
 exec "highlight rubySymbol guifg=" . s:purple
-augroup NightflyRubyAutocmds
-    autocmd!
-    " Use different colors when in Ruby and eRuby files for 'rubyConstant'.
-    autocmd FileType eruby exec "highlight rubyConstant guifg=" . s:turquoise
-    autocmd FileType ruby exec "highlight rubyConstant guifg=" . s:emerald
-augroup END
 
 " Rust
 exec "highlight rustAssert guifg=" . s:green
