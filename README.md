@@ -227,7 +227,7 @@ Repeating, the above `t_8*` settings are **not** required for Neovim.
 Terminal Themes
 ---------------
 
-A couple matching _nightfly_-flavoured terminal themes are provided:
+A collection of nightfly_ terminal themes are provided:
 
 - _iterm2_ users on macOS can import
   [this](terminal_themes/nightfly.itermcolors) color scheme
@@ -243,31 +243,37 @@ A couple matching _nightfly_-flavoured terminal themes are provided:
 - [kitty](https://sw.kovidgoyal.net/kitty) users can use
   [this](terminal_themes/kitty-theme.conf) theme
 
+- [alacritty](https://github.com/alacritty/alacritty) users can copy
+  [this](terminal_themes/alacritty.yml) theme into their `alacritty.yml`
+  configuration.
+
 For other terminals please configure appropriately with the following colors:
 
-| Type           | Value      |
-|----------------|------------|
-| background     | `#011627`  |
-| foreground     | `#acb4c2`  |
-| cursor         | `#9ca1aa`  |
-| selection      | `#b2ceee`  |
-| selection text | `#080808`  |
-| color0         | `#1d3b53`  |
-| color1         | `#fc514e`  |
-| color2         | `#a1cd5e`  |
-| color3         | `#e3d18a`  |
-| color4         | `#82aaff`  |
-| color5         | `#c792ea`  |
-| color6         | `#7fdbca`  |
-| color7         | `#a1aab8`  |
-| color8         | `#7c8f8f`  |
-| color9         | `#ff5874`  |
-| color10        | `#21c7a8`  |
-| color11        | `#ecc48d`  |
-| color12        | `#82aaff`  |
-| color13        | `#ae81ff`  |
-| color14        | `#7fdbca`  |
-| color15        | `#d6deeb`  |
+| Type                    | Value      |
+|-------------------------|------------|
+| background              | `#011627`  |
+| foreground              | `#acb4c2`  |
+| bold                    | `#eeeeee`  |
+| cursor                  | `#9ca1aa`  |
+| cursor text             | `#080808`  |
+| selection               | `#b2ceee`  |
+| selection text          | `#080808`  |
+| color0 (black)          | `#1d3b53`  |
+| color1 (red)            | `#fc514e`  |
+| color2 (green)          | `#a1cd5e`  |
+| color3 (yellow)         | `#e3d18a`  |
+| color4 (blue)           | `#82aaff`  |
+| color5 (purple)         | `#c792ea`  |
+| color6 (cyan)           | `#7fdbca`  |
+| color7 (white)          | `#a1aab8`  |
+| color8 (black bright)   | `#7c8f8f`  |
+| color9 (red bright)     | `#ff5874`  |
+| color10 (green bright)  | `#21c7a8`  |
+| color11 (yellow bright) | `#ecc48d`  |
+| color12 (blue bright)   | `#82aaff`  |
+| color13 (purple bright) | `#ae81ff`  |
+| color14 (cyan bright)   | `#7fdbca`  |
+| color15 (white bright)  | `#d6deeb`  |
 
 Color Values
 ------------
