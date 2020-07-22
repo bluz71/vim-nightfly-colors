@@ -249,31 +249,31 @@ A collection of nightfly_ terminal themes are provided:
 
 For other terminals please configure appropriately with the following colors:
 
-| Type                    | Value      |
-|-------------------------|------------|
-| background              | `#011627`  |
-| foreground              | `#acb4c2`  |
-| bold                    | `#eeeeee`  |
-| cursor                  | `#9ca1aa`  |
-| cursor text             | `#080808`  |
-| selection               | `#b2ceee`  |
-| selection text          | `#080808`  |
-| color0 (black)          | `#1d3b53`  |
-| color1 (red)            | `#fc514e`  |
-| color2 (green)          | `#a1cd5e`  |
-| color3 (yellow)         | `#e3d18a`  |
-| color4 (blue)           | `#82aaff`  |
-| color5 (purple)         | `#c792ea`  |
-| color6 (cyan)           | `#7fdbca`  |
-| color7 (white)          | `#a1aab8`  |
-| color8 (black bright)   | `#7c8f8f`  |
-| color9 (red bright)     | `#ff5874`  |
-| color10 (green bright)  | `#21c7a8`  |
-| color11 (yellow bright) | `#ecc48d`  |
-| color12 (blue bright)   | `#82aaff`  |
-| color13 (purple bright) | `#ae81ff`  |
-| color14 (cyan bright)   | `#7fdbca`  |
-| color15 (white bright)  | `#d6deeb`  |
+| Type           | Category        | Value     | Color                                                       |
+|----------------|-----------------|-----------|-------------------------------------------------------------|
+| Background     | Background      | `#011627` | ![background](https://placehold.it/32/011627/000000?text=+) |
+| Foreground     | Foreground      | `#acb4c2` | ![background](https://placehold.it/32/acb4c2/000000?text=+) |
+| Bold           | Bold            | `#eeeeee` | ![background](https://placehold.it/32/eeeeee/000000?text=+) |
+| Cursor         | Cursor          | `#9ca1aa` | ![background](https://placehold.it/32/9ca1aa/000000?text=+) |
+| Cursor Text    | Cursor Text     | `#080808` | ![background](https://placehold.it/32/080808/000000?text=+) |
+| Selection      | Highlight       | `#b2ceee` | ![background](https://placehold.it/32/b2ceee/000000?text=+) |
+| Selection Text | Highlight Text  | `#080808` | ![background](https://placehold.it/32/080808/000000?text=+) |
+| Color 1        | Black (normal)  | `#1d3b53` | ![background](https://placehold.it/32/1d3b53/000000?text=+) |
+| Color 2        | Red (normal)    | `#fc514e` | ![background](https://placehold.it/32/fc514e/000000?text=+) |
+| Color 3        | Green (normal)  | `#a1cd5e` | ![background](https://placehold.it/32/a1cd5e/000000?text=+) |
+| Color 4        | Yellow (normal) | `#e3d18a` | ![background](https://placehold.it/32/e3d18a/000000?text=+) |
+| Color 5        | Blue (normal)   | `#82aaff` | ![background](https://placehold.it/32/82aaff/000000?text=+) |
+| Color 6        | Purple (normal) | `#c792ea` | ![background](https://placehold.it/32/c792ea/000000?text=+) |
+| Color 7        | Cyan (normal)   | `#7fdbca` | ![background](https://placehold.it/32/7fdbca/000000?text=+) |
+| Color 8        | White (normal)  | `#a1aab8` | ![background](https://placehold.it/32/a1aab8/000000?text=+) |
+| Color 9        | Black (bright)  | `#7c8f8f` | ![background](https://placehold.it/32/7c8f8f/000000?text=+) |
+| Color 10       | Red (bright)    | `#ff5874` | ![background](https://placehold.it/32/ff5874/000000?text=+) |
+| Color 11       | Green (bright)  | `#21c7a8` | ![background](https://placehold.it/32/21c7a8/000000?text=+) |
+| Color 12       | Yellow (bright) | `#ecc48d` | ![background](https://placehold.it/32/ecc48d/000000?text=+) |
+| Color 13       | Blue (bright)   | `#82aaff` | ![background](https://placehold.it/32/82aaff/000000?text=+) |
+| Color 14       | Purple (bright) | `#ae81ff` | ![background](https://placehold.it/32/ae81ff/000000?text=+) |
+| Color 15       | Cyan (bright)   | `#7fdbca` | ![background](https://placehold.it/32/7fdbca/000000?text=+) |
+| Color 16       | White (bright)  | `#d6deeb` | ![background](https://placehold.it/32/d6deeb/000000?text=+) |
 
 Color Values
 ------------
