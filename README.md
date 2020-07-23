@@ -20,11 +20,12 @@ A GUI client, such as gvim, **or** a modern terminal version of Vim/Neovim, with
 about true-color terminals are listed below.
 
 _nightfly_ explicitly does **not** support color terminal versions of Vim,
-including 256 `cterm`, due to the number of custom colors required. Color
+including 256 color `cterm`, due to the number of custom colors required. Color
 terminals only allow 16 custom colors. I encourage terminal users to use a
-true-color terminal, such as [iTerm2](https://iterm2.com) or [GNOME
-Terminal](https://wiki.gnome.org/Apps/Terminal), and enable the `termguicolors`
-option available in modern terminal versions of Vim and Neovim.
+true-color terminal, such as: [iTerm2](https://iterm2.com), [GNOME
+Terminal](https://wiki.gnome.org/Apps/Terminal) or
+[Alacritty](https://github.com/alacritty/alacritty), and enable the
+`termguicolors` option.
 
 Primary Colors
 --------------
@@ -187,15 +188,15 @@ True Color Terminals
 
 Many modern terminal programs support [24-bit true
 colors](https://gist.github.com/XVilka/8346728). Current versions of Vim and
-Neovim, on such terminals, support true colors when `set termguicolors` is
+Neovim on such terminals support true colors when `set termguicolors` is
 enabled.
 
 A list of common terminals that support true colors:
 
 - [iTerm2](http://www.iterm2.com)
 - [GNOME Terminal](https://wiki.gnome.org/Apps/Terminal)
-- [Windows Terminal](https://github.com/microsoft/terminal)
-- [alacritty](https://github.com/alacritty/alacritty)
+- [Windows Terminal](https://github.com/Microsoft/Terminal)
+- [Alacritty](https://github.com/alacritty/alacritty)
 - [kitty](https://sw.kovidgoyal.net/kitty/index.html)
 - [konsole](https://konsole.kde.org)
 - [PuTTY](https://putty.org)
@@ -227,9 +228,9 @@ Repeating, the above `t_8*` settings are **not** required for Neovim.
 Terminal Themes
 ---------------
 
-A collection of nightfly_ terminal themes are provided:
+A collection of _nightfly_ terminal themes are provided:
 
-- _iterm2_ users on macOS can import
+- _iTerm2_ users on macOS can import
   [this](terminal_themes/nightfly.itermcolors) color scheme
 
 - _GNOME Terminal_ users can run
@@ -240,12 +241,12 @@ A collection of nightfly_ terminal themes are provided:
   please set the _cursor_ and _highlight_ colors by hand, with the appropriate
   color values listed below, in `Preferences` / `Nightfly` / `Colors`.
 
-- [kitty](https://sw.kovidgoyal.net/kitty) users can use
-  [this](terminal_themes/kitty-theme.conf) theme
-
-- [alacritty](https://github.com/alacritty/alacritty) users can copy
+- [Alacritty](https://github.com/alacritty/alacritty) users can copy
   [this](terminal_themes/alacritty.yml) theme into their `alacritty.yml`
   configuration.
+
+- [kitty](https://sw.kovidgoyal.net/kitty) users can use
+  [this](terminal_themes/kitty-theme.conf) theme
 
 For other terminals please configure appropriately with the following colors:
 
@@ -256,8 +257,8 @@ For other terminals please configure appropriately with the following colors:
 | Bold           | Bold            | `#eeeeee` | ![background](https://placehold.it/32/eeeeee/000000?text=+) |
 | Cursor         | Cursor          | `#9ca1aa` | ![background](https://placehold.it/32/9ca1aa/000000?text=+) |
 | Cursor Text    | Cursor Text     | `#080808` | ![background](https://placehold.it/32/080808/000000?text=+) |
-| Selection      | Highlight       | `#b2ceee` | ![background](https://placehold.it/32/b2ceee/000000?text=+) |
-| Selection Text | Highlight Text  | `#080808` | ![background](https://placehold.it/32/080808/000000?text=+) |
+| Selection      | Selection       | `#b2ceee` | ![background](https://placehold.it/32/b2ceee/000000?text=+) |
+| Selection Text | Selection Text  | `#080808` | ![background](https://placehold.it/32/080808/000000?text=+) |
 | Color 1        | Black (normal)  | `#1d3b53` | ![background](https://placehold.it/32/1d3b53/000000?text=+) |
 | Color 2        | Red (normal)    | `#fc514e` | ![background](https://placehold.it/32/fc514e/000000?text=+) |
 | Color 3        | Green (normal)  | `#a1cd5e` | ![background](https://placehold.it/32/a1cd5e/000000?text=+) |
