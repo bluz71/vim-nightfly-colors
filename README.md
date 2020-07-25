@@ -4,8 +4,7 @@
 _nightfly_ is a dark GUI color scheme for Vim and Neovim heavily inspired by
 Sarah Drasner's [Night Owl](https://github.com/sdras/night-owl-vscode-theme)
 theme mixed with a dash of my own
-[moonfly](https://github.com/bluz71/vim-moonfly-colors) theme, hence the name
-_nightfly_.
+[moonfly](https://github.com/bluz71/vim-moonfly-colors) theme.
 
 Be aware, the _nightfly_ color scheme does incrementally change from time to
 time, primarily with regard to language and plugin theming.
@@ -19,10 +18,10 @@ A GUI client, such as gvim, **or** a modern terminal version of Vim/Neovim, with
 `termguicolors` enabled in a true-color terminal, will be required. Details
 about true-color terminals are listed below.
 
-_nightfly_ explicitly does **not** support color terminal versions of Vim,
-including 256 color `cterm`, due to the number of custom colors required. Color
-terminals only allow 16 custom colors. I encourage terminal users to use a
-true-color terminal, such as: [iTerm2](https://iterm2.com), [GNOME
+_nightfly_ explicitly does **not** support the 256 color `cterm` version of Vim,
+due to the number of custom colors required. 256 color terminals only allow 16
+custom colors. I encourage terminal users to use a true-color terminal, such as:
+[iTerm2](https://iterm2.com), [GNOME
 Terminal](https://wiki.gnome.org/Apps/Terminal) or
 [Alacritty](https://github.com/alacritty/alacritty), and enable the
 `termguicolors` option.
@@ -186,7 +185,7 @@ let g:nightflyItalics = 0
 True Color Terminals
 --------------------
 
-Many modern terminal programs support [24-bit true
+Many modern terminals support [24-bit true
 colors](https://gist.github.com/XVilka/8346728). Current versions of Vim and
 Neovim on such terminals support true colors when `set termguicolors` is
 enabled.
@@ -223,12 +222,10 @@ let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 ```
 
-Repeating, the above `t_8*` settings are **not** required for Neovim.
-
 Terminal Themes
 ---------------
 
-A collection of _nightfly_ terminal themes are provided:
+A collection of _nightfly_-flavoured terminal themes are provided:
 
 - _iTerm2_ users on macOS can import
   [this](terminal_themes/nightfly.itermcolors) color scheme
@@ -238,7 +235,7 @@ A collection of _nightfly_ terminal themes are provided:
   _Nightfly_ profile. Before executing the script, please install the
   `dconf-cli` command line utility for modern versions of Gnome (3.28 and
   later), for example `sudo apt install dconf-cli`. After executing the script,
-  please set the _cursor_ and _highlight_ colors by hand, with the appropriate
+  please set the _cursor_ and _selection_ colors by hand, with the appropriate
   color values listed below, in `Preferences` / `Nightfly` / `Colors`.
 
 - [Alacritty](https://github.com/alacritty/alacritty) users can copy
