@@ -644,6 +644,10 @@ exec "highlight vimfilerNormalFile guifg=" . s:white
 exec "highlight vimfilerOpenedFile guifg=" . s:blue
 exec "highlight vimfilerROFile guifg=" . s:grey_blue
 
+" fern.vim plugin
+exec "highlight FernBranch guifg=" . s:blue
+exec "highlight FernRoot guifg=" . s:purple
+
 " Neomake plugin
 if g:nightflyUndercurls
     exec "highlight NeomakeError guibg=bg gui=undercurl guisp=" . s:red
