@@ -645,8 +645,10 @@ exec "highlight vimfilerOpenedFile guifg=" . s:blue
 exec "highlight vimfilerROFile guifg=" . s:grey_blue
 
 " fern.vim plugin
-exec "highlight FernBranch guifg=" . s:blue
-exec "highlight FernRoot guifg=" . s:purple
+exec "highlight FernBranchSymbol guifg=" . s:green
+exec "highlight FernBranchText guifg=" . s:blue
+exec "highlight FernRootSymbol guifg=" . s:purple
+exec "highlight FernRootText guifg=" . s:purple
 
 " Neomake plugin
 if g:nightflyUndercurls
