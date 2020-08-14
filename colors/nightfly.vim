@@ -439,6 +439,15 @@ highlight link mkdLineBreak NormalNC
 exec "highlight mkdDelimiter guifg=" . s:white
 exec "highlight mkdListItem guifg=" . s:blue
 exec "highlight mkdURL guifg=" . s:purple
+augroup NightflyMarkdown
+    autocmd!
+    autocmd FileType markdown exec "highlight htmlH1 guifg=" . s:orange
+    autocmd FileType markdown exec "highlight htmlH2 guifg=" . s:orange
+    autocmd FileType markdown exec "highlight htmlH3 guifg=" . s:orange
+    autocmd FileType markdown exec "highlight htmlH4 guifg=" . s:orange
+    autocmd FileType markdown exec "highlight htmlH5 guifg=" . s:orange
+    autocmd FileType markdown exec "highlight htmlH6 guifg=" . s:orange
+augroup END
 
 " PHP
 exec "highlight phpClass guifg=" . s:emerald
