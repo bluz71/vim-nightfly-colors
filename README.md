@@ -129,13 +129,13 @@ _vim-moonfly_statusline_ plugin has been installed, please add the following to
 your _vimrc_:
 
 ```viml
-let g:moonflyHonorUserDefinedColors = 1
+let g:moonflyIgnoreDefaultColors = 1
 ```
 
 This option will tell _moonfly-statusline_ to not use the default
 [moonfly](https://github.com/bluz71/vim-moonfly-colors) colors of that plugin,
 but instead use the specified `statusline` colors defined by this _nightfly_
-theme.
+color scheme.
 
 Options
 -------
