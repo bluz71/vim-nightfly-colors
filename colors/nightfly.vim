@@ -741,9 +741,8 @@ exec "highlight User2 guibg=" . s:white      . " guifg=" . s:dark_blue
 exec "highlight User3 guibg=" . s:purple     . " guifg=" . s:dark_blue
 exec "highlight User4 guibg=" . s:watermelon . " guifg=" . s:dark_blue
 exec "highlight User5 guibg=" . s:slate_blue . " guifg=" . s:blue       . " gui=none"
-exec "highlight User6 guibg=" . s:slate_blue . " guifg=" . s:white      . " gui=none"
+exec "highlight User6 guibg=" . s:slate_blue . " guifg=" . s:watermelon . " gui=none"
 exec "highlight User7 guibg=" . s:slate_blue . " guifg=" . s:blue       . " gui=none"
-exec "highlight User8 guibg=" . s:slate_blue . " guifg=" . s:watermelon . " gui=none"
 
 " Misc languages and plugins
 exec "highlight bufExplorerHelp guifg=" . s:cadet_blue
