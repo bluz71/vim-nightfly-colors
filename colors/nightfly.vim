@@ -706,6 +706,16 @@ exec "highlight ALEWarningSign guibg=bg guifg=" . s:yellow
 exec "highlight ALEVirtualTextInfo guifg=" . s:steel_blue
 exec "highlight ALEInfoSign guibg=bg guifg=" . s:blue
 
+" Neovim LSP diagnostics
+exec "highlight LspDiagnosticsError guifg=" . s:steel_blue
+exec "highlight LspDiagnosticsErrorSign guibg=bg guifg=" . s:red
+exec "highlight LspDiagnosticsWarning guifg=" . s:steel_blue
+exec "highlight LspDiagnosticsWarningSign guibg=bg guifg=" . s:yellow
+exec "highlight LspDiagnosticsInformation guifg=" . s:steel_blue
+exec "highlight LspDiagnosticsInformationSign guibg=bg guifg=" . s:blue
+exec "highlight LspDiagnosticsHint guifg=" . s:steel_blue
+exec "highlight LspDiagnosticsHintSign guibg=bg guifg=" . s:turquoise
+
 " GitGutter plugin
 exec "highlight GitGutterAdd guibg=bg guifg=" . s:emerald
 exec "highlight GitGutterChange guibg=bg guifg=" . s:purple
