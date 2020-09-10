@@ -213,6 +213,15 @@ else
     exec "highlight SpellLocal guibg=bg guifg=" . s:blue . " gui=underline guisp=" . s:blue
 endif
 
+" Neovim Treesitter.
+exec "highlight TSAnnotation guifg=" . s:blue
+exec "highlight TSBoolean guifg=" . s:purple
+exec "highlight TSConstant guifg=" . s:emerald
+exec "highlight TSConstructor guifg=" . s:emerald
+exec "highlight TSFuncBuiltin guifg=" . s:blue
+exec "highlight TSFuncMacro guifg=" . s:blue
+exec "highlight TSVariableBuiltin guifg=" . s:green
+
 " Misc.
 exec "highlight Question guifg=" . s:green . " gui=none"
 exec "highlight MoreMsg guifg=" . s:red . " gui=none"
