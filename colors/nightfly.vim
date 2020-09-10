@@ -215,6 +215,7 @@ endif
 
 " Neovim Treesitter.
 exec "highlight TSAnnotation guifg=" . s:blue
+exec "highlight TSConstBuiltin guifg=" . s:green
 exec "highlight TSBoolean guifg=" . s:purple
 exec "highlight TSConstant guifg=" . s:emerald
 exec "highlight TSConstructor guifg=" . s:emerald
