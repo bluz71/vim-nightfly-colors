@@ -214,13 +214,17 @@ else
 endif
 
 " Neovim Treesitter.
-exec "highlight TSAnnotation guifg=" . s:blue
-exec "highlight TSConstBuiltin guifg=" . s:green
+exec "highlight TSAnnotation guifg=" . s:violet
 exec "highlight TSBoolean guifg=" . s:purple
-exec "highlight TSConstant guifg=" . s:emerald
+exec "highlight TSConstBuiltin guifg=" . s:green
+exec "highlight TSConstMacro guifg=" . s:violet
+exec "highlight TSConstant guifg=" . s:purple
 exec "highlight TSConstructor guifg=" . s:emerald
 exec "highlight TSFuncBuiltin guifg=" . s:blue
 exec "highlight TSFuncMacro guifg=" . s:blue
+exec "highlight TSInclude guifg=" . s:watermelon
+exec "highlight TSParameter guifg=" . s:white
+exec "highlight TSPunctSpecial guifg=" . s:watermelon
 exec "highlight TSVariableBuiltin guifg=" . s:green
 
 " Misc.
