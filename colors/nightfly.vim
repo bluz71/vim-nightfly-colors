@@ -352,7 +352,7 @@ exec "highlight elmTopLevelDecl guifg=" . s:orange
 exec "highlight elmType guifg=" . s:blue
 
 " Go
-exec "highlight goBuiltins guifg=" . s:watermelon
+exec "highlight goBuiltins guifg=" . s:blue
 exec "highlight goConditional guifg=" . s:violet
 exec "highlight goDeclType guifg=" . s:green
 exec "highlight goDirective guifg=" . s:watermelon
