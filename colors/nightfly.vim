@@ -220,12 +220,18 @@ exec "highlight TSConstBuiltin guifg=" . s:green
 exec "highlight TSConstMacro guifg=" . s:violet
 exec "highlight TSConstant guifg=" . s:purple
 exec "highlight TSConstructor guifg=" . s:emerald
+exec "highlight TSError guibg=bg guifg=" . s:red
 exec "highlight TSFuncBuiltin guifg=" . s:blue
 exec "highlight TSFuncMacro guifg=" . s:blue
 exec "highlight TSInclude guifg=" . s:watermelon
 exec "highlight TSParameter guifg=" . s:white
 exec "highlight TSPunctSpecial guifg=" . s:watermelon
 exec "highlight TSVariableBuiltin guifg=" . s:green
+augroup MoonflyTreesitter
+    autocmd!
+    autocmd FileType html exec "highlight TSType guifg=" . s:blue
+    autocmd FileType html exec "highlight TSPunctBracket guifg=" . s:green
+augroup END
 
 " Misc.
 exec "highlight Question guifg=" . s:green . " gui=none"
