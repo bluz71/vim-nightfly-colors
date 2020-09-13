@@ -228,18 +228,18 @@ exec "highlight TSInclude guifg=" . s:watermelon
 exec "highlight TSParameter guifg=" . s:white
 exec "highlight TSPunctSpecial guifg=" . s:watermelon
 exec "highlight TSVariableBuiltin guifg=" . s:green
-augroup MoonflyTreesitter
+augroup NightflyColorsTreesitter
     autocmd!
     " Defaults.
-    autocmd FileType * highlight! link TSConstant Character
-    autocmd FileType * highlight! link TSPunctBracket Normal
-    autocmd FileType * highlight! link TSType Type
-    autocmd FileType * highlight! link TSVariable Normal
+    autocmd FileType * exec "highlight TSConstant guifg=" . s:purple
+    autocmd FileType * exec "highlight TSPunctBracket guifg=" . s:white
+    autocmd FileType * exec "highlight TSType guifg=" . s:emerald
+    autocmd FileType * exec "highlight TSVariable guifg=" . s:white
     " File type overrides.
-    autocmd FileType sh   highlight! link TSConstant Identifier
-    autocmd FileType html highlight! link TSPunctBracket TSVariableBuiltin
-    autocmd FileType html highlight! link TSType htmlTagName
-    autocmd FileType sh   highlight! link TSVariable Identifier
+    autocmd FileType sh   exec "highlight TSConstant guifg=" . s:turquoise
+    autocmd FileType html exec "highlight TSPunctBracket guifg=" . s:lime
+    autocmd FileType html exec "highlight TSType guifg=" . s:blue
+    autocmd FileType sh   exec "highlight TSVariable guifg=" . s:turquoise
 augroup END
 
 " Misc.
@@ -411,7 +411,7 @@ else
     exec "highlight htmlItalic guifg=" . s:cadet_blue " gui=none"
     exec "highlight htmlUnderlineItalic guibg=" . s:black . " guifg=" . s:cadet_blue
 endif
-augroup MoonflyHTML
+augroup NightflyColorsHTML
     autocmd!
     " Defaults.
     autocmd FileType html highlight! link htmlH1 Statement
@@ -812,3 +812,8 @@ endif
 exec "highlight MatchWordCur guibg=bg"
 exec "highlight Cheat40Header guifg=" . s:blue
 exec "highlight Beacon guibg=" . s:white
+
+augroup NightflyColorsEvents
+    autocmd!
+    autocmd ColorScheme * if g:colors_name != "nightfly" | silent augroup! NightflyColorsTreesitter | silent augroup! NightflyColorsHTML | endif
+augroup END
