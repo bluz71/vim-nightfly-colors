@@ -215,10 +215,8 @@ endif
 
 " Neovim Treesitter.
 exec "highlight TSAnnotation guifg=" . s:violet
-exec "highlight TSBoolean guifg=" . s:purple
 exec "highlight TSConstBuiltin guifg=" . s:green
 exec "highlight TSConstMacro guifg=" . s:violet
-exec "highlight TSConstant guifg=" . s:purple
 exec "highlight TSConstructor guifg=" . s:emerald
 exec "highlight TSError guibg=bg guifg=" . s:red
 exec "highlight TSFuncBuiltin guifg=" . s:blue
@@ -229,8 +227,16 @@ exec "highlight TSPunctSpecial guifg=" . s:watermelon
 exec "highlight TSVariableBuiltin guifg=" . s:green
 augroup MoonflyTreesitter
     autocmd!
-    autocmd FileType html exec "highlight TSType guifg=" . s:blue
+    " Defaults.
+    autocmd FileType *    exec "highlight TSConstant guifg=" . s:purple
+    autocmd FileType *    exec "highlight TSPunctBracket guifg=" . s:white
+    autocmd FileType *    exec "highlight TSType guifg=" . s:emerald
+    autocmd FileType *    exec "highlight TSVariable guifg=" . s:white
+    " File type overrides.
+    autocmd FileType sh   exec "highlight TSConstant guifg=" . s:turquoise
     autocmd FileType html exec "highlight TSPunctBracket guifg=" . s:green
+    autocmd FileType html exec "highlight TSType guifg=" . s:blue
+    autocmd FileType sh   exec "highlight TSVariable guifg=" . s:turquoise
 augroup END
 
 " Misc.
@@ -277,7 +283,6 @@ exec "highlight cPreCondit guifg=" . s:violet
 exec "highlight cStatement guifg=" . s:violet
 exec "highlight cStructure guifg=" . s:orange
 exec "highlight cppAccess guifg=" . s:green
-exec "highlight cppBoolean guifg=" . s:yellow
 exec "highlight cppCast guifg=" . s:turquoise
 exec "highlight cppCustomClass guifg=" . s:turquoise
 exec "highlight cppExceptions guifg=" . s:green
@@ -385,12 +390,6 @@ exec "highlight haskellType guifg=" . s:blue
 exec "highlight haskellWhere guifg=" . s:violet
 
 " HTML
-exec "highlight htmlH1 guifg=" . s:violet
-exec "highlight htmlH2 guifg=" . s:violet
-exec "highlight htmlH3 guifg=" . s:violet
-exec "highlight htmlH4 guifg=" . s:violet
-exec "highlight htmlH5 guifg=" . s:violet
-exec "highlight htmlH6 guifg=" . s:violet
 exec "highlight htmlArg guifg=" . s:blue
 exec "highlight htmlLink guifg=" . s:green
 exec "highlight htmlEndTag guifg=" . s:purple
@@ -409,6 +408,23 @@ else
     exec "highlight htmlItalic guifg=" . s:cadet_blue " gui=none"
     exec "highlight htmlUnderlineItalic guibg=" . s:black . " guifg=" . s:cadet_blue
 endif
+augroup MoonflyHTML
+    autocmd!
+    " Defaults.
+    autocmd FileType *        exec "highlight htmlH1 guifg=" . s:violet
+    autocmd FileType *        exec "highlight htmlH2 guifg=" . s:violet
+    autocmd FileType *        exec "highlight htmlH3 guifg=" . s:violet
+    autocmd FileType *        exec "highlight htmlH4 guifg=" . s:violet
+    autocmd FileType *        exec "highlight htmlH5 guifg=" . s:violet
+    autocmd FileType *        exec "highlight htmlH6 guifg=" . s:violet
+    " File type overrides.
+    autocmd FileType markdown exec "highlight htmlH1 guifg=" . s:orange
+    autocmd FileType markdown exec "highlight htmlH2 guifg=" . s:orange
+    autocmd FileType markdown exec "highlight htmlH3 guifg=" . s:orange
+    autocmd FileType markdown exec "highlight htmlH4 guifg=" . s:orange
+    autocmd FileType markdown exec "highlight htmlH5 guifg=" . s:orange
+    autocmd FileType markdown exec "highlight htmlH6 guifg=" . s:orange
+augroup END
 
 " Java
 exec "highlight javaAnnotation guifg=" . s:green
@@ -459,15 +475,6 @@ highlight link mkdLineBreak NormalNC
 exec "highlight mkdDelimiter guifg=" . s:white
 exec "highlight mkdListItem guifg=" . s:blue
 exec "highlight mkdURL guifg=" . s:purple
-augroup NightflyMarkdown
-    autocmd!
-    autocmd FileType markdown exec "highlight htmlH1 guifg=" . s:orange
-    autocmd FileType markdown exec "highlight htmlH2 guifg=" . s:orange
-    autocmd FileType markdown exec "highlight htmlH3 guifg=" . s:orange
-    autocmd FileType markdown exec "highlight htmlH4 guifg=" . s:orange
-    autocmd FileType markdown exec "highlight htmlH5 guifg=" . s:orange
-    autocmd FileType markdown exec "highlight htmlH6 guifg=" . s:orange
-augroup END
 
 " PHP
 exec "highlight phpClass guifg=" . s:emerald
