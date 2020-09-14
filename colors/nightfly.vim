@@ -225,6 +225,7 @@ exec "highlight TSError guibg=bg guifg=" . s:red
 exec "highlight TSFuncBuiltin guifg=" . s:blue
 exec "highlight TSFuncMacro guifg=" . s:blue
 exec "highlight TSInclude guifg=" . s:watermelon
+exec "highlight TSKeywordOperator guifg=" . s:violet
 exec "highlight TSParameter guifg=" . s:white
 exec "highlight TSPunctSpecial guifg=" . s:watermelon
 exec "highlight TSVariableBuiltin guifg=" . s:green
