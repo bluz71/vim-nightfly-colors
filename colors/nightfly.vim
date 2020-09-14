@@ -229,19 +229,6 @@ exec "highlight TSKeywordOperator guifg=" . s:violet
 exec "highlight TSParameter guifg=" . s:white
 exec "highlight TSPunctSpecial guifg=" . s:watermelon
 exec "highlight TSVariableBuiltin guifg=" . s:green
-augroup NightflyColorsTreesitter
-    autocmd!
-    " Defaults.
-    autocmd FileType * exec "highlight TSConstant guifg=" . s:purple
-    autocmd FileType * exec "highlight TSPunctBracket guifg=" . s:white
-    autocmd FileType * exec "highlight TSType guifg=" . s:emerald
-    autocmd FileType * exec "highlight TSVariable guifg=" . s:white
-    " File type overrides.
-    autocmd FileType sh   exec "highlight TSConstant guifg=" . s:turquoise
-    autocmd FileType html exec "highlight TSPunctBracket guifg=" . s:lime
-    autocmd FileType html exec "highlight TSType guifg=" . s:blue
-    autocmd FileType sh   exec "highlight TSVariable guifg=" . s:turquoise
-augroup END
 
 " Misc.
 exec "highlight Question guifg=" . s:green . " gui=none"
@@ -813,8 +800,3 @@ endif
 exec "highlight MatchWordCur guibg=bg"
 exec "highlight Cheat40Header guifg=" . s:blue
 exec "highlight Beacon guibg=" . s:white
-
-augroup NightflyColorsEvents
-    autocmd!
-    autocmd ColorScheme * if g:colors_name != "nightfly" | silent augroup! NightflyColorsTreesitter | silent augroup! NightflyColorsHTML | endif
-augroup END
