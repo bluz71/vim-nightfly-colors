@@ -4,7 +4,7 @@
 " License: MIT (https://opensource.org/licenses/MIT)
 
 let s:white      = ['#c3ccdc', 251]
-let s:cadet_blue = ["#a1aab8", 247]
+let s:cadet_blue = ['#a1aab8', 247]
 let s:slate_blue = ['#2c3043', 236]
 let s:dark_blue  = ['#092236', 234]
 let s:blue       = ['#82aaff', 111]
