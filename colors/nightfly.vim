@@ -48,10 +48,10 @@ let g:nightflyUndercurls          = get(g:, 'nightflyUndercurls', 1)
 let g:nightflyItalics             = get(g:, 'nightflyItalics', 1)
 let g:nightflyFloatingFZF         = get(g:, 'nightflyFloatingFZF', 0)
 
-" Background and foreground.
+" Background and foreground
 let s:black      = '#011627'
 let s:white      = '#c3ccdc'
-" Variations of blue-grey.
+" Variations of blue-grey
 let s:black_blue = '#081e2f'
 let s:dark_blue  = '#092236'
 let s:deep_blue  = '#0e293f'
@@ -62,7 +62,7 @@ let s:steel_blue = '#4b6479'
 let s:grey_blue  = '#7c8f8f'
 let s:cadet_blue = '#a1aab8'
 let s:white_blue = '#d6deeb'
-" Core theme colors.
+" Core theme colors
 let s:yellow     = '#e3d18a'
 let s:peach      = '#ffcb8b'
 let s:tan        = '#ecc48d'
@@ -76,7 +76,7 @@ let s:turquoise  = '#7fdbca'
 let s:emerald    = '#21c7a8'
 let s:green      = '#a1cd5e'
 
-" Specify the the colors used by the inbuilt terminal of Neovim and Vim.
+" Specify the the colors used by the inbuilt terminal of Neovim and Vim
 if g:nightflyTerminalColors
     if has('nvim')
         let g:terminal_color_0  = '#1d3b53'
@@ -105,53 +105,53 @@ if g:nightflyTerminalColors
     endif
 endif
 
-" Background and text.
+" Background and text
 exec 'highlight Normal guibg=' . s:black . ' guifg=' . s:white
 
 " Color of mode text, -- INSERT --
 exec 'highlight ModeMsg guifg=' . s:cadet_blue . ' gui=none'
 
-" Comments.
+" Comments
 if g:nightflyItalics
     exec 'highlight Comment guifg=' . s:grey_blue . ' gui=italic'
 else
     exec 'highlight Comment guifg=' . s:grey_blue
 endif
 
-" Functions.
+" Functions
 exec 'highlight Function guifg=' . s:blue
 
-" Strings.
+" Strings
 exec 'highlight String guifg=' . s:tan
 
-" Booleans.
+" Booleans
 exec 'highlight Boolean guifg=' . s:watermelon
 
-" Identifiers.
+" Identifiers
 exec 'highlight Identifier guifg=' . s:turquoise
 
-" Color of titles.
+" Color of titles
 exec 'highlight Title guifg=' . s:orange . ' gui=none'
 
-" const, static.
+" const, static
 exec 'highlight StorageClass guifg=' . s:orange
 
-" void, intptr_t.
+" void, intptr_t
 exec 'highlight Type guifg=' . s:emerald . ' gui=none'
 
-" Numbers.
+" Numbers
 exec 'highlight Constant guifg=' . s:orange
 
-" Character constants.
+" Character constants
 exec 'highlight Character guifg=' . s:purple
 
-" Exceptions.
+" Exceptions
 exec 'highlight Exception guifg=' . s:watermelon
 
-" ifdef/endif.
+" ifdef/endif
 exec 'highlight PreProc guifg=' . s:watermelon
 
-" Status, split and tab lines.
+" Status, split and tab lines
 exec 'highlight StatusLine cterm=none guibg=' . s:slate_blue . ' guifg=' . s:white . ' gui=none'
 exec 'highlight StatusLineNC cterm=none guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue . ' gui=none'
 exec 'highlight VertSplit cterm=none guibg=' . s:slate_blue . ' guifg=' . s:slate_blue . ' gui=none'
@@ -161,7 +161,7 @@ exec 'highlight TablineFill cterm=none guibg=' . s:slate_blue . ' guifg=' . s:sl
 exec 'highlight StatusLineTerm cterm=none guibg=' . s:slate_blue . ' guifg=' . s:white . ' gui=none'
 exec 'highlight StatusLineTermNC cterm=none guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue . ' gui=none'
 
-" case in switch statement.
+" case in switch statement
 exec 'highlight Label guifg=' . s:turquoise
 
 " end-of-line '$', end-of-file '~'
@@ -170,40 +170,40 @@ exec 'highlight NonText guifg=' . s:orange . ' gui=none'
 " sizeof
 exec 'highlight Operator guifg=' . s:watermelon
 
-" for, while.
+" for, while
 exec 'highlight Repeat guifg=' . s:violet
 
-" Search.
+" Search
 exec 'highlight Search guibg=bg guifg=' . s:orange . ' gui=reverse'
 exec 'highlight IncSearch guibg=bg guifg=' . s:peach
 
-" '\n' sequences.
+" '\n' sequences
 exec 'highlight Special guifg=' . s:watermelon
 
-" if, else.
+" if, else
 exec 'highlight Statement guifg=' . s:violet . ' gui=none'
 
-" Visual selection.
+" Visual selection
 exec 'highlight Visual guibg=' . s:regal_blue
 exec 'highlight VisualNOS guibg=' . s:regal_blue . ' guifg=fg gui=none'
 exec 'highlight VisualInDiff guibg=' . s:regal_blue . ' guifg=' . s:white
 
-" Errors, warnings and whitespace-eol.
+" Errors, warnings and whitespace-eol
 exec 'highlight Error guibg=bg guifg=' . s:red
 exec 'highlight ErrorMsg guibg=bg guifg=' . s:red
 exec 'highlight WarningMsg guibg=bg guifg=' . s:orange
 
-" struct, union, enum, typedef.
+" struct, union, enum, typedef
 exec 'highlight Structure guifg=' . s:violet
 
-" Auto-text-completion menu.
+" Auto-text-completion menu
 exec 'highlight Pmenu guibg=' . s:deep_blue . ' guifg=fg'
 exec 'highlight PmenuSel guibg=' . s:cyan_blue . ' guifg=fg'
 exec 'highlight PmenuSbar guibg=' . s:deep_blue
 exec 'highlight PmenuThumb guibg=' . s:steel_blue
 exec 'highlight WildMenu guibg=' . s:cyan_blue . ' guifg=fg'
 
-" Spelling errors.
+" Spelling errors
 if g:nightflyUndercurls
     exec 'highlight SpellBad guibg=bg gui=undercurl guisp=' . s:red
     exec 'highlight SpellCap guibg=bg gui=undercurl guisp=' . s:blue
@@ -216,7 +216,7 @@ else
     exec 'highlight SpellLocal guibg=bg guifg=' . s:blue . ' gui=underline guisp=' . s:blue
 endif
 
-" Misc.
+" Misc
 exec 'highlight Question guifg=' . s:green . ' gui=none'
 exec 'highlight MoreMsg guifg=' . s:red . ' gui=none'
 exec 'highlight LineNr guibg=bg guifg=' . s:steel_blue
@@ -244,17 +244,17 @@ exec 'highlight Underlined guifg=' . s:green . ' gui=none'
 exec 'highlight QuickFixLine guibg=' . s:deep_blue
 exec 'highlight Delimiter guifg=' . s:white
 
-" Neovim only highlight groups.
+" Neovim only highlight groups
 exec 'highlight Whitespace guifg=' . s:deep_blue
 exec 'highlight TermCursor guibg=' . s:cadet_blue . ' guifg=bg gui=none'
 
-" Color column (after line 80).
+" Color column (after line 80)
 exec 'highlight ColorColumn guibg=' . s:black_blue
 
-" Conceal color, as used by indentLine plugin.
+" Conceal color, as used by indentLine plugin
 exec 'highlight Conceal guibg=bg guifg=' . s:deep_blue
 
-" Custom nightfly highlight groups.
+" Custom nightfly highlight groups
 exec 'highlight NightflyReset guifg=fg'
 exec 'highlight NightflyWhite guifg=' . s:white
 exec 'highlight NightflyRegalBlue guifg=' . s:regal_blue
@@ -273,7 +273,7 @@ exec 'highlight NightflyTurquoise guifg=' . s:turquoise
 exec 'highlight NightflyEmerald guifg=' . s:emerald
 exec 'highlight NightflyGreen guifg=' . s:green
 
-" Neovim Treesitter.
+" Neovim Treesitter
 highlight! link TSAnnotation NightflyViolet
 highlight! link TSConstBuiltin NightflyGreen
 highlight! link TSConstMacro NightflyViolet
@@ -776,6 +776,11 @@ exec 'highlight GitGutterChange guibg=bg guifg=' . s:purple
 exec 'highlight GitGutterChangeDelete guibg=bg guifg=' . s:orange
 exec 'highlight GitGutterDelete guibg=bg guifg=' . s:red
 
+" Signify plugin
+exec 'highlight SignifySignAdd guibg=bg guifg=' . s:emerald
+exec 'highlight SignifySignChange guibg=bg guifg=' . s:purple
+exec 'highlight SignifySignDelete guibg=bg guifg=' . s:red
+
 " FZF plugin
 exec 'highlight fzf1 guifg=' . s:watermelon . ' guibg=' . s:slate_blue
 exec 'highlight fzf2 guifg=' . s:blue . ' guibg=' . s:slate_blue
@@ -807,4 +812,3 @@ exec 'highlight User4 guibg=' . s:watermelon . ' guifg=' . s:dark_blue
 exec 'highlight User5 guibg=' . s:slate_blue . ' guifg=' . s:blue       . ' gui=none'
 exec 'highlight User6 guibg=' . s:slate_blue . ' guifg=' . s:watermelon . ' gui=none'
 exec 'highlight User7 guibg=' . s:slate_blue . ' guifg=' . s:blue       . ' gui=none'
-
