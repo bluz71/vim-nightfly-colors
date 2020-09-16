@@ -384,6 +384,8 @@ exec 'highlight haskellWhere guifg=' . s:violet
 exec 'highlight htmlArg guifg=' . s:blue
 exec 'highlight htmlLink guifg=' . s:green
 exec 'highlight htmlEndTag guifg=' . s:purple
+exec 'highlight htmlH1 guifg=' . s:watermelon
+exec 'highlight htmlH2 guifg=' . s:orange
 exec 'highlight htmlTag guifg=' . s:green
 exec 'highlight htmlTagN guifg=' . s:blue
 exec 'highlight htmlTagName guifg=' . s:blue
@@ -399,23 +401,6 @@ else
     exec 'highlight htmlItalic guifg=' . s:cadet_blue ' gui=none'
     exec 'highlight htmlUnderlineItalic guibg=' . s:black . ' guifg=' . s:cadet_blue
 endif
-augroup NightflyColorsHTML
-    autocmd!
-    " Defaults.
-    autocmd FileType html highlight! link htmlH1 Statement
-    autocmd FileType html highlight! link htmlH2 Statement
-    autocmd FileType html highlight! link htmlH3 Statement
-    autocmd FileType html highlight! link htmlH4 Statement
-    autocmd FileType html highlight! link htmlH5 Statement
-    autocmd FileType html highlight! link htmlH5 Statement
-    " File type overrides.
-    autocmd FileType markdown highlight! link htmlH1 Title
-    autocmd FileType markdown highlight! link htmlH2 Title
-    autocmd FileType markdown highlight! link htmlH3 Title
-    autocmd FileType markdown highlight! link htmlH4 Title
-    autocmd FileType markdown highlight! link htmlH5 Title
-    autocmd FileType markdown highlight! link htmlH6 Title
-augroup END
 
 " Java
 exec 'highlight javaAnnotation guifg=' . s:green
@@ -622,12 +607,6 @@ exec 'highlight xmlEndTag guifg=' . s:blue
 exec 'highlight xmlTag guifg=' . s:green
 exec 'highlight xmlTagName guifg=' . s:blue
 
-" vimdiff/nvim -d
-exec 'highlight DiffAdd guibg=' . s:emerald . ' guifg=bg'
-exec 'highlight DiffChange guibg=' . s:slate_blue
-exec 'highlight DiffDelete guibg=' . s:slate_blue . ' guifg=' . s:watermelon ' gui=none'
-exec 'highlight DiffText guibg=' . s:blue . ' guifg=bg gui=none'
-
 " Git commits
 exec 'highlight gitCommitBranch guifg=' . s:blue
 exec 'highlight gitCommitDiscardedFile guifg=' . s:watermelon
@@ -689,6 +668,43 @@ exec 'highlight FernRootText guifg=' . s:purple
 exec 'highlight FernGitStatusBracket guifg=' . s:grey_blue
 exec 'highlight FernGitStatusIndex guifg=' . s:emerald
 exec 'highlight FernGitStatusWorktree guifg=' . s:watermelon
+
+" Git commit diffs
+exec 'highlight diffAdded guifg=' . s:green
+exec 'highlight diffChanged guifg=' . s:watermelon
+exec 'highlight diffIndexLine guifg=' . s:watermelon
+exec 'highlight diffLine guifg=' . s:blue
+exec 'highlight diffRemoved guifg=' . s:red
+exec 'highlight diffSubname guifg=' . s:blue
+
+" Misc languages and plugins
+exec 'highlight bufExplorerHelp guifg=' . s:cadet_blue
+exec 'highlight bufExplorerSortBy guifg=' . s:cadet_blue
+exec 'highlight CleverFDefaultLabel guifg=' . s:watermelon
+exec 'highlight CtrlPMatch guifg=' . s:orange
+exec 'highlight Directory guifg=' . s:emerald
+exec 'highlight HighlightedyankRegion guibg=' . s:regal_blue
+exec 'highlight jsonKeyword guifg=' . s:blue
+exec 'highlight jsonBoolean guifg=' . s:turquoise
+exec 'highlight netrwClassify guifg=' . s:watermelon
+exec 'highlight netrwDir guifg=' . s:blue
+exec 'highlight netrwExe guifg=' . s:tan
+exec 'highlight snipLeadingSpaces guibg=bg guifg=fg'
+exec 'highlight tagName guifg=' . s:turquoise
+if g:nightflyUnderlineMatchParen
+    exec 'highlight MatchWord gui=underline guisp=' . s:orange
+else
+    exec 'highlight MatchWord guifg=' . s:orange
+endif
+exec 'highlight MatchWordCur guibg=bg'
+exec 'highlight Cheat40Header guifg=' . s:blue
+exec 'highlight Beacon guibg=' . s:white
+
+" vimdiff/nvim -d
+exec 'highlight DiffAdd guibg=' . s:emerald . ' guifg=bg'
+exec 'highlight DiffChange guibg=' . s:slate_blue
+exec 'highlight DiffDelete guibg=' . s:slate_blue . ' guifg=' . s:watermelon ' gui=none'
+exec 'highlight DiffText guibg=' . s:blue . ' guifg=bg gui=none'
 
 " Neomake plugin
 if g:nightflyUndercurls
@@ -772,31 +788,3 @@ exec 'highlight User5 guibg=' . s:slate_blue . ' guifg=' . s:blue       . ' gui=
 exec 'highlight User6 guibg=' . s:slate_blue . ' guifg=' . s:watermelon . ' gui=none'
 exec 'highlight User7 guibg=' . s:slate_blue . ' guifg=' . s:blue       . ' gui=none'
 
-" Misc languages and plugins
-exec 'highlight bufExplorerHelp guifg=' . s:cadet_blue
-exec 'highlight bufExplorerSortBy guifg=' . s:cadet_blue
-exec 'highlight CleverFDefaultLabel guifg=' . s:watermelon
-exec 'highlight CtrlPMatch guifg=' . s:orange
-exec 'highlight Directory guifg=' . s:emerald
-exec 'highlight HighlightedyankRegion guibg=' . s:regal_blue
-exec 'highlight jsonKeyword guifg=' . s:blue
-exec 'highlight jsonBoolean guifg=' . s:turquoise
-exec 'highlight netrwClassify guifg=' . s:watermelon
-exec 'highlight netrwDir guifg=' . s:blue
-exec 'highlight netrwExe guifg=' . s:tan
-exec 'highlight snipLeadingSpaces guibg=bg guifg=fg'
-exec 'highlight tagName guifg=' . s:turquoise
-exec 'highlight diffAdded guifg=' . s:green
-exec 'highlight diffChanged guifg=' . s:watermelon
-exec 'highlight diffIndexLine guifg=' . s:watermelon
-exec 'highlight diffLine guifg=' . s:blue
-exec 'highlight diffRemoved guifg=' . s:red
-exec 'highlight diffSubname guifg=' . s:blue
-if g:nightflyUnderlineMatchParen
-    exec 'highlight MatchWord gui=underline guisp=' . s:orange
-else
-    exec 'highlight MatchWord guifg=' . s:orange
-endif
-exec 'highlight MatchWordCur guibg=bg'
-exec 'highlight Cheat40Header guifg=' . s:blue
-exec 'highlight Beacon guibg=' . s:white
