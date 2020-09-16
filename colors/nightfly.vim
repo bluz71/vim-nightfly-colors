@@ -216,20 +216,6 @@ else
     exec 'highlight SpellLocal guibg=bg guifg=' . s:blue . ' gui=underline guisp=' . s:blue
 endif
 
-" Neovim Treesitter.
-exec 'highlight TSAnnotation guifg=' . s:violet
-exec 'highlight TSConstBuiltin guifg=' . s:green
-exec 'highlight TSConstMacro guifg=' . s:violet
-exec 'highlight TSConstructor guifg=' . s:emerald
-exec 'highlight TSError guibg=bg guifg=' . s:red
-exec 'highlight TSFuncBuiltin guifg=' . s:blue
-exec 'highlight TSFuncMacro guifg=' . s:blue
-exec 'highlight TSInclude guifg=' . s:watermelon
-exec 'highlight TSKeywordOperator guifg=' . s:violet
-exec 'highlight TSParameter guifg=' . s:white
-exec 'highlight TSPunctSpecial guifg=' . s:watermelon
-exec 'highlight TSVariableBuiltin guifg=' . s:green
-
 " Misc.
 exec 'highlight Question guifg=' . s:green . ' gui=none'
 exec 'highlight MoreMsg guifg=' . s:red . ' gui=none'
@@ -268,128 +254,161 @@ exec 'highlight ColorColumn guibg=' . s:black_blue
 " Conceal color, as used by indentLine plugin.
 exec 'highlight Conceal guibg=bg guifg=' . s:deep_blue
 
+" Custom nightfly highlight groups.
+exec 'highlight NightflyReset guifg=fg'
+exec 'highlight NightflyWhite guifg=' . s:white
+exec 'highlight NightflyRegalBlue guifg=' . s:regal_blue
+exec 'highlight NightflyCadetBlue guifg=' . s:cadet_blue
+exec 'highlight NightflyGreyBlue guifg=' . s:grey_blue
+exec 'highlight NightflyYellow guifg=' . s:yellow
+exec 'highlight NightflyPeach guifg=' . s:peach
+exec 'highlight NightflyTan guifg=' . s:tan
+exec 'highlight NightflyOrange guifg=' . s:orange
+exec 'highlight NightflyRed guifg=' . s:red
+exec 'highlight NightflyWatermelon guifg=' . s:watermelon
+exec 'highlight NightflyViolet guifg=' . s:violet
+exec 'highlight NightflyPurple guifg=' . s:purple
+exec 'highlight NightflyBlue guifg=' . s:blue
+exec 'highlight NightflyTurquoise guifg=' . s:turquoise
+exec 'highlight NightflyEmerald guifg=' . s:emerald
+exec 'highlight NightflyGreen guifg=' . s:green
+
+" Neovim Treesitter.
+highlight! link TSAnnotation NightflyViolet
+highlight! link TSConstBuiltin NightflyGreen
+highlight! link TSConstMacro NightflyViolet
+highlight! link TSConstructor NightflyEmerald
+highlight! link TSError NightflyRed
+highlight! link TSFuncBuiltin NightflyBlue
+highlight! link TSFuncMacro NightflyBlue
+highlight! link TSInclude NightflyWatermelon
+highlight! link TSKeywordOperator NightflyViolet
+highlight! link TSParameter NightflyWhite
+highlight! link TSPunctSpecial NightflyWatermelon
+highlight! link TSVariableBuiltin NightflyGreen
+
 " C/C++
-exec 'highlight cDefine guifg=' . s:violet
-exec 'highlight cPreCondit guifg=' . s:violet
-exec 'highlight cStatement guifg=' . s:violet
-exec 'highlight cStructure guifg=' . s:orange
-exec 'highlight cppAccess guifg=' . s:green
-exec 'highlight cppCast guifg=' . s:turquoise
-exec 'highlight cppCustomClass guifg=' . s:turquoise
-exec 'highlight cppExceptions guifg=' . s:green
-exec 'highlight cppModifier guifg=' . s:violet
-exec 'highlight cppOperator guifg=' . s:green
-exec 'highlight cppSTLconstant guifg=' . s:blue
-exec 'highlight cppSTLnamespace guifg=' . s:purple
-exec 'highlight cppStatement guifg=' . s:turquoise
+highlight! link cDefine NightflyViolet
+highlight! link cPreCondit NightflyViolet
+highlight! link cStatement NightflyViolet
+highlight! link cStructure NightflyOrange
+highlight! link cppAccess NightflyGreen
+highlight! link cppCast NightflyTurquoise
+highlight! link cppCustomClass NightflyTurquoise
+highlight! link cppExceptions NightflyGreen
+highlight! link cppModifier NightflyViolet
+highlight! link cppOperator NightflyGreen
+highlight! link cppSTLconstant NightflyBlue
+highlight! link cppSTLnamespace NightflyPurple
+highlight! link cppStatement NightflyTurquoise
 
 " C#
-exec 'highlight csModifier guifg=' . s:green
-exec 'highlight csPrecondit guifg=' . s:violet
-exec 'highlight csXmlTag guifg=' . s:blue
+highlight! link csModifier NightflyGreen
+highlight! link csPrecondit NightflyViolet
+highlight! link csXmlTag NightflyBlue
 
 " Clojure
-exec 'highlight clojureDefine guifg=' . s:violet
-exec 'highlight clojureKeyword guifg=' . s:turquoise
-exec 'highlight clojureMacro guifg=' . s:orange
-exec 'highlight clojureParen guifg=' . s:blue
-exec 'highlight clojureSpecial guifg=' . s:violet
+highlight! link clojureDefine NightflyViolet
+highlight! link clojureKeyword NightflyTurquoise
+highlight! link clojureMacro NightflyOrange
+highlight! link clojureParen NightflyBlue
+highlight! link clojureSpecial NightflyViolet
 
 " CoffeeScript
-exec 'highlight coffeeConstant guifg=' . s:orange
-exec 'highlight coffeeGlobal guifg=' . s:watermelon
-exec 'highlight coffeeKeyword guifg=' . s:orange
-exec 'highlight coffeeObject guifg=' . s:emerald
-exec 'highlight coffeeObjAssign guifg=' . s:blue
-exec 'highlight coffeeSpecialIdent guifg=' . s:turquoise
-exec 'highlight coffeeSpecialVar guifg=' . s:blue
-exec 'highlight coffeeStatement guifg=' . s:orange
+highlight! link coffeeConstant NightflyOrange
+highlight! link coffeeGlobal NightflyWatermelon
+highlight! link coffeeKeyword NightflyOrange
+highlight! link coffeeObject NightflyEmerald
+highlight! link coffeeObjAssign NightflyBlue
+highlight! link coffeeSpecialIdent NightflyTurquoise
+highlight! link coffeeSpecialVar NightflyBlue
+highlight! link coffeeStatement NightflyOrange
 
 " Crystal
-exec 'highlight crystalAccess guifg=' . s:yellow
-exec 'highlight crystalAttribute guifg=' . s:blue
-exec 'highlight crystalBlockParameter guifg=' . s:green
-exec 'highlight crystalClass guifg=' . s:violet
-exec 'highlight crystalDefine guifg=' . s:violet
-exec 'highlight crystalExceptional guifg=' . s:orange
-exec 'highlight crystalInstanceVariable guifg=' . s:turquoise
-exec 'highlight crystalModule guifg=' . s:blue
-exec 'highlight crystalPseudoVariable guifg=' . s:green
-exec 'highlight crystalSharpBang guifg=' . s:cadet_blue
-exec 'highlight crystalStringDelimiter guifg=' . s:tan
+highlight! link crystalAccess NightflyYellow
+highlight! link crystalAttribute NightflyBlue
+highlight! link crystalBlockParameter NightflyGreen
+highlight! link crystalClass NightflyViolet
+highlight! link crystalDefine NightflyViolet
+highlight! link crystalExceptional NightflyOrange
+highlight! link crystalInstanceVariable NightflyTurquoise
+highlight! link crystalModule NightflyBlue
+highlight! link crystalPseudoVariable NightflyGreen
+highlight! link crystalSharpBang NightflyCadetBlue
+highlight! link crystalStringDelimiter NightflyTan
 
 " CSS/SCSS
-exec 'highlight cssAttr guifg=' . s:turquoise
-exec 'highlight cssClassName guifg=' . s:blue
-exec 'highlight cssColor guifg=' . s:turquoise
-exec 'highlight cssIdentifier guifg=' . s:peach
-exec 'highlight cssProp guifg=' . s:turquoise
-exec 'highlight cssValueNumber guifg=' . s:violet
-exec 'highlight scssSelectorName guifg=' . s:blue
+highlight! link cssAttr NightflyTurquoise
+highlight! link cssClassName NightflyBlue
+highlight! link cssColor NightflyTurquoise
+highlight! link cssIdentifier NightflyPeach
+highlight! link cssProp NightflyTurquoise
+highlight! link cssValueNumber NightflyViolet
+highlight! link scssSelectorName NightflyBlue
 
 " Dart
-exec 'highlight dartMetadata guifg=' . s:green
-exec 'highlight dartStorageClass guifg=' . s:violet
-exec 'highlight dartTypedef guifg=' . s:violet
-exec 'highlight dartUserType guifg=' . s:blue
+highlight! link dartMetadata NightflyGreen
+highlight! link dartStorageClass NightflyViolet
+highlight! link dartTypedef NightflyViolet
+highlight! link dartUserType NightflyBlue
 
 " Elixir
-exec 'highlight eelixirDelimiter guifg=' . s:watermelon
-exec 'highlight elixirAtom guifg=' . s:purple
-exec 'highlight elixirBlockDefinition guifg=' . s:violet
-exec 'highlight elixirDefine guifg=' . s:violet
-exec 'highlight elixirDocTest guifg=' . s:cadet_blue
-exec 'highlight elixirExUnitAssert guifg=' . s:green
-exec 'highlight elixirExUnitMacro guifg=' . s:blue
-exec 'highlight elixirKernelFunction guifg=' . s:green
-exec 'highlight elixirKeyword guifg=' . s:orange
-exec 'highlight elixirModuleDefine guifg=' . s:blue
-exec 'highlight elixirPrivateDefine guifg=' . s:violet
-exec 'highlight elixirStringDelimiter guifg=' . s:tan
-exec 'highlight elixirVariable guifg=' . s:turquoise
+highlight! link eelixirDelimiter NightflyWatermelon
+highlight! link elixirAtom NightflyPurple
+highlight! link elixirBlockDefinition NightflyViolet
+highlight! link elixirDefine NightflyViolet
+highlight! link elixirDocTest NightflyCadetBlue
+highlight! link elixirExUnitAssert NightflyGreen
+highlight! link elixirExUnitMacro NightflyBlue
+highlight! link elixirKernelFunction NightflyGreen
+highlight! link elixirKeyword NightflyOrange
+highlight! link elixirModuleDefine NightflyBlue
+highlight! link elixirPrivateDefine NightflyViolet
+highlight! link elixirStringDelimiter NightflyTan
+highlight! link elixirVariable NightflyTurquoise
 
 " Elm
-exec 'highlight elmLetBlockDefinition guifg=' . s:green
-exec 'highlight elmTopLevelDecl guifg=' . s:orange
-exec 'highlight elmType guifg=' . s:blue
+highlight! link elmLetBlockDefinition NightflyGreen
+highlight! link elmTopLevelDecl NightflyOrange
+highlight! link elmType NightflyBlue
 
 " Go
-exec 'highlight goBuiltins guifg=' . s:blue
-exec 'highlight goConditional guifg=' . s:violet
-exec 'highlight goDeclType guifg=' . s:green
-exec 'highlight goDirective guifg=' . s:watermelon
-exec 'highlight goFloats guifg=' . s:orange
-exec 'highlight goFunction guifg=' . s:blue
-exec 'highlight goFunctionCall guifg=' . s:blue
-exec 'highlight goImport guifg=' . s:watermelon
-exec 'highlight goLabel guifg=' . s:yellow
-exec 'highlight goMethod guifg=' . s:blue
-exec 'highlight goMethodCall guifg=' . s:blue
-exec 'highlight goPackage guifg=' . s:violet
-exec 'highlight goSignedInts guifg=' . s:emerald
-exec 'highlight goStruct guifg=' . s:orange
-exec 'highlight goStructDef guifg=' . s:orange
-exec 'highlight goUnsignedInts guifg=' . s:orange
+highlight! link goBuiltins NightflyBlue
+highlight! link goConditional NightflyViolet
+highlight! link goDeclType NightflyGreen
+highlight! link goDirective NightflyWatermelon
+highlight! link goFloats NightflyOrange
+highlight! link goFunction NightflyBlue
+highlight! link goFunctionCall NightflyBlue
+highlight! link goImport NightflyWatermelon
+highlight! link goLabel NightflyYellow
+highlight! link goMethod NightflyBlue
+highlight! link goMethodCall NightflyBlue
+highlight! link goPackage NightflyViolet
+highlight! link goSignedInts NightflyEmerald
+highlight! link goStruct NightflyOrange
+highlight! link goStructDef NightflyOrange
+highlight! link goUnsignedInts NightflyOrange
 
 " Haskell
-exec 'highlight haskellDecl guifg=' . s:orange
-exec 'highlight haskellDeclKeyword guifg=' . s:orange
-exec 'highlight haskellIdentifier guifg=' . s:turquoise
-exec 'highlight haskellLet guifg=' . s:blue
-exec 'highlight haskellOperators guifg=' . s:watermelon
-exec 'highlight haskellType guifg=' . s:blue
-exec 'highlight haskellWhere guifg=' . s:violet
+highlight! link haskellDecl NightflyOrange
+highlight! link haskellDeclKeyword NightflyOrange
+highlight! link haskellIdentifier NightflyTurquoise
+highlight! link haskellLet NightflyBlue
+highlight! link haskellOperators NightflyWatermelon
+highlight! link haskellType NightflyBlue
+highlight! link haskellWhere NightflyViolet
 
 " HTML
-exec 'highlight htmlArg guifg=' . s:blue
-exec 'highlight htmlLink guifg=' . s:green
-exec 'highlight htmlEndTag guifg=' . s:purple
-exec 'highlight htmlH1 guifg=' . s:watermelon
-exec 'highlight htmlH2 guifg=' . s:orange
-exec 'highlight htmlTag guifg=' . s:green
-exec 'highlight htmlTagN guifg=' . s:blue
-exec 'highlight htmlTagName guifg=' . s:blue
-exec 'highlight htmlUnderline guifg=' . s:white
+highlight! link htmlArg NightflyBlue
+highlight! link htmlLink NightflyGreen
+highlight! link htmlEndTag NightflyPurple
+highlight! link htmlH1 NightflyWatermelon
+highlight! link htmlH2 NightflyOrange
+highlight! link htmlTag NightflyGreen
+highlight! link htmlTagN NightflyBlue
+highlight! link htmlTagName NightflyBlue
+highlight! link htmlUnderline NightflyWhite
 if g:nightflyItalics
     exec 'highlight htmlBoldItalic guibg=' . s:black . ' guifg=' . s:orange . ' gui=italic'
     exec 'highlight htmlBoldUnderlineItalic guibg=' . s:black . ' guifg=' . s:orange . ' gui=italic'
@@ -403,130 +422,130 @@ else
 endif
 
 " Java
-exec 'highlight javaAnnotation guifg=' . s:green
-exec 'highlight javaBraces guifg=' . s:white
-exec 'highlight javaClassDecl guifg=' . s:peach
-exec 'highlight javaCommentTitle guifg=' . s:cadet_blue
-exec 'highlight javaConstant guifg=' . s:blue
-exec 'highlight javaDebug guifg=' . s:blue
-exec 'highlight javaMethodDecl guifg=' . s:yellow
-exec 'highlight javaOperator guifg=' . s:watermelon
-exec 'highlight javaScopeDecl guifg=' . s:violet
-exec 'highlight javaStatement guifg=' . s:turquoise
+highlight! link javaAnnotation NightflyGreen
+highlight! link javaBraces NightflyWhite
+highlight! link javaClassDecl NightflyPeach
+highlight! link javaCommentTitle NightflyCadetBlue
+highlight! link javaConstant NightflyBlue
+highlight! link javaDebug NightflyBlue
+highlight! link javaMethodDecl NightflyYellow
+highlight! link javaOperator NightflyWatermelon
+highlight! link javaScopeDecl NightflyViolet
+highlight! link javaStatement NightflyTurquoise
 
 " JavaScript, 'pangloss/vim-javascript' plugin
-exec 'highlight jsClassDefinition guifg=' . s:emerald
-exec 'highlight jsClassKeyword guifg=' . s:violet
-exec 'highlight jsClassMethodType guifg=' . s:emerald
-exec 'highlight jsExceptions guifg=' . s:emerald
-exec 'highlight jsFrom guifg=' . s:orange
-exec 'highlight jsFuncBlock guifg=' . s:turquoise
-exec 'highlight jsFuncCall guifg=' . s:blue
-exec 'highlight jsFunction guifg=' . s:violet
-exec 'highlight jsGlobalObjects guifg=' . s:green
-exec 'highlight jsModuleAs guifg=' . s:orange
-exec 'highlight jsObjectKey guifg=' . s:blue
-exec 'highlight jsObjectValue guifg=' . s:emerald
-exec 'highlight jsOperator guifg=' . s:violet
-exec 'highlight jsStorageClass guifg=' . s:green
-exec 'highlight jsTemplateBraces guifg=' . s:watermelon
-exec 'highlight jsTemplateExpression guifg=' . s:turquoise
-exec 'highlight jsThis guifg=' . s:turquoise
+highlight! link jsClassDefinition NightflyEmerald
+highlight! link jsClassKeyword NightflyViolet
+highlight! link jsClassMethodType NightflyEmerald
+highlight! link jsExceptions NightflyEmerald
+highlight! link jsFrom NightflyOrange
+highlight! link jsFuncBlock NightflyTurquoise
+highlight! link jsFuncCall NightflyBlue
+highlight! link jsFunction NightflyViolet
+highlight! link jsGlobalObjects NightflyGreen
+highlight! link jsModuleAs NightflyOrange
+highlight! link jsObjectKey NightflyBlue
+highlight! link jsObjectValue NightflyEmerald
+highlight! link jsOperator NightflyViolet
+highlight! link jsStorageClass NightflyGreen
+highlight! link jsTemplateBraces NightflyWatermelon
+highlight! link jsTemplateExpression NightflyTurquoise
+highlight! link jsThis NightflyTurquoise
 
 " JSX, 'MaxMEllon/vim-jsx-pretty' plugin
-exec 'highlight jsxAttrib guifg=' . s:green
-exec 'highlight jsxClosePunct guifg=' . s:purple
-exec 'highlight jsxComponentName guifg=' . s:blue
-exec 'highlight jsxOpenPunct guifg=' . s:green
-exec 'highlight jsxTagName guifg=' . s:blue
+highlight! link jsxAttrib NightflyGreen
+highlight! link jsxClosePunct NightflyPurple
+highlight! link jsxComponentName NightflyBlue
+highlight! link jsxOpenPunct NightflyGreen
+highlight! link jsxTagName NightflyBlue
 
 " Lua
-exec 'highlight luaBraces guifg=' . s:watermelon
-exec 'highlight luaBuiltin guifg=' . s:green
-exec 'highlight luaFuncCall guifg=' . s:blue
-exec 'highlight luaSpecialTable guifg=' . s:blue
+highlight! link luaBraces NightflyWatermelon
+highlight! link luaBuiltin NightflyGreen
+highlight! link luaFuncCall NightflyBlue
+highlight! link luaSpecialTable NightflyBlue
 
 " Markdown, 'plasticboy/vim-markdown' plugin
 highlight link mkdLineBreak NormalNC
-exec 'highlight mkdDelimiter guifg=' . s:white
-exec 'highlight mkdListItem guifg=' . s:blue
-exec 'highlight mkdURL guifg=' . s:purple
+highlight! link mkdDelimiter NightflyWhite
+highlight! link mkdListItem NightflyBlue
+highlight! link mkdURL NightflyPurple
 
 " PHP
-exec 'highlight phpClass guifg=' . s:emerald
-exec 'highlight phpClasses guifg=' . s:peach
-exec 'highlight phpFunction guifg=' . s:blue
-exec 'highlight phpParent guifg=fg'
-exec 'highlight phpType guifg=' . s:violet
+highlight! link phpClass NightflyEmerald
+highlight! link phpClasses NightflyPeach
+highlight! link phpFunction NightflyBlue
+highlight! link phpParent NightflyReset
+highlight! link phpType NightflyViolet
 
 " PureScript
-exec 'highlight purescriptClass guifg=' . s:peach
-exec 'highlight purescriptModuleParams guifg=' . s:orange
+highlight! link purescriptClass NightflyPeach
+highlight! link purescriptModuleParams NightflyOrange
 
 " Python
-exec 'highlight pythonBuiltin guifg=' . s:blue
-exec 'highlight pythonClassVar guifg=' . s:green
-exec 'highlight pythonCoding guifg=' . s:blue
-exec 'highlight pythonImport guifg=' . s:watermelon
-exec 'highlight pythonOperator guifg=' . s:violet
-exec 'highlight pythonRun guifg=' . s:blue
-exec 'highlight pythonStatement guifg=' s:violet
+highlight! link pythonBuiltin NightflyBlue
+highlight! link pythonClassVar NightflyGreen
+highlight! link pythonCoding NightflyBlue
+highlight! link pythonImport NightflyWatermelon
+highlight! link pythonOperator NightflyViolet
+highlight! link pythonRun NightflyBlue
+highlight! link pythonStatement NightflyViolet
 
 " Ruby
-exec 'highlight erubyDelimiter guifg=' . s:watermelon
-exec 'highlight rspecGroupMethods guifg=' . s:blue
-exec 'highlight rubyAccess guifg=' . s:yellow
-exec 'highlight rubyAssertion guifg=' . s:blue
-exec 'highlight rubyAttribute guifg=' . s:blue
-exec 'highlight rubyBlockParameter guifg=' . s:green
-exec 'highlight rubyCallback guifg=' . s:blue
-exec 'highlight rubyClass guifg=' . s:orange
-exec 'highlight rubyClassName guifg=' . s:emerald
-exec 'highlight rubyDefine guifg=' . s:violet
-exec 'highlight rubyEntities guifg=' . s:blue
-exec 'highlight rubyExceptional guifg=' . s:orange
-exec 'highlight rubyGemfileMethod guifg=' . s:blue
-exec 'highlight rubyInstanceVariable guifg=' . s:turquoise
-exec 'highlight rubyInterpolationDelimiter guifg=' . s:watermelon
-exec 'highlight rubyMacro guifg=' . s:blue
-exec 'highlight rubyModule guifg=' . s:blue
-exec 'highlight rubyModuleName guifg=' . s:emerald
-exec 'highlight rubyPseudoVariable guifg=' . s:green
-exec 'highlight rubyResponse guifg=' . s:blue
-exec 'highlight rubyRoute guifg=' . s:blue
-exec 'highlight rubySharpBang guifg=' . s:cadet_blue
-exec 'highlight rubyStringDelimiter guifg=' . s:tan
-exec 'highlight rubySymbol guifg=' . s:purple
+highlight! link erubyDelimiter NightflyWatermelon
+highlight! link rspecGroupMethods NightflyBlue
+highlight! link rubyAccess NightflyYellow
+highlight! link rubyAssertion NightflyBlue
+highlight! link rubyAttribute NightflyBlue
+highlight! link rubyBlockParameter NightflyGreen
+highlight! link rubyCallback NightflyBlue
+highlight! link rubyClass NightflyOrange
+highlight! link rubyClassName NightflyEmerald
+highlight! link rubyDefine NightflyViolet
+highlight! link rubyEntities NightflyBlue
+highlight! link rubyExceptional NightflyOrange
+highlight! link rubyGemfileMethod NightflyBlue
+highlight! link rubyInstanceVariable NightflyTurquoise
+highlight! link rubyInterpolationDelimiter NightflyWatermelon
+highlight! link rubyMacro NightflyBlue
+highlight! link rubyModule NightflyBlue
+highlight! link rubyModuleName NightflyEmerald
+highlight! link rubyPseudoVariable NightflyGreen
+highlight! link rubyResponse NightflyBlue
+highlight! link rubyRoute NightflyBlue
+highlight! link rubySharpBang NightflyCadetBlue
+highlight! link rubyStringDelimiter NightflyTan
+highlight! link rubySymbol NightflyPurple
 
 " Rust
-exec 'highlight rustAssert guifg=' . s:green
-exec 'highlight rustAttribute guifg=fg'
-exec 'highlight rustCharacterInvalid guifg=' . s:watermelon
-exec 'highlight rustCharacterInvalidUnicode guifg=' . s:watermelon
-exec 'highlight rustCommentBlockDoc guifg=' . s:cadet_blue
-exec 'highlight rustCommentBlockDocError guifg=' . s:cadet_blue
-exec 'highlight rustCommentLineDoc guifg=' . s:cadet_blue
-exec 'highlight rustCommentLineDocError guifg=' . s:cadet_blue
-exec 'highlight rustConstant guifg=' . s:orange
-exec 'highlight rustDerive guifg=' . s:green
-exec 'highlight rustEscapeError guifg=' . s:watermelon
-exec 'highlight rustFuncName guifg=' . s:blue
-exec 'highlight rustIdentifier guifg=' . s:blue
-exec 'highlight rustInvalidBareKeyword guifg=' . s:watermelon
-exec 'highlight rustKeyword guifg=' . s:violet
-exec 'highlight rustLifetime guifg=' . s:violet
-exec 'highlight rustMacro guifg=' . s:green
-exec 'highlight rustMacroVariable guifg=' . s:violet
-exec 'highlight rustModPath guifg=' . s:blue
-exec 'highlight rustObsoleteExternMod guifg=' . s:watermelon
-exec 'highlight rustObsoleteStorage guifg=' . s:watermelon
-exec 'highlight rustReservedKeyword guifg=' . s:watermelon
-exec 'highlight rustSelf guifg=' . s:turquoise
-exec 'highlight rustSigil guifg=' . s:turquoise
-exec 'highlight rustStorage guifg=' . s:violet
-exec 'highlight rustStructure guifg=' . s:violet
-exec 'highlight rustTrait guifg=' . s:emerald
-exec 'highlight rustType guifg=' . s:emerald
+highlight! link rustAssert NightflyGreen
+highlight! link rustAttribute NightflyReset
+highlight! link rustCharacterInvalid NightflyWatermelon
+highlight! link rustCharacterInvalidUnicode NightflyWatermelon
+highlight! link rustCommentBlockDoc NightflyCadetBlue
+highlight! link rustCommentBlockDocError NightflyCadetBlue
+highlight! link rustCommentLineDoc NightflyCadetBlue
+highlight! link rustCommentLineDocError NightflyCadetBlue
+highlight! link rustConstant NightflyOrange
+highlight! link rustDerive NightflyGreen
+highlight! link rustEscapeError NightflyWatermelon
+highlight! link rustFuncName NightflyBlue
+highlight! link rustIdentifier NightflyBlue
+highlight! link rustInvalidBareKeyword NightflyWatermelon
+highlight! link rustKeyword NightflyViolet
+highlight! link rustLifetime NightflyViolet
+highlight! link rustMacro NightflyGreen
+highlight! link rustMacroVariable NightflyViolet
+highlight! link rustModPath NightflyBlue
+highlight! link rustObsoleteExternMod NightflyWatermelon
+highlight! link rustObsoleteStorage NightflyWatermelon
+highlight! link rustReservedKeyword NightflyWatermelon
+highlight! link rustSelf NightflyTurquoise
+highlight! link rustSigil NightflyTurquoise
+highlight! link rustStorage NightflyViolet
+highlight! link rustStructure NightflyViolet
+highlight! link rustTrait NightflyEmerald
+highlight! link rustType NightflyEmerald
 
 " Scala
 exec 'highlight scalaCapitalWord guifg=' . s:blue
@@ -537,168 +556,169 @@ exec 'highlight scalaSpecial guifg=' . s:turquoise
 exec 'highlight scalaSpecial guifg=' . s:watermelon
 
 " Shell scripts
-exec 'highlight shAlias guifg=' . s:turquoise
-exec 'highlight shCommandSub guifg=fg'
-exec 'highlight shLoop guifg=' . s:violet
-exec 'highlight shSetList guifg=' . s:turquoise
-exec 'highlight shShellVariables guifg=' . s:green
-exec 'highlight shStatement guifg=fg'
-exec 'highlight shVariable guifg=' . s:turquoise
+highlight! link shAlias NightflyTurquoise
+highlight! link shCommandSub NightflyReset
+highlight! link shLoop NightflyViolet
+highlight! link shSetList NightflyTurquoise
+highlight! link shShellVariables NightflyGreen
+highlight! link shStatement NightflyReset
+highlight! link shVariable NightflyTurquoise
 
 " TypeScript (leafgarland/typescript-vim)
-exec 'highlight typescriptDOMObjects guifg=' . s:blue
-exec 'highlight typescriptFuncComma guifg=' . s:white
-exec 'highlight typescriptFuncKeyword guifg=' . s:green
-exec 'highlight typescriptGlobalObjects guifg=' . s:blue
-exec 'highlight typescriptIdentifier guifg=' . s:green
-exec 'highlight typescriptNull guifg=' . s:green
-exec 'highlight typescriptOpSymbols guifg=' . s:violet
-exec 'highlight typescriptOperator guifg=' . s:watermelon
-exec 'highlight typescriptParens guifg=' . s:white
-exec 'highlight typescriptReserved guifg=' . s:violet
-exec 'highlight typescriptStorageClass guifg=' . s:green
+highlight! link typescriptDOMObjects NightflyBlue
+highlight! link typescriptFuncComma NightflyWhite
+highlight! link typescriptFuncKeyword NightflyGreen
+highlight! link typescriptGlobalObjects NightflyBlue
+highlight! link typescriptIdentifier NightflyGreen
+highlight! link typescriptNull NightflyGreen
+highlight! link typescriptOpSymbols NightflyViolet
+highlight! link typescriptOperator NightflyWatermelon
+highlight! link typescriptParens NightflyWhite
+highlight! link typescriptReserved NightflyViolet
+highlight! link typescriptStorageClass NightflyGreen
 
 " TypeScript (HerringtonDarkholme/yats.vim)
-exec 'highlight typeScriptModule guifg=' . s:blue
-exec 'highlight typescriptAbstract guifg=' . s:orange
-exec 'highlight typescriptArrayMethod guifg=' . s:blue
-exec 'highlight typescriptArrowFuncArg guifg=' . s:white
-exec 'highlight typescriptBOM guifg=' . s:emerald
-exec 'highlight typescriptBOMHistoryMethod guifg=' . s:blue
-exec 'highlight typescriptBOMLocationMethod guifg=' . s:blue
-exec 'highlight typescriptBOMWindowProp guifg=' . s:green
-exec 'highlight typescriptBraces guifg=' . s:white
-exec 'highlight typescriptCall guifg=' . s:white
-exec 'highlight typescriptClassHeritage guifg=' . s:peach
-exec 'highlight typescriptClassKeyword guifg=' . s:violet
-exec 'highlight typescriptClassName guifg=' . s:emerald
-exec 'highlight typescriptDecorator guifg=' . s:green
-exec 'highlight typescriptDOMDocMethod guifg=' . s:blue
-exec 'highlight typescriptDOMEventTargetMethod guifg=' . s:blue
-exec 'highlight typescriptDOMNodeMethod guifg=' . s:blue
-exec 'highlight typescriptExceptions guifg=' . s:watermelon
-exec 'highlight typescriptFuncType guifg=' . s:white
-exec 'highlight typescriptMathStaticMethod guifg=' . s:blue
-exec 'highlight typescriptMethodAccessor guifg=' . s:violet
-exec 'highlight typescriptObjectLabel guifg=' . s:blue
-exec 'highlight typescriptParamImpl guifg=' . s:white
-exec 'highlight typescriptStringMethod guifg=' . s:blue
-exec 'highlight typescriptTry guifg=' . s:watermelon
-exec 'highlight typescriptVariable guifg=' . s:green
-exec 'highlight typescriptXHRMethod guifg=' . s:blue
+highlight! link typeScriptModule NightflyBlue
+highlight! link typescriptAbstract NightflyOrange
+highlight! link typescriptArrayMethod NightflyBlue
+highlight! link typescriptArrowFuncArg NightflyWhite
+highlight! link typescriptBOM NightflyEmerald
+highlight! link typescriptBOMHistoryMethod NightflyBlue
+highlight! link typescriptBOMLocationMethod NightflyBlue
+highlight! link typescriptBOMWindowProp NightflyGreen
+highlight! link typescriptBraces NightflyWhite
+highlight! link typescriptCall NightflyWhite
+highlight! link typescriptClassHeritage NightflyPeach
+highlight! link typescriptClassKeyword NightflyViolet
+highlight! link typescriptClassName NightflyEmerald
+highlight! link typescriptDecorator NightflyGreen
+highlight! link typescriptDOMDocMethod NightflyBlue
+highlight! link typescriptDOMEventTargetMethod NightflyBlue
+highlight! link typescriptDOMNodeMethod NightflyBlue
+highlight! link typescriptExceptions NightflyWatermelon
+highlight! link typescriptFuncType NightflyWhite
+highlight! link typescriptMathStaticMethod NightflyBlue
+highlight! link typescriptMethodAccessor NightflyViolet
+highlight! link typescriptObjectLabel NightflyBlue
+highlight! link typescriptParamImpl NightflyWhite
+highlight! link typescriptStringMethod NightflyBlue
+highlight! link typescriptTry NightflyWatermelon
+highlight! link typescriptVariable NightflyGreen
+highlight! link typescriptXHRMethod NightflyBlue
 
 " Vimscript
-exec 'highlight vimBracket guifg=' . s:blue
-exec 'highlight vimCommand guifg=' . s:orange
-exec 'highlight vimCommentTitle guifg=' . s:violet
-exec 'highlight vimEnvvar guifg=' . s:watermelon
-exec 'highlight vimFuncName guifg=' . s:blue
-exec 'highlight vimFuncSID guifg=' . s:blue
-exec 'highlight vimFunction guifg=' . s:blue
-exec 'highlight vimNotation guifg=' . s:blue
-exec 'highlight vimOption guifg=' . s:turquoise
-exec 'highlight vimParenSep guifg=' . s:white
-exec 'highlight vimSep guifg=' . s:white
-exec 'highlight vimUserFunc guifg=' . s:blue
+highlight! link vimBracket NightflyBlue
+highlight! link vimCommand NightflyOrange
+highlight! link vimCommentTitle NightflyViolet
+highlight! link vimEnvvar NightflyWatermelon
+highlight! link vimFuncName NightflyBlue
+highlight! link vimFuncSID NightflyBlue
+highlight! link vimFunction NightflyBlue
+highlight! link vimNotation NightflyBlue
+highlight! link vimOption NightflyTurquoise
+highlight! link vimParenSep NightflyWhite
+highlight! link vimSep NightflyWhite
+highlight! link vimUserFunc NightflyBlue
 
 " XML
-exec 'highlight xmlAttrib guifg=' . s:green
-exec 'highlight xmlEndTag guifg=' . s:blue
-exec 'highlight xmlTag guifg=' . s:green
-exec 'highlight xmlTagName guifg=' . s:blue
+highlight! link xmlAttrib NightflyGreen
+highlight! link xmlEndTag NightflyBlue
+highlight! link xmlTag NightflyGreen
+highlight! link xmlTagName NightflyBlue
 
 " Git commits
-exec 'highlight gitCommitBranch guifg=' . s:blue
-exec 'highlight gitCommitDiscardedFile guifg=' . s:watermelon
-exec 'highlight gitCommitDiscardedType guifg=' . s:blue
-exec 'highlight gitCommitHeader guifg=' . s:purple
-exec 'highlight gitCommitSelectedFile guifg=' . s:emerald
-exec 'highlight gitCommitSelectedType guifg=' . s:blue
-exec 'highlight gitCommitUntrackedFile guifg=' . s:watermelon
-exec 'highlight gitEmail guifg=' . s:blue
-
-" Tagbar plugin
-exec 'highlight TagbarFoldIcon guifg=' . s:cadet_blue
-exec 'highlight TagbarVisibilityPublic guifg=' . s:green
-exec 'highlight TagbarVisibilityProtected guifg=' . s:green
-exec 'highlight TagbarVisibilityPrivate guifg=' . s:green
-exec 'highlight TagbarKind guifg=' . s:emerald
-
-" NERDTree plugin
-exec 'highlight NERDTreeClosable guifg=' . s:green
-exec 'highlight NERDTreeCWD guifg=' . s:purple
-exec 'highlight NERDTreeDir guifg=' . s:blue
-exec 'highlight NERDTreeDirSlash guifg=' . s:watermelon
-exec 'highlight NERDTreeExecFile guifg=' . s:tan
-exec 'highlight NERDTreeFile guifg=' . s:white
-exec 'highlight NERDTreeFlags guifg=' . s:purple
-exec 'highlight NERDTreeHelp guifg=' . s:cadet_blue
-exec 'highlight NERDTreeLinkDir guifg=' . s:blue
-exec 'highlight NERDTreeLinkFile guifg=' . s:blue
-exec 'highlight NERDTreeLinkTarget guifg=' . s:turquoise
-exec 'highlight NERDTreeOpenable guifg=' . s:green
-exec 'highlight NERDTreePart guifg=' . s:regal_blue
-exec 'highlight NERDTreePartFile guifg=' . s:regal_blue
-exec 'highlight NERDTreeUp guifg=' . s:blue
-
-" NERDTree Git plugin
-exec 'highlight NERDTreeGitStatusDirDirty guifg=' . s:tan
-exec 'highlight NERDTreeGitStatusModified guifg=' . s:watermelon
-exec 'highlight NERDTreeGitStatusRenamed guifg=' . s:blue
-exec 'highlight NERDTreeGitStatusStaged guifg=' . s:blue
-exec 'highlight NERDTreeGitStatusUntracked guifg=' . s:red
-
-" vimfiler plugin
-exec 'highlight vimfilerClosedFile guifg=' . s:blue
-exec 'highlight vimfilerMarkedFile guifg=' . s:orange
-exec 'highlight vimfilerNonMark guifg=' . s:green
-exec 'highlight vimfilerNormalFile guifg=' . s:white
-exec 'highlight vimfilerOpenedFile guifg=' . s:blue
-exec 'highlight vimfilerROFile guifg=' . s:grey_blue
-
-" fern.vim plugin
-exec 'highlight FernBranchSymbol guifg=' . s:green
-exec 'highlight FernBranchText guifg=' . s:blue
-exec 'highlight FernMarkedLine guifg=' . s:orange
-exec 'highlight FernMarkedText guifg=' . s:orange
-exec 'highlight FernRootSymbol guifg=' . s:purple
-exec 'highlight FernRootText guifg=' . s:purple
-
-" fern-git-status.vim plugin
-exec 'highlight FernGitStatusBracket guifg=' . s:grey_blue
-exec 'highlight FernGitStatusIndex guifg=' . s:emerald
-exec 'highlight FernGitStatusWorktree guifg=' . s:watermelon
+highlight! link gitCommitBranch NightflyBlue
+highlight! link gitCommitDiscardedFile NightflyWatermelon
+highlight! link gitCommitDiscardedType NightflyBlue
+highlight! link gitCommitHeader NightflyPurple
+highlight! link gitCommitSelectedFile NightflyEmerald
+highlight! link gitCommitSelectedType NightflyBlue
+highlight! link gitCommitUntrackedFile NightflyWatermelon
+highlight! link gitEmail NightflyBlue
 
 " Git commit diffs
-exec 'highlight diffAdded guifg=' . s:green
-exec 'highlight diffChanged guifg=' . s:watermelon
-exec 'highlight diffIndexLine guifg=' . s:watermelon
-exec 'highlight diffLine guifg=' . s:blue
-exec 'highlight diffRemoved guifg=' . s:red
-exec 'highlight diffSubname guifg=' . s:blue
+highlight! link diffAdded NightflyGreen
+highlight! link diffChanged NightflyWatermelon
+highlight! link diffIndexLine NightflyWatermelon
+highlight! link diffLine NightflyBlue
+highlight! link diffRemoved NightflyRed
+highlight! link diffSubname NightflyBlue
+
+" Tagbar plugin
+highlight! link TagbarFoldIcon NightflyCadetBlue
+highlight! link TagbarVisibilityPublic NightflyGreen
+highlight! link TagbarVisibilityProtected NightflyGreen
+highlight! link TagbarVisibilityPrivate NightflyGreen
+highlight! link TagbarKind NightflyEmerald
+
+" NERDTree plugin
+highlight! link NERDTreeClosable NightflyGreen
+highlight! link NERDTreeCWD NightflyPurple
+highlight! link NERDTreeDir NightflyBlue
+highlight! link NERDTreeDirSlash NightflyWatermelon
+highlight! link NERDTreeExecFile NightflyTan
+highlight! link NERDTreeFile NightflyWhite
+highlight! link NERDTreeFlags NightflyPurple
+highlight! link NERDTreeHelp NightflyCadetBlue
+highlight! link NERDTreeLinkDir NightflyBlue
+highlight! link NERDTreeLinkFile NightflyBlue
+highlight! link NERDTreeLinkTarget NightflyTurquoise
+highlight! link NERDTreeOpenable NightflyGreen
+highlight! link NERDTreePart NightflyRegalBlue
+highlight! link NERDTreePartFile NightflyRegalBlue
+highlight! link NERDTreeUp NightflyBlue
+
+" NERDTree Git plugin
+highlight! link NERDTreeGitStatusDirDirty NightflyTan
+highlight! link NERDTreeGitStatusModified NightflyWatermelon
+highlight! link NERDTreeGitStatusRenamed NightflyBlue
+highlight! link NERDTreeGitStatusStaged NightflyBlue
+highlight! link NERDTreeGitStatusUntracked NightflyRed
+
+" vimfiler plugin
+highlight! link vimfilerClosedFile NightflyBlue
+highlight! link vimfilerMarkedFile NightflyOrange
+highlight! link vimfilerNonMark NightflyGreen
+highlight! link vimfilerNormalFile NightflyWhite
+highlight! link vimfilerOpenedFile NightflyBlue
+highlight! link vimfilerROFile NightflyGreyBlue
+
+" fern.vim plugin
+highlight! link FernBranchSymbol NightflyGreen
+highlight! link FernBranchText NightflyBlue
+highlight! link FernMarkedLine NightflyOrange
+highlight! link FernMarkedText NightflyOrange
+highlight! link FernRootSymbol NightflyPurple
+highlight! link FernRootText NightflyPurple
+
+" fern-git-status.vim plugin
+highlight! link FernGitStatusBracket NightflyGreyBlue
+highlight! link FernGitStatusIndex NightflyEmerald
+highlight! link FernGitStatusWorktree NightflyWatermelon
 
 " Misc languages and plugins
-exec 'highlight bufExplorerHelp guifg=' . s:cadet_blue
-exec 'highlight bufExplorerSortBy guifg=' . s:cadet_blue
-exec 'highlight CleverFDefaultLabel guifg=' . s:watermelon
-exec 'highlight CtrlPMatch guifg=' . s:orange
-exec 'highlight Directory guifg=' . s:emerald
-exec 'highlight HighlightedyankRegion guibg=' . s:regal_blue
-exec 'highlight jsonKeyword guifg=' . s:blue
-exec 'highlight jsonBoolean guifg=' . s:turquoise
-exec 'highlight netrwClassify guifg=' . s:watermelon
-exec 'highlight netrwDir guifg=' . s:blue
-exec 'highlight netrwExe guifg=' . s:tan
-exec 'highlight snipLeadingSpaces guibg=bg guifg=fg'
-exec 'highlight tagName guifg=' . s:turquoise
+highlight! link bufExplorerHelp NightflyCadetBlue
+highlight! link bufExplorerSortBy NightflyCadetBlue
+highlight! link CleverFDefaultLabel NightflyWatermelon
+highlight! link CtrlPMatch NightflyOrange
+highlight! link Directory NightflyEmerald
+highlight! link HighlightedyankRegion NightflyRegalBlue
+highlight! link jsonKeyword NightflyBlue
+highlight! link jsonBoolean NightflyTurquoise
+highlight! link jsonQuote NightflyWhite
+highlight! link netrwClassify NightflyWatermelon
+highlight! link netrwDir NightflyBlue
+highlight! link netrwExe NightflyTan
+highlight! link tagName NightflyTurquoise
+highlight! link Cheat40Header NightflyBlue
+highlight! link Beacon NightflyWhite
 if g:nightflyUnderlineMatchParen
     exec 'highlight MatchWord gui=underline guisp=' . s:orange
 else
-    exec 'highlight MatchWord guifg=' . s:orange
+    highlight! link highlight NightflyOrange
 endif
+exec 'highlight snipLeadingSpaces guibg=bg guifg=fg'
 exec 'highlight MatchWordCur guibg=bg'
-exec 'highlight Cheat40Header guifg=' . s:blue
-exec 'highlight Beacon guibg=' . s:white
 
 " vimdiff/nvim -d
 exec 'highlight DiffAdd guibg=' . s:emerald . ' guifg=bg'
