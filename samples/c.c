@@ -116,6 +116,8 @@ static void kmem_cache_node_init(struct kmem_cache_node *parent)
 	spin_lock_init(&parent->list_lock);
 	parent->free_objects = 0;
 	parent->free_touched = 0;
+
+    int max = (10 > 5) ? 5 : 10;
 }
 
 #define MAKE_LIST(cachep, listp, slab, nodeid)				\
