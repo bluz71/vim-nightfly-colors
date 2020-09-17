@@ -33,20 +33,22 @@ else " Vim
     endif
 endif
 
-" * By default do not color the cursor.
-" * By default use the nightly color palette in the `:terminal`
-" * By default do not underline matching parentheses.
-" * By default do use undercurls in GUI versions of Vim, including terminal Vim
-"     with termguicolors set.
-" * By default do use italics in GUI versions of Vim, including terminal Vim
-"     with termguicolors set.
-" * By default do not style fzf for display in floating window.
-let g:nightflyCursorColor         = get(g:, 'nightflyCursorColor', 0)
-let g:nightflyTerminalColors      = get(g:, 'nightflyTerminalColors', 1)
+" By default do not color the cursor.
+let g:nightflyCursorColor = get(g:, 'nightflyCursorColor', 0)
+
+" By default use the nightly color palette in the `:terminal`
+let g:nightflyTerminalColors = get(g:, 'nightflyTerminalColors', 1)
+
+" By default do not underline matching parentheses.
 let g:nightflyUnderlineMatchParen = get(g:, 'nightflyUnderlineMatchParen', 0)
-let g:nightflyUndercurls          = get(g:, 'nightflyUndercurls', 1)
-let g:nightflyItalics             = get(g:, 'nightflyItalics', 1)
-let g:nightflyFloatingFZF         = get(g:, 'nightflyFloatingFZF', 0)
+
+" By default do use undercurls in GUI versions of Vim, including terminal Vim
+" with termguicolors set.
+let g:nightflyUndercurls = get(g:, 'nightflyUndercurls', 1)
+
+" By default do use italics in GUI versions of Vim, including terminal Vim
+" with termguicolors set.
+let g:nightflyItalics = get(g:, 'nightflyItalics', 1)
 
 " Background and foreground
 let s:black      = '#011627'
@@ -258,6 +260,7 @@ exec 'highlight Conceal guibg=bg guifg=' . s:deep_blue
 exec 'highlight NightflyReset guifg=fg'
 exec 'highlight NightflyWhite guifg=' . s:white
 exec 'highlight NightflyRegalBlue guifg=' . s:regal_blue
+exec 'highlight NightflySteelBlue guifg=' . s:steel_blue
 exec 'highlight NightflyCadetBlue guifg=' . s:cadet_blue
 exec 'highlight NightflyGreyBlue guifg=' . s:grey_blue
 exec 'highlight NightflyYellow guifg=' . s:yellow
@@ -272,6 +275,10 @@ exec 'highlight NightflyBlue guifg=' . s:blue
 exec 'highlight NightflyTurquoise guifg=' . s:turquoise
 exec 'highlight NightflyEmerald guifg=' . s:emerald
 exec 'highlight NightflyGreen guifg=' . s:green
+exec 'highlight NightflyWhiteDiagnostic guibg=bg guifg=' . s:white
+exec 'highlight NightflyYellowDiagnostic guibg=bg guifg=' . s:yellow
+exec 'highlight NightflyRedDiagnostic guibg=bg guifg=' . s:red
+exec 'highlight NightflyBlueDiagnostic guibg=bg guifg=' . s:blue
 
 " Neovim Treesitter
 highlight! link TSAnnotation NightflyViolet
@@ -547,7 +554,7 @@ highlight! link rustStructure NightflyViolet
 highlight! link rustTrait NightflyEmerald
 highlight! link rustType NightflyEmerald
 
-" Scala
+" Scala, note link highlighting does not work (I don't know why)
 exec 'highlight scalaCapitalWord guifg=' . s:blue
 exec 'highlight scalaCommentCodeBlock guifg=' . s:cadet_blue
 exec 'highlight scalaInstanceDeclaration guifg=' . s:turquoise
@@ -738,10 +745,10 @@ else
     exec 'highlight NeomakeInfo guibg=bg'
     exec 'highlight NeomakeMessage guibg=bg'
 endif
-exec 'highlight NeomakeErrorSign guibg=bg guifg=' . s:red
-exec 'highlight NeomakeWarningSign guibg=bg guifg=' . s:yellow
-exec 'highlight NeomakeInfoSign guibg=bg guifg=' . s:blue
-exec 'highlight NeomakeMessageSign guibg=bg guifg=' . s:white
+highlight! link NeomakeErrorSign NightflyRedDiagnostic
+highlight! link NeomakeWarningSign NightflyYellowDiagnostic
+highlight! link NeomakeInfoSign NightflyBlueDiagnostic
+highlight! link NeomakeMessageSign NightflyWhiteDiagnostic
 
 " ALE plugin
 if g:nightflyUndercurls
@@ -753,22 +760,22 @@ else
     exec 'highlight ALEWarning guibg=bg'
     exec 'highlight ALEInfo guibg=bg'
 endif
-exec 'highlight ALEVirtualTextError guifg=' . s:steel_blue
-exec 'highlight ALEErrorSign guibg=bg guifg=' . s:red
-exec 'highlight ALEVirtualTextWarning guifg=' . s:steel_blue
-exec 'highlight ALEWarningSign guibg=bg guifg=' . s:yellow
-exec 'highlight ALEVirtualTextInfo guifg=' . s:steel_blue
-exec 'highlight ALEInfoSign guibg=bg guifg=' . s:blue
+highlight! link ALEVirtualTextError NightflySteelBlue
+highlight! link ALEErrorSign NightflyRedDiagnostic
+highlight! link ALEVirtualTextWarning NightflySteelBlue
+highlight! link ALEWarningSign NightflyYellowDiagnostic
+highlight! link ALEVirtualTextInfo NightflySteelBlue
+highlight! link ALEInfoSign NightflyBlueDiagnostic
 
 " Neovim LSP diagnostics
-exec 'highlight LspDiagnosticsError guifg=' . s:steel_blue
-exec 'highlight LspDiagnosticsErrorSign guibg=bg guifg=' . s:red
-exec 'highlight LspDiagnosticsWarning guifg=' . s:steel_blue
-exec 'highlight LspDiagnosticsWarningSign guibg=bg guifg=' . s:yellow
-exec 'highlight LspDiagnosticsInformation guifg=' . s:steel_blue
-exec 'highlight LspDiagnosticsInformationSign guibg=bg guifg=' . s:blue
-exec 'highlight LspDiagnosticsHint guifg=' . s:steel_blue
-exec 'highlight LspDiagnosticsHintSign guibg=bg guifg=' . s:turquoise
+highlight! link LspDiagnosticsError NightflySteelBlue
+highlight! link LspDiagnosticsErrorSign NightflyRedDiagnostic
+highlight! link LspDiagnosticsWarning NightflySteelBlue
+highlight! link LspDiagnosticsWarningSign NightflyYellowDiagnostic
+highlight! link LspDiagnosticsInformation NightflySteelBlue
+highlight! link LspDiagnosticsInformationSign NightflyBlueDiagnostic
+highlight! link LspDiagnosticsHint NightflySteelBlue
+highlight! link LspDiagnosticsHintSign NightflyWhiteDiagnostic
 
 " GitGutter plugin
 exec 'highlight GitGutterAdd guibg=bg guifg=' . s:emerald
