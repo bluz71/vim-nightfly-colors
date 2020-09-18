@@ -275,10 +275,13 @@ exec 'highlight NightflyBlue guifg=' . s:blue
 exec 'highlight NightflyTurquoise guifg=' . s:turquoise
 exec 'highlight NightflyEmerald guifg=' . s:emerald
 exec 'highlight NightflyGreen guifg=' . s:green
-exec 'highlight NightflyWhiteDiagnostic guibg=bg guifg=' . s:white
-exec 'highlight NightflyYellowDiagnostic guibg=bg guifg=' . s:yellow
-exec 'highlight NightflyRedDiagnostic guibg=bg guifg=' . s:red
-exec 'highlight NightflyBlueDiagnostic guibg=bg guifg=' . s:blue
+exec 'highlight NightflyWhiteAlert guibg=bg guifg=' . s:white
+exec 'highlight NightflyYellowAlert guibg=bg guifg=' . s:yellow
+exec 'highlight NightflyOrangeAlert guibg=bg guifg=' . s:orange
+exec 'highlight NightflyRedAlert guibg=bg guifg=' . s:red
+exec 'highlight NightflyPurpleAlert guibg=bg guifg=' . s:purple
+exec 'highlight NightflyBlueAlert guibg=bg guifg=' . s:blue
+exec 'highlight NightflyEmeraldAlert guibg=bg guifg=' . s:emerald
 
 " Neovim Treesitter
 highlight! link TSAnnotation NightflyViolet
@@ -745,10 +748,10 @@ else
     exec 'highlight NeomakeInfo guibg=bg'
     exec 'highlight NeomakeMessage guibg=bg'
 endif
-highlight! link NeomakeErrorSign NightflyRedDiagnostic
-highlight! link NeomakeWarningSign NightflyYellowDiagnostic
-highlight! link NeomakeInfoSign NightflyBlueDiagnostic
-highlight! link NeomakeMessageSign NightflyWhiteDiagnostic
+highlight! link NeomakeErrorSign NightflyRedAlert
+highlight! link NeomakeWarningSign NightflyYellowAlert
+highlight! link NeomakeInfoSign NightflyBlueAlert
+highlight! link NeomakeMessageSign NightflyWhiteAlert
 
 " ALE plugin
 if g:nightflyUndercurls
@@ -761,32 +764,32 @@ else
     exec 'highlight ALEInfo guibg=bg'
 endif
 highlight! link ALEVirtualTextError NightflySteelBlue
-highlight! link ALEErrorSign NightflyRedDiagnostic
+highlight! link ALEErrorSign NightflyRedAlert
 highlight! link ALEVirtualTextWarning NightflySteelBlue
-highlight! link ALEWarningSign NightflyYellowDiagnostic
+highlight! link ALEWarningSign NightflyYellowAlert
 highlight! link ALEVirtualTextInfo NightflySteelBlue
-highlight! link ALEInfoSign NightflyBlueDiagnostic
+highlight! link ALEInfoSign NightflyBlueAlert
 
 " Neovim LSP diagnostics
 highlight! link LspDiagnosticsError NightflySteelBlue
-highlight! link LspDiagnosticsErrorSign NightflyRedDiagnostic
+highlight! link LspDiagnosticsErrorSign NightflyRedAlert
 highlight! link LspDiagnosticsWarning NightflySteelBlue
-highlight! link LspDiagnosticsWarningSign NightflyYellowDiagnostic
+highlight! link LspDiagnosticsWarningSign NightflyYellowAlert
 highlight! link LspDiagnosticsInformation NightflySteelBlue
-highlight! link LspDiagnosticsInformationSign NightflyBlueDiagnostic
+highlight! link LspDiagnosticsInformationSign NightflyBlueAlert
 highlight! link LspDiagnosticsHint NightflySteelBlue
-highlight! link LspDiagnosticsHintSign NightflyWhiteDiagnostic
+highlight! link LspDiagnosticsHintSign NightflyWhiteAlert
 
 " GitGutter plugin
-exec 'highlight GitGutterAdd guibg=bg guifg=' . s:emerald
-exec 'highlight GitGutterChange guibg=bg guifg=' . s:purple
-exec 'highlight GitGutterChangeDelete guibg=bg guifg=' . s:orange
-exec 'highlight GitGutterDelete guibg=bg guifg=' . s:red
+highlight! link GitGutterAdd NightflyEmeraldAlert
+highlight! link GitGutterChange NightflyPurpleAlert
+highlight! link GitGutterChangeDelete NightflyOrangeAlert
+highlight! link GitGutterDelete NightflyRedAlert
 
 " Signify plugin
-exec 'highlight SignifySignAdd guibg=bg guifg=' . s:emerald
-exec 'highlight SignifySignChange guibg=bg guifg=' . s:purple
-exec 'highlight SignifySignDelete guibg=bg guifg=' . s:red
+highlight! link SignifySignAdd NightflyEmeraldAlert
+highlight! link SignifySignChange NightflyPurpleAlert
+highlight! link SignifySignDelete NightflyRedAlert
 
 " FZF plugin
 exec 'highlight fzf1 guifg=' . s:watermelon . ' guibg=' . s:slate_blue
