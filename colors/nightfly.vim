@@ -295,6 +295,8 @@ highlight! link TSInclude NightflyWatermelon
 highlight! link TSKeywordOperator NightflyViolet
 highlight! link TSParameter NightflyWhite
 highlight! link TSPunctSpecial NightflyWatermelon
+highlight! link TSTag NightflyBlue
+highlight! link TSTagDelimiter NightflyGreen
 highlight! link TSVariableBuiltin NightflyGreen
 
 " C/C++
