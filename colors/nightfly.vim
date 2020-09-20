@@ -78,7 +78,7 @@ let s:turquoise  = '#7fdbca'
 let s:emerald    = '#21c7a8'
 let s:green      = '#a1cd5e'
 
-" Specify the the colors used by the inbuilt terminal of Neovim and Vim
+" Specify the colors used by the inbuilt terminal of Neovim and Vim
 if g:nightflyTerminalColors
     if has('nvim')
         let g:terminal_color_0  = '#1d3b53'
