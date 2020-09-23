@@ -314,8 +314,8 @@ highlight! link cppCustomClass NightflyTurquoise
 highlight! link cppExceptions NightflyGreen
 highlight! link cppModifier NightflyViolet
 highlight! link cppOperator NightflyGreen
-highlight! link cppSTLconstant NightflyBlue
-highlight! link cppSTLnamespace NightflyPurple
+highlight! link cppSTLconstant NightflyIndigo
+highlight! link cppSTLnamespace NightflyIndigo
 highlight! link cppStatement NightflyTurquoise
 
 " C#
@@ -552,7 +552,7 @@ highlight! link rustKeyword NightflyViolet
 highlight! link rustLifetime NightflyViolet
 highlight! link rustMacro NightflyGreen
 highlight! link rustMacroVariable NightflyViolet
-highlight! link rustModPath NightflyBlue
+highlight! link rustModPath NightflyIndigo
 highlight! link rustObsoleteExternMod NightflyWatermelon
 highlight! link rustObsoleteStorage NightflyWatermelon
 highlight! link rustReservedKeyword NightflyWatermelon
