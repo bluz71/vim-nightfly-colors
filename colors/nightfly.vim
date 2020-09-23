@@ -73,6 +73,7 @@ let s:red        = '#fc514e'
 let s:watermelon = '#ff5874'
 let s:violet     = '#c792ea'
 let s:purple     = '#ae81ff'
+let s:indigo     = '#5e97ec'
 let s:blue       = '#82aaff'
 let s:turquoise  = '#7fdbca'
 let s:emerald    = '#21c7a8'
@@ -196,7 +197,7 @@ exec 'highlight ErrorMsg guibg=bg guifg=' . s:red
 exec 'highlight WarningMsg guibg=bg guifg=' . s:orange
 
 " struct, union, enum, typedef
-exec 'highlight Structure guifg=' . s:violet
+exec 'highlight Structure guifg=' . s:indigo
 
 " Auto-text-completion menu
 exec 'highlight Pmenu guibg=' . s:deep_blue . ' guifg=fg'
@@ -272,6 +273,7 @@ exec 'highlight NightflyWatermelon guifg=' . s:watermelon
 exec 'highlight NightflyViolet guifg=' . s:violet
 exec 'highlight NightflyPurple guifg=' . s:purple
 exec 'highlight NightflyBlue guifg=' . s:blue
+exec 'highlight NightflyIndigo guifg=' . s:indigo
 exec 'highlight NightflyTurquoise guifg=' . s:turquoise
 exec 'highlight NightflyEmerald guifg=' . s:emerald
 exec 'highlight NightflyGreen guifg=' . s:green
@@ -294,6 +296,7 @@ highlight! link TSFuncBuiltin NightflyBlue
 highlight! link TSFuncMacro NightflyBlue
 highlight! link TSInclude NightflyWatermelon
 highlight! link TSKeywordOperator NightflyViolet
+highlight! link TSNamespace NightflyIndigo
 highlight! link TSParameter NightflyWhite
 highlight! link TSPunctSpecial NightflyWatermelon
 highlight! link TSTag NightflyBlue
