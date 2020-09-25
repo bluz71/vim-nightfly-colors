@@ -1,1 +1,1 @@
-convert -size 100x200 xc:"#fc514e" xc:"#a1cd5e" xc:"#e3d18a" xc:"#5e97ec" xc:"#82aaff" xc:"#c792ea" xc:"#f78c6c" xc:"#ff5874" xc:"#21c7a8" xc:"#ecc48d" xc:"#ae81ff" xc:"#7fdbca" xc:"#ffcb8b" +append nightfly-palette.png
+convert -size 100x200 xc:"#fc514e" xc:"#ff5874" xc:"#c792ea" xc:"#ae81ff" xc:"#5e97ec" xc:"#82aaff" xc:"#7fdbca" xc:"#21c7a8" xc:"#a1cd5e" xc:"#e3d18a" xc:"#ecc48d" xc:"#ffcb8b" xc:"#f78c6c" +append nightfly-palette.png
