@@ -46,7 +46,7 @@ let g:nightflyUnderlineMatchParen = get(g:, 'nightflyUnderlineMatchParen', 0)
 " with termguicolors set.
 let g:nightflyUndercurls = get(g:, 'nightflyUndercurls', 1)
 
-" By default do use italics in all versions of Vim, including terminal Vim.
+" By default do use italics in GUI versions of Vim.
 let g:nightflyItalics = get(g:, 'nightflyItalics', 1)
 
 " Background and foreground
@@ -115,7 +115,7 @@ exec 'highlight ModeMsg guifg=' . s:cadet_blue . ' gui=none'
 
 " Comments
 if g:nightflyItalics
-    exec 'highlight Comment cterm=italic guifg=' . s:grey_blue . ' gui=italic'
+    exec 'highlight Comment guifg=' . s:grey_blue . ' gui=italic'
 else
     exec 'highlight Comment guifg=' . s:grey_blue
 endif
@@ -425,10 +425,10 @@ highlight! link htmlTagN NightflyBlue
 highlight! link htmlTagName NightflyBlue
 highlight! link htmlUnderline NightflyWhite
 if g:nightflyItalics
-    exec 'highlight htmlBoldItalic cterm=italic guibg=' . s:black . ' guifg=' . s:orange . ' gui=italic'
-    exec 'highlight htmlBoldUnderlineItalic cterm=italic guibg=' . s:black . ' guifg=' . s:orange . ' gui=italic'
-    exec 'highlight htmlItalic cterm=italic guifg=' . s:cadet_blue . ' gui=italic'
-    exec 'highlight htmlUnderlineItalic cterm=italic guibg=' . s:black . ' guifg=' . s:cadet_blue . ' gui=italic'
+    exec 'highlight htmlBoldItalic guibg=' . s:black . ' guifg=' . s:orange . ' gui=italic'
+    exec 'highlight htmlBoldUnderlineItalic guibg=' . s:black . ' guifg=' . s:orange . ' gui=italic'
+    exec 'highlight htmlItalic guifg=' . s:cadet_blue . ' gui=italic'
+    exec 'highlight htmlUnderlineItalic guibg=' . s:black . ' guifg=' . s:cadet_blue . ' gui=italic'
 else
     exec 'highlight htmlBoldItalic guibg=' . s:black . ' guifg=' . s:orange
     exec 'highlight htmlBoldUnderlineItalic guibg=' . s:black . ' guifg=' . s:orange
