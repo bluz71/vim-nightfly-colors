@@ -508,8 +508,8 @@ highlight! link pythonRun NightflyBlue
 highlight! link pythonStatement NightflyViolet
 
 " Ruby
+exec 'highlight rspecGroupMethods guifg=' . s:blue
 highlight! link erubyDelimiter NightflyWatermelon
-highlight! link rspecGroupMethods NightflyBlue
 highlight! link rubyAccess NightflyYellow
 highlight! link rubyAssertion NightflyBlue
 highlight! link rubyAttribute NightflyBlue
