@@ -487,6 +487,11 @@ highlight! link mkdDelimiter NightflyWhite
 highlight! link mkdListItem NightflyBlue
 highlight! link mkdURL NightflyPurple
 
+" Markdown, 'tpope/vim-markdown' plugin
+highlight! link markdownCode NightflyTan
+highlight! link markdownCodeDelimiter NightflyTan
+highlight! link markdownUrl NightflyPurple
+
 " PHP
 highlight! link phpClass NightflyEmerald
 highlight! link phpClasses NightflyPeach
