@@ -481,20 +481,22 @@ highlight! link luaBuiltin NightflyGreen
 highlight! link luaFuncCall NightflyBlue
 highlight! link luaSpecialTable NightflyBlue
 
+" Markdown, 'tpope/vim-markdown' plugin
+highlight! link markdownBold NightflyPeach
+highlight! link markdownCode NightflyTan
+highlight! link markdownCodeDelimiter NightflyTan
+highlight! link markdownH1 NightflyOrange
+highlight! link markdownUrl NightflyPurple
+
 " Markdown, 'plasticboy/vim-markdown' plugin
 highlight link mkdLineBreak NormalNC
 highlight! link mkdDelimiter NightflyWhite
 highlight! link mkdListItem NightflyBlue
 highlight! link mkdURL NightflyPurple
 
-" Markdown, 'tpope/vim-markdown' plugin
-highlight! link markdownCode NightflyTan
-highlight! link markdownCodeDelimiter NightflyTan
-highlight! link markdownUrl NightflyPurple
-
 " PHP
 highlight! link phpClass NightflyEmerald
-highlight! link phpClasses NightflyPeach
+highlight! link phpClasses NightflyIndigo
 highlight! link phpFunction NightflyBlue
 highlight! link phpParent NightflyReset
 highlight! link phpType NightflyViolet
