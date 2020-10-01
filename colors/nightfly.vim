@@ -485,12 +485,13 @@ highlight! link luaSpecialTable NightflyBlue
 highlight! link markdownBold NightflyPeach
 highlight! link markdownCode NightflyTan
 highlight! link markdownCodeDelimiter NightflyTan
+highlight! link markdownError NormalNC
 highlight! link markdownH1 NightflyOrange
 highlight! link markdownUrl NightflyPurple
 
 " Markdown, 'plasticboy/vim-markdown' plugin
-highlight link mkdLineBreak NormalNC
 highlight! link mkdDelimiter NightflyWhite
+highlight! link mkdLineBreak NormalNC
 highlight! link mkdListItem NightflyBlue
 highlight! link mkdURL NightflyPurple
 
