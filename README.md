@@ -19,11 +19,11 @@ Prerequisites
 
 _nightfly_ is a **GUI-only** Vim color scheme.
 
-A GUI client, such as gvim, **or** a modern terminal version of Vim/Neovim, with
+A GUI client, such as gvim, or a modern terminal version of Vim/Neovim with
 `termguicolors` enabled in a true-color terminal, will be required. Details
 about true-color terminals are listed below.
 
-_nightfly_ explicitly does **not** support the 256 color `cterm` version of Vim,
+_nightfly_ explicitly does **not** support the 256 color `cterm` version of Vim
 due to the number of custom colors required. 256 color terminals only allow 16
 custom colors. I encourage terminal users to use a true-color terminal, such as:
 [iTerm2](https://iterm2.com), [GNOME
@@ -185,7 +185,7 @@ colors](https://gist.github.com/XVilka/8346728). Current versions of Vim and
 Neovim on such terminals support true colors when `set termguicolors` is
 enabled.
 
-A list of common terminals that support true colors:
+A list of prevalent terminals that support true colors:
 
 - [iTerm2](http://www.iterm2.com)
 - [GNOME Terminal](https://wiki.gnome.org/Apps/Terminal)
@@ -196,14 +196,11 @@ A list of common terminals that support true colors:
 - [PuTTY](https://putty.org)
 - [mintty](https://mintty.github.io)
 
-:bomb: _Terminal.app_ on macOS and _xterm_ on Unix do **not** support true
-colors.
-
 On terminals that support true colors, and when `termguicolors` is set, the
 _nightfly_ color scheme will emit the correct theme colors.
 
 For the _nightfly_ color scheme to display correctly inside _tmux_ the following
-setting will be required in _~/.tmux.conf_:
+setting will usually be required in _~/.tmux.conf_:
 
 ```
 set -ga terminal-overrides ',xterm-256color:Tc'
