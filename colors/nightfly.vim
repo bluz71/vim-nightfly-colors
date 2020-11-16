@@ -769,9 +769,9 @@ highlight! link NeomakeMessageSign NightflyWhiteAlert
 
 " ALE plugin
 if g:nightflyUndercurls
-     exec 'highlight ALEError guibg=bg gui=undercurl guisp=' . s:red
-     exec 'highlight ALEWarning guibg=bg gui=undercurl guisp=' . s:yellow
-     exec 'highlight ALEInfo guibg=bg gui=undercurl guisp=' . s:blue
+    exec 'highlight ALEError guibg=bg gui=undercurl guisp=' . s:red
+    exec 'highlight ALEWarning guibg=bg gui=undercurl guisp=' . s:yellow
+    exec 'highlight ALEInfo guibg=bg gui=undercurl guisp=' . s:blue
 else
     exec 'highlight ALEError guibg=bg'
     exec 'highlight ALEWarning guibg=bg'
@@ -785,14 +785,29 @@ highlight! link ALEVirtualTextInfo NightflySteelBlue
 highlight! link ALEInfoSign NightflyBlueAlert
 
 " Neovim LSP diagnostics
-highlight! link LspDiagnosticsError NightflySteelBlue
-highlight! link LspDiagnosticsErrorSign NightflyRedAlert
-highlight! link LspDiagnosticsWarning NightflySteelBlue
-highlight! link LspDiagnosticsWarningSign NightflyYellowAlert
-highlight! link LspDiagnosticsInformation NightflySteelBlue
-highlight! link LspDiagnosticsInformationSign NightflyBlueAlert
-highlight! link LspDiagnosticsHint NightflySteelBlue
-highlight! link LspDiagnosticsHintSign NightflyWhiteAlert
+if g:nightflyUndercurls
+    exec 'highlight LspDiagnosticsUnderlineError guibg=bg gui=undercurl guisp=' . s:red
+    exec 'highlight LspDiagnosticsUnderlineWarning guibg=bg gui=undercurl guisp=' . s:yellow
+    exec 'highlight LspDiagnosticsUnderlineInformation guibg=bg gui=undercurl guisp=' . s:blue
+    exec 'highlight LspDiagnosticsUnderlineHint guibg=bg gui=undercurl guisp=' . s:white
+else
+    exec 'highlight LspDiagnosticsUnderlineError guibg=bg gui=underline guisp=' . s:red
+    exec 'highlight LspDiagnosticsUnderlineWarning guibg=bg gui=underline guisp=' . s:yellow
+    exec 'highlight LspDiagnosticsUnderlineInformation guibg=bg gui=underline guisp=' . s:blue
+    exec 'highlight LspDiagnosticsUnderlineHint guibg=bg gui=underline guisp=' . s:white
+endif
+highlight! link LspDiagnosticsVirtualTextError NightflySteelBlue
+highlight! link LspDiagnosticsSignError NightflyRedAlert
+highlight! link LspDiagnosticsFloatingError NightflyRed
+highlight! link LspDiagnosticsVirtualTextWarning NightflySteelBlue
+highlight! link LspDiagnosticsSignWarning NightflyYellowAlert
+highlight! link LspDiagnosticsFloatingWarning NightflyYellow
+highlight! link LspDiagnosticsVirtualTextInformation NightflySteelBlue
+highlight! link LspDiagnosticsSignInformation NightflyBlueAlert
+highlight! link LspDiagnosticsFloatingInformation NightflyBlue
+highlight! link LspDiagnosticsVirtualTextHint NightflySteelBlue
+highlight! link LspDiagnosticsSignHint NightflyWhiteAlert
+highlight! link LspDiagnosticsFloatingHint NightflyWhite
 
 " GitGutter plugin
 highlight! link GitGutterAdd NightflyEmeraldAlert
