@@ -22,6 +22,20 @@ class Consts {
         };
 };
 
+class DateClass
+{
+public:
+    static int single;
+    int m_year;
+    int m_month;
+    int m_day;
+
+    void print()
+    {
+        std::cout << m_year << '/' << m_month << '/' << m_day;
+    }
+};
+
 template <typename T>
 inline T ToCData(v8::internal::Object* obj);
 
