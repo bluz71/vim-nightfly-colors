@@ -852,7 +852,7 @@ exec 'highlight User5 guibg=' . s:slate_blue . ' guifg=' . s:blue       . ' gui=
 exec 'highlight User6 guibg=' . s:slate_blue . ' guifg=' . s:watermelon . ' gui=none'
 exec 'highlight User7 guibg=' . s:slate_blue . ' guifg=' . s:blue       . ' gui=none'
 
-" barbar.nvim
+" barbar.nvim plugin
 exec 'highlight BufferCurrent      guibg=' . s:dark_blue . '  guifg=' . s:white
 exec 'highlight BufferCurrentMod   guibg=' . s:dark_blue . '  guifg=' . s:tan
 exec 'highlight BufferCurrentSign  guibg=' . s:dark_blue . '  guifg=' . s:blue
