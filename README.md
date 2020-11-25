@@ -86,6 +86,7 @@ Plugins explicity styled
 - [fzf.vim](https://github.com/junegunn/fzf.vim)
 - [indentLine](https://github.com/Yggdroot/indentLine) (please set `let g:indentLine_setColors = 0` in your _vimrc_)
 - [vimfiler](https://github.com/Shougo/vimfiler.vim)
+- [barbar.nvim](https://github.com/romgrk/barbar.nvim)
 
 Installation
 ------------

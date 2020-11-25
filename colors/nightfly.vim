@@ -851,3 +851,14 @@ exec 'highlight User4 guibg=' . s:watermelon . ' guifg=' . s:dark_blue
 exec 'highlight User5 guibg=' . s:slate_blue . ' guifg=' . s:blue       . ' gui=none'
 exec 'highlight User6 guibg=' . s:slate_blue . ' guifg=' . s:watermelon . ' gui=none'
 exec 'highlight User7 guibg=' . s:slate_blue . ' guifg=' . s:blue       . ' gui=none'
+
+" barbar.nvim
+exec 'highlight BufferCurrent      guibg=' . s:dark_blue . '  guifg=' . s:white
+exec 'highlight BufferCurrentMod   guibg=' . s:dark_blue . '  guifg=' . s:tan
+exec 'highlight BufferCurrentSign  guibg=' . s:dark_blue . '  guifg=' . s:blue
+exec 'highlight BufferVisible      guibg=' . s:dark_blue . '  guifg=' . s:grey_blue
+exec 'highlight BufferVisibleMod   guibg=' . s:dark_blue . '  guifg=' . s:tan
+exec 'highlight BufferVisibleSign  guibg=' . s:dark_blue . '  guifg=' . s:grey_blue
+exec 'highlight BufferInactive     guibg=' . s:slate_blue . ' guifg=' . s:grey_blue
+exec 'highlight BufferInactiveMod  guibg=' . s:slate_blue . ' guifg=' . s:tan
+exec 'highlight BufferInactiveSign guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue
