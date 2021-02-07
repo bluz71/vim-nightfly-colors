@@ -48,6 +48,9 @@ let g:nightflyUndercurls = get(g:, 'nightflyUndercurls', 1)
 
 " By default do use italics in GUI versions of Vim.
 let g:nightflyItalics = get(g:, 'nightflyItalics', 1)
+"
+" By default do not use a transparent background in GUI versions of Vim.
+let g:nightflyTransparent = get(g:, 'nightflyTransparent', 0)
 
 " Background and foreground
 let s:black      = '#011627'
@@ -108,7 +111,11 @@ if g:nightflyTerminalColors
 endif
 
 " Background and text
-exec 'highlight Normal guibg=' . s:black . ' guifg=' . s:white
+if g:nightflyTransparent
+    exec 'highlight Normal guibg=NONE' . ' guifg=' . s:white
+else
+    exec 'highlight Normal guibg=' . s:black . ' guifg=' . s:white
+endif
 
 " Color of mode text, -- INSERT --
 exec 'highlight ModeMsg guifg=' . s:cadet_blue . ' gui=none'
