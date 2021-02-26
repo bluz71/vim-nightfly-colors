@@ -3,6 +3,8 @@
 require "pry"
 
 module AlbumsHelper
+  VALID_WEBSITE_RE = %r{\Ahttps?://[\w\d\-.]*\z}.freeze
+
   def genre_select(album)
     album.genre.present? ? album.genre.id : Genre.find_by(name: "Rock").id
   end
