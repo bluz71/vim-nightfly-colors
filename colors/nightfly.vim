@@ -298,7 +298,6 @@ highlight! link TSConstant NightflyPurple
 highlight! link TSConstBuiltin NightflyGreen
 highlight! link TSConstMacro NightflyViolet
 highlight! link TSConstructor NightflyEmerald
-highlight! link TSError NightflyRed
 highlight! link TSFuncBuiltin NightflyBlue
 highlight! link TSFuncMacro NightflyBlue
 highlight! link TSInclude NightflyWatermelon
@@ -306,6 +305,7 @@ highlight! link TSKeywordOperator NightflyViolet
 highlight! link TSNamespace NightflyIndigo
 highlight! link TSParameter NightflyWhite
 highlight! link TSPunctSpecial NightflyWatermelon
+highlight! link TSSymbol NightflyPurple
 highlight! link TSTag NightflyBlue
 highlight! link TSTagDelimiter NightflyGreen
 highlight! link TSVariableBuiltin NightflyGreen
