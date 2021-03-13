@@ -254,7 +254,7 @@ exec 'highlight QuickFixLine guibg=' . s:deep_blue
 exec 'highlight Delimiter guifg=' . s:white
 
 " Neovim only highlight groups
-exec 'highlight Whitespace guifg=' . s:deep_blue
+exec 'highlight Whitespace guifg=' . s:regal_blue
 exec 'highlight TermCursor guibg=' . s:cadet_blue . ' guifg=bg gui=none'
 
 " Color column (after line 80)
