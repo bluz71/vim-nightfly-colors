@@ -244,9 +244,9 @@ exec 'highlight SignColumn guibg=bg guifg=' . s:green
 exec 'highlight Todo guibg=' . s:yellow . ' guifg=' . s:black
 exec 'highlight SpecialKey guibg=bg guifg=' . s:blue
 if g:nightflyUnderlineMatchParen
-    exec 'highlight MatchParen guibg=bg guifg=' . s:orange . ' gui=underline'
+    exec 'highlight MatchParen guibg=bg gui=underline'
 else
-    exec 'highlight MatchParen guibg=bg guifg=' . s:orange
+    exec 'highlight MatchParen guibg=' . s:regal_blue
 endif
 exec 'highlight Ignore guifg=' . s:blue
 exec 'highlight Underlined guifg=' . s:green . ' gui=none'
