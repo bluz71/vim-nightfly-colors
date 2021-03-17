@@ -214,15 +214,15 @@ exec 'highlight WildMenu guibg=' . s:cyan_blue . ' guifg=fg'
 
 " Spelling errors
 if g:nightflyUndercurls
-    exec 'highlight SpellBad guibg=bg gui=undercurl guisp=' . s:red
-    exec 'highlight SpellCap guibg=bg gui=undercurl guisp=' . s:blue
-    exec 'highlight SpellRare guibg=bg gui=undercurl guisp=' . s:yellow
-    exec 'highlight SpellLocal guibg=bg gui=undercurl guisp=' . s:blue
+    exec 'highlight SpellBad gui=undercurl guisp=' . s:red
+    exec 'highlight SpellCap gui=undercurl guisp=' . s:blue
+    exec 'highlight SpellRare gui=undercurl guisp=' . s:yellow
+    exec 'highlight SpellLocal gui=undercurl guisp=' . s:blue
 else
-    exec 'highlight SpellBad guibg=bg guifg=' . s:red . ' gui=underline guisp=' . s:red
-    exec 'highlight SpellCap guibg=bg guifg=' . s:blue . ' gui=underline guisp=' . s:blue
-    exec 'highlight SpellRare guibg=bg guifg=' . s:yellow . ' gui=underline guisp=' . s:yellow
-    exec 'highlight SpellLocal guibg=bg guifg=' . s:blue . ' gui=underline guisp=' . s:blue
+    exec 'highlight SpellBad guifg=' . s:red . ' gui=underline guisp=' . s:red
+    exec 'highlight SpellCap guifg=' . s:blue . ' gui=underline guisp=' . s:blue
+    exec 'highlight SpellRare guifg=' . s:yellow . ' gui=underline guisp=' . s:yellow
+    exec 'highlight SpellLocal guifg=' . s:blue . ' gui=underline guisp=' . s:blue
 endif
 
 " Misc
