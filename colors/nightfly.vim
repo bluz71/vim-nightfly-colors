@@ -29,6 +29,7 @@ else " Vim
         finish
     elseif !has('gui_running') && !&termguicolors
         echomsg 'The termguicolors option must be set'
+        echomsg 'Be aware macOS default Vim is broken, use Homebrew Vim instead'
         finish
     endif
 endif
