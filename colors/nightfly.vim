@@ -828,6 +828,14 @@ highlight! link SignifySignAdd NightflyEmeraldAlert
 highlight! link SignifySignChange NightflyPurpleAlert
 highlight! link SignifySignDelete NightflyRedAlert
 
+" gitsigns.nvim plugin
+highlight! link GitSignsAdd NightflyEmeraldAlert
+highlight! link GitSignsChange NightflyPurpleAlert
+highlight! link GitSignsChangeNr NightflyPurpleAlert
+highlight! link GitSignsChangeLn NightflyPurpleAlert
+highlight! link GitSignsChangeDelete NightflyOrangeAlert
+highlight! link GitSignsDelete NightflyRedAlert
+
 " FZF plugin
 exec 'highlight fzf1 guifg=' . s:watermelon . ' guibg=' . s:slate_blue
 exec 'highlight fzf2 guifg=' . s:blue . ' guibg=' . s:slate_blue
