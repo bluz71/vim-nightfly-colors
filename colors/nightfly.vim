@@ -374,7 +374,6 @@ highlight! link scssSelectorName NightflyBlue
 highlight! link dartMetadata NightflyGreen
 highlight! link dartStorageClass NightflyViolet
 highlight! link dartTypedef NightflyViolet
-highlight! link dartUserType NightflyBlue
 
 " Elixir
 highlight! link eelixirDelimiter NightflyWatermelon
