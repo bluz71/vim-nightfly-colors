@@ -285,6 +285,7 @@ exec 'highlight NightflyTurquoise guifg=' . s:turquoise
 exec 'highlight NightflyEmerald guifg=' . s:emerald
 exec 'highlight NightflyGreen guifg=' . s:green
 exec 'highlight NightflyWhiteAlert guibg=bg guifg=' . s:white
+exec 'highlight NightflyCadetBlueAlert guibg=bg guifg=' . s:cadet_blue
 exec 'highlight NightflyYellowAlert guibg=bg guifg=' . s:yellow
 exec 'highlight NightflyOrangeAlert guibg=bg guifg=' . s:orange
 exec 'highlight NightflyRedAlert guibg=bg guifg=' . s:red
@@ -818,20 +819,20 @@ highlight! link LspDiagnosticsFloatingHint NightflyWhite
 
 " GitGutter plugin
 highlight! link GitGutterAdd NightflyEmeraldAlert
-highlight! link GitGutterChange NightflyPurpleAlert
+highlight! link GitGutterChange NightflyCadetBlueAlert
 highlight! link GitGutterChangeDelete NightflyOrangeAlert
 highlight! link GitGutterDelete NightflyRedAlert
 
 " Signify plugin
 highlight! link SignifySignAdd NightflyEmeraldAlert
-highlight! link SignifySignChange NightflyPurpleAlert
+highlight! link SignifySignChange NightflyCadetBlueAlert
 highlight! link SignifySignDelete NightflyRedAlert
 
 " gitsigns.nvim plugin
 highlight! link GitSignsAdd NightflyEmeraldAlert
-highlight! link GitSignsChange NightflyPurpleAlert
-highlight! link GitSignsChangeNr NightflyPurpleAlert
-highlight! link GitSignsChangeLn NightflyPurpleAlert
+highlight! link GitSignsChange NightflyCadetBlueAlert
+highlight! link GitSignsChangeNr NightflyCadetBlueAlert
+highlight! link GitSignsChangeLn NightflyCadetBlueAlert
 highlight! link GitSignsChangeDelete NightflyOrangeAlert
 highlight! link GitSignsDelete NightflyRedAlert
 
