@@ -827,20 +827,20 @@ highlight! link LspDiagnosticsFloatingHint NightflyWhite
 
 " GitGutter plugin
 highlight! link GitGutterAdd NightflyEmeraldAlert
-highlight! link GitGutterChange NightflyCadetBlueAlert
+highlight! link GitGutterChange NightflyBlueAlert
 highlight! link GitGutterChangeDelete NightflyOrangeAlert
 highlight! link GitGutterDelete NightflyRedAlert
 
 " Signify plugin
 highlight! link SignifySignAdd NightflyEmeraldAlert
-highlight! link SignifySignChange NightflyCadetBlueAlert
+highlight! link SignifySignChange NightflyBlueAlert
 highlight! link SignifySignDelete NightflyRedAlert
 
 " gitsigns.nvim plugin
 highlight! link GitSignsAdd NightflyEmeraldAlert
-highlight! link GitSignsChange NightflyCadetBlueAlert
-highlight! link GitSignsChangeNr NightflyCadetBlueAlert
-highlight! link GitSignsChangeLn NightflyCadetBlueAlert
+highlight! link GitSignsChange NightflyBlueAlert
+highlight! link GitSignsChangeNr NightflyBlueAlert
+highlight! link GitSignsChangeLn NightflyBlueAlert
 highlight! link GitSignsChangeDelete NightflyOrangeAlert
 highlight! link GitSignsDelete NightflyRedAlert
 
