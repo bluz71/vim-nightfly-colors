@@ -89,28 +89,28 @@ let s:green      = '#a1cd5e'
 " Specify the colors used by the inbuilt terminal of Neovim and Vim
 if g:nightflyTerminalColors
     if has('nvim')
-        let g:terminal_color_0  = '#1d3b53'
-        let g:terminal_color_1  = '#fc514e'
-        let g:terminal_color_2  = '#a1cd5e'
-        let g:terminal_color_3  = '#e3d18a'
-        let g:terminal_color_4  = '#82aaff'
-        let g:terminal_color_5  = '#c792ea'
-        let g:terminal_color_6  = '#7fdbca'
-        let g:terminal_color_7  = '#a1aab8'
-        let g:terminal_color_8  = '#7c8f8f'
-        let g:terminal_color_9  = '#ff5874'
-        let g:terminal_color_10 = '#21c7a8'
-        let g:terminal_color_11 = '#ecc48d'
-        let g:terminal_color_12 = '#82aaff'
-        let g:terminal_color_13 = '#ae81ff'
-        let g:terminal_color_14 = '#7fdbca'
-        let g:terminal_color_15 = '#d6deeb'
+        let g:terminal_color_0  = s:regal_blue
+        let g:terminal_color_1  = s:red
+        let g:terminal_color_2  = s:green
+        let g:terminal_color_3  = s:yellow
+        let g:terminal_color_4  = s:blue
+        let g:terminal_color_5  = s:violet
+        let g:terminal_color_6  = s:turquoise
+        let g:terminal_color_7  = s:cadet_blue
+        let g:terminal_color_8  = s:grey_blue
+        let g:terminal_color_9  = s:watermelon
+        let g:terminal_color_10 = s:emerald
+        let g:terminal_color_11 = s:tan
+        let g:terminal_color_12 = s:blue
+        let g:terminal_color_13 = s:purple
+        let g:terminal_color_14 = s:turquoise
+        let g:terminal_color_15 = s:white_blue
     else
         let g:terminal_ansi_colors = [
-                    \ '#1d3b53', '#fc514e', '#a1cd5e', '#e3d18a',
-                    \ '#82aaff', '#c792ea', '#7fdbca', '#a1aab8',
-                    \ '#7c8f8f', '#ff5874', '#21c7a8', '#ecc48d',
-                    \ '#82aaff', '#ae81ff', '#7fdbca', '#d6deeb'
+                    \ s:regal_blue, s:red, s:green, s:yellow,
+                    \ s:blue, s:violet, s:turquoise, s:cadet_blue,
+                    \ s:grey_blue, s:watermelon, s:emerald, s:tan,
+                    \ s:blue, s:purple, s:turquoise, s:white_blue
                     \]
     endif
 endif
