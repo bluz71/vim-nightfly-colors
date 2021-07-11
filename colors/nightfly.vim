@@ -55,7 +55,7 @@ let g:nightflyTransparent = get(g:, 'nightflyTransparent', 0)
 
 " By default do not use a customized 'NormalFloat' highlight group (for Neovim
 " floating windows).
-let g:nightflyNormalFloat = get(g:, 'moonflyNormalFloat', 0)
+let g:nightflyNormalFloat = get(g:, 'nightflyNormalFloat', 0)
 
 " Background and foreground
 let s:black      = '#011627'
