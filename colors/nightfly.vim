@@ -601,7 +601,6 @@ highlight! link shCommandSub NightflyReset
 highlight! link shLoop NightflyViolet
 highlight! link shSetList NightflyTurquoise
 highlight! link shShellVariables NightflyGreen
-highlight! link shStatement NightflyReset
 highlight! link shVariable NightflyTurquoise
 
 " TypeScript (leafgarland/typescript-vim)
