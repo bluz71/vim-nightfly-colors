@@ -750,7 +750,8 @@ highlight! link netrwDir NightflyBlue
 highlight! link netrwExe NightflyTan
 highlight! link tagName NightflyTurquoise
 highlight! link Cheat40Header NightflyBlue
-highlight! link Beacon NightflyWhite
+highlight! link yamlBlockMappingKey NightflyBlue
+highlight! link yamlFlowMappingKey NightflyBlue
 if g:nightflyUnderlineMatchParen
     exec 'highlight MatchWord gui=underline guisp=' . s:orange
 else
