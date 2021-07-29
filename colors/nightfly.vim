@@ -824,6 +824,7 @@ highlight! link LspDiagnosticsFloatingInformation NightflyBlue
 highlight! link LspDiagnosticsVirtualTextHint NightflySteelBlue
 highlight! link LspDiagnosticsSignHint NightflyWhiteAlert
 highlight! link LspDiagnosticsFloatingHint NightflyWhite
+highlight! link LspSignatureActiveParameter NightflyRegalBlue
 
 " GitGutter plugin
 highlight! link GitGutterAdd NightflyEmeraldAlert
