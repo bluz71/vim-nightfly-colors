@@ -304,7 +304,7 @@ exec 'highlight NightflyEmeraldAlert guibg=bg guifg=' . s:emerald
 " Neovim Treesitter
 highlight! link TSAnnotation NightflyViolet
 highlight! link TSAttribute NightflyBlue
-highlight! link TSConstant NightflyPurple
+highlight! link TSConstant NightflyTurquoise
 highlight! link TSConstBuiltin NightflyGreen
 highlight! link TSConstMacro NightflyViolet
 highlight! link TSConstructor NightflyEmerald
@@ -319,6 +319,7 @@ highlight! link TSSymbol NightflyPurple
 highlight! link TSTag NightflyBlue
 highlight! link TSTagDelimiter NightflyGreen
 highlight! link TSVariableBuiltin NightflyGreen
+highlight! link bashTSParameter NightflyTurquoise
 
 " C/C++
 highlight! link cDefine NightflyViolet
