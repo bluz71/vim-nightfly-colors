@@ -432,7 +432,7 @@ highlight! link haskellType NightflyBlue
 highlight! link haskellWhere NightflyViolet
 
 " HTML
-highlight! link htmlArg NightflyBlue
+highlight! link htmlArg NightflyTurquoise
 highlight! link htmlLink NightflyGreen
 highlight! link htmlEndTag NightflyPurple
 highlight! link htmlH1 NightflyWatermelon
