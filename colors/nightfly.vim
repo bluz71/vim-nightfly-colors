@@ -7,7 +7,6 @@
 " License: MIT (https://opensource.org/licenses/MIT)
 
 highlight clear
-set background=dark
 if exists('syntax_on')
     syntax reset
 endif
@@ -715,14 +714,6 @@ highlight! link NERDTreeGitStatusRenamed NightflyBlue
 highlight! link NERDTreeGitStatusStaged NightflyBlue
 highlight! link NERDTreeGitStatusUntracked NightflyRed
 
-" vimfiler plugin
-highlight! link vimfilerClosedFile NightflyBlue
-highlight! link vimfilerMarkedFile NightflyOrange
-highlight! link vimfilerNonMark NightflyGreen
-highlight! link vimfilerNormalFile NightflyWhite
-highlight! link vimfilerOpenedFile NightflyBlue
-highlight! link vimfilerROFile NightflyGreyBlue
-
 " fern.vim plugin
 highlight! link FernBranchSymbol NightflyGreen
 highlight! link FernBranchText NightflyBlue
@@ -766,23 +757,6 @@ exec 'highlight DiffAdd guibg=' . s:emerald . ' guifg=bg'
 exec 'highlight DiffChange guibg=' . s:slate_blue
 exec 'highlight DiffDelete guibg=' . s:slate_blue . ' guifg=' . s:watermelon ' gui=none'
 exec 'highlight DiffText guibg=' . s:blue . ' guifg=bg gui=none'
-
-" Neomake plugin
-if g:nightflyUndercurls
-    exec 'highlight NeomakeError guibg=bg gui=undercurl guisp=' . s:red
-    exec 'highlight NeomakeWarning guibg=bg gui=undercurl guisp=' . s:yellow
-    exec 'highlight NeomakeInfo guibg=bg gui=undercurl guisp=' . s:blue
-    exec 'highlight NeomakeMessage guibg=bg gui=undercurl guisp=' . s:white
-else
-    exec 'highlight NeomakeError guibg=bg'
-    exec 'highlight NeomakeWarning guibg=bg'
-    exec 'highlight NeomakeInfo guibg=bg'
-    exec 'highlight NeomakeMessage guibg=bg'
-endif
-highlight! link NeomakeErrorSign NightflyRedAlert
-highlight! link NeomakeWarningSign NightflyYellowAlert
-highlight! link NeomakeInfoSign NightflyBlueAlert
-highlight! link NeomakeMessageSign NightflyWhiteAlert
 
 " ALE plugin
 if g:nightflyUndercurls
@@ -888,3 +862,5 @@ exec 'highlight BufferVisibleSign  guibg=' . s:dark_blue . '  guifg=' . s:grey_b
 exec 'highlight BufferInactive     guibg=' . s:slate_blue . ' guifg=' . s:grey_blue
 exec 'highlight BufferInactiveMod  guibg=' . s:slate_blue . ' guifg=' . s:tan
 exec 'highlight BufferInactiveSign guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue
+
+set background=dark
