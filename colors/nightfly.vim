@@ -114,6 +114,13 @@ if g:nightflyTerminalColors
     endif
 endif
 
+" Background and text
+if g:nightflyTransparent
+    exec 'highlight Normal guibg=NONE' . ' guifg=' . s:white
+else
+    exec 'highlight Normal guibg=' . s:black . ' guifg=' . s:white
+endif
+
 " Custom nightfly highlight groups
 exec 'highlight NightflyReset guifg=fg'
 exec 'highlight NightflyWhite guifg=' . s:white
@@ -142,13 +149,6 @@ exec 'highlight NightflyRedAlert guibg=bg guifg=' . s:red
 exec 'highlight NightflyPurpleAlert guibg=bg guifg=' . s:purple
 exec 'highlight NightflyBlueAlert guibg=bg guifg=' . s:blue
 exec 'highlight NightflyEmeraldAlert guibg=bg guifg=' . s:emerald
-
-" Background and text
-if g:nightflyTransparent
-    exec 'highlight Normal guibg=NONE' . ' guifg=' . s:white
-else
-    exec 'highlight Normal guibg=' . s:black . ' guifg=' . s:white
-endif
 
 " Color of mode text, -- INSERT --
 exec 'highlight ModeMsg guifg=' . s:cadet_blue . ' gui=none'
@@ -193,16 +193,6 @@ highlight! link Exception NightflyWatermelon
 " ifdef/endif
 highlight! link PreProc NightflyWatermelon
 
-" Status, split and tab lines
-exec 'highlight StatusLine cterm=none guibg=' . s:slate_blue . ' guifg=' . s:white . ' gui=none'
-exec 'highlight StatusLineNC cterm=none guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue . ' gui=none'
-exec 'highlight VertSplit cterm=none guibg=' . s:slate_blue . ' guifg=' . s:slate_blue . ' gui=none'
-exec 'highlight Tabline cterm=none guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue . ' gui=none'
-exec 'highlight TablineSel cterm=none guibg=' . s:slate_blue . ' guifg=' . s:blue . ' gui=none'
-exec 'highlight TablineFill cterm=none guibg=' . s:slate_blue . ' guifg=' . s:slate_blue . ' gui=none'
-exec 'highlight StatusLineTerm cterm=none guibg=' . s:slate_blue . ' guifg=' . s:white . ' gui=none'
-exec 'highlight StatusLineTermNC cterm=none guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue . ' gui=none'
-
 " case in switch statement
 highlight! link Label NightflyTurquoise
 
@@ -225,6 +215,19 @@ highlight! link Special NightflyWatermelon
 " if, else
 exec 'highlight Statement guifg=' . s:violet . ' gui=none'
 
+" struct, union, enum, typedef
+highlight! link Structure NightflyIndigo
+
+" Status, split and tab lines
+exec 'highlight StatusLine cterm=none guibg=' . s:slate_blue . ' guifg=' . s:white . ' gui=none'
+exec 'highlight StatusLineNC cterm=none guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue . ' gui=none'
+exec 'highlight VertSplit cterm=none guibg=' . s:slate_blue . ' guifg=' . s:slate_blue . ' gui=none'
+exec 'highlight Tabline cterm=none guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue . ' gui=none'
+exec 'highlight TablineSel cterm=none guibg=' . s:slate_blue . ' guifg=' . s:blue . ' gui=none'
+exec 'highlight TablineFill cterm=none guibg=' . s:slate_blue . ' guifg=' . s:slate_blue . ' gui=none'
+exec 'highlight StatusLineTerm cterm=none guibg=' . s:slate_blue . ' guifg=' . s:white . ' gui=none'
+exec 'highlight StatusLineTermNC cterm=none guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue . ' gui=none'
+
 " Visual selection
 exec 'highlight Visual guibg=' . s:regal_blue
 exec 'highlight VisualNOS guibg=' . s:regal_blue . ' guifg=fg gui=none'
@@ -234,9 +237,6 @@ exec 'highlight VisualInDiff guibg=' . s:regal_blue . ' guifg=' . s:white
 exec 'highlight Error guibg=bg guifg=' . s:red
 exec 'highlight ErrorMsg guibg=bg guifg=' . s:red
 exec 'highlight WarningMsg guibg=bg guifg=' . s:orange
-
-" struct, union, enum, typedef
-highlight! link Structure NightflyIndigo
 
 " Auto-text-completion menu
 exec 'highlight Pmenu guibg=' . s:deep_blue . ' guifg=fg'
