@@ -848,6 +848,13 @@ if has('nvim')
     highlight! link LspDiagnosticsFloatingHint NightflyWhite
     highlight! link LspSignatureActiveParameter NightflyRegalBlue
 
+    " nvim-tree.lua plugin
+    highlight! link NvimTreeFolderName NightflyBlue
+    highlight! link NvimTreeRootFolder NightflyPurple
+    highlight! link NvimTreeFolderIcon NightflyCadetBlue
+    highlight! link NvimTreeSpecialFile NightflyYellow
+    highlight! link NvimTreeIndentMarker NightflyCadetBlue
+
     " gitsigns.nvim plugin
     highlight! link GitSignsAdd NightflyEmeraldAlert
     highlight! link GitSignsChange NightflyYellowAlert
