@@ -124,6 +124,7 @@ endif
 " Custom nightfly highlight groups
 exec 'highlight NightflyReset guifg=fg'
 exec 'highlight NightflyWhite guifg=' . s:white
+exec 'highlight NightflySlateBlue guifg=' . s:slate_blue
 exec 'highlight NightflyRegalBlue guifg=' . s:regal_blue
 exec 'highlight NightflySteelBlue guifg=' . s:steel_blue
 exec 'highlight NightflyCadetBlue guifg=' . s:cadet_blue
@@ -589,7 +590,7 @@ highlight! link rustStructure NightflyViolet
 highlight! link rustTrait NightflyEmerald
 highlight! link rustType NightflyEmerald
 
-" Scala, note link highlighting does not work (I don't know why)
+" Scala (note, link highlighting does not work, I don't know why)
 exec 'highlight scalaCapitalWord guifg=' . s:blue
 exec 'highlight scalaCommentCodeBlock guifg=' . s:cadet_blue
 exec 'highlight scalaInstanceDeclaration guifg=' . s:turquoise
@@ -849,11 +850,16 @@ if has('nvim')
     highlight! link LspSignatureActiveParameter NightflyRegalBlue
 
     " nvim-tree.lua plugin
-    highlight! link NvimTreeFolderName NightflyBlue
-    highlight! link NvimTreeRootFolder NightflyPurple
     highlight! link NvimTreeFolderIcon NightflyCadetBlue
-    highlight! link NvimTreeSpecialFile NightflyYellow
+    highlight! link NvimTreeFolderName NightflyBlue
     highlight! link NvimTreeIndentMarker NightflyCadetBlue
+    highlight! link NvimTreeRootFolder NightflyPurple
+    highlight! link NvimTreeSpecialFile NightflyYellow
+
+    " telescope.nvim plugin
+    highlight! link TelescopeBorder NightflySlateBlue
+    highlight! link TelescopeMatching NightflyOrange
+    highlight! link TelescopePromptPrefix NightflyBlue
 
     " gitsigns.nvim plugin
     highlight! link GitSignsAdd NightflyEmeraldAlert
