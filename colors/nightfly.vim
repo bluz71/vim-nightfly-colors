@@ -659,12 +659,14 @@ highlight! link typescriptXHRMethod NightflyBlue
 
 " Vimscript
 highlight! link vimBracket NightflyBlue
-highlight! link vimCommand NightflyOrange
+highlight! link vimCommand NightflyViolet
 highlight! link vimCommentTitle NightflyViolet
 highlight! link vimEnvvar NightflyWatermelon
 highlight! link vimFuncName NightflyBlue
 highlight! link vimFuncSID NightflyBlue
 highlight! link vimFunction NightflyBlue
+highlight! link vimHighlight NightflyBlue
+highlight! link vimNotFunc NightflyViolet
 highlight! link vimNotation NightflyBlue
 highlight! link vimOption NightflyTurquoise
 highlight! link vimParenSep NightflyWhite
