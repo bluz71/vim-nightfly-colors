@@ -873,8 +873,10 @@ if has('nvim')
     highlight! link NvimTreeFolderIcon NightflyCadetBlue
     highlight! link NvimTreeFolderName NightflyBlue
     highlight! link NvimTreeIndentMarker NightflyCadetBlue
+    highlight! link NvimTreeOpenedFolderName NightflyBlue
     highlight! link NvimTreeRootFolder NightflyPurple
     highlight! link NvimTreeSpecialFile NightflyYellow
+    highlight! link NvimTreeWindowPicker DiffText
 
     " telescope.nvim plugin
     highlight! link TelescopeBorder NightflySlateBlue
