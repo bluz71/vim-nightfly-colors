@@ -98,7 +98,7 @@ if g:nightflyTerminalColors
         let g:terminal_color_4  = s:blue
         let g:terminal_color_5  = s:violet
         let g:terminal_color_6  = s:turquoise
-        let g:terminal_color_7  = s:cadet_blue
+        let g:terminal_color_7  = s:white
         let g:terminal_color_8  = s:grey_blue
         let g:terminal_color_9  = s:watermelon
         let g:terminal_color_10 = s:emerald
@@ -110,7 +110,7 @@ if g:nightflyTerminalColors
     else
         let g:terminal_ansi_colors = [
                     \ s:regal_blue, s:red, s:green, s:yellow,
-                    \ s:blue, s:violet, s:turquoise, s:cadet_blue,
+                    \ s:blue, s:violet, s:turquoise, s:white,
                     \ s:grey_blue, s:watermelon, s:emerald, s:tan,
                     \ s:blue, s:purple, s:turquoise, s:white_blue
                     \]
