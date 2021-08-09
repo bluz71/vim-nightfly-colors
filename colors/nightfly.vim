@@ -52,12 +52,12 @@ let g:nightflyItalics = get(g:, 'nightflyItalics', 1)
 " By default do not use a transparent background in GUI versions of Vim.
 let g:nightflyTransparent = get(g:, 'nightflyTransparent', 0)
 
+" By default do display vertical split columns.
+let g:nightflyVertSplits = get(g:, 'nightflyVertSplits', 1)
+
 " By default do not use a customized 'NormalFloat' highlight group (for Neovim
 " floating windows).
 let g:nightflyNormalFloat = get(g:, 'nightflyNormalFloat', 0)
-
-" By default display panel separators
-let g:nightflyVertSplits = get(g:, 'nightflyVertSplits', 1)
 
 " Background and foreground
 let s:black      = '#011627'
@@ -222,7 +222,7 @@ exec 'highlight Statement guifg=' . s:violet . ' gui=none'
 " struct, union, enum, typedef
 highlight! link Structure NightflyIndigo
 
-" Status, split and tab lines
+" Statusline, splits and tab lines
 exec 'highlight StatusLine cterm=none guibg=' . s:slate_blue . ' guifg=' . s:white . ' gui=none'
 exec 'highlight StatusLineNC cterm=none guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue . ' gui=none'
 exec 'highlight Tabline cterm=none guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue . ' gui=none'
@@ -230,7 +230,6 @@ exec 'highlight TablineSel cterm=none guibg=' . s:slate_blue . ' guifg=' . s:blu
 exec 'highlight TablineFill cterm=none guibg=' . s:slate_blue . ' guifg=' . s:slate_blue . ' gui=none'
 exec 'highlight StatusLineTerm cterm=none guibg=' . s:slate_blue . ' guifg=' . s:white . ' gui=none'
 exec 'highlight StatusLineTermNC cterm=none guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue . ' gui=none'
-
 if g:nightflyVertSplits
   exec 'highlight VertSplit cterm=none guibg=' . s:slate_blue . ' guifg=' . s:slate_blue . ' gui=none'
 else

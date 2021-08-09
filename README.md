@@ -190,6 +190,15 @@ to your initialization file:
 let g:nightflyTransparent = 1
 ```
 
+The `g:nightflyVertSplits` option specifies whether to show vertical split
+columns. By default vertical split columns will be visible. If you would like
+vertical split columns to not be visible then add the following to your
+configuration:
+
+```viml
+let g:nightflyVertSplits = 0
+```
+
 The `g:nightflyNormalFloat` option specifies whether to use nightfly background
 and foreground colors in Neovim floating windows. By default this options is
 **disabled**, hence, Neovim floating windows will usually be styled with popup
@@ -198,14 +207,6 @@ following to your configuration:
 
 ```viml
 let g:nightflyNormalFloat = 1
-```
-
-The `g:nightflyVertSplits` option specifies whether to show vertical panel
-separators. By default they will be visible, setting it to 0 will make them 
-the same color as the background.
-
-```viml
-let g:nightflyVertSplits = 0
 ```
 
 :bulb: If the above option is set then it is highly recommended to enable
