@@ -881,7 +881,9 @@ if has('nvim')
     " telescope.nvim plugin
     highlight! link TelescopeBorder NightflySlateBlue
     highlight! link TelescopeMatching NightflyOrange
+    highlight! link TelescopeMultiSelection NightflyWatermelon
     highlight! link TelescopePromptPrefix NightflyBlue
+    highlight! link TelescopeSelectionCaret NightflyWatermelon
 
     " gitsigns.nvim plugin
     highlight! link GitSignsAdd NightflyEmeraldAlert
