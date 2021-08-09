@@ -200,6 +200,14 @@ following to your configuration:
 let g:nightflyNormalFloat = 1
 ```
 
+The `g:nightflyVertSplits` option specifies whether to show vertical panel
+separators. By default they will be visible, setting it to 0 will make them 
+the same color as the background.
+
+```viml
+let g:nightflyVertSplits = 0
+```
+
 :bulb: If the above option is set then it is highly recommended to enable
 floating window borders to distinguish between the edit and floating windows in
 Neovim's LSP client, for example:

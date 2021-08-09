@@ -56,6 +56,9 @@ let g:nightflyTransparent = get(g:, 'nightflyTransparent', 0)
 " floating windows).
 let g:nightflyNormalFloat = get(g:, 'nightflyNormalFloat', 0)
 
+" By default display panel separators
+let g:nightflyVertSplits = get(g:, 'nightflyVertSplits', 1)
+
 " Background and foreground
 let s:black      = '#011627'
 let s:white      = '#c3ccdc'
@@ -222,12 +225,17 @@ highlight! link Structure NightflyIndigo
 " Status, split and tab lines
 exec 'highlight StatusLine cterm=none guibg=' . s:slate_blue . ' guifg=' . s:white . ' gui=none'
 exec 'highlight StatusLineNC cterm=none guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue . ' gui=none'
-exec 'highlight VertSplit cterm=none guibg=' . s:slate_blue . ' guifg=' . s:slate_blue . ' gui=none'
 exec 'highlight Tabline cterm=none guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue . ' gui=none'
 exec 'highlight TablineSel cterm=none guibg=' . s:slate_blue . ' guifg=' . s:blue . ' gui=none'
 exec 'highlight TablineFill cterm=none guibg=' . s:slate_blue . ' guifg=' . s:slate_blue . ' gui=none'
 exec 'highlight StatusLineTerm cterm=none guibg=' . s:slate_blue . ' guifg=' . s:white . ' gui=none'
 exec 'highlight StatusLineTermNC cterm=none guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue . ' gui=none'
+
+if g:nightflyVertSplits
+  exec 'highlight VertSplit cterm=none guibg=' . s:slate_blue . ' guifg=' . s:slate_blue . ' gui=none'
+else
+  exec 'highlight VertSplit cterm=none guibg=' . s:black . ' guifg=' . s:black . ' gui=none'
+end
 
 " Visual selection
 exec 'highlight Visual guibg=' . s:regal_blue
