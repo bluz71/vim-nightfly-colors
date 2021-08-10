@@ -201,7 +201,7 @@ highlight! link PreProc NightflyWatermelon
 highlight! link Label NightflyTurquoise
 
 " end-of-line '$', end-of-file '~'
-exec 'highlight NonText guifg=' . s:orange . ' gui=none'
+exec 'highlight NonText guifg=' . s:steel_blue . ' gui=none'
 
 " sizeof
 highlight! link Operator NightflyWatermelon
