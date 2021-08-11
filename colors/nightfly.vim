@@ -126,6 +126,7 @@ endif
 
 " Custom nightfly highlight groups
 exec 'highlight NightflyReset guifg=fg'
+exec 'highlight NightflyVisual guibg=' . s:regal_blue
 exec 'highlight NightflyWhite guifg=' . s:white
 exec 'highlight NightflySlateBlue guifg=' . s:slate_blue
 exec 'highlight NightflyRegalBlue guifg=' . s:regal_blue
@@ -237,7 +238,7 @@ else
 end
 
 " Visual selection
-exec 'highlight Visual guibg=' . s:regal_blue
+highlight! link Visual NightflyVisual
 exec 'highlight VisualNOS guibg=' . s:regal_blue . ' guifg=fg gui=none'
 exec 'highlight VisualInDiff guibg=' . s:regal_blue . ' guifg=' . s:white
 
@@ -287,7 +288,7 @@ exec 'highlight SpecialKey guibg=bg guifg=' . s:blue
 if g:nightflyUnderlineMatchParen
     exec 'highlight MatchParen guibg=bg gui=underline'
 else
-    exec 'highlight MatchParen guibg=' . s:regal_blue
+    highlight! link MatchParen NightflyVisual
 endif
 exec 'highlight Ignore guifg=' . s:blue
 exec 'highlight Underlined guifg=' . s:green . ' gui=none'
@@ -884,6 +885,13 @@ if has('nvim')
     highlight! link TelescopeMultiSelection NightflyWatermelon
     highlight! link TelescopePromptPrefix NightflyBlue
     highlight! link TelescopeSelectionCaret NightflyWatermelon
+
+    " Snap plugin
+    highlight! link SnapBorder NightflySlateBlue
+    highlight! link SnapMultiSelect NightflyWatermelon
+    highlight! link SnapPosition NightflyOrange
+    highlight! link SnapPrompt NightflyBlue
+    highlight! link SnapSelect NightflyVisual
 
     " gitsigns.nvim plugin
     highlight! link GitSignsAdd NightflyEmeraldAlert
