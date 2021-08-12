@@ -886,13 +886,6 @@ if has('nvim')
     highlight! link TelescopePromptPrefix NightflyBlue
     highlight! link TelescopeSelectionCaret NightflyWatermelon
 
-    " Snap plugin
-    highlight! link SnapBorder NightflySlateBlue
-    highlight! link SnapMultiSelect NightflyWatermelon
-    highlight! link SnapPosition NightflyOrange
-    highlight! link SnapPrompt NightflyBlue
-    highlight! link SnapSelect NightflyVisual
-
     " gitsigns.nvim plugin
     highlight! link GitSignsAdd NightflyEmeraldAlert
     highlight! link GitSignsChange NightflyYellowAlert
