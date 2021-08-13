@@ -118,6 +118,14 @@ The _nightfly_ color scheme also supports
 [vim-airline](https://github.com/vim-airline/vim-airline). With modern versions
 of _vim-airline_ the _nightfly_ theme will be automatically loaded.
 
+The [lualine.nvim](https://github.com/hoob3rt/lualine.nvim) Neovim-only
+statusline plugin ships with a _nightfly_ theme that can be set as follows in
+your initialization file:
+
+```lua
+require('lualine').setup({options = {theme = 'nightfly'}})
+```
+
 Alternatively,
 [vim-moonfly-statusline](https://github.com/bluz71/vim-moonfly-statusline) is
 available for those that want a simple yet informative status line. After the
@@ -129,9 +137,8 @@ let g:moonflyIgnoreDefaultColors = 1
 ```
 
 This option will tell _moonfly-statusline_ to not use the default
-[moonfly](https://github.com/bluz71/vim-moonfly-colors) colors of that plugin,
-but instead use the specified `statusline` colors defined by this _nightfly_
-color scheme.
+[moonfly](https://github.com/bluz71/vim-moonfly-colors) colors, but instead use
+the specified `statusline` colors defined by this _nightfly_ color scheme.
 
 Options
 -------
