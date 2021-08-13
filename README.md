@@ -114,13 +114,13 @@ installed, please add the following to your initialization file:
 let g:lightline = { 'colorscheme': 'nightfly' }
 ```
 
-The _nightfly_ color scheme also supports
+The _nightfly_ color scheme supports
 [vim-airline](https://github.com/vim-airline/vim-airline). With modern versions
 of _vim-airline_ the _nightfly_ theme will be automatically loaded.
 
-The [lualine.nvim](https://github.com/hoob3rt/lualine.nvim) Neovim-only
-statusline plugin ships with a _nightfly_ theme that can be set as follows in
-your initialization file:
+The _nightfly_ color scheme supports
+[lualine.nvim](https://github.com/hoob3rt/lualine.nvim). To enable the
+_moonfly_ theme please add the following to your initialization file:
 
 ```lua
 require('lualine').setup({options = {theme = 'nightfly'}})
