@@ -6,9 +6,12 @@
 " URL:     github.com/bluz71/vim-nightfly-guicolors
 " License: MIT (https://opensource.org/licenses/MIT)
 
-highlight clear
-if exists('syntax_on')
-    syntax reset
+" Clear highlights and reset syntax only when changing colorschemes.
+if exists('g:colors_name')
+    highlight clear
+    if exists('syntax_on')
+        syntax reset
+    endif
 endif
 let g:colors_name='nightfly'
 
