@@ -617,7 +617,6 @@ exec 'highlight scalaCapitalWord guifg=' . s:blue
 exec 'highlight scalaCommentCodeBlock guifg=' . s:cadet_blue
 exec 'highlight scalaInstanceDeclaration guifg=' . s:turquoise
 exec 'highlight scalaKeywordModifier guifg=' . s:green
-exec 'highlight scalaSpecial guifg=' . s:turquoise
 exec 'highlight scalaSpecial guifg=' . s:watermelon
 
 " Shell scripts
