@@ -885,6 +885,7 @@ if has('nvim')
     highlight! link TelescopeBorder NightflySlateBlue
     highlight! link TelescopeMatching NightflyOrange
     highlight! link TelescopeMultiSelection NightflyWatermelon
+    highlight! link TelescopePreviewMatch NightflyVisual
     highlight! link TelescopePromptPrefix NightflyBlue
     highlight! link TelescopeSelectionCaret NightflyWatermelon
 
