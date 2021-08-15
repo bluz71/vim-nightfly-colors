@@ -1,10 +1,12 @@
 ![nightfly](https://raw.githubusercontent.com/bluz71/misc-binaries/master/headings/nightfly.png)
 ==========
 
-_nightfly_ is a dark GUI color scheme for Vim and Neovim heavily inspired by
-Sarah Drasner's [Night Owl](https://github.com/sdras/night-owl-vscode-theme)
-theme mixed with a dash of my own
-[moonfly](https://github.com/bluz71/vim-moonfly-colors) theme.
+_nightfly_ is a dark GUI color scheme for Vim and Neovim that has taken
+inspiration from:
+
+- [Night Owl](https://github.com/sdras/night-owl-vscode-theme)
+
+- [moonfly](https://github.com/bluz71/vim-moonfly-colors)
 
 Be aware, the _nightfly_ color scheme does incrementally change from time to
 time, primarily with regard to language and plugin theming.
@@ -14,8 +16,8 @@ Color Palette
 
 ![palette](https://raw.githubusercontent.com/bluz71/misc-binaries/master/nightfly/nightfly-palette.png)
 
-Prerequisites
--------------
+:zap: Prerequisites
+-------------------
 
 _nightfly_ is a **GUI-only** Vim color scheme.
 
@@ -92,128 +94,212 @@ Plugins explicity styled
 Installation
 ------------
 
-Use your favoured plugin manager to install **bluz71/vim-nightfly-guicolors**
-then set the colorscheme in your initialization file.
+Install the **bluz71/vim-nightfly-colors** colorscheme with your preferred
+plugin manager.
 
-If using [vim-plug](https://github.com/junegunn/vim-plug) do the following:
+[vim-plug](https://github.com/junegunn/vim-plug):
 
-1. Add `Plug 'bluz71/vim-nightfly-guicolors'` to your initialization file
-2. Run `:PlugInstall`
-3. Add `colorscheme nightfly` to your initialization file, make sure this line
-   appears **after** the _Plug_ declaration.
+```viml
+Plug 'bluz71/vim-nightfly-colors'
+```
 
-Status line
------------
+[packer.nvim](https://github.com/wbthomason/packer.nvim):
 
-The _nightfly_ color scheme supports
-[lightline.vim](https://github.com/itchyny/lightline.vim). To enable the
-_nightfly_ lightline colorscheme, after the _lightline.vim_ plugin has been
-installed, please add the following to your initialization file:
+```lua
+use 'bluz71/vim-nightfly-colors'
+```
+
+Usage
+-----
+
+Enable the colorscheme after the plugin declaration.
+
+```viml
+" Vimscript initialization file
+colorscheme nightfly
+```
+
+```lua
+-- Lua initialization file
+vim.cmd [[colorscheme nightfly]]
+```
+
+Statusline
+----------
+
+- The _nightfly_ color scheme supports
+  [lightline.vim](https://github.com/itchyny/lightline.vim). To enable the
+  _nightfly_ lightline colorscheme please add the following to your
+  initialization file:
 
 ```viml
 let g:lightline = { 'colorscheme': 'nightfly' }
 ```
 
-The _nightfly_ color scheme supports
-[vim-airline](https://github.com/vim-airline/vim-airline). With modern versions
-of _vim-airline_ the _nightfly_ theme will be automatically loaded.
+- The _nightfly_ color scheme supports
+  [vim-airline](https://github.com/vim-airline/vim-airline). For modern
+  versions of _vim-airline_ the _nightfly_ theme will be automatically loaded.
 
-The _nightfly_ color scheme supports
-[lualine.nvim](https://github.com/hoob3rt/lualine.nvim). To enable the
-_moonfly_ theme please add the following to your initialization file:
+- The _nightfly_ color scheme supports
+  [lualine.nvim](https://github.com/hoob3rt/lualine.nvim). To enable the
+  _nightfly_ theme please add the following to your initialization file:
 
 ```lua
 require('lualine').setup({options = {theme = 'nightfly'}})
 ```
 
-Alternatively,
-[vim-moonfly-statusline](https://github.com/bluz71/vim-moonfly-statusline) is
-available for those that want a simple yet informative status line. After the
-_vim-moonfly_statusline_ plugin has been installed, please add the following to
-your initialization file:
+- Lastly,
+  [vim-moonfly-statusline](https://github.com/bluz71/vim-moonfly-statusline) is
+  available for those that want a simple yet informative status line. Please add
+  the following to your initialization file to indicate to _moonfly-statusline_
+  that `statusline` colors defined by  the_nightfly_ color scheme should be
+  preferenced:
 
 ```viml
+" Vimscript initialization file
 let g:moonflyIgnoreDefaultColors = 1
 ```
 
-This option will tell _moonfly-statusline_ to not use the default
-[moonfly](https://github.com/bluz71/vim-moonfly-colors) colors, but instead use
-the specified `statusline` colors defined by this _nightfly_ color scheme.
+```lua
+-- Lua initialization file
+vim.g.moonflyIgnoreDefaultColors = 1
+```
 
 Options
 -------
 
-The `g:nightflyCursorColor` option specifies whether to color the cursor or not.
+The `nightflyCursorColor` option specifies whether to color the cursor or not.
 By default the cursor will **NOT** be colored. If you prefer a colored cursor
 then add the following to your initialization file:
 
 ```viml
+" Vimscript initialization file
 let g:nightflyCursorColor = 1
 ```
 
-The `g:nightflyTerminalColors` option specifies whether to use the nightfly
-color palette in `:terminal` windows when `termguicolors` is set. By default
-this option is **enabled**. If you prefer not to use the nightfly color palette
-for the first 16 terminal colors then add the following to your initialization
-file:
+```lua
+-- Lua initialization file
+vim.g.nightflyCursorColor = 1
+```
+
+---
+
+The `nightflyTerminalColors` option specifies whether to use the nightfly color
+palette in `:terminal` windows when `termguicolors` is set. By default this
+option is **enabled**. If you prefer not to use the nightfly color palette for
+the first 16 terminal colors then add the following to your initialization file:
 
 ```viml
+" Vimscript initialization file
 let g:nightflyTerminalColors = 0
 ```
 
-The `g:nightflyUnderlineMatchParen` option specifies whether to underline
+```lua
+-- Lua initialization file
+vim.g.nightflyTerminalColors = 0
+```
+
+---
+
+The `nightflyUnderlineMatchParen` option specifies whether to underline
 matching parentheses. By default this option is **disabled**. If you want to
 underline matching parentheses then add the following to your initialization
 file:
 
 ```viml
+" Vimscript initialization file
 let g:nightflyUnderlineMatchParen = 1
 ```
 
-The `g:nightflyUndercurls` option specifies whether to use undercurls for
+```lua
+-- Lua initialization file
+vuim.g.nightflyUnderlineMatchParen = 1
+```
+
+---
+
+The `nightflyUndercurls` option specifies whether to use undercurls for
 spelling and linting errors in GUI versions of Vim, including terminal Vim with
 `termguicolors` set. By default this option is **enabled**. If you do not like
 the appearance of undercurls then add the following to your initialization file:
 
 ```viml
+" Vimscript initialization file
 let g:nightflyUndercurls = 0
 ```
 
-The `g:nightflyItalics` option specifies whether to use italics for comments and
+```lua
+-- Lua initialization file
+vim.g.nightflyUndercurls = 0
+```
+
+---
+
+The `nightflyItalics` option specifies whether to use italics for comments and
 certain HTML elements in GUI versions of Vim. By default this option is
 **enabled**. If you do not like the appearance of italics then add the following
 to your initialization file:
 
 ```viml
+" Vimscript initialization file
 let g:nightflyItalics = 0
 ```
 
-The `g:nightflyTransparent` option specifies whether to use an opaque or
+```lua
+-- Lua initialization file
+vim.g.nightflyItalics = 0
+```
+
+---
+
+The `nightflyTransparent` option specifies whether to use an opaque or
 transparent background in GUI versions of Vim. By default this option is
 **disabled**. If you would like a transparent background then add the following
 to your initialization file:
 
 ```viml
+" Vimscript initialization file
 let g:nightflyTransparent = 1
 ```
 
-The `g:nightflyVertSplits` option specifies whether to show vertical split
+```lua
+-- Lua initialization file
+vim.g.nightflyTransparent = 1
+```
+
+---
+
+The `nightflyVertSplits` option specifies whether to show vertical split
 columns. By default vertical split columns will be visible. If you would like
 vertical split columns to not be visible then add the following to your
 configuration:
 
 ```viml
+" Vimscript initialization file
 let g:nightflyVertSplits = 0
 ```
 
-The `g:nightflyNormalFloat` option specifies whether to use nightfly background
+```lua
+-- Lua initialization file
+vim.g.nightflyVertSplits = 0
+```
+
+---
+
+The `nightflyNormalFloat` option specifies whether to use nightfly background
 and foreground colors in Neovim floating windows. By default this options is
 **disabled**, hence, Neovim floating windows will usually be styled with popup
 menu colors. If you would like to use nightfly colors instead then add the
 following to your configuration:
 
 ```viml
+" Vimscript initialization file
 let g:nightflyNormalFloat = 1
+```
+
+```lua
+-- Lua initialization file
+vim.g.nightflyNormalFloat = 1
 ```
 
 :bulb: If the above option is set then it is highly recommended to enable
