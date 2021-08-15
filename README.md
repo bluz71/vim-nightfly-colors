@@ -213,7 +213,7 @@ let g:nightflyUnderlineMatchParen = 1
 
 ```lua
 -- Lua initialization file
-vuim.g.nightflyUnderlineMatchParen = 1
+vim.g.nightflyUnderlineMatchParen = 1
 ```
 
 ---
