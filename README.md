@@ -152,7 +152,7 @@ require('lualine').setup({options = {theme = 'nightfly'}})
   [vim-moonfly-statusline](https://github.com/bluz71/vim-moonfly-statusline) is
   available for those that want a simple yet informative status line. Please add
   the following to your initialization file to indicate to _moonfly-statusline_
-  that `statusline` colors defined by  the_nightfly_ color scheme should be
+  that `statusline` colors defined by the _nightfly_ color scheme should be
   preferenced:
 
 ```viml
