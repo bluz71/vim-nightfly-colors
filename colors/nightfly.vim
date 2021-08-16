@@ -741,10 +741,10 @@ highlight! link NERDTreeGitStatusStaged NightflyBlue
 highlight! link NERDTreeGitStatusUntracked NightflyRed
 
 " fern.vim plugin
-highlight! link FernBranchSymbol NightflyGreen
+highlight! link FernBranchSymbol NightflyYellow
 highlight! link FernBranchText NightflyBlue
-highlight! link FernMarkedLine NightflyOrange
-highlight! link FernMarkedText NightflyOrange
+highlight! link FernMarkedLine NightflyWatermelon
+highlight! link FernMarkedText NightflyWatermelon
 highlight! link FernRootSymbol NightflyPurple
 highlight! link FernRootText NightflyPurple
 
