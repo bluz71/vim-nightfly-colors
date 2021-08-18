@@ -881,12 +881,14 @@ if has('nvim')
     highlight! link NvimTreeSpecialFile NightflyYellow
     highlight! link NvimTreeWindowPicker DiffText
 
-    " telescope.nvim plugin
+    " Telescope plugin
     highlight! link TelescopeBorder NightflySlateBlue
     highlight! link TelescopeMatching NightflyOrange
     highlight! link TelescopeMultiSelection NightflyWatermelon
     highlight! link TelescopePreviewMatch NightflyVisual
     highlight! link TelescopePromptPrefix NightflyBlue
+    highlight! link TelescopeResultsDiffAdd NightflyGreen
+    highlight! link TelescopeResultsDiffChange NightflyRed
     highlight! link TelescopeSelectionCaret NightflyWatermelon
 
     " gitsigns.nvim plugin
