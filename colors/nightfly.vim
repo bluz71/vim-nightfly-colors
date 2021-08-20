@@ -310,6 +310,8 @@ if has('nvim')
     exec 'highlight TermCursor guibg=' . s:cadet_blue . ' guifg=bg gui=none'
     if g:nightflyNormalFloat
         exec 'highlight NormalFloat guibg=bg guifg=' . s:cadet_blue
+    else
+        exec 'highlight NormalFloat guibg=' . s:dark_blue . ' guifg=fg'
     endif
     exec 'highlight FloatBorder guibg=bg guifg=' . s:slate_blue
 
