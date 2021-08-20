@@ -11,11 +11,6 @@ inspiration from:
 Be aware, the _nightfly_ color scheme does incrementally change from time to
 time, primarily with regard to language and plugin theming.
 
-Color Palette
--------------
-
-![palette](https://raw.githubusercontent.com/bluz71/misc-binaries/master/nightfly/nightfly-palette.png)
-
 :zap: Prerequisites
 -------------------
 
