@@ -719,7 +719,7 @@ highlight! link TagbarVisibilityPrivate NightflyGreen
 highlight! link TagbarKind NightflyEmerald
 
 " NERDTree plugin
-highlight! link NERDTreeClosable NightflyGreen
+highlight! link NERDTreeClosable NightflyEmerald
 highlight! link NERDTreeCWD NightflyPurple
 highlight! link NERDTreeDir NightflyBlue
 highlight! link NERDTreeDirSlash NightflyWatermelon
@@ -730,7 +730,7 @@ highlight! link NERDTreeHelp NightflyCadetBlue
 highlight! link NERDTreeLinkDir NightflyBlue
 highlight! link NERDTreeLinkFile NightflyBlue
 highlight! link NERDTreeLinkTarget NightflyTurquoise
-highlight! link NERDTreeOpenable NightflyGreen
+highlight! link NERDTreeOpenable NightflyEmerald
 highlight! link NERDTreePart NightflyRegalBlue
 highlight! link NERDTreePartFile NightflyRegalBlue
 highlight! link NERDTreeUp NightflyBlue
