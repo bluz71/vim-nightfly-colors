@@ -282,7 +282,7 @@ vim.g.nightflyVertSplits = 0
 ---
 
 The `nightflyNormalFloat` option specifies whether to use nightfly background
-and foreground colors in Neovim floating windows. By default this options is
+and foreground colors in Neovim floating windows. By default this option is
 **disabled**, hence, Neovim floating windows will usually be styled with popup
 menu colors. If you would like to use nightfly colors instead then add the
 following to your configuration:
