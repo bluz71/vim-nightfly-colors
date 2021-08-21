@@ -319,7 +319,7 @@ setting will usually be required in _~/.tmux.conf_:
 set -ga terminal-overrides ',xterm-256color:Tc'
 ```
 
-Vim, as against Neovim, inside _tmux_, will also require the following setting
+Vim, as against Neovim, inside _tmux_, will also require the following settings
 be added to the `~/.vimrc` file:
 
 ```viml
