@@ -1,15 +1,15 @@
 ![nightfly](https://raw.githubusercontent.com/bluz71/misc-binaries/master/headings/nightfly.png)
 ==========
 
-_nightfly_ is a dark GUI color scheme for Vim and Neovim that has taken
-inspiration from:
+_nightfly_ is a dark GUI color scheme for Vim & Neovim inspired by:
 
 - [Night Owl](https://github.com/sdras/night-owl-vscode-theme)
 
-- [moonfly](https://github.com/bluz71/vim-moonfly-colors)
+- [moonfly](https://github.com/bluz71/vim-moonfly-colors) (note, this is my
+other Vim & Neovim colorscheme)
 
-Be aware, the _nightfly_ color scheme does incrementally change from time to
-time, primarily with regard to language and plugin theming.
+Note, the _nightfly_ color scheme does incrementally change from time to time,
+primarily with regard to language and plugin theming.
 
 :zap: Prerequisites
 -------------------
@@ -41,50 +41,26 @@ Screenshots
 
 The font in use is [Iosevka](https://github.com/be5invis/Iosevka).
 
-Languages explicitly styled
----------------------------
-
-- All Neovim Treesitter highlighted-languages
-- C/C++
-- Clojure
-- CoffeeScript
-- Crystal
-- Elixir
-- Elm
-- Dart
-- Go
-- Haskell
-- Java
-- [JavaScript](https://github.com/pangloss/vim-javascript)
-- Lua
-- Markdown
-- PHP
-- PureScript
-- Python
-- Ruby
-- Rust
-- Scala
-- Shell
-- [TypeScript](https://github.com/HerringtonDarkholme/yats.vim)
-
-Plugins explicity styled
-------------------------
+Styled Plugins
+--------------
 
 - [ALE](https://github.com/w0rp/ale)
 - [barbar.nvim](https://github.com/romgrk/barbar.nvim)
 - [BufExplorer](https://github.com/jlanzarotta/bufexplorer)
 - [clever-f](https://github.com/rhysd/clever-f.vim)
 - [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
-- [fern.vim](https://github.com/lambdalisue/fern.vim)
+- [Fern](https://github.com/lambdalisue/fern.vim)
 - [fzf.vim](https://github.com/junegunn/fzf.vim) (with matching [fly16](https://github.com/bluz71/fly16-bat) [bat](https://github.com/sharkdp/bat) theme)
 - [GitGutter](https://github.com/airblade/vim-gitgutter)
-- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
-- [indentLine](https://github.com/Yggdroot/indentLine)
+- [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
+- [lightline](https://github.com/itchyny/lightline.vim)
+- [Lualine](https://github.com/hoob3rt/lualine.nvim)
 - [NERDTree](https://github.com/scrooloose/nerdtree)
-- [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
+- [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
 - [Signify](https://github.com/mhinz/vim-signify)
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [Tagbar](https://github.com/majutsushi/tagbar)
+- [vim-airline](https://github.com/vim-airline/vim-airline)
 
 Installation
 ------------
@@ -123,7 +99,7 @@ Statusline
 ----------
 
 - The _nightfly_ color scheme supports
-  [lightline.vim](https://github.com/itchyny/lightline.vim). To enable the
+  [lightline](https://github.com/itchyny/lightline.vim). To enable the
   _nightfly_ lightline colorscheme please add the following to your
   initialization file:
 
@@ -136,8 +112,8 @@ let g:lightline = { 'colorscheme': 'nightfly' }
   versions of _vim-airline_ the _nightfly_ theme will be automatically loaded.
 
 - The _nightfly_ color scheme supports
-  [lualine.nvim](https://github.com/hoob3rt/lualine.nvim). To enable the
-  _nightfly_ theme please add the following to your initialization file:
+  [Lualine](https://github.com/hoob3rt/lualine.nvim). To enable the _nightfly_
+  theme please add the following to your initialization file:
 
 ```lua
 require('lualine').setup({options = {theme = 'nightfly'}})
@@ -160,8 +136,8 @@ let g:moonflyIgnoreDefaultColors = 1
 vim.g.moonflyIgnoreDefaultColors = 1
 ```
 
-Options
--------
+:wrench: Options
+----------------
 
 The `nightflyCursorColor` option specifies whether to color the cursor or not.
 By default the cursor will **NOT** be colored. If you prefer a colored cursor
@@ -321,7 +297,7 @@ True Color Terminals
 --------------------
 
 Many modern terminals support [24-bit true
-colors](https://gist.github.com/XVilka/8346728). Current versions of Vim and
+colors](https://gist.github.com/XVilka/8346728). Current versions of Vim &
 Neovim on such terminals support true colors when `set termguicolors` is
 enabled.
 
@@ -347,7 +323,7 @@ set -ga terminal-overrides ',xterm-256color:Tc'
 ```
 
 Vim, as against Neovim, inside _tmux_, will also require the following setting
-be added to initialization file:
+be added to the `~/.vimrc` file:
 
 ```viml
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
@@ -362,6 +338,13 @@ A collection of _nightfly_-flavoured terminal themes are provided:
 - _iTerm2_ users on macOS can import
   [this](terminal_themes/nightfly.itermcolors) color scheme
 
+- [Alacritty](https://github.com/alacritty/alacritty) users can copy
+  [this](terminal_themes/alacritty.yml) theme into their `alacritty.yml`
+  configuration.
+
+- [kitty](https://sw.kovidgoyal.net/kitty) users can use
+  [this](terminal_themes/kitty-theme.conf) theme
+
 - _GNOME Terminal_ users can run
   [this](terminal_themes/gnome-terminal-nightfly.sh) script to create a
   _Nightfly_ profile. Before executing the script, please install the
@@ -369,13 +352,6 @@ A collection of _nightfly_-flavoured terminal themes are provided:
   later), for example `sudo apt install dconf-cli`. After executing the script,
   please set the _cursor_ and _selection_ colors by hand, with the appropriate
   color values listed below, in `Preferences` / `Nightfly` / `Colors`.
-
-- [Alacritty](https://github.com/alacritty/alacritty) users can copy
-  [this](terminal_themes/alacritty.yml) theme into their `alacritty.yml`
-  configuration.
-
-- [kitty](https://sw.kovidgoyal.net/kitty) users can use
-  [this](terminal_themes/kitty-theme.conf) theme
 
 For other terminals please configure appropriately with the following colors:
 

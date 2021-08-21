@@ -1,8 +1,5 @@
 " Dark Vim/Neovim color scheme.
 "
-" Note: Inspiration taken from: Sarah Drasner's Night Owl theme and my own
-" moonfly theme.
-"
 " URL:     github.com/bluz71/vim-nightfly-guicolors
 " License: MIT (https://opensource.org/licenses/MIT)
 
