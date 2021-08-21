@@ -5,27 +5,24 @@ _nightfly_ is a dark GUI color scheme for Vim & Neovim inspired by:
 
 - [Night Owl](https://github.com/sdras/night-owl-vscode-theme)
 
-- [moonfly](https://github.com/bluz71/vim-moonfly-colors) (note, this is my
-other Vim & Neovim colorscheme)
-
-Note, the _nightfly_ color scheme does incrementally change from time to time,
-primarily with regard to language and plugin theming.
+- [moonfly](https://github.com/bluz71/vim-moonfly-colors) (note, this is a dark
+Vim & Neovim colorscheme that I maintain)
 
 :zap: Prerequisites
 -------------------
 
 _nightfly_ is a **GUI-only** Vim color scheme.
 
-A GUI client, such as gvim, or a modern terminal version of Vim/Neovim with
+A GUI client, such as Gvim, or a modern terminal version of Vim/Neovim with
 `termguicolors` enabled in a true-color terminal, will be required. Details
 about true-color terminals are listed below.
 
 _nightfly_ explicitly does **not** support the 256 color `cterm` version of Vim
 due to the number of custom colors required. 256 color terminals only allow 16
 custom colors. I encourage terminal users to use a true-color terminal, such as:
-[iTerm2](https://iterm2.com), [GNOME
-Terminal](https://wiki.gnome.org/Apps/Terminal) or
-[Alacritty](https://github.com/alacritty/alacritty), and enable the
+[iTerm2](https://iterm2.com),
+[Alacritty](https://github.com/alacritty/alacritty), or
+[kitty](https://sw.kovidgoyal.net/kitty/index.html) and enable the
 `termguicolors` option.
 
 Screenshots
@@ -109,7 +106,7 @@ let g:lightline = { 'colorscheme': 'nightfly' }
 
 - The _nightfly_ color scheme supports
   [vim-airline](https://github.com/vim-airline/vim-airline). For modern
-  versions of _vim-airline_ the _nightfly_ theme will be automatically loaded.
+  versions of _vim-airline_ the _nightfly_ theme will automatically be loaded.
 
 - The _nightfly_ color scheme supports
   [Lualine](https://github.com/hoob3rt/lualine.nvim). To enable the _nightfly_
@@ -119,12 +116,12 @@ let g:lightline = { 'colorscheme': 'nightfly' }
 require('lualine').setup({options = {theme = 'nightfly'}})
 ```
 
-- Lastly,
+- Lastly, my own
   [vim-moonfly-statusline](https://github.com/bluz71/vim-moonfly-statusline) is
-  available for those that want a simple yet informative status line. Please add
-  the following to your initialization file to indicate to _moonfly-statusline_
-  that `statusline` colors defined by the _nightfly_ color scheme should be
-  preferenced:
+  available for those that want a very simple yet informative status line.
+  Please add the following to your initialization file to indicate to
+  _moonfly-statusline_ that `statusline` colors defined by the _nightfly_ color
+  scheme should be preferenced:
 
 ```viml
 " Vimscript initialization file
