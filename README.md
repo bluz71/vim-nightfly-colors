@@ -1,7 +1,7 @@
 ![nightfly](https://raw.githubusercontent.com/bluz71/misc-binaries/master/headings/nightfly.png)
 ==========
 
-_nightfly_ is a dark GUI color scheme for Vim & Neovim inspired by:
+_nightfly_ is a dark GUI colorscheme for Vim & Neovim inspired by:
 
 - [Night Owl](https://github.com/sdras/night-owl-vscode-theme)
 
@@ -11,7 +11,7 @@ Vim & Neovim colorscheme that I also maintain)
 :zap: Prerequisites
 -------------------
 
-_nightfly_ is a **GUI-only** Vim color scheme.
+_nightfly_ is a **GUI-only** colorscheme.
 
 A GUI client, such as Gvim, or a modern terminal version of Vim/Neovim with
 `termguicolors` enabled in a true-color terminal, will be required. Details
@@ -95,7 +95,7 @@ vim.cmd [[colorscheme nightfly]]
 Statusline
 ----------
 
-- The _nightfly_ color scheme supports
+- The _nightfly_ colorscheme supports
   [lightline](https://github.com/itchyny/lightline.vim). To enable the
   _nightfly_ lightline colorscheme please add the following to your
   initialization file:
@@ -104,11 +104,11 @@ Statusline
 let g:lightline = { 'colorscheme': 'nightfly' }
 ```
 
-- The _nightfly_ color scheme supports
+- The _nightfly_ colorscheme supports
   [vim-airline](https://github.com/vim-airline/vim-airline). For modern
   versions of _vim-airline_ the _nightfly_ theme will automatically be loaded.
 
-- The _nightfly_ color scheme supports
+- The _nightfly_ colorscheme supports
   [Lualine](https://github.com/hoob3rt/lualine.nvim). To enable the _nightfly_
   theme please add the following to your initialization file:
 
@@ -310,9 +310,9 @@ A list of popular terminals that support true colors:
 - [mintty](https://mintty.github.io)
 
 On terminals that support true colors, and when `termguicolors` is set, the
-_nightfly_ color scheme will emit the correct theme colors.
+_nightfly_ colorscheme will emit the correct theme colors.
 
-For the _nightfly_ color scheme to display correctly inside _tmux_ the following
+For the _nightfly_ colorscheme to display correctly inside _tmux_ the following
 setting will usually be required in _~/.tmux.conf_:
 
 ```
@@ -333,7 +333,7 @@ Terminal Themes
 A collection of _nightfly_-flavoured terminal themes are provided:
 
 - _iTerm2_ users on macOS can import
-  [this](terminal_themes/nightfly.itermcolors) color scheme
+  [this](terminal_themes/nightfly.itermcolors) colorscheme
 
 - [Alacritty](https://github.com/alacritty/alacritty) users can copy
   [this](terminal_themes/alacritty.yml) theme into their `alacritty.yml`
