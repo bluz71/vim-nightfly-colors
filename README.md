@@ -6,7 +6,7 @@ _nightfly_ is a dark GUI color scheme for Vim & Neovim inspired by:
 - [Night Owl](https://github.com/sdras/night-owl-vscode-theme)
 
 - [moonfly](https://github.com/bluz71/vim-moonfly-colors) (note, this is a dark
-Vim & Neovim colorscheme that I maintain)
+Vim & Neovim colorscheme that I also maintain)
 
 :zap: Prerequisites
 -------------------
