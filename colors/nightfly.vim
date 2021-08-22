@@ -871,14 +871,18 @@ if has('nvim')
     highlight! link LspDiagnosticsFloatingHint NightflyWhite
     highlight! link LspSignatureActiveParameter NightflyRegalBlue
 
-    " nvim-tree.lua plugin
-    highlight! link NvimTreeFolderIcon NightflyCadetBlue
+    " NvimTree plugin
+    highlight! link NvimTreeFolderIcon NightflyBlue
     highlight! link NvimTreeFolderName NightflyBlue
-    highlight! link NvimTreeIndentMarker NightflyCadetBlue
+    highlight! link NvimTreeIndentMarker NightflySlateBlue
     highlight! link NvimTreeOpenedFolderName NightflyBlue
     highlight! link NvimTreeRootFolder NightflyPurple
     highlight! link NvimTreeSpecialFile NightflyYellow
-    highlight! link NvimTreeWindowPicker DiffText
+    highlight! link NvimTreeWindowPicker DiffChange
+    exec 'highlight NvimTreeExecFile guifg=' . s:green . ' gui=none'
+    exec 'highlight NvimTreeImageFile guifg=' . s:violet . ' gui=none'
+    exec 'highlight NvimTreeOpenedFile guifg=' . s:yellow . ' gui=none'
+    exec 'highlight NvimTreeSymlink guifg=' . s:turquoise . ' gui=none'
 
     " Telescope plugin
     highlight! link TelescopeBorder NightflySlateBlue
