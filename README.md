@@ -65,19 +65,19 @@ Styled Features & Plugins
 Installation
 ------------
 
-Install the **bluz71/vim-nightfly-colors** colorscheme with your preferred
+Install the **bluz71/vim-nightfly-guicolors** colorscheme with your preferred
 plugin manager.
 
 [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```viml
-Plug 'bluz71/vim-nightfly-colors'
+Plug 'bluz71/vim-nightfly-guicolors'
 ```
 
 [packer.nvim](https://github.com/wbthomason/packer.nvim):
 
 ```lua
-use 'bluz71/vim-nightfly-colors'
+use 'bluz71/vim-nightfly-guicolors'
 ```
 
 Usage
