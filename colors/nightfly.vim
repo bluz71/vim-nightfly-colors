@@ -902,6 +902,12 @@ if has('nvim')
     highlight! link GitSignsChangeDelete NightflyOrangeAlert
     highlight! link GitSignsDelete NightflyRedAlert
 
+    " Hop plugin
+    highlight! link HopNextKey NightflyOrange
+    highlight! link HopNextKey1 NightflyBlue
+    highlight! link HopNextKey2 NightflyWatermelon
+    highlight! link HopUnmatched NightflyGreyBlue
+
     " barbar.nvim plugin
     exec 'highlight BufferCurrent      guibg=' . s:dark_blue . '  guifg=' . s:white
     exec 'highlight BufferCurrentMod   guibg=' . s:dark_blue . '  guifg=' . s:tan
