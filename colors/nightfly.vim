@@ -903,7 +903,7 @@ if has('nvim')
     highlight! link GitSignsDelete NightflyRedAlert
 
     " Hop plugin
-    highlight! link HopNextKey NightflyOrange
+    highlight! link HopNextKey NightflyVisual
     highlight! link HopNextKey1 NightflyBlue
     highlight! link HopNextKey2 NightflyWatermelon
     highlight! link HopUnmatched NightflyGreyBlue
