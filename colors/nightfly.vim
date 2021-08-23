@@ -742,7 +742,7 @@ highlight! link NERDTreeGitStatusUntracked NightflyRed
 " fern.vim plugin
 highlight! link FernBranchSymbol NightflyEmerald
 highlight! link FernBranchText NightflyBlue
-highlight! link FernMarkedLine NightflyWatermelon
+highlight! link FernMarkedLine NightflyYellow
 highlight! link FernMarkedText NightflyWatermelon
 highlight! link FernRootSymbol NightflyPurple
 highlight! link FernRootText NightflyPurple
@@ -903,7 +903,7 @@ if has('nvim')
     highlight! link GitSignsDelete NightflyRedAlert
 
     " Hop plugin
-    highlight! link HopNextKey NightflyVisual
+    highlight! link HopNextKey NightflyYellow
     highlight! link HopNextKey1 NightflyBlue
     highlight! link HopNextKey2 NightflyWatermelon
     highlight! link HopUnmatched NightflyGreyBlue
