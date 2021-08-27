@@ -72,6 +72,7 @@ let s:cyan_blue  = '#296596'
 let s:steel_blue = '#4b6479'
 let s:grey_blue  = '#7c8f8f'
 let s:cadet_blue = '#a1aab8'
+let s:ash_blue   = '#acb4c2'
 let s:white_blue = '#d6deeb'
 " Core theme colors
 let s:yellow     = '#e3d18a'
@@ -131,8 +132,9 @@ exec 'highlight NightflyWhite guifg=' . s:white
 exec 'highlight NightflySlateBlue guifg=' . s:slate_blue
 exec 'highlight NightflyRegalBlue guifg=' . s:regal_blue
 exec 'highlight NightflySteelBlue guifg=' . s:steel_blue
-exec 'highlight NightflyCadetBlue guifg=' . s:cadet_blue
 exec 'highlight NightflyGreyBlue guifg=' . s:grey_blue
+exec 'highlight NightflyCadetBlue guifg=' . s:cadet_blue
+exec 'highlight NightflyAshBlue guifg=' . s:ash_blue
 exec 'highlight NightflyYellow guifg=' . s:yellow
 exec 'highlight NightflyPeach guifg=' . s:peach
 exec 'highlight NightflyTan guifg=' . s:tan
@@ -815,7 +817,7 @@ highlight! link SignifySignDelete NightflyRedAlert
 exec 'highlight fzf1 guifg=' . s:watermelon . ' guibg=' . s:slate_blue
 exec 'highlight fzf2 guifg=' . s:blue . ' guibg=' . s:slate_blue
 exec 'highlight fzf3 guifg=' . s:green . ' guibg=' . s:slate_blue
-exec 'highlight fzfNormal guifg=' . s:cadet_blue
+exec 'highlight fzfNormal guifg=' . s:ash_blue
 exec 'highlight fzfFgPlus guifg=' . s:white_blue
 exec 'highlight fzfBorder guifg=' . s:slate_blue
 let g:fzf_colors = {
@@ -888,7 +890,7 @@ if has('nvim')
     highlight! link TelescopeBorder NightflySlateBlue
     highlight! link TelescopeMatching NightflyOrange
     highlight! link TelescopeMultiSelection NightflyWatermelon
-    highlight! link TelescopeNormal NightflyCadetBlue
+    highlight! link TelescopeNormal NightflyAshBlue
     highlight! link TelescopePreviewMatch NightflyVisual
     highlight! link TelescopePromptPrefix NightflyBlue
     highlight! link TelescopeResultsDiffAdd NightflyGreen
