@@ -272,7 +272,7 @@ endif
 " Misc
 exec 'highlight Question guifg=' . s:green . ' gui=none'
 exec 'highlight MoreMsg guifg=' . s:red . ' gui=none'
-exec 'highlight LineNr guibg=bg guifg=' . s:steel_blue
+exec 'highlight LineNr guibg=bg guifg=' . s:steel_blue . ' gui=none'
 if g:nightflyCursorColor
     exec 'highlight Cursor guifg=bg guibg=' . s:blue
 else
