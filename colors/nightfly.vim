@@ -759,7 +759,7 @@ highlight! link bufExplorerHelp NightflyCadetBlue
 highlight! link bufExplorerSortBy NightflyCadetBlue
 highlight! link CleverFDefaultLabel NightflyWatermelon
 highlight! link CtrlPMatch NightflyOrange
-highlight! link Directory NightflyEmerald
+highlight! link Directory NightflyBlue
 highlight! link HighlightedyankRegion NightflyRegalBlue
 highlight! link jsonKeyword NightflyBlue
 highlight! link jsonBoolean NightflyTurquoise
@@ -891,7 +891,12 @@ if has('nvim')
     highlight! link TelescopeMatching NightflyOrange
     highlight! link TelescopeMultiSelection NightflyWatermelon
     highlight! link TelescopeNormal NightflyAshBlue
+    highlight! link TelescopePreviewDate NightflyWhite
+    highlight! link TelescopePreviewGroup NightflyGreyBlue
+    highlight! link TelescopePreviewLink NightflyTurquoise
     highlight! link TelescopePreviewMatch NightflyVisual
+    highlight! link TelescopePreviewRead NightflyOrange
+    highlight! link TelescopePreviewUser NightflyGreyBlue
     highlight! link TelescopePromptPrefix NightflyBlue
     highlight! link TelescopeResultsDiffAdd NightflyGreen
     highlight! link TelescopeResultsDiffChange NightflyRed
