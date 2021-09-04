@@ -845,6 +845,9 @@ exec 'highlight User5 guibg=' . s:slate_blue . ' guifg=' . s:blue       . ' gui=
 exec 'highlight User6 guibg=' . s:slate_blue . ' guifg=' . s:watermelon . ' gui=none'
 exec 'highlight User7 guibg=' . s:slate_blue . ' guifg=' . s:blue       . ' gui=none'
 
+" Coc plugin
+highlight! link CocUnusedHighlight NightflyWhite
+
 " Neovim only plugins
 if has('nvim')
     " Neovim LSP diagnostics
