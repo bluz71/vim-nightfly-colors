@@ -295,7 +295,8 @@ endif
 exec 'highlight Ignore guifg=' . s:blue
 exec 'highlight Underlined guifg=' . s:green . ' gui=none'
 exec 'highlight QuickFixLine guibg=' . s:deep_blue
-exec 'highlight Delimiter guifg=' . s:white
+highlight! link Delimiter NightflyWhite
+highlight! link qfFileName NightflyEmerald
 
 " Color column (after line 80)
 exec 'highlight ColorColumn guibg=' . s:black_blue
