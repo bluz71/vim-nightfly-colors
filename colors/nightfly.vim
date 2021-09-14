@@ -927,7 +927,7 @@ if has('nvim')
 
     " Barbar plugin
     exec 'highlight BufferCurrent      guibg=' . s:dark_blue . '  guifg=' . s:white
-    exec 'highlight BufferCurrentIndex guibg=' . s:dark_blue . '  guifg=' . s:watermelon
+    exec 'highlight BufferCurrentIndex guibg=' . s:dark_blue . '  guifg=' . s:white
     exec 'highlight BufferCurrentMod   guibg=' . s:dark_blue . '  guifg=' . s:tan
     exec 'highlight BufferCurrentSign  guibg=' . s:dark_blue . '  guifg=' . s:blue
     exec 'highlight BufferVisible      guibg=' . s:dark_blue . '  guifg=' . s:grey_blue
