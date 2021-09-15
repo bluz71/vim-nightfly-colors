@@ -155,57 +155,6 @@ vim.g.nightflyCursorColor = 1
 
 ---
 
-The `nightflyTerminalColors` option specifies whether to use the nightfly color
-palette in `:terminal` windows when `termguicolors` is set. By default this
-option is **enabled**. If you prefer not to use the nightfly color palette for
-the first 16 terminal colors then add the following to your initialization file:
-
-```viml
-" Vimscript initialization file
-let g:nightflyTerminalColors = 0
-```
-
-```lua
--- Lua initialization file
-vim.g.nightflyTerminalColors = 0
-```
-
----
-
-The `nightflyUnderlineMatchParen` option specifies whether to underline
-matching parentheses. By default this option is **disabled**. If you want to
-underline matching parentheses then add the following to your initialization
-file:
-
-```viml
-" Vimscript initialization file
-let g:nightflyUnderlineMatchParen = 1
-```
-
-```lua
--- Lua initialization file
-vim.g.nightflyUnderlineMatchParen = 1
-```
-
----
-
-The `nightflyUndercurls` option specifies whether to use undercurls for
-spelling and linting errors in GUI versions of Vim, including terminal Vim with
-`termguicolors` set. By default this option is **enabled**. If you do not like
-the appearance of undercurls then add the following to your initialization file:
-
-```viml
-" Vimscript initialization file
-let g:nightflyUndercurls = 0
-```
-
-```lua
--- Lua initialization file
-vim.g.nightflyUndercurls = 0
-```
-
----
-
 The `nightflyItalics` option specifies whether to use italics for comments and
 certain HTML elements in GUI versions of Vim. By default this option is
 **enabled**. If you do not like the appearance of italics then add the following
@@ -219,40 +168,6 @@ let g:nightflyItalics = 0
 ```lua
 -- Lua initialization file
 vim.g.nightflyItalics = 0
-```
-
----
-
-The `nightflyTransparent` option specifies whether to use an opaque or
-transparent background in GUI versions of Vim. By default this option is
-**disabled**. If you would like a transparent background then add the following
-to your initialization file:
-
-```viml
-" Vimscript initialization file
-let g:nightflyTransparent = 1
-```
-
-```lua
--- Lua initialization file
-vim.g.nightflyTransparent = 1
-```
-
----
-
-The `nightflyVertSplits` option specifies whether to show vertical split
-columns. By default vertical split columns will be visible. If you would like
-vertical split columns to not be visible then add the following to your
-configuration:
-
-```viml
-" Vimscript initialization file
-let g:nightflyVertSplits = 0
-```
-
-```lua
--- Lua initialization file
-vim.g.nightflyVertSplits = 0
 ```
 
 ---
@@ -291,6 +206,91 @@ Neovim's LSP client, for example:
   local opts = {noremap = true, silent = true}
   vim.api.nvim_buf_set_keymap(0, 'n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next({severity_limit = "Warning", popup_opts = {border = "single"}})<CR>', opts)
   vim.api.nvim_buf_set_keymap(0, 'n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_prev({severity_limit = "Warning", popup_opts = {border = "single"}})<CR>', opts)
+```
+
+---
+
+The `nightflyTerminalColors` option specifies whether to use the nightfly color
+palette in `:terminal` windows when `termguicolors` is set. By default this
+option is **enabled**. If you prefer not to use the nightfly color palette for
+the first 16 terminal colors then add the following to your initialization file:
+
+```viml
+" Vimscript initialization file
+let g:nightflyTerminalColors = 0
+```
+
+```lua
+-- Lua initialization file
+vim.g.nightflyTerminalColors = 0
+```
+
+---
+
+The `nightflyTransparent` option specifies whether to use an opaque or
+transparent background in GUI versions of Vim. By default this option is
+**disabled**. If you would like a transparent background then add the following
+to your initialization file:
+
+```viml
+" Vimscript initialization file
+let g:nightflyTransparent = 1
+```
+
+```lua
+-- Lua initialization file
+vim.g.nightflyTransparent = 1
+```
+
+---
+
+The `nightflyUndercurls` option specifies whether to use undercurls for
+spelling and linting errors in GUI versions of Vim, including terminal Vim with
+`termguicolors` set. By default this option is **enabled**. If you do not like
+the appearance of undercurls then add the following to your initialization file:
+
+```viml
+" Vimscript initialization file
+let g:nightflyUndercurls = 0
+```
+
+```lua
+-- Lua initialization file
+vim.g.nightflyUndercurls = 0
+```
+
+---
+
+The `nightflyUnderlineMatchParen` option specifies whether to underline
+matching parentheses. By default this option is **disabled**. If you want to
+underline matching parentheses then add the following to your initialization
+file:
+
+```viml
+" Vimscript initialization file
+let g:nightflyUnderlineMatchParen = 1
+```
+
+```lua
+-- Lua initialization file
+vim.g.nightflyUnderlineMatchParen = 1
+```
+
+---
+
+The `nightflyVertSplits` option specifies whether to show vertical split
+columns. By default vertical split columns will be visible. If you would like
+vertical split columns to not be visible then add the following to your
+configuration:
+
+```viml
+" Vimscript initialization file
+let g:nightflyVertSplits = 0
+```
+
+```lua
+-- Lua initialization file
+vim.g.nightflyVertSplits = 0
 ```
 
 True Color Terminals
