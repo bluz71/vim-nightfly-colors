@@ -857,7 +857,7 @@ highlight! link CocUnusedHighlight NightflyWhite
 
 " Neovim only plugins
 if has('nvim')
-    " Neovim LSP diagnostics
+    " Neovim 0.5 LSP diagnostics
     if g:nightflyUndercurls
         exec 'highlight LspDiagnosticsUnderlineError guibg=bg gui=undercurl guisp=' . s:red
         exec 'highlight LspDiagnosticsUnderlineWarning guibg=bg gui=undercurl guisp=' . s:yellow
@@ -882,6 +882,35 @@ if has('nvim')
     highlight! link LspDiagnosticsSignHint NightflyWhiteAlert
     highlight! link LspDiagnosticsFloatingHint NightflyWhite
     highlight! link LspSignatureActiveParameter NightflyRegalBlue
+
+    " Neovim 0.6 diagnostic
+    highlight! link DiagnosticError NightflyRed
+    highlight! link DiagnosticWarn NightflyYellow
+    highlight! link DiagnosticInfo NightflyBlue
+    highlight! link DiagnosticHint NightflyWhite
+    if g:nightflyUndercurls
+        exec 'highlight DiagnosticUnderlineError guibg=bg gui=undercurl guisp=' . s:red
+        exec 'highlight DiagnosticUnderlineWarn guibg=bg gui=undercurl guisp=' . s:yellow
+        exec 'highlight DiagnosticUnderlineInfo guibg=bg gui=undercurl guisp=' . s:blue
+        exec 'highlight DiagnosticUnderlineHint guibg=bg gui=undercurl guisp=' . s:white
+    else
+        exec 'highlight DiagnosticUnderlineError guibg=bg gui=underline guisp=' . s:red
+        exec 'highlight DiagnosticUnderlineWarn guibg=bg gui=underline guisp=' . s:yellow
+        exec 'highlight DiagnosticUnderlineInfo guibg=bg gui=underline guisp=' . s:blue
+        exec 'highlight DiagnosticUnderlineHint guibg=bg gui=underline guisp=' . s:white
+    endif
+    highlight! link DiagnosticVirtualTextError NightflySteelBlue
+    highlight! link DiagnosticSignError NightflyRedAlert
+    highlight! link DiagnosticFloatingError NightflyRed
+    highlight! link DiagnosticVirtualTextWarn NightflySteelBlue
+    highlight! link DiagnosticSignWarn NightflyYellowAlert
+    highlight! link DiagnosticFloatingWarn NightflyYellow
+    highlight! link DiagnosticVirtualTextInfo NightflySteelBlue
+    highlight! link DiagnosticSignInfo NightflyBlueAlert
+    highlight! link DiagnosticFloatingInfo NightflyBlue
+    highlight! link DiagnosticVirtualTextHint NightflySteelBlue
+    highlight! link DiagnosticSignHint NightflyWhiteAlert
+    highlight! link DiagnosticFloatingHint NightflyWhite
 
     " NvimTree plugin
     highlight! link NvimTreeFolderIcon NightflyBlue
