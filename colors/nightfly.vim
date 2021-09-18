@@ -886,7 +886,7 @@ if has('nvim-0.6')
     highlight! link DiagnosticFloatingInfo NightflyBlue
     highlight! link DiagnosticFloatingHint NightflyWhite
     highlight! link LspSignatureActiveParameter NightflyRegalBlue
-else
+elseif has('nvim-0.5')
     " Neovim 0.5 LSP diagnostics
     if g:nightflyUndercurls
         exec 'highlight LspDiagnosticsUnderlineError guibg=bg gui=undercurl guisp=' . s:red
