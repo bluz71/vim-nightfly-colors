@@ -855,34 +855,8 @@ exec 'highlight User7 guibg=' . s:slate_blue . ' guifg=' . s:blue       . ' gui=
 " Coc plugin
 highlight! link CocUnusedHighlight NightflyWhite
 
-" Neovim only plugins
-if has('nvim')
-    " Neovim 0.5 LSP diagnostics
-    if g:nightflyUndercurls
-        exec 'highlight LspDiagnosticsUnderlineError guibg=bg gui=undercurl guisp=' . s:red
-        exec 'highlight LspDiagnosticsUnderlineWarning guibg=bg gui=undercurl guisp=' . s:yellow
-        exec 'highlight LspDiagnosticsUnderlineInformation guibg=bg gui=undercurl guisp=' . s:blue
-        exec 'highlight LspDiagnosticsUnderlineHint guibg=bg gui=undercurl guisp=' . s:white
-    else
-        exec 'highlight LspDiagnosticsUnderlineError guibg=bg gui=underline guisp=' . s:red
-        exec 'highlight LspDiagnosticsUnderlineWarning guibg=bg gui=underline guisp=' . s:yellow
-        exec 'highlight LspDiagnosticsUnderlineInformation guibg=bg gui=underline guisp=' . s:blue
-        exec 'highlight LspDiagnosticsUnderlineHint guibg=bg gui=underline guisp=' . s:white
-    endif
-    highlight! link LspDiagnosticsVirtualTextError NightflySteelBlue
-    highlight! link LspDiagnosticsSignError NightflyRedAlert
-    highlight! link LspDiagnosticsFloatingError NightflyRed
-    highlight! link LspDiagnosticsVirtualTextWarning NightflySteelBlue
-    highlight! link LspDiagnosticsSignWarning NightflyYellowAlert
-    highlight! link LspDiagnosticsFloatingWarning NightflyYellow
-    highlight! link LspDiagnosticsVirtualTextInformation NightflySteelBlue
-    highlight! link LspDiagnosticsSignInformation NightflyBlueAlert
-    highlight! link LspDiagnosticsFloatingInformation NightflyBlue
-    highlight! link LspDiagnosticsVirtualTextHint NightflySteelBlue
-    highlight! link LspDiagnosticsSignHint NightflyWhiteAlert
-    highlight! link LspDiagnosticsFloatingHint NightflyWhite
-    highlight! link LspSignatureActiveParameter NightflyRegalBlue
-
+" Neovim diagnostics
+if has('nvim-0.6')
     " Neovim 0.6 diagnostic
     highlight! link DiagnosticError NightflyRed
     highlight! link DiagnosticWarn NightflyYellow
@@ -900,18 +874,48 @@ if has('nvim')
         exec 'highlight DiagnosticUnderlineHint guibg=bg gui=underline guisp=' . s:white
     endif
     highlight! link DiagnosticVirtualTextError NightflySteelBlue
-    highlight! link DiagnosticSignError NightflyRedAlert
-    highlight! link DiagnosticFloatingError NightflyRed
     highlight! link DiagnosticVirtualTextWarn NightflySteelBlue
-    highlight! link DiagnosticSignWarn NightflyYellowAlert
-    highlight! link DiagnosticFloatingWarn NightflyYellow
     highlight! link DiagnosticVirtualTextInfo NightflySteelBlue
-    highlight! link DiagnosticSignInfo NightflyBlueAlert
-    highlight! link DiagnosticFloatingInfo NightflyBlue
     highlight! link DiagnosticVirtualTextHint NightflySteelBlue
+    highlight! link DiagnosticSignError NightflyRedAlert
+    highlight! link DiagnosticSignWarn NightflyYellowAlert
+    highlight! link DiagnosticSignInfo NightflyBlueAlert
     highlight! link DiagnosticSignHint NightflyWhiteAlert
+    highlight! link DiagnosticFloatingError NightflyRed
+    highlight! link DiagnosticFloatingWarn NightflyYellow
+    highlight! link DiagnosticFloatingInfo NightflyBlue
     highlight! link DiagnosticFloatingHint NightflyWhite
+    highlight! link LspSignatureActiveParameter NightflyRegalBlue
+else
+    " Neovim 0.5 LSP diagnostics
+    if g:nightflyUndercurls
+        exec 'highlight LspDiagnosticsUnderlineError guibg=bg gui=undercurl guisp=' . s:red
+        exec 'highlight LspDiagnosticsUnderlineWarning guibg=bg gui=undercurl guisp=' . s:yellow
+        exec 'highlight LspDiagnosticsUnderlineInformation guibg=bg gui=undercurl guisp=' . s:blue
+        exec 'highlight LspDiagnosticsUnderlineHint guibg=bg gui=undercurl guisp=' . s:white
+    else
+        exec 'highlight LspDiagnosticsUnderlineError guibg=bg gui=underline guisp=' . s:red
+        exec 'highlight LspDiagnosticsUnderlineWarning guibg=bg gui=underline guisp=' . s:yellow
+        exec 'highlight LspDiagnosticsUnderlineInformation guibg=bg gui=underline guisp=' . s:blue
+        exec 'highlight LspDiagnosticsUnderlineHint guibg=bg gui=underline guisp=' . s:white
+    endif
+    highlight! link LspDiagnosticsVirtualTextError NightflySteelBlue
+    highlight! link LspDiagnosticsVirtualTextWarning NightflySteelBlue
+    highlight! link LspDiagnosticsVirtualTextInformation NightflySteelBlue
+    highlight! link LspDiagnosticsVirtualTextHint NightflySteelBlue
+    highlight! link LspDiagnosticsSignError NightflyRedAlert
+    highlight! link LspDiagnosticsSignWarning NightflyYellowAlert
+    highlight! link LspDiagnosticsSignInformation NightflyBlueAlert
+    highlight! link LspDiagnosticsSignHint NightflyWhiteAlert
+    highlight! link LspDiagnosticsFloatingError NightflyRed
+    highlight! link LspDiagnosticsFloatingWarning NightflyYellow
+    highlight! link LspDiagnosticsFloatingInformation NightflyBlue
+    highlight! link LspDiagnosticsFloatingHint NightflyWhite
+    highlight! link LspSignatureActiveParameter NightflyRegalBlue
+endif
 
+" Neovim only plugins
+if has('nvim')
     " NvimTree plugin
     highlight! link NvimTreeFolderIcon NightflyBlue
     highlight! link NvimTreeFolderName NightflyBlue
