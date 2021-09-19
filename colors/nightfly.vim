@@ -787,10 +787,10 @@ exec 'highlight snipLeadingSpaces guibg=bg guifg=fg'
 exec 'highlight MatchWordCur guibg=bg'
 
 " vimdiff/nvim -d
-exec 'highlight DiffAdd guibg=' . s:emerald . ' guifg=bg'
+exec 'highlight DiffAdd guibg=' . s:emerald . ' guifg=' . s:black
 exec 'highlight DiffChange guibg=' . s:slate_blue
 exec 'highlight DiffDelete guibg=' . s:slate_blue . ' guifg=' . s:watermelon ' gui=none'
-exec 'highlight DiffText guibg=' . s:blue . ' guifg=bg gui=none'
+exec 'highlight DiffText guibg=' . s:blue . ' guifg=' . s:black . ' gui=none'
 
 " ALE plugin
 if g:nightflyUndercurls
