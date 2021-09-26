@@ -135,6 +135,7 @@ exec 'highlight NightflySteelBlue guifg=' . s:steel_blue
 exec 'highlight NightflyGreyBlue guifg=' . s:grey_blue
 exec 'highlight NightflyCadetBlue guifg=' . s:cadet_blue
 exec 'highlight NightflyAshBlue guifg=' . s:ash_blue
+exec 'highlight NightflyWhiteBlue guifg=' . s:white_blue
 exec 'highlight NightflyYellow guifg=' . s:yellow
 exec 'highlight NightflyPeach guifg=' . s:peach
 exec 'highlight NightflyTan guifg=' . s:tan
@@ -974,6 +975,11 @@ if has('nvim')
     exec 'highlight BufferInactive     guibg=' . s:slate_blue . ' guifg=' . s:grey_blue
     exec 'highlight BufferInactiveMod  guibg=' . s:slate_blue . ' guifg=' . s:tan
     exec 'highlight BufferInactiveSign guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue
+
+    " nvim-cmp plugin
+    highlight! link CmpItemKind NightflyTurquoise
+    highlight! link CmpItemMenu NightflyCadetBlue
+    highlight! link CmpItemAbbrMatchFuzzy NightflyWhiteBlue
 endif
 
 set background=dark
