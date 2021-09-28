@@ -68,7 +68,6 @@ let s:dark_blue  = '#092236'
 let s:deep_blue  = '#0e293f'
 let s:slate_blue = '#2c3043'
 let s:regal_blue = '#1d3b53'
-let s:cyan_blue  = '#296596'
 let s:steel_blue = '#4b6479'
 let s:grey_blue  = '#7c8f8f'
 let s:cadet_blue = '#a1aab8'
@@ -88,6 +87,8 @@ let s:blue       = '#82aaff'
 let s:turquoise  = '#7fdbca'
 let s:emerald    = '#21c7a8'
 let s:green      = '#a1cd5e'
+" Extra colors
+let s:cyan_blue  = '#296596'
 
 " Specify the colors used by the inbuilt terminal of Neovim and Vim
 if g:nightflyTerminalColors
