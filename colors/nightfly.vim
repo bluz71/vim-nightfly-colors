@@ -395,6 +395,7 @@ highlight! link crystalModule NightflyBlue
 highlight! link crystalPseudoVariable NightflyGreen
 highlight! link crystalSharpBang NightflyCadetBlue
 highlight! link crystalStringDelimiter NightflyTan
+highlight! link crystalSymbol NightflyPurple
 
 " CSS/SCSS
 highlight! link cssAtRule NightflyViolet
