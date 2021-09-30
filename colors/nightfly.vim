@@ -260,15 +260,15 @@ exec 'highlight WildMenu guibg=' . s:cyan_blue . ' guifg=fg'
 
 " Spelling errors
 if g:nightflyUndercurls
-    exec 'highlight SpellBad cterm=underline gui=undercurl guisp=' . s:red
-    exec 'highlight SpellCap cterm=underline gui=undercurl guisp=' . s:blue
-    exec 'highlight SpellRare cterm=underline gui=undercurl guisp=' . s:yellow
-    exec 'highlight SpellLocal cterm=underline gui=undercurl guisp=' . s:blue
+    exec 'highlight SpellBad ctermbg=NONE cterm=underline guibg=NONE gui=undercurl guisp=' . s:red
+    exec 'highlight SpellCap ctermbg=NONE cterm=underline guibg=NONE gui=undercurl guisp=' . s:blue
+    exec 'highlight SpellRare ctermbg=NONE cterm=underline guibg=NONE gui=undercurl guisp=' . s:yellow
+    exec 'highlight SpellLocal ctermbg=NONE cterm=underline guibg=NONE gui=undercurl guisp=' . s:blue
 else
-    exec 'highlight SpellBad cterm=underline guifg=' . s:red . ' gui=underline guisp=' . s:red
-    exec 'highlight SpellCap cterm=underline guifg=' . s:blue . ' gui=underline guisp=' . s:blue
-    exec 'highlight SpellRare cterm=underline guifg=' . s:yellow . ' gui=underline guisp=' . s:yellow
-    exec 'highlight SpellLocal cterm=underline guifg=' . s:blue . ' gui=underline guisp=' . s:blue
+    exec 'highlight SpellBad ctermbg=NONE cterm=underline guibg=NONE guifg=' . s:red . ' gui=underline guisp=' . s:red
+    exec 'highlight SpellCap ctermbg=NONE cterm=underline guibg=NONE guifg=' . s:blue . ' gui=underline guisp=' . s:blue
+    exec 'highlight SpellRare ctermbg=NONE cterm=underline guibg=NONE guifg=' . s:yellow . ' gui=underline guisp=' . s:yellow
+    exec 'highlight SpellLocal ctermbg=NONE cterm=underline guibg=NONE guifg=' . s:blue . ' gui=underline guisp=' . s:blue
 endif
 
 " Misc
@@ -796,13 +796,13 @@ exec 'highlight DiffText guibg=' . s:blue . ' guifg=' . s:black . ' gui=none'
 
 " ALE plugin
 if g:nightflyUndercurls
-    exec 'highlight ALEError guibg=bg gui=undercurl guisp=' . s:red
-    exec 'highlight ALEWarning guibg=bg gui=undercurl guisp=' . s:yellow
-    exec 'highlight ALEInfo guibg=bg gui=undercurl guisp=' . s:blue
+    exec 'highlight ALEError guibg=NONE gui=undercurl guisp=' . s:red
+    exec 'highlight ALEWarning guibg=NONE gui=undercurl guisp=' . s:yellow
+    exec 'highlight ALEInfo guibg=NONE gui=undercurl guisp=' . s:blue
 else
-    exec 'highlight ALEError guibg=bg'
-    exec 'highlight ALEWarning guibg=bg'
-    exec 'highlight ALEInfo guibg=bg'
+    exec 'highlight ALEError guibg=NONE'
+    exec 'highlight ALEWarning guibg=NONE'
+    exec 'highlight ALEInfo guibg=NONE'
 endif
 highlight! link ALEVirtualTextError NightflySteelBlue
 highlight! link ALEErrorSign NightflyRedAlert
@@ -865,15 +865,15 @@ if has('nvim-0.6')
     highlight! link DiagnosticInfo NightflyBlue
     highlight! link DiagnosticHint NightflyWhite
     if g:nightflyUndercurls
-        exec 'highlight DiagnosticUnderlineError guibg=bg gui=undercurl guisp=' . s:red
-        exec 'highlight DiagnosticUnderlineWarn guibg=bg gui=undercurl guisp=' . s:yellow
-        exec 'highlight DiagnosticUnderlineInfo guibg=bg gui=undercurl guisp=' . s:blue
-        exec 'highlight DiagnosticUnderlineHint guibg=bg gui=undercurl guisp=' . s:white
+        exec 'highlight DiagnosticUnderlineError guibg=NONE gui=undercurl guisp=' . s:red
+        exec 'highlight DiagnosticUnderlineWarn guibg=NONE gui=undercurl guisp=' . s:yellow
+        exec 'highlight DiagnosticUnderlineInfo guibg=NONE gui=undercurl guisp=' . s:blue
+        exec 'highlight DiagnosticUnderlineHint guibg=NONE gui=undercurl guisp=' . s:white
     else
-        exec 'highlight DiagnosticUnderlineError guibg=bg gui=underline guisp=' . s:red
-        exec 'highlight DiagnosticUnderlineWarn guibg=bg gui=underline guisp=' . s:yellow
-        exec 'highlight DiagnosticUnderlineInfo guibg=bg gui=underline guisp=' . s:blue
-        exec 'highlight DiagnosticUnderlineHint guibg=bg gui=underline guisp=' . s:white
+        exec 'highlight DiagnosticUnderlineError guibg=NONE gui=underline guisp=' . s:red
+        exec 'highlight DiagnosticUnderlineWarn guibg=NONE gui=underline guisp=' . s:yellow
+        exec 'highlight DiagnosticUnderlineInfo guibg=NONE gui=underline guisp=' . s:blue
+        exec 'highlight DiagnosticUnderlineHint guibg=NONE gui=underline guisp=' . s:white
     endif
     highlight! link DiagnosticVirtualTextError NightflySteelBlue
     highlight! link DiagnosticVirtualTextWarn NightflySteelBlue
@@ -891,15 +891,15 @@ if has('nvim-0.6')
 elseif has('nvim-0.5')
     " Neovim 0.5 LSP diagnostics
     if g:nightflyUndercurls
-        exec 'highlight LspDiagnosticsUnderlineError guibg=bg gui=undercurl guisp=' . s:red
-        exec 'highlight LspDiagnosticsUnderlineWarning guibg=bg gui=undercurl guisp=' . s:yellow
-        exec 'highlight LspDiagnosticsUnderlineInformation guibg=bg gui=undercurl guisp=' . s:blue
-        exec 'highlight LspDiagnosticsUnderlineHint guibg=bg gui=undercurl guisp=' . s:white
+        exec 'highlight LspDiagnosticsUnderlineError guibg=NONE gui=undercurl guisp=' . s:red
+        exec 'highlight LspDiagnosticsUnderlineWarning guibg=NONE gui=undercurl guisp=' . s:yellow
+        exec 'highlight LspDiagnosticsUnderlineInformation guibg=NONE gui=undercurl guisp=' . s:blue
+        exec 'highlight LspDiagnosticsUnderlineHint guibg=NONE gui=undercurl guisp=' . s:white
     else
-        exec 'highlight LspDiagnosticsUnderlineError guibg=bg gui=underline guisp=' . s:red
-        exec 'highlight LspDiagnosticsUnderlineWarning guibg=bg gui=underline guisp=' . s:yellow
-        exec 'highlight LspDiagnosticsUnderlineInformation guibg=bg gui=underline guisp=' . s:blue
-        exec 'highlight LspDiagnosticsUnderlineHint guibg=bg gui=underline guisp=' . s:white
+        exec 'highlight LspDiagnosticsUnderlineError guibg=NONE gui=underline guisp=' . s:red
+        exec 'highlight LspDiagnosticsUnderlineWarning guibg=NONE gui=underline guisp=' . s:yellow
+        exec 'highlight LspDiagnosticsUnderlineInformation guibg=NONE gui=underline guisp=' . s:blue
+        exec 'highlight LspDiagnosticsUnderlineHint guibg=NONE gui=underline guisp=' . s:white
     endif
     highlight! link LspDiagnosticsVirtualTextError NightflySteelBlue
     highlight! link LspDiagnosticsVirtualTextWarning NightflySteelBlue
