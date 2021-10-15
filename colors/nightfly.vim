@@ -982,7 +982,7 @@ if has('nvim')
     highlight! link CmpItemAbbrMatch NightflyWhiteBlue
     highlight! link CmpItemAbbrMatchFuzzy NightflyOrange
     highlight! link CmpItemKind NightflyBlue
-    highlight! link CmpItemMenu NightflyWhite
+    highlight! link CmpItemMenu NightflyCadetBlue
 endif
 
 set background=dark
