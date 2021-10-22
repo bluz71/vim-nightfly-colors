@@ -888,7 +888,7 @@ if has('nvim-0.6')
     highlight! link DiagnosticFloatingWarn NightflyYellow
     highlight! link DiagnosticFloatingInfo NightflyBlue
     highlight! link DiagnosticFloatingHint NightflyWhite
-    highlight! link LspSignatureActiveParameter NightflyRegalBlue
+    highlight! link LspSignatureActiveParameter NightflyVisual
 elseif has('nvim-0.5')
     " Neovim 0.5 LSP diagnostics
     if g:nightflyUndercurls
@@ -914,7 +914,7 @@ elseif has('nvim-0.5')
     highlight! link LspDiagnosticsFloatingWarning NightflyYellow
     highlight! link LspDiagnosticsFloatingInformation NightflyBlue
     highlight! link LspDiagnosticsFloatingHint NightflyWhite
-    highlight! link LspSignatureActiveParameter NightflyRegalBlue
+    highlight! link LspSignatureActiveParameter NightflyVisual
 endif
 
 " Neovim only plugins
