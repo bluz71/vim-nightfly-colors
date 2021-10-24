@@ -54,7 +54,7 @@ Styled Features & Plugins
 - [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
 - [Hop](https://github.com/phaazon/hop.nvim)
 - [lightline](https://github.com/itchyny/lightline.vim)
-- [Lualine](https://github.com/hoob3rt/lualine.nvim)
+- [Lualine](https://github.com/nvim-lualine/lualine.nvim)
 - [NERDTree](https://github.com/scrooloose/nerdtree)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
@@ -113,8 +113,8 @@ let g:lightline = { 'colorscheme': 'nightfly' }
   versions of _vim-airline_ the _nightfly_ theme will automatically be loaded.
 
 - The _nightfly_ colorscheme supports
-  [Lualine](https://github.com/hoob3rt/lualine.nvim). To enable the _nightfly_
-  theme please add the following to your initialization file:
+  [Lualine](https://github.com/nvim-lualine/lualine.nvim). To enable the
+  _nightfly_ theme please add the following to your initialization file:
 
 ```lua
 require('lualine').setup({options = {theme = 'nightfly'}})
