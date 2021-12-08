@@ -855,9 +855,6 @@ exec 'highlight User5 guibg=' . s:slate_blue . ' guifg=' . s:blue       . ' gui=
 exec 'highlight User6 guibg=' . s:slate_blue . ' guifg=' . s:watermelon . ' gui=none'
 exec 'highlight User7 guibg=' . s:slate_blue . ' guifg=' . s:blue       . ' gui=none'
 
-" Coc plugin
-highlight! link CocUnusedHighlight NightflyAshBlue
-
 " indentLine plugin
 if !exists('g:indentLine_defaultGroup') && !exists('g:indentLine_color_gui')
     let g:indentLine_color_gui = s:deep_blue
