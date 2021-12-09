@@ -987,7 +987,30 @@ if has('nvim')
     " nvim-cmp plugin
     highlight! link CmpItemAbbrMatch NightflyWhiteBlue
     highlight! link CmpItemAbbrMatchFuzzy NightflyOrange
-    highlight! link CmpItemKind NightflyBlue
+    highlight! link CmpItemKindDefault NightflyWhite
+    highlight! link CmpItemKindClass NightflyEmerald
+    highlight! link CmpItemKindColor NightflyTurquoise
+    highlight! link CmpItemKindConstant NightflyPurple
+    highlight! link CmpItemKindConstructor NightflyBlue
+    highlight! link CmpItemKindEnum NightflyViolet
+    highlight! link CmpItemKindEnumMember NightflyTurquoise
+    highlight! link CmpItemKindEvent NightflyViolet
+    highlight! link CmpItemKindField NightflyTurquoise
+    highlight! link CmpItemKindFile NightflyBlue
+    highlight! link CmpItemKindFolder NightflyBlue
+    highlight! link CmpItemKindFunction NightflyBlue
+    highlight! link CmpItemKindInterface NightflyEmerald
+    highlight! link CmpItemKindKeyword NightflyViolet
+    highlight! link CmpItemKindMethod NightflyBlue
+    highlight! link CmpItemKindModule NightflyEmerald
+    highlight! link CmpItemKindOperator NightflyViolet
+    highlight! link CmpItemKindProperty NightflyTurquoise
+    highlight! link CmpItemKindReference NightflyTurquoise
+    highlight! link CmpItemKindStruct NightflyEmerald
+    highlight! link CmpItemKindTypeParameter NightflyEmerald
+    highlight! link CmpItemKindUnit NightflyTurquoise
+    highlight! link CmpItemKindValue NightflyTurquoise
+    highlight! link CmpItemKindVariable NightflyTurquoise
     highlight! link CmpItemMenu NightflyCadetBlue
 endif
 
