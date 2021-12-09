@@ -253,10 +253,10 @@ exec 'highlight WarningMsg guibg=bg guifg=' . s:orange
 
 " Auto-text-completion menu
 exec 'highlight Pmenu guibg=' . s:deep_blue . ' guifg=fg'
-exec 'highlight PmenuSel guibg=' . s:cyan_blue . ' guifg=fg'
+exec 'highlight PmenuSel guibg=' . s:cyan_blue . ' guifg=' . s:white_blue
 exec 'highlight PmenuSbar guibg=' . s:deep_blue
 exec 'highlight PmenuThumb guibg=' . s:steel_blue
-exec 'highlight WildMenu guibg=' . s:cyan_blue . ' guifg=fg'
+exec 'highlight WildMenu guibg=' . s:cyan_blue . ' guifg=' . s:white_blue
 
 " Spelling errors
 if g:nightflyUndercurls
