@@ -966,6 +966,7 @@ if has('nvim')
     highlight! link GitSignsDelete NightflyRedAlert
 
     " Hop plugin
+    highlight! link HopCursor IncSearch
     highlight! link HopNextKey NightflyYellow
     highlight! link HopNextKey1 NightflyBlue
     highlight! link HopNextKey2 NightflyWatermelon
