@@ -340,6 +340,7 @@ if has('nvim')
     highlight! link cssTSType NightflyBlue
     highlight! link scssTSPunctDelimiter NightflyWatermelon
     highlight! link scssTSType NightflyBlue
+    highlight! link scssTSVariable NightflyTurquoise
     highlight! link yamlTSField NightflyBlue
     highlight! link yamlTSPunctDelimiter NightflyWatermelon
 endif
