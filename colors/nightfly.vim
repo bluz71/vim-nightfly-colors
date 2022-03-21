@@ -57,7 +57,7 @@ let g:nightflyUndercurls = get(g:, 'nightflyUndercurls', 1)
 let g:nightflyUnderlineMatchParen = get(g:, 'nightflyUnderlineMatchParen', 0)
 
 " By default do display vertical split columns.
-let g:nightflyVertSplits = get(g:, 'nightflyVertSplits', 1)
+let g:nightflyWinSeparator = get(g:, 'nightflyWinSeparator', 1)
 
 " Background and foreground
 let s:black      = '#011627'
@@ -235,10 +235,12 @@ exec 'highlight TablineSel cterm=none guibg=' . s:slate_blue . ' guifg=' . s:blu
 exec 'highlight TablineFill cterm=none guibg=' . s:slate_blue . ' guifg=' . s:slate_blue . ' gui=none'
 exec 'highlight StatusLineTerm cterm=none guibg=' . s:slate_blue . ' guifg=' . s:white . ' gui=none'
 exec 'highlight StatusLineTermNC cterm=none guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue . ' gui=none'
-if g:nightflyVertSplits
+if g:nightflyWinSeparator == 0
+    exec 'highlight VertSplit cterm=none guibg=' . s:black . ' guifg=' . s:black . ' gui=none'
+elseif g:nightflyWinSeparator == 1
     exec 'highlight VertSplit cterm=none guibg=' . s:slate_blue . ' guifg=' . s:slate_blue . ' gui=none'
 else
-    exec 'highlight VertSplit cterm=none guibg=' . s:black . ' guifg=' . s:black . ' gui=none'
+    exec 'highlight VertSplit guibg=NONE guifg=' . s:slate_blue . ' gui=none'
 end
 
 " Visual selection
@@ -316,6 +318,7 @@ if has('nvim')
         exec 'highlight NormalFloat guibg=' . s:dark_blue . ' guifg=fg'
     endif
     exec 'highlight FloatBorder guibg=bg guifg=' . s:slate_blue
+    highlight! link WinSeparator VertSplit
 
     " Neovim Treesitter
     highlight! link TSAnnotation NightflyViolet
