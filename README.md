@@ -403,6 +403,11 @@ For other terminals please configure appropriately with the following colors:
 | Color 15       | Cyan (bright)   | `#7fdbca` | ![background](https://via.placeholder.com/32/7fdbca?text=+) |
 | Color 16       | White (bright)  | `#d6deeb` | ![background](https://via.placeholder.com/32/d6deeb?text=+) |
 
+Sponsor
+-------
+
+[![Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/bluz71)
+
 License
 -------
 
