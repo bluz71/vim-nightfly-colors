@@ -206,8 +206,21 @@ Neovim's LSP client, for example:
     }
   )
   vim.diagnostic.config({ float = { border = "single" } })
-  vim.keymap.set("n", "]d", "<cmd>lua vim.diagnostic.goto_next()<CR>")
-  vim.keymap.set("n", "[d", "<cmd>lua vim.diagnostic.goto_prev()<CR>")
+```
+
+:bulb: Likewise, [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) may be
+configured as follows for nicer display when `g:nightflyNormalFloat` is enabled:
+
+```lua
+local winhighlight = {
+  winhighlight = "Normal:NormalFloat,FloatBorder:FloatBorder,CursorLine:PmenuSel",
+}
+require('cmp').setup({
+  window = {
+    completion = cmp.config.window.bordered(winhighlight),
+    documentation = cmp.config.window.bordered(winhighlight),
+  }
+})
 ```
 
 ---
