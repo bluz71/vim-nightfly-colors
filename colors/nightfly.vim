@@ -318,6 +318,8 @@ if has('nvim')
         exec 'highlight NormalFloat guibg=' . s:dark_blue . ' guifg=fg'
     endif
     exec 'highlight FloatBorder guibg=bg guifg=' . s:slate_blue
+    exec 'highlight WinBar cterm=none guibg=' . s:deep_blue . ' guifg=' . s:white . ' gui=none'
+    exec 'highlight WinBarNC cterm=none guibg=' . s:deep_blue . ' guifg=' . s:cadet_blue . ' gui=none'
     highlight! link WinSeparator VertSplit
 
     " Neovim Treesitter
@@ -857,7 +859,7 @@ exec 'highlight User3 guibg=' . s:purple     . ' guifg=' . s:dark_blue
 exec 'highlight User4 guibg=' . s:watermelon . ' guifg=' . s:dark_blue
 exec 'highlight User5 guibg=' . s:slate_blue . ' guifg=' . s:blue       . ' gui=none'
 exec 'highlight User6 guibg=' . s:slate_blue . ' guifg=' . s:watermelon . ' gui=none'
-exec 'highlight User7 guibg=' . s:slate_blue . ' guifg=' . s:blue       . ' gui=none'
+exec 'highlight User7 guibg=' . s:slate_blue . ' guifg=' . s:yellow     . ' gui=none'
 
 " Coc plugin (see issue: https://github.com/bluz71/vim-nightfly-guicolors/issues/31)
 highlight! link CocUnusedHighlight NightflyAshBlue
