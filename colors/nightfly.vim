@@ -861,6 +861,14 @@ exec 'highlight User5 guibg=' . s:slate_blue . ' guifg=' . s:blue       . ' gui=
 exec 'highlight User6 guibg=' . s:slate_blue . ' guifg=' . s:watermelon . ' gui=none'
 exec 'highlight User7 guibg=' . s:slate_blue . ' guifg=' . s:yellow     . ' gui=none'
 
+" mistfly-statusline plugin
+exec 'highlight MistflyNormal guibg=' . s:blue . ' guifg=' . s:dark_blue
+exec 'highlight MistflyInsert guibg=' . s:white . ' guifg=' . s:dark_blue
+exec 'highlight MistflyVisual guibg=' . s:purple . ' guifg=' . s:dark_blue
+exec 'highlight MistflyReplace guibg=' . s:watermelon . ' guifg=' . s:dark_blue
+exec 'highlight MistflyEmphasis guibg=' . s:slate_blue . ' guifg=' . s:blue
+exec 'highlight MistflyNotification guibg=' . s:slate_blue . ' guifg=' . s:watermelon
+
 " Coc plugin (see issue: https://github.com/bluz71/vim-nightfly-guicolors/issues/31)
 highlight! link CocUnusedHighlight NightflyAshBlue
 
