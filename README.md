@@ -122,21 +122,8 @@ require('lualine').setup({options = {theme = 'nightfly'}})
 ```
 
 - Lastly, my own
-  [vim-moonfly-statusline](https://github.com/bluz71/vim-moonfly-statusline) is
+  [vim-mistfly-statusline](https://github.com/bluz71/vim-mistfly-statusline) is
   available for those that want a very simple yet informative status line.
-  Please add the following to your initialization file to indicate to
-  _moonfly-statusline_ that `statusline` colors defined by the _nightfly_ color
-  scheme should be preferenced:
-
-```viml
-" Vimscript initialization file
-let g:moonflyIgnoreDefaultColors = 1
-```
-
-```lua
--- Lua initialization file
-vim.g.moonflyIgnoreDefaultColors = 1
-```
 
 :wrench: Options
 ----------------
