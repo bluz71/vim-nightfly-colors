@@ -379,29 +379,29 @@ For other terminals please configure appropriately with the following colors:
 
 | Type           | Category        | Value     | Color                                                       |
 |----------------|-----------------|-----------|-------------------------------------------------------------|
-| Background     | Background      | `#011627` | ![background](https://via.placeholder.com/32/011627?text=+) |
-| Foreground     | Foreground      | `#acb4c2` | ![background](https://via.placeholder.com/32/acb4c2?text=+) |
-| Bold           | Bold            | `#eeeeee` | ![background](https://via.placeholder.com/32/eeeeee?text=+) |
-| Cursor         | Cursor          | `#9ca1aa` | ![background](https://via.placeholder.com/32/9ca1aa?text=+) |
-| Cursor Text    | Cursor Text     | `#080808` | ![background](https://via.placeholder.com/32/080808?text=+) |
-| Selection      | Selection       | `#b2ceee` | ![background](https://via.placeholder.com/32/b2ceee?text=+) |
-| Selection Text | Selection Text  | `#080808` | ![background](https://via.placeholder.com/32/080808?text=+) |
-| Color 1        | Black (normal)  | `#1d3b53` | ![background](https://via.placeholder.com/32/1d3b53?text=+) |
-| Color 2        | Red (normal)    | `#fc514e` | ![background](https://via.placeholder.com/32/fc514e?text=+) |
-| Color 3        | Green (normal)  | `#a1cd5e` | ![background](https://via.placeholder.com/32/a1cd5e?text=+) |
-| Color 4        | Yellow (normal) | `#e3d18a` | ![background](https://via.placeholder.com/32/e3d18a?text=+) |
-| Color 5        | Blue (normal)   | `#82aaff` | ![background](https://via.placeholder.com/32/82aaff?text=+) |
-| Color 6        | Purple (normal) | `#c792ea` | ![background](https://via.placeholder.com/32/c792ea?text=+) |
-| Color 7        | Cyan (normal)   | `#7fdbca` | ![background](https://via.placeholder.com/32/7fdbca?text=+) |
-| Color 8        | White (normal)  | `#a1aab8` | ![background](https://via.placeholder.com/32/a1aab8?text=+) |
-| Color 9        | Black (bright)  | `#7c8f8f` | ![background](https://via.placeholder.com/32/7c8f8f?text=+) |
-| Color 10       | Red (bright)    | `#ff5874` | ![background](https://via.placeholder.com/32/ff5874?text=+) |
-| Color 11       | Green (bright)  | `#21c7a8` | ![background](https://via.placeholder.com/32/21c7a8?text=+) |
-| Color 12       | Yellow (bright) | `#ecc48d` | ![background](https://via.placeholder.com/32/ecc48d?text=+) |
-| Color 13       | Blue (bright)   | `#82aaff` | ![background](https://via.placeholder.com/32/82aaff?text=+) |
-| Color 14       | Purple (bright) | `#ae81ff` | ![background](https://via.placeholder.com/32/ae81ff?text=+) |
-| Color 15       | Cyan (bright)   | `#7fdbca` | ![background](https://via.placeholder.com/32/7fdbca?text=+) |
-| Color 16       | White (bright)  | `#d6deeb` | ![background](https://via.placeholder.com/32/d6deeb?text=+) |
+| Background     | Background      | `#011627` | ![background](https://place-hold.it/32/011627?text=+) |
+| Foreground     | Foreground      | `#acb4c2` | ![background](https://place-hold.it/32/acb4c2?text=+) |
+| Bold           | Bold            | `#eeeeee` | ![background](https://place-hold.it/32/eeeeee?text=+) |
+| Cursor         | Cursor          | `#9ca1aa` | ![background](https://place-hold.it/32/9ca1aa?text=+) |
+| Cursor Text    | Cursor Text     | `#080808` | ![background](https://place-hold.it/32/080808?text=+) |
+| Selection      | Selection       | `#b2ceee` | ![background](https://place-hold.it/32/b2ceee?text=+) |
+| Selection Text | Selection Text  | `#080808` | ![background](https://place-hold.it/32/080808?text=+) |
+| Color 1        | Black (normal)  | `#1d3b53` | ![background](https://place-hold.it/32/1d3b53?text=+) |
+| Color 2        | Red (normal)    | `#fc514e` | ![background](https://place-hold.it/32/fc514e?text=+) |
+| Color 3        | Green (normal)  | `#a1cd5e` | ![background](https://place-hold.it/32/a1cd5e?text=+) |
+| Color 4        | Yellow (normal) | `#e3d18a` | ![background](https://place-hold.it/32/e3d18a?text=+) |
+| Color 5        | Blue (normal)   | `#82aaff` | ![background](https://place-hold.it/32/82aaff?text=+) |
+| Color 6        | Purple (normal) | `#c792ea` | ![background](https://place-hold.it/32/c792ea?text=+) |
+| Color 7        | Cyan (normal)   | `#7fdbca` | ![background](https://place-hold.it/32/7fdbca?text=+) |
+| Color 8        | White (normal)  | `#a1aab8` | ![background](https://place-hold.it/32/a1aab8?text=+) |
+| Color 9        | Black (bright)  | `#7c8f8f` | ![background](https://place-hold.it/32/7c8f8f?text=+) |
+| Color 10       | Red (bright)    | `#ff5874` | ![background](https://place-hold.it/32/ff5874?text=+) |
+| Color 11       | Green (bright)  | `#21c7a8` | ![background](https://place-hold.it/32/21c7a8?text=+) |
+| Color 12       | Yellow (bright) | `#ecc48d` | ![background](https://place-hold.it/32/ecc48d?text=+) |
+| Color 13       | Blue (bright)   | `#82aaff` | ![background](https://place-hold.it/32/82aaff?text=+) |
+| Color 14       | Purple (bright) | `#ae81ff` | ![background](https://place-hold.it/32/ae81ff?text=+) |
+| Color 15       | Cyan (bright)   | `#7fdbca` | ![background](https://place-hold.it/32/7fdbca?text=+) |
+| Color 16       | White (bright)  | `#d6deeb` | ![background](https://place-hold.it/32/d6deeb?text=+) |
 
 Sponsor
 -------
