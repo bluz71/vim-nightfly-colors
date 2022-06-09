@@ -1,12 +1,16 @@
 ![nightfly](https://raw.githubusercontent.com/bluz71/misc-binaries/master/headings/nightfly.png)
 ==========
 
-_nightfly_ is a dark GUI colorscheme for Vim & Neovim inspired by:
+_nightfly_ is a dark GUI colorscheme for Vim & Neovim.
 
-- [Night Owl](https://github.com/sdras/night-owl-vscode-theme)
+:point_right: I maintain another dark Vim theme named
+[moonfly](https://github.com/bluz71/vim-moonfly-colors) which may be of
+interest.
 
-- [moonfly](https://github.com/bluz71/vim-moonfly-colors) (note, this is a dark
-  Vim & Neovim colorscheme that I also maintain)
+Screenshot
+----------
+
+![screenshot](https://raw.githubusercontent.com/bluz71/misc-binaries/master/nightfly/nightfly-screenshot.png)
 
 :zap: Prerequisites
 -------------------
@@ -24,19 +28,6 @@ custom colors. I encourage terminal users to use a true-color terminal, such as:
 [Alacritty](https://github.com/alacritty/alacritty), or
 [kitty](https://sw.kovidgoyal.net/kitty/index.html) and enable the
 `termguicolors` option.
-
-Screenshots
------------
-
-### Ruby
-
-<img width="800" alt="ruby" src="https://raw.githubusercontent.com/bluz71/misc-binaries/master/nightfly/ruby_nightfly.png">
-
-### JavaScript
-
-<img width="800" alt="javascript" src="https://raw.githubusercontent.com/bluz71/misc-binaries/master/nightfly/javascript_nightfly.png">
-
-The font in use is [Iosevka](https://github.com/be5invis/Iosevka).
 
 Styled Features & Plugins
 -------------------------
