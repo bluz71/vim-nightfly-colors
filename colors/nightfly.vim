@@ -973,11 +973,16 @@ if has('nvim')
 
     " gitsigns.nvim plugin
     highlight! link GitSignsAdd NightflyEmeraldAlert
+    highlight! link GitSignsAddLn NightflyGreen
     highlight! link GitSignsChange NightflyYellowAlert
-    highlight! link GitSignsChangeNr NightflyYellowAlert
-    highlight! link GitSignsChangeLn NightflyYellowAlert
     highlight! link GitSignsChangeDelete NightflyOrangeAlert
+    highlight! link GitSignsChangeLn NightflyYellow
+    highlight! link GitSignsChangeNr NightflyYellowAlert
     highlight! link GitSignsDelete NightflyRedAlert
+    highlight! link GitSignsDeleteLn NightflyRed
+    exec 'highlight GitSignsAddInline guibg=' . s:green . ' guifg=' . s:black
+    exec 'highlight GitSignsChangeInline guibg=' . s:yellow . ' guifg=' . s:black
+    exec 'highlight GitSignsDeleteInline guibg=' . s:red . ' guifg=' . s:black
 
     " Hop plugin
     highlight! link HopCursor IncSearch
