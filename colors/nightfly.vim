@@ -770,6 +770,15 @@ highlight! link FernGitStatusBracket NightflyGreyBlue
 highlight! link FernGitStatusIndex NightflyEmerald
 highlight! link FernGitStatusWorktree NightflyWatermelon
 
+" Glyph palette
+highlight! link GlyphPalette1 NightflyWatermelon
+highlight! link GlyphPalette2 NightflyEmerald
+highlight! link GlyphPalette3 NightflyYellow
+highlight! link GlyphPalette4 NightflyBlue
+highlight! link GlyphPalette6 NightflyTurquoise
+highlight! link GlyphPalette7 NightflyWhite
+highlight! link GlyphPalette9 NightflyWatermelon
+
 " Misc languages and plugins
 highlight! link bufExplorerHelp NightflyCadetBlue
 highlight! link bufExplorerSortBy NightflyCadetBlue
