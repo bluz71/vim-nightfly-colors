@@ -229,7 +229,7 @@ highlight! link Structure NightflyIndigo
 
 " Statusline, splits and tab lines
 exec 'highlight StatusLine cterm=none guibg=' . s:slate_blue . ' guifg=' . s:white . ' gui=none'
-exec 'highlight StatusLineNC cterm=none guibg=' . s:slate_blue . ' guifg=' . s:grey_blue . ' gui=none'
+exec 'highlight StatusLineNC cterm=none guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue . ' gui=none'
 exec 'highlight Tabline cterm=none guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue . ' gui=none'
 exec 'highlight TablineSel cterm=none guibg=' . s:slate_blue . ' guifg=' . s:blue . ' gui=none'
 exec 'highlight TablineFill cterm=none guibg=' . s:slate_blue . ' guifg=' . s:slate_blue . ' gui=none'
@@ -876,7 +876,7 @@ exec 'highlight MistflyInsert guibg=' . s:white . ' guifg=' . s:dark_blue
 exec 'highlight MistflyVisual guibg=' . s:purple . ' guifg=' . s:dark_blue
 exec 'highlight MistflyReplace guibg=' . s:watermelon . ' guifg=' . s:dark_blue
 exec 'highlight MistflyEmphasis guibg=' . s:slate_blue . ' guifg=' . s:blue
-exec 'highlight MistflyDiscreet guibg=' . s:slate_blue . ' guifg=' . s:grey_blue
+exec 'highlight MistflyDiscreet guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue
 exec 'highlight MistflyNotification guibg=' . s:slate_blue . ' guifg=' . s:watermelon
 
 " Coc plugin (see issue: https://github.com/bluz71/vim-nightfly-guicolors/issues/31)
