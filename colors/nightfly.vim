@@ -310,7 +310,7 @@ exec 'highlight Conceal guibg=NONE guifg=' . s:ash_blue
 
 " Neovim only highlight groups
 if has('nvim')
-    exec 'highlight Whitespace guifg=' . s:deep_blue
+    exec 'highlight Whitespace guifg=' . s:steel_blue
     exec 'highlight TermCursor guibg=' . s:cadet_blue . ' guifg=bg gui=none'
     if g:nightflyNormalFloat
         exec 'highlight NormalFloat guibg=bg guifg=' . s:cadet_blue
@@ -1042,6 +1042,11 @@ if has('nvim')
     highlight! link CmpItemKindValue NightflyTurquoise
     highlight! link CmpItemKindVariable NightflyTurquoise
     highlight! link CmpItemMenu NightflyCadetBlue
+
+    " Indent Blankline
+    exec 'highlight IndentBlanklineChar guifg=' . s:deep_blue  . ' gui=nocombine'
+    exec 'highlight IndentBlanklineSpaceChar guifg=' . s:deep_blue  . ' gui=nocombine'
+    exec 'highlight IndentBlanklineSpaceCharBlankline guifg=' . s:deep_blue  . ' gui=nocombine'
 endif
 
 set background=dark
