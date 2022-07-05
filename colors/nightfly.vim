@@ -130,6 +130,7 @@ endif
 exec 'highlight NightflyReset guifg=fg'
 exec 'highlight NightflyVisual guibg=' . s:regal_blue
 exec 'highlight NightflyWhite guifg=' . s:white
+exec 'highlight NightflyDeepBlue guifg=' . s:deep_blue
 exec 'highlight NightflySlateBlue guifg=' . s:slate_blue
 exec 'highlight NightflyRegalBlue guifg=' . s:regal_blue
 exec 'highlight NightflySteelBlue guifg=' . s:steel_blue
@@ -960,6 +961,16 @@ if has('nvim')
     exec 'highlight NvimTreeImageFile guifg=' . s:violet . ' gui=none'
     exec 'highlight NvimTreeOpenedFile guifg=' . s:yellow . ' gui=none'
     exec 'highlight NvimTreeSymlink guifg=' . s:turquoise . ' gui=none'
+
+    " Neo-tree plugin
+    highlight! link NeoTreeDimText NightflyDeepBlue
+    highlight! link NeoTreeDotfile NightflySlateBlue
+    highlight! link NeoTreeGitConflict NightflyWatermelon
+    highlight! link NeoTreeGitModified NightflyViolet
+    highlight! link NeoTreeGitUntracked NightflySteelBlue
+    highlight! link NeoTreeMessage NightflyCadetBlue
+    highlight! link NeoTreeModified NightflyYellow
+    highlight! link NeoTreeRootName NightflyPurple
 
     " Telescope plugin
     highlight! link TelescopeBorder NightflySlateBlue
