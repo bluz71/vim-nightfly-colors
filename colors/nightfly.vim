@@ -1058,6 +1058,57 @@ if has('nvim')
     exec 'highlight IndentBlanklineChar guifg=' . s:deep_blue  . ' gui=nocombine'
     exec 'highlight IndentBlanklineSpaceChar guifg=' . s:deep_blue  . ' gui=nocombine'
     exec 'highlight IndentBlanklineSpaceCharBlankline guifg=' . s:deep_blue  . ' gui=nocombine'
+
+    " Mini
+    highlight! link MiniCompletionActiveParameter NightflyVisual
+
+    highlight MiniCursorword gui=underline
+    highlight MiniCursorwordCurrent gui=underline
+
+    highlight! link MiniIndentscopeSymbol NightflyWhite
+    highlight MiniIndentscopePrefix gui=nocombine
+
+    highlight! link MiniJump SpellRare
+
+    exec 'highlight MiniJump2dSpot guifg=' . s:yellow . ' gui=bold,nocombine'
+
+    highlight MiniStarterCurrent gui=nocombine
+    highlight! link MiniStarterFooter Title
+    highlight! link MiniStarterHeader Title
+    highlight! link MiniStarterInactive Comment
+    highlight! link MiniStarterItem Normal
+    highlight! link MiniStarterItemBullet Delimiter
+    highlight! link MiniStarterItemPrefix NightflyYellow
+    highlight! link MiniStarterSection NightflyWatermelon
+    highlight! link MiniStarterQuery NightflyBlue
+
+    exec 'highlight MiniStatuslineDevinfo     guibg=' . s:regal_blue
+    exec 'highlight MiniStatuslineFileinfo    guibg=' . s:regal_blue
+    exec 'highlight MiniStatuslineFilename    guibg=' . s:slate_blue . ' guifg=' . s:white
+    exec 'highlight MiniStatuslineInactive    guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue
+    exec 'highlight MiniStatuslineModeCommand guibg=' . s:yellow     . ' guifg=' . s:dark_blue . ' gui=bold'
+    exec 'highlight MiniStatuslineModeInsert  guibg=' . s:white      . ' guifg=' . s:dark_blue . ' gui=bold'
+    exec 'highlight MiniStatuslineModeNormal  guibg=' . s:blue       . ' guifg=' . s:dark_blue . ' gui=bold'
+    exec 'highlight MiniStatuslineModeOther   guibg=' . s:turquoise  . ' guifg=' . s:dark_blue . ' gui=bold'
+    exec 'highlight MiniStatuslineModeReplace guibg=' . s:watermelon . ' guifg=' . s:dark_blue . ' gui=bold'
+    exec 'highlight MiniStatuslineModeVisual  guibg=' . s:purple     . ' guifg=' . s:dark_blue . ' gui=bold'
+
+    highlight! link MiniSurround IncSearch
+
+    exec 'highlight MiniTablineCurrent         guibg=' . s:dark_blue  . ' guifg=' . s:white
+    highlight! link MiniTablineFill TabLineFill
+    exec 'highlight MiniTablineHidden          guibg=' . s:slate_blue . ' guifg=' . s:grey_blue
+    exec 'highlight MiniTablineModifiedCurrent guibg=' . s:dark_blue  . ' guifg=' . s:tan
+    exec 'highlight MiniTablineModifiedHidden  guibg=' . s:slate_blue . ' guifg=' . s:tan
+    exec 'highlight MiniTablineModifiedVisible guibg=' . s:dark_blue  . ' guifg=' . s:tan
+    exec 'highlight MiniTablineTabpagesection  guibg=' . s:black      . ' guifg=' . s:orange . ' gui=reverse,bold'
+    exec 'highlight MiniTablineVisible         guibg=' . s:dark_blue  . ' guifg=' . s:grey_blue
+
+    exec 'highlight MiniTestEmphasis gui=bold'
+    exec 'highlight MiniTestFail guifg=' . s:red  . ' gui=bold'
+    exec 'highlight MiniTestPass guifg=' . s:green  . ' gui=bold'
+
+    exec 'highlight MiniTrailspace guibg=' . s:red
 endif
 
 set background=dark
