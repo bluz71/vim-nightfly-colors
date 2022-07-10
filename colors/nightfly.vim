@@ -1096,7 +1096,7 @@ if has('nvim')
     highlight! link MiniTestFail NightflyRed
     highlight! link MiniTestPass NightflyGreen
     highlight! link MiniTrailspace NightflyWatermelonMode
-    exec 'highlight MiniJump2dSpot guifg=' . s:yellow . ' gui=nocombine'
+    exec 'highlight MiniJump2dSpot guifg=' . s:yellow . ' gui=underline,nocombine'
     exec 'highlight MiniStatuslineFilename guibg=' . s:slate_blue . ' guifg=' . s:white
     exec 'highlight MiniStatuslineInactive guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue
     exec 'highlight MiniTablineHidden guibg=' . s:slate_blue . ' guifg=' . s:grey_blue
