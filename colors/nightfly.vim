@@ -167,9 +167,11 @@ exec 'highlight NightflyPurpleMode guibg=' . s:purple . ' guifg=' . s:dark_blue
 exec 'highlight NightflyWatermelonMode guibg=' . s:watermelon . ' guifg=' . s:dark_blue
 exec 'highlight NightflyEmeraldMode guibg=' . s:emerald . ' guifg=' . s:dark_blue
 exec 'highlight NightflyYellowMode guibg=' . s:yellow . ' guifg=' . s:dark_blue
-exec 'highlight NightflyWhiteTab guibg=' . s:dark_blue . '  guifg=' . s:white
-exec 'highlight NightflyTanTab guibg=' . s:dark_blue . '  guifg=' . s:tan
-exec 'highlight NightflyGreyBlueTab guibg=' . s:dark_blue . '  guifg=' . s:grey_blue
+exec 'highlight NightflyWhiteLineActive guibg=' . s:regal_blue . '  guifg=' . s:white_blue
+exec 'highlight NightflyTanLineActive guibg=' . s:regal_blue . '  guifg=' . s:tan
+exec 'highlight NightflyTanLine guibg=' . s:dark_blue . '  guifg=' . s:tan
+exec 'highlight NightflyGreyBlueLine guibg=' . s:dark_blue . '  guifg=' . s:grey_blue
+exec 'highlight NightflyBlueLine guibg=' . s:slate_blue . ' guifg=' . s:blue
 
 " Color of mode text, -- INSERT --
 exec 'highlight ModeMsg guifg=' . s:cadet_blue . ' gui=none'
@@ -878,7 +880,7 @@ highlight! link MistflyNormal NightflyBlueMode
 highlight! link MistflyInsert NightflyWhiteMode
 highlight! link MistflyVisual NightflyPurpleMode
 highlight! link MistflyReplace NightflyWatermelonMode
-exec 'highlight MistflyEmphasis guibg=' . s:slate_blue . ' guifg=' . s:blue
+highlight! link MistflyEmphasis NightflyBlueLine
 exec 'highlight MistflyDiscreet guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue
 exec 'highlight MistflyNotification guibg=' . s:slate_blue . ' guifg=' . s:watermelon
 
@@ -1015,14 +1017,15 @@ if has('nvim')
     highlight! link HopUnmatched NightflyGreyBlue
 
     " Barbar plugin
-    highlight! link BufferCurrent NightflyWhiteTab
-    highlight! link BufferCurrentIndex NightflyWhiteTab
-    highlight! link BufferCurrentMod NightflyTanTab
-    highlight! link BufferVisible NightflyGreyBlueTab
-    highlight! link BufferVisibleIndex NightflyGreyBlueTab
-    highlight! link BufferVisibleMod NightflyTanTab
-    highlight! link BufferVisibleSign NightflyGreyBlueTab
-    exec 'highlight BufferCurrentSign  guibg=' . s:dark_blue . '  guifg=' . s:blue
+    highlight! link BufferCurrent NightflyWhiteLineActive
+    highlight! link BufferCurrentIndex NightflyWhiteLineActive
+    highlight! link BufferCurrentMod NightflyTanLineActive
+    highlight! link BufferTabpages NightflyBlueLine
+    highlight! link BufferVisible NightflyGreyBlueLine
+    highlight! link BufferVisibleIndex NightflyGreyBlueLine
+    highlight! link BufferVisibleMod NightflyTanLine
+    highlight! link BufferVisibleSign NightflyGreyBlueLine
+    exec 'highlight BufferCurrentSign  guibg=' . s:regal_blue . '  guifg=' . s:blue
     exec 'highlight BufferInactive     guibg=' . s:slate_blue . ' guifg=' . s:grey_blue
     exec 'highlight BufferInactiveMod  guibg=' . s:slate_blue . ' guifg=' . s:tan
     exec 'highlight BufferInactiveSign guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue
@@ -1086,12 +1089,12 @@ if has('nvim')
     highlight! link MiniStatuslineModeReplace NightflyWatermelonMode
     highlight! link MiniStatuslineModeVisual NightflyPurpleMode
     highlight! link MiniSurround IncSearch
-    highlight! link MiniTablineCurrent NightflyWhiteTab
+    highlight! link MiniTablineCurrent NightflyWhiteLineActive
     highlight! link MiniTablineFill TabLineFill
-    highlight! link MiniTablineModifiedCurrent NightflyTanTab
-    highlight! link MiniTablineModifiedVisible NightflyTanTab
+    highlight! link MiniTablineModifiedCurrent NightflyTanLineActive
+    highlight! link MiniTablineModifiedVisible NightflyTanLine
     highlight! link MiniTablineTabpagesection NightflyBlueMode
-    highlight! link MiniTablineVisible NightflyGreyBlueTab
+    highlight! link MiniTablineVisible NightflyGreyBlueLine
     highlight! link MiniTestEmphasis NightflyUnderline
     highlight! link MiniTestFail NightflyRed
     highlight! link MiniTestPass NightflyGreen
