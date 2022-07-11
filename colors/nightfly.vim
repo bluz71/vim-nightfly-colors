@@ -165,8 +165,8 @@ exec 'highlight NightflyBlueMode guibg=' . s:blue . ' guifg=' . s:dark_blue
 exec 'highlight NightflyWhiteMode guibg=' . s:white . ' guifg=' . s:dark_blue
 exec 'highlight NightflyPurpleMode guibg=' . s:purple . ' guifg=' . s:dark_blue
 exec 'highlight NightflyWatermelonMode guibg=' . s:watermelon . ' guifg=' . s:dark_blue
-exec 'highlight NightflyEmeraldMode guibg=' . s:emerald . ' guifg=' . s:dark_blue
-exec 'highlight NightflyYellowMode guibg=' . s:yellow . ' guifg=' . s:dark_blue
+exec 'highlight NightflyTanMode guibg=' . s:tan . ' guifg=' . s:dark_blue
+exec 'highlight NightflyTurquoiseMode guibg=' . s:turquoise . ' guifg=' . s:dark_blue
 exec 'highlight NightflyWhiteLineActive guibg=' . s:regal_blue . '  guifg=' . s:white_blue
 exec 'highlight NightflyTanLineActive guibg=' . s:regal_blue . '  guifg=' . s:tan
 exec 'highlight NightflyTanLine guibg=' . s:dark_blue . '  guifg=' . s:tan
@@ -879,6 +879,7 @@ let g:fzf_colors = {
 highlight! link MistflyNormal NightflyBlueMode
 highlight! link MistflyInsert NightflyWhiteMode
 highlight! link MistflyVisual NightflyPurpleMode
+highlight! link MistflyCommand NightflyTanMode
 highlight! link MistflyReplace NightflyWatermelonMode
 highlight! link MistflyEmphasis NightflyBlueLine
 exec 'highlight MistflyDiscreet guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue
@@ -1082,10 +1083,10 @@ if has('nvim')
     highlight! link MiniStarterSection NightflyWatermelon
     highlight! link MiniStatuslineDevinfo NightflyVisual
     highlight! link MiniStatuslineFileinfo NightflyVisual
-    highlight! link MiniStatuslineModeCommand NightflyEmeraldMode
+    highlight! link MiniStatuslineModeCommand NightflyTanMode
     highlight! link MiniStatuslineModeInsert NightflyWhiteMode
     highlight! link MiniStatuslineModeNormal NightflyBlueMode
-    highlight! link MiniStatuslineModeOther NightflyYellowMode
+    highlight! link MiniStatuslineModeOther NightflyTurquoiseMode
     highlight! link MiniStatuslineModeReplace NightflyWatermelonMode
     highlight! link MiniStatuslineModeVisual NightflyPurpleMode
     highlight! link MiniSurround IncSearch
