@@ -109,16 +109,12 @@ let g:lightline = { 'colorscheme': 'nightfly' }
 ```
 
 - The _nightfly_ colorscheme supports
-  [vim-airline](https://github.com/vim-airline/vim-airline). For modern
-  versions of _vim-airline_ the _nightfly_ theme will automatically be loaded.
+  [vim-airline](https://github.com/vim-airline/vim-airline). The _nightfly_
+  theme will automatically load once vim-airline starts.
 
 - The _nightfly_ colorscheme supports
-  [Lualine](https://github.com/nvim-lualine/lualine.nvim). To enable the
-  _nightfly_ theme please add the following to your initialization file:
-
-```lua
-require('lualine').setup({options = {theme = 'nightfly'}})
-```
+  [Lualine](https://github.com/nvim-lualine/lualine.nvim). The
+  _nightfly_ theme will automatically load once Lualine starts.
 
 - Lastly, my own
   [mistfly-statusline](https://github.com/bluz71/vim-mistfly-statusline) is
