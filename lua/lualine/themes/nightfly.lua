@@ -10,7 +10,7 @@ local colors = {
 
   -- Mode colors.
   color1 = '#82aaff',
-  color2 = '#c3ccdc',
+  color2 = '#21c7a8',
   color3 = '#ae81ff',
   color4 = '#ecc48d',
   color5 = '#ff5874',
@@ -20,6 +20,9 @@ local colors = {
 
   -- StatusLineNC foreground.
   color7 = '#a1aab8',
+
+  -- Normal text color.
+  color8 = '#c3ccdc',
 }
 
 -- LuaFormatter on
@@ -27,7 +30,7 @@ return {
   normal = {
     a = {fg = colors.color6, bg = colors.color1},
     b = {fg = colors.color1, bg = colors.color0},
-    c = {fg = colors.color2, bg = colors.color0}
+    c = {fg = colors.color8, bg = colors.color0}
   },
   insert = {
     a = {fg = colors.color6, bg = colors.color2},

@@ -162,7 +162,7 @@ exec 'highlight NightflyEmeraldAlert guibg=bg guifg=' . s:emerald
 exec 'highlight NightflyUnderline gui=underline'
 exec 'highlight NightflyNoCombine gui=nocombine'
 exec 'highlight NightflyBlueMode guibg=' . s:blue . ' guifg=' . s:dark_blue
-exec 'highlight NightflyWhiteMode guibg=' . s:white . ' guifg=' . s:dark_blue
+exec 'highlight NightflyEmeraldMode guibg=' . s:emerald . ' guifg=' . s:dark_blue
 exec 'highlight NightflyPurpleMode guibg=' . s:purple . ' guifg=' . s:dark_blue
 exec 'highlight NightflyWatermelonMode guibg=' . s:watermelon . ' guifg=' . s:dark_blue
 exec 'highlight NightflyTanMode guibg=' . s:tan . ' guifg=' . s:dark_blue
@@ -877,7 +877,7 @@ let g:fzf_colors = {
 
 " mistfly-statusline plugin
 highlight! link MistflyNormal NightflyBlueMode
-highlight! link MistflyInsert NightflyWhiteMode
+highlight! link MistflyInsert NightflyEmeraldMode
 highlight! link MistflyVisual NightflyPurpleMode
 highlight! link MistflyCommand NightflyTanMode
 highlight! link MistflyReplace NightflyWatermelonMode
@@ -1083,7 +1083,7 @@ if has('nvim')
     highlight! link MiniStatuslineDevinfo NightflyVisual
     highlight! link MiniStatuslineFileinfo NightflyVisual
     highlight! link MiniStatuslineModeCommand NightflyTanMode
-    highlight! link MiniStatuslineModeInsert NightflyWhiteMode
+    highlight! link MiniStatuslineModeInsert NightflyEmeraldMode
     highlight! link MiniStatuslineModeNormal NightflyBlueMode
     highlight! link MiniStatuslineModeOther NightflyTurquoiseMode
     highlight! link MiniStatuslineModeReplace NightflyWatermelonMode
