@@ -359,6 +359,10 @@ A collection of _nightfly_-flavoured terminal themes are provided:
   [this](terminal_themes/alacritty.yml) theme into their `alacritty.yml`
   configuration.
 
+- [Windows Terminal](https://github.com/microsoft/terminal) users can copy
+  [this](terminal_themes/windows-terminal-settings.json) theme into their `settings.json`
+  configuration.
+
 - [kitty](https://sw.kovidgoyal.net/kitty) users can use
   [this](terminal_themes/kitty-theme.conf) theme
 
