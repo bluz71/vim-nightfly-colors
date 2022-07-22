@@ -881,8 +881,6 @@ highlight! link MistflyInsert NightflyEmeraldMode
 highlight! link MistflyVisual NightflyPurpleMode
 highlight! link MistflyCommand NightflyTanMode
 highlight! link MistflyReplace NightflyWatermelonMode
-highlight! link MistflyEmphasis NightflyBlueLine
-exec 'highlight MistflyNotification guibg=' . s:slate_blue . ' guifg=' . s:watermelon
 
 " Coc plugin (see issue: https://github.com/bluz71/vim-nightfly-guicolors/issues/31)
 highlight! link CocUnusedHighlight NightflyAshBlue
