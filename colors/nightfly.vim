@@ -161,17 +161,23 @@ exec 'highlight NightflyBlueAlert guibg=bg guifg=' . s:blue
 exec 'highlight NightflyEmeraldAlert guibg=bg guifg=' . s:emerald
 exec 'highlight NightflyUnderline gui=underline'
 exec 'highlight NightflyNoCombine gui=nocombine'
+" Statusline helper colors.
 exec 'highlight NightflyBlueMode guibg=' . s:blue . ' guifg=' . s:dark_blue
 exec 'highlight NightflyEmeraldMode guibg=' . s:emerald . ' guifg=' . s:dark_blue
 exec 'highlight NightflyPurpleMode guibg=' . s:purple . ' guifg=' . s:dark_blue
 exec 'highlight NightflyWatermelonMode guibg=' . s:watermelon . ' guifg=' . s:dark_blue
 exec 'highlight NightflyTanMode guibg=' . s:tan . ' guifg=' . s:dark_blue
 exec 'highlight NightflyTurquoiseMode guibg=' . s:turquoise . ' guifg=' . s:dark_blue
-exec 'highlight NightflyWhiteLineActive guibg=' . s:regal_blue . '  guifg=' . s:white_blue
-exec 'highlight NightflyTanLineActive guibg=' . s:regal_blue . '  guifg=' . s:tan
-exec 'highlight NightflyTanLine guibg=' . s:dark_blue . '  guifg=' . s:tan
-exec 'highlight NightflyGreyBlueLine guibg=' . s:dark_blue . '  guifg=' . s:grey_blue
+" Tabline helper colors.
 exec 'highlight NightflyBlueLine guibg=' . s:slate_blue . ' guifg=' . s:blue
+exec 'highlight NightflyBlueLineActive guibg=' . s:regal_blue . '  guifg=' . s:blue
+exec 'highlight NightflyCadetBlueLine guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue
+exec 'highlight NightflyEmeraldLine guibg=' . s:slate_blue . ' guifg=' . s:emerald
+exec 'highlight NightflyEmeraldLineActive guibg=' . s:regal_blue . ' guifg=' . s:emerald
+exec 'highlight NightflyGreyBlueLine guibg=' . s:dark_blue . '  guifg=' . s:grey_blue
+exec 'highlight NightflyTanLine guibg=' . s:dark_blue . '  guifg=' . s:tan
+exec 'highlight NightflyTanLineActive guibg=' . s:regal_blue . '  guifg=' . s:tan
+exec 'highlight NightflyWhiteLineActive guibg=' . s:regal_blue . '  guifg=' . s:white_blue
 
 " Color of mode text, -- INSERT --
 exec 'highlight ModeMsg guifg=' . s:cadet_blue . ' gui=none'
@@ -1027,6 +1033,26 @@ if has('nvim')
     exec 'highlight BufferInactive     guibg=' . s:slate_blue . ' guifg=' . s:grey_blue
     exec 'highlight BufferInactiveMod  guibg=' . s:slate_blue . ' guifg=' . s:tan
     exec 'highlight BufferInactiveSign guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue
+
+    " Bufferline plugin
+    exec 'highlight BufferLineFill guibg=bg guifg=bg'
+    highlight! link BufferLineBackground NightflyGreyBlueLine
+    highlight! link BufferLineBuffer BufferLineBackground
+    highlight! link BufferLineBufferSelected NightflyWhiteLineActive
+    highlight! link BufferLineBufferVisible NightflyCadetBlueLine
+    highlight! link BufferLineCloseButton BufferLineBackground
+    highlight! link BufferLineCloseButtonSelected NightflyBlueLineActive
+    highlight! link BufferLineCloseButtonVisible NightflyCadetBlueLine
+    highlight! link BufferLineIndicatorSelected NightflyBlueLineActive
+    highlight! link BufferLineIndicatorVisible NightflyCadetBlueLine
+    highlight! link BufferLineModified BufferLineBackground
+    highlight! link BufferLineModifiedSelected NightflyEmeraldLineActive
+    highlight! link BufferLineModifiedVisible NightflyEmeraldLine
+    highlight! link BufferLineSeparator BufferLineFill
+    highlight! link BufferLineSeparatorSelected BufferLineFill
+    highlight! link BufferLineTab BufferLineBackground
+    highlight! link BufferLineTabClose NightflyBlueLine
+    highlight! link BufferLineTabSelected NightflyBlueLineActive
 
     " nvim-cmp plugin
     highlight! link CmpItemAbbrMatch NightflyTan
