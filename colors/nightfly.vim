@@ -271,7 +271,7 @@ exec 'highlight VisualInDiff guibg=' . s:regal_blue . ' guifg=' . s:white
 " Errors, warnings and whitespace-eol
 exec 'highlight Error guibg=bg guifg=' . s:red
 exec 'highlight ErrorMsg guibg=bg guifg=' . s:red
-exec 'highlight WarningMsg guibg=bg guifg=' . s:yellow
+exec 'highlight WarningMsg guibg=bg guifg=' . s:orange
 
 " Auto-text-completion menu
 exec 'highlight Pmenu guibg=' . s:deep_blue . ' guifg=fg'
