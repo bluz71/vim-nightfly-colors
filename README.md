@@ -127,14 +127,14 @@ let g:lightline = { 'colorscheme': 'nightfly' }
 
 | Option | Default State
 |--------|--------------
-| [nightflyCursorColor](https://github.com/bluz71/vim-nightfly-guicolors#nightflyCursorColor)                 | Disabled
-| [nightflyItalics](https://github.com/bluz71/vim-nightfly-guicolors#nightflyItalics)                         | Enabled
-| [nightflyNormalFloat](https://github.com/bluz71/vim-nightfly-guicolors#nightflyNormalFloat)                 | Disabled
-| [nightflyTerminalColors](https://github.com/bluz71/vim-nightfly-guicolors#nightflyTerminalColors)           | Enabled
-| [nightflyTransparent](https://github.com/bluz71/vim-nightfly-guicolors#nightflyTransparent)                 | Disabled
-| [nightflyUndercurls](https://github.com/bluz71/vim-nightfly-guicolors#nightflyUndercurls)                   | Enabled
-| [nightflyUnderlineMatchParen](https://github.com/bluz71/vim-guinightfly-colors#nightflyUnderlineMatchParen) | Disabled
-| [nightflyWinSeparator](https://github.com/bluz71/vim-nightfly-guicolors#nightflyWinSeparator)               | `1`
+| [nightflyCursorColor](https://github.com/bluz71/vim-nightfly-guicolors#nightflycursorcolor)                 | Disabled
+| [nightflyItalics](https://github.com/bluz71/vim-nightfly-guicolors#nightflyitalics)                         | Enabled
+| [nightflyNormalFloat](https://github.com/bluz71/vim-nightfly-guicolors#nightflynormalfloat)                 | Disabled
+| [nightflyTerminalColors](https://github.com/bluz71/vim-nightfly-guicolors#nightflyterminalcolors)           | Enabled
+| [nightflyTransparent](https://github.com/bluz71/vim-nightfly-guicolors#nightflytransparent)                 | Disabled
+| [nightflyUndercurls](https://github.com/bluz71/vim-nightfly-guicolors#nightflyundercurls)                   | Enabled
+| [nightflyUnderlineMatchParen](https://github.com/bluz71/vim-nightfly-guicolors#nightflyunderlinematchparen) | Disabled
+| [nightflyWinSeparator](https://github.com/bluz71/vim-nightfly-guicolors#nightflywinseparator)               | `1`
 
 ---
 
