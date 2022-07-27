@@ -125,6 +125,21 @@ let g:lightline = { 'colorscheme': 'nightfly' }
 :wrench: Options
 ----------------
 
+| Option | Default State
+|--------|--------------
+| [nightflyCursorColor](https://github.com/bluz71/vim-nightfly-guicolors#nightflyCursorColor)                 | Disabled
+| [nightflyItalics](https://github.com/bluz71/vim-nightfly-guicolors#nightflyItalics)                         | Enabled
+| [nightflyNormalFloat](https://github.com/bluz71/vim-nightfly-guicolors#nightflyNormalFloat)                 | Disabled
+| [nightflyTerminalColors](https://github.com/bluz71/vim-nightfly-guicolors#nightflyTerminalColors)           | Enabled
+| [nightflyTransparent](https://github.com/bluz71/vim-nightfly-guicolors#nightflyTransparent)                 | Disabled
+| [nightflyUndercurls](https://github.com/bluz71/vim-nightfly-guicolors#nightflyUndercurls)                   | Enabled
+| [nightflyUnderlineMatchParen](https://github.com/bluz71/vim-guinightfly-colors#nightflyUnderlineMatchParen) | Disabled
+| [nightflyWinSeparator](https://github.com/bluz71/vim-nightfly-guicolors#nightflyWinSeparator)               | `1`
+
+---
+
+### nightflyCursorColor
+
 The `nightflyCursorColor` option specifies whether to color the cursor or not.
 By default the cursor will **NOT** be colored. If you prefer a colored cursor
 then add the following to your initialization file:
@@ -140,6 +155,8 @@ vim.g.nightflyCursorColor = 1
 ```
 
 ---
+
+### nightflyItalics
 
 The `nightflyItalics` option specifies whether to use italics for comments and
 certain HTML elements in GUI versions of Vim. By default this option is
@@ -157,6 +174,8 @@ vim.g.nightflyItalics = 0
 ```
 
 ---
+
+### nightflyNormalFloat
 
 The `nightflyNormalFloat` option specifies whether to use nightfly background
 and foreground colors in Neovim floating windows. By default this option is
@@ -209,6 +228,8 @@ require('cmp').setup({
 
 ---
 
+### nightflyTerminalColors
+
 The `nightflyTerminalColors` option specifies whether to use the nightfly color
 palette in `:terminal` windows when `termguicolors` is set. By default this
 option is **enabled**. If you prefer not to use the nightfly color palette for
@@ -225,6 +246,8 @@ vim.g.nightflyTerminalColors = 0
 ```
 
 ---
+
+### nightflyTransparent
 
 The `nightflyTransparent` option specifies whether to use an opaque or
 transparent background in GUI versions of Vim. By default this option is
@@ -243,6 +266,8 @@ vim.g.nightflyTransparent = 1
 
 ---
 
+### nightflyUndercurls
+
 The `nightflyUndercurls` option specifies whether to use undercurls for
 spelling and linting errors in GUI versions of Vim, including terminal Vim with
 `termguicolors` set. By default this option is **enabled**. If you do not like
@@ -260,6 +285,8 @@ vim.g.nightflyUndercurls = 0
 
 ---
 
+### nightflyUnderlineMatchParen
+
 The `nightflyUnderlineMatchParen` option specifies whether to underline
 matching parentheses. By default this option is **disabled**. If you want to
 underline matching parentheses then add the following to your initialization
@@ -276,6 +303,8 @@ vim.g.nightflyUnderlineMatchParen = 1
 ```
 
 ---
+
+### nightflyWinSeparator
 
 The `nightflyWinSeparator` option specifies the style of window separators:
 
