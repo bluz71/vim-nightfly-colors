@@ -112,7 +112,7 @@ let g:lightline = { 'colorscheme': 'nightfly' }
 
 - The _nightfly_ colorscheme supports
   [vim-airline](https://github.com/vim-airline/vim-airline). The _nightfly_
-  theme will automatically load once vim-airline starts.
+  theme will load once vim-airline starts.
 
 - The _nightfly_ colorscheme supports
   [Lualine](https://github.com/nvim-lualine/lualine.nvim). The
@@ -146,12 +146,12 @@ then add the following to your initialization file:
 
 ```viml
 " Vimscript initialization file
-let g:nightflyCursorColor = 1
+let g:nightflyCursorColor = v:true
 ```
 
 ```lua
 -- Lua initialization file
-vim.g.nightflyCursorColor = 1
+vim.g.nightflyCursorColor = true
 ```
 
 ---
@@ -165,12 +165,12 @@ to your initialization file:
 
 ```viml
 " Vimscript initialization file
-let g:nightflyItalics = 0
+let g:nightflyItalics = v:false
 ```
 
 ```lua
 -- Lua initialization file
-vim.g.nightflyItalics = 0
+vim.g.nightflyItalics = false
 ```
 
 ---
@@ -185,12 +185,12 @@ following to your configuration:
 
 ```viml
 " Vimscript initialization file
-let g:nightflyNormalFloat = 1
+let g:nightflyNormalFloat = v:true
 ```
 
 ```lua
 -- Lua initialization file
-vim.g.nightflyNormalFloat = 1
+vim.g.nightflyNormalFloat = true
 ```
 
 :bulb: If the above option is set then it is highly recommended to enable
@@ -237,12 +237,12 @@ the first 16 terminal colors then add the following to your initialization file:
 
 ```viml
 " Vimscript initialization file
-let g:nightflyTerminalColors = 0
+let g:nightflyTerminalColors = v:false
 ```
 
 ```lua
 -- Lua initialization file
-vim.g.nightflyTerminalColors = 0
+vim.g.nightflyTerminalColors = false
 ```
 
 ---
@@ -256,12 +256,12 @@ to your initialization file:
 
 ```viml
 " Vimscript initialization file
-let g:nightflyTransparent = 1
+let g:nightflyTransparent = v:true
 ```
 
 ```lua
 -- Lua initialization file
-vim.g.nightflyTransparent = 1
+vim.g.nightflyTransparent = true
 ```
 
 ---
@@ -275,12 +275,12 @@ the appearance of undercurls then add the following to your initialization file:
 
 ```viml
 " Vimscript initialization file
-let g:nightflyUndercurls = 0
+let g:nightflyUndercurls = v:false
 ```
 
 ```lua
 -- Lua initialization file
-vim.g.nightflyUndercurls = 0
+vim.g.nightflyUndercurls = false
 ```
 
 ---
@@ -294,12 +294,12 @@ file:
 
 ```viml
 " Vimscript initialization file
-let g:nightflyUnderlineMatchParen = 1
+let g:nightflyUnderlineMatchParen = v:true
 ```
 
 ```lua
 -- Lua initialization file
-vim.g.nightflyUnderlineMatchParen = 1
+vim.g.nightflyUnderlineMatchParen = true
 ```
 
 ---

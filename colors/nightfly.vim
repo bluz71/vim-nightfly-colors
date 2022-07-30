@@ -34,27 +34,27 @@ else " Vim
 endif
 
 " By default do not color the cursor.
-let g:nightflyCursorColor = get(g:, 'nightflyCursorColor', 0)
+let g:nightflyCursorColor = get(g:, 'nightflyCursorColor', v:false)
 
 " By default do use italics in GUI versions of Vim.
-let g:nightflyItalics = get(g:, 'nightflyItalics', 1)
+let g:nightflyItalics = get(g:, 'nightflyItalics', v:true)
 
 " By default do not use a customized 'NormalFloat' highlight group (for Neovim
 " floating windows).
-let g:nightflyNormalFloat = get(g:, 'nightflyNormalFloat', 0)
+let g:nightflyNormalFloat = get(g:, 'nightflyNormalFloat', v:false)
 
 " By default use the nightly color palette in the `:terminal`
-let g:nightflyTerminalColors = get(g:, 'nightflyTerminalColors', 1)
+let g:nightflyTerminalColors = get(g:, 'nightflyTerminalColors', v:true)
 
 " By default do not use a transparent background in GUI versions of Vim.
-let g:nightflyTransparent = get(g:, 'nightflyTransparent', 0)
+let g:nightflyTransparent = get(g:, 'nightflyTransparent', v:false)
 
 " By default do use undercurls in GUI versions of Vim, including terminal Vim
 " with termguicolors set.
-let g:nightflyUndercurls = get(g:, 'nightflyUndercurls', 1)
+let g:nightflyUndercurls = get(g:, 'nightflyUndercurls', v:true)
 
 " By default do not underline matching parentheses.
-let g:nightflyUnderlineMatchParen = get(g:, 'nightflyUnderlineMatchParen', 0)
+let g:nightflyUnderlineMatchParen = get(g:, 'nightflyUnderlineMatchParen', v:false)
 
 " By default do display vertical split columns.
 let g:nightflyWinSeparator = get(g:, 'nightflyWinSeparator', 1)
