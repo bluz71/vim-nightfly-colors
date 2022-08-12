@@ -330,7 +330,7 @@ exec 'highlight Conceal guibg=NONE guifg=' . s:ash_blue
 
 " Neovim only highlight groups
 if has('nvim')
-    exec 'highlight Whitespace guifg=' . s:steel_blue
+    exec 'highlight Whitespace guifg=' . s:regal_blue
     exec 'highlight TermCursor guibg=' . s:cadet_blue . ' guifg=bg gui=none'
     if g:nightflyNormalFloat
         exec 'highlight NormalFloat guibg=bg guifg=' . s:cadet_blue
