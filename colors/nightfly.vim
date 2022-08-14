@@ -353,7 +353,7 @@ if has('nvim')
     highlight! link TSFuncMacro NightflyBlue
     highlight! link TSInclude NightflyWatermelon
     highlight! link TSKeywordOperator NightflyViolet
-    highlight! link TSNamespace NightflyIndigo
+    highlight! link TSNamespace NightflyTurquoise
     highlight! link TSParameter NightflyWhite
     highlight! link TSPunctSpecial NightflyWatermelon
     highlight! link TSSymbol NightflyPurple
