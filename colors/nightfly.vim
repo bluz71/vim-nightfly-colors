@@ -1128,6 +1128,12 @@ if has('nvim')
     exec 'highlight MiniStatuslineInactive guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue
     exec 'highlight MiniTablineHidden guibg=' . s:slate_blue . ' guifg=' . s:grey_blue
     exec 'highlight MiniTablineModifiedHidden guibg=' . s:slate_blue . ' guifg=' . s:tan
+
+    " Dashboard plugin
+    highlight! link DashboardCenter NightflyViolet
+    highlight! link DashboardFooter NightflyOrange
+    highlight! link DashboardHeader NightflyBlue
+    highlight! link DashboardShortCut NightflyTurquoise
 endif
 
 set background=dark
