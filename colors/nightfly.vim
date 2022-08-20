@@ -366,6 +366,7 @@ if has('nvim')
     highlight! link scssTSPunctDelimiter NightflyWatermelon
     highlight! link scssTSType NightflyBlue
     highlight! link scssTSVariable NightflyTurquoise
+    highlight! link vimTSVariable NightflyTurquoise
     highlight! link yamlTSField NightflyBlue
     highlight! link yamlTSPunctDelimiter NightflyWatermelon
 endif
@@ -1057,7 +1058,7 @@ if has('nvim')
     " nvim-cmp plugin
     highlight! link CmpItemAbbrMatch NightflyTan
     highlight! link CmpItemAbbrMatchFuzzy NightflyOrange
-    highlight! link CmpItemKindDefault NightflyWhite
+    highlight! link CmpItemKind NightflyWhite
     highlight! link CmpItemKindClass NightflyEmerald
     highlight! link CmpItemKindColor NightflyTurquoise
     highlight! link CmpItemKindConstant NightflyPurple
@@ -1076,7 +1077,9 @@ if has('nvim')
     highlight! link CmpItemKindOperator NightflyViolet
     highlight! link CmpItemKindProperty NightflyTurquoise
     highlight! link CmpItemKindReference NightflyTurquoise
+    highlight! link CmpItemKindSnippet NightflyGreen
     highlight! link CmpItemKindStruct NightflyEmerald
+    highlight! link CmpItemKindText NightflyAshBlue
     highlight! link CmpItemKindTypeParameter NightflyEmerald
     highlight! link CmpItemKindUnit NightflyTurquoise
     highlight! link CmpItemKindValue NightflyTurquoise
