@@ -985,7 +985,8 @@ if has('nvim')
     " Telescope plugin
     highlight! link TelescopeBorder NightflySlateBlue
     highlight! link TelescopeMatching NightflyOrange
-    highlight! link TelescopeMultiSelection NightflyWatermelon
+    highlight! link TelescopeMultiIcon NightflyWatermelon
+    highlight! link TelescopeMultiSelection NightflyEmerald
     highlight! link TelescopeNormal NightflyAshBlue
     highlight! link TelescopePreviewDate NightflyGreyBlue
     highlight! link TelescopePreviewGroup NightflyGreyBlue
