@@ -235,8 +235,8 @@ highlight! link Operator NightflyWatermelon
 highlight! link Repeat NightflyViolet
 
 " Search
-exec 'highlight Search guibg=bg guifg=' . s:orange . ' gui=reverse'
-exec 'highlight IncSearch guibg=bg guifg=' . s:peach
+exec 'highlight Search cterm=none guibg=' . s:orange . ' guifg=bg gui=none'
+exec 'highlight IncSearch cterm=none guibg=' . s:peach . ' guifg=bg gui=none'
 
 " '\n' sequences
 highlight! link Special NightflyWatermelon
