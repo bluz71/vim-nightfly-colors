@@ -362,15 +362,29 @@ if has('nvim')
     highlight! link TSTag NightflyBlue
     highlight! link TSTagDelimiter NightflyGreen
     highlight! link TSVariableBuiltin NightflyGreen
-    highlight! link bashTSParameter NightflyTurquoise
-    highlight! link cssTSPunctDelimiter NightflyWatermelon
-    highlight! link cssTSType NightflyBlue
-    highlight! link scssTSPunctDelimiter NightflyWatermelon
-    highlight! link scssTSType NightflyBlue
-    highlight! link scssTSVariable NightflyTurquoise
-    highlight! link vimTSVariable NightflyTurquoise
-    highlight! link yamlTSField NightflyBlue
-    highlight! link yamlTSPunctDelimiter NightflyWatermelon
+    if has('nvim-0.8')
+        highlight! link @parameter.bash NightflyTurquoise
+        highlight! link @punctDelimiter.css NightflyWatermelon
+        highlight! link @type.css NightflyBlue
+        highlight! link @punctuation.delimiter.scss NightflyWatermelon
+        highlight! link @type.scss NightflyBlue
+        highlight! link @variable.scss NightflyTurquoise
+        highlight! link @variable.vim NightflyTurquoise
+        highlight! link @variable.builtin.vim NightflyEmerald
+        highlight! link @field.yaml NightflyBlue
+        highlight! link @punctuation.delimiter.yaml NightflyWatermelon
+    else
+        highlight! link bashTSParameter NightflyTurquoise
+        highlight! link cssTSPunctDelimiter NightflyWatermelon
+        highlight! link cssTSType NightflyBlue
+        highlight! link scssTSPunctDelimiter NightflyWatermelon
+        highlight! link scssTSType NightflyBlue
+        highlight! link scssTSVariable NightflyTurquoise
+        highlight! link vimTSVariable NightflyTurquoise
+        highlight! link vimTSVariableBuiltin NightflyEmerald
+        highlight! link yamlTSField NightflyBlue
+        highlight! link yamlTSPunctDelimiter NightflyWatermelon
+    endif
 endif
 
 " C/C++
