@@ -3,18 +3,16 @@
 " URL:     github.com/bluz71/vim-nightfly-guicolors
 " License: MIT (https://opensource.org/licenses/MIT)
 
-" Clear highlights and reset syntax only when changing colorschemes.
-if exists('g:colors_name')
-    highlight clear
-    if exists('syntax_on')
-        syntax reset
-    endif
+" Clear highlights and reset syntax.
+highlight clear
+if exists('syntax_on')
+    syntax reset
 endif
 let g:colors_name='nightfly'
 
-" Please check that Vim/Neovim is able to run this true-color only theme.
+" Check that Vim/Neovim is able to run this true-color only theme.
 "
-" If running in a terminal make sure termguicolors exists and is set.
+" If running in a terminal make sure 'termguicolors' exists and is set.
 if has('nvim')
     if has('nvim-0.4') && len(nvim_list_uis()) > 0 && nvim_list_uis()[0]['ext_termcolors'] && !&termguicolors
         " The nvim_list_uis test indicates terminal Neovim vs GUI Neovim.
@@ -1059,24 +1057,8 @@ if has('nvim')
     exec 'highlight BufferInactiveSign guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue
 
     " Bufferline plugin
-    exec 'highlight BufferLineFill guibg=bg guifg=bg'
-    highlight! link BufferLineBackground NightflyGreyBlueLine
-    highlight! link BufferLineBuffer BufferLineBackground
-    highlight! link BufferLineBufferSelected NightflyWhiteLineActive
-    highlight! link BufferLineBufferVisible NightflyCadetBlueLine
-    highlight! link BufferLineCloseButton BufferLineBackground
-    highlight! link BufferLineCloseButtonSelected NightflyBlueLineActive
-    highlight! link BufferLineCloseButtonVisible NightflyCadetBlueLine
-    highlight! link BufferLineIndicatorSelected NightflyBlueLineActive
-    highlight! link BufferLineIndicatorVisible NightflyCadetBlueLine
-    highlight! link BufferLineModified BufferLineBackground
-    highlight! link BufferLineModifiedSelected NightflyEmeraldLineActive
-    highlight! link BufferLineModifiedVisible NightflyEmeraldLine
-    highlight! link BufferLineSeparator BufferLineFill
-    highlight! link BufferLineSeparatorSelected BufferLineFill
-    highlight! link BufferLineTab BufferLineBackground
-    highlight! link BufferLineTabClose NightflyBlueLine
-    highlight! link BufferLineTabSelected NightflyBlueLineActive
+    exec 'highlight BufferLineTabSelected guifg=' . s:blue
+    exec 'highlight BufferLineIndicatorSelected guifg=' . s:blue
 
     " nvim-cmp plugin
     highlight! link CmpItemAbbrMatch NightflyTan
