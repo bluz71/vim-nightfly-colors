@@ -1142,6 +1142,23 @@ if has('nvim')
     highlight! link DashboardFooter NightflyOrange
     highlight! link DashboardHeader NightflyBlue
     highlight! link DashboardShortCut NightflyTurquoise
+
+    " nvim-notify
+    highlight! link NotifyERRORBorder FloatBorder
+    highlight! link NotifyWARNBorder FloatBorder
+    highlight! link NotifyINFOBorder FloatBorder
+    highlight! link NotifyDEBUGBorder FloatBorder
+    highlight! link NotifyTRACEBorder FloatBorder
+    highlight! link NotifyERRORIcon NightflyRed
+    highlight! link NotifyWARNIcon NightflyYellow
+    highlight! link NotifyINFOIcon NightflyBlue
+    highlight! link NotifyDEBUGIcon NightflyGreyBlue
+    highlight! link NotifyTRACEIcon NightflyPurple
+    highlight! link NotifyERRORTitle NightflyRed
+    highlight! link NotifyWARNTitle NightflyYellow
+    highlight! link NotifyINFOTitle NightflyBlue
+    highlight! link NotifyDEBUGTitle NightflyGreyBlue
+    highlight! link NotifyTRACETitle NightflyPurple
 endif
 
 set background=dark
