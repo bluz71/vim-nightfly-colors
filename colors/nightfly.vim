@@ -341,11 +341,6 @@ if has('nvim')
     exec 'highlight WinBar cterm=none guibg=' . s:deep_blue . ' guifg=' . s:white . ' gui=none'
     exec 'highlight WinBarNC cterm=none guibg=' . s:deep_blue . ' guifg=' . s:cadet_blue . ' gui=none'
     highlight! link WinSeparator VertSplit
-    " When cmdheight is 0 then use StatusLine colors for the commandline since
-    " the commandline will actually use the statusline area.
-    if &cmdheight == 0
-        highlight! link MsgArea StatusLine
-    endif
 
     " Neovim Treesitter
     highlight! link TSAnnotation NightflyViolet
