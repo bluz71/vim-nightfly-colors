@@ -349,6 +349,7 @@ if has('nvim')
     highlight! link TSConstBuiltin NightflyGreen
     highlight! link TSConstMacro NightflyViolet
     highlight! link TSConstructor NightflyEmerald
+    highlight! link TSDanger Todo
     highlight! link TSFuncBuiltin NightflyBlue
     highlight! link TSFuncMacro NightflyBlue
     highlight! link TSInclude NightflyWatermelon
