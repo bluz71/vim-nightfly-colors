@@ -384,29 +384,254 @@ if has('nvim')
         highlight! link yamlTSField NightflyBlue
         highlight! link yamlTSPunctDelimiter NightflyWatermelon
     endif
+
+    " Neovim Diagnostic
+    highlight! link DiagnosticError NightflyRed
+    highlight! link DiagnosticWarn NightflyYellow
+    highlight! link DiagnosticInfo NightflyBlue
+    highlight! link DiagnosticHint NightflyWhite
+    if g:nightflyUndercurls
+        exec 'highlight DiagnosticUnderlineError guibg=NONE gui=undercurl guisp=' . s:red
+        exec 'highlight DiagnosticUnderlineWarn guibg=NONE gui=undercurl guisp=' . s:yellow
+        exec 'highlight DiagnosticUnderlineInfo guibg=NONE gui=undercurl guisp=' . s:blue
+        exec 'highlight DiagnosticUnderlineHint guibg=NONE gui=undercurl guisp=' . s:white
+    else
+        exec 'highlight DiagnosticUnderlineError guibg=NONE gui=underline guisp=' . s:red
+        exec 'highlight DiagnosticUnderlineWarn guibg=NONE gui=underline guisp=' . s:yellow
+        exec 'highlight DiagnosticUnderlineInfo guibg=NONE gui=underline guisp=' . s:blue
+        exec 'highlight DiagnosticUnderlineHint guibg=NONE gui=underline guisp=' . s:white
+    endif
+    highlight! link DiagnosticVirtualTextError NightflySteelBlue
+    highlight! link DiagnosticVirtualTextWarn NightflySteelBlue
+    highlight! link DiagnosticVirtualTextInfo NightflySteelBlue
+    highlight! link DiagnosticVirtualTextHint NightflySteelBlue
+    highlight! link DiagnosticSignError NightflyRedAlert
+    highlight! link DiagnosticSignWarn NightflyYellowAlert
+    highlight! link DiagnosticSignInfo NightflyBlueAlert
+    highlight! link DiagnosticSignHint NightflyWhiteAlert
+    highlight! link DiagnosticFloatingError NightflyRed
+    highlight! link DiagnosticFloatingWarn NightflyYellow
+    highlight! link DiagnosticFloatingInfo NightflyBlue
+    highlight! link DiagnosticFloatingHint NightflyWhite
+    highlight! link LspSignatureActiveParameter NightflyVisual
 endif
 
-" C/C++
-highlight! link cDefine NightflyViolet
-highlight! link cPreCondit NightflyViolet
-highlight! link cStatement NightflyViolet
-highlight! link cStructure NightflyOrange
-highlight! link cppAccess NightflyGreen
-highlight! link cppCast NightflyTurquoise
-highlight! link cppCustomClass NightflyTurquoise
-highlight! link cppExceptions NightflyGreen
-highlight! link cppModifier NightflyViolet
-highlight! link cppOperator NightflyGreen
-highlight! link cppSTLconstant NightflyIndigo
-highlight! link cppSTLnamespace NightflyIndigo
-highlight! link cppStatement NightflyTurquoise
-highlight! link cppStructure NightflyViolet
+" Neovim 0.8 provides builtin Treesitter support for C, Lua and Vimscript,
+" hence, only setup old-school regex highlight groups for Vim and Neovim
+" versions prior to 0.8.
+if !has('nvim-0.8')
+    " C
+    highlight! link cDefine NightflyViolet
+    highlight! link cPreCondit NightflyViolet
+    highlight! link cStatement NightflyViolet
+    highlight! link cStructure NightflyOrange
 
-" C#
-highlight! link csModifier NightflyGreen
-highlight! link csPrecondit NightflyViolet
-highlight! link csStorage NightflyViolet
-highlight! link csXmlTag NightflyBlue
+    " Lua
+    highlight! link luaBraces NightflyWatermelon
+    highlight! link luaBuiltin NightflyGreen
+    highlight! link luaFuncCall NightflyBlue
+    highlight! link luaSpecialTable NightflyBlue
+
+    " Vimscript
+    highlight! link vimBracket NightflyBlue
+    highlight! link vimCommand NightflyViolet
+    highlight! link vimCommentTitle NightflyViolet
+    highlight! link vimEnvvar NightflyWatermelon
+    highlight! link vimFuncName NightflyBlue
+    highlight! link vimFuncSID NightflyBlue
+    highlight! link vimFunction NightflyBlue
+    highlight! link vimHighlight NightflyBlue
+    highlight! link vimNotFunc NightflyViolet
+    highlight! link vimNotation NightflyBlue
+    highlight! link vimOption NightflyTurquoise
+    highlight! link vimParenSep NightflyWhite
+    highlight! link vimSep NightflyWhite
+    highlight! link vimUserFunc NightflyBlue
+endif
+
+" With Neovim 0.6 (and later) it is best to use the Nvim Treesitter plugin to
+" style the most common languages, hence, only setup old-school regex highlight
+" groups for Vim and Neovim versions prior to 0.6.
+if !has('nvim-0.6')
+    " C++
+    highlight! link cppAccess NightflyGreen
+    highlight! link cppCast NightflyTurquoise
+    highlight! link cppCustomClass NightflyTurquoise
+    highlight! link cppExceptions NightflyGreen
+    highlight! link cppModifier NightflyViolet
+    highlight! link cppOperator NightflyGreen
+    highlight! link cppSTLconstant NightflyIndigo
+    highlight! link cppSTLnamespace NightflyIndigo
+    highlight! link cppStatement NightflyTurquoise
+    highlight! link cppStructure NightflyViolet
+
+    " C#
+    highlight! link csModifier NightflyGreen
+    highlight! link csPrecondit NightflyViolet
+    highlight! link csStorage NightflyViolet
+    highlight! link csXmlTag NightflyBlue
+
+    " Go
+    highlight! link goBuiltins NightflyBlue
+    highlight! link goConditional NightflyViolet
+    highlight! link goDeclType NightflyGreen
+    highlight! link goDirective NightflyWatermelon
+    highlight! link goFloats NightflyOrange
+    highlight! link goFunction NightflyBlue
+    highlight! link goFunctionCall NightflyBlue
+    highlight! link goImport NightflyWatermelon
+    highlight! link goLabel NightflyYellow
+    highlight! link goMethod NightflyBlue
+    highlight! link goMethodCall NightflyBlue
+    highlight! link goPackage NightflyViolet
+    highlight! link goSignedInts NightflyEmerald
+    highlight! link goStruct NightflyOrange
+    highlight! link goStructDef NightflyOrange
+    highlight! link goUnsignedInts NightflyOrange
+
+    " Java
+    highlight! link javaAnnotation NightflyGreen
+    highlight! link javaBraces NightflyWhite
+    highlight! link javaClassDecl NightflyPeach
+    highlight! link javaCommentTitle NightflyCadetBlue
+    highlight! link javaConstant NightflyBlue
+    highlight! link javaDebug NightflyBlue
+    highlight! link javaMethodDecl NightflyYellow
+    highlight! link javaOperator NightflyWatermelon
+    highlight! link javaScopeDecl NightflyViolet
+    highlight! link javaStatement NightflyTurquoise
+
+    " JavaScript, 'pangloss/vim-javascript' plugin
+    highlight! link jsClassDefinition NightflyEmerald
+    highlight! link jsClassKeyword NightflyViolet
+    highlight! link jsClassMethodType NightflyEmerald
+    highlight! link jsExceptions NightflyEmerald
+    highlight! link jsFrom NightflyOrange
+    highlight! link jsFuncBlock NightflyTurquoise
+    highlight! link jsFuncCall NightflyBlue
+    highlight! link jsFunction NightflyViolet
+    highlight! link jsGlobalObjects NightflyGreen
+    highlight! link jsModuleAs NightflyOrange
+    highlight! link jsObjectKey NightflyBlue
+    highlight! link jsObjectValue NightflyEmerald
+    highlight! link jsOperator NightflyViolet
+    highlight! link jsStorageClass NightflyGreen
+    highlight! link jsTemplateBraces NightflyWatermelon
+    highlight! link jsTemplateExpression NightflyTurquoise
+    highlight! link jsThis NightflyTurquoise
+
+    " JSX, 'MaxMEllon/vim-jsx-pretty' plugin
+    highlight! link jsxAttrib NightflyGreen
+    highlight! link jsxClosePunct NightflyPurple
+    highlight! link jsxComponentName NightflyBlue
+    highlight! link jsxOpenPunct NightflyGreen
+    highlight! link jsxTagName NightflyBlue
+
+    " Python
+    highlight! link pythonBuiltin NightflyBlue
+    highlight! link pythonClassVar NightflyGreen
+    highlight! link pythonCoding NightflyBlue
+    highlight! link pythonImport NightflyWatermelon
+    highlight! link pythonOperator NightflyViolet
+    highlight! link pythonRun NightflyBlue
+    highlight! link pythonStatement NightflyViolet
+
+    " Ruby
+    highlight! link erubyDelimiter NightflyWatermelon
+    highlight! link rubyAccess NightflyYellow
+    highlight! link rubyAssertion NightflyBlue
+    highlight! link rubyAttribute NightflyBlue
+    highlight! link rubyBlockParameter NightflyGreen
+    highlight! link rubyCallback NightflyBlue
+    highlight! link rubyClassName NightflyEmerald
+    highlight! link rubyDefine NightflyViolet
+    highlight! link rubyEntities NightflyBlue
+    highlight! link rubyExceptional NightflyOrange
+    highlight! link rubyGemfileMethod NightflyBlue
+    highlight! link rubyInstanceVariable NightflyTurquoise
+    highlight! link rubyInterpolationDelimiter NightflyWatermelon
+    highlight! link rubyMacro NightflyBlue
+    highlight! link rubyModule NightflyBlue
+    highlight! link rubyModuleName NightflyEmerald
+    highlight! link rubyPseudoVariable NightflyGreen
+    highlight! link rubyResponse NightflyBlue
+    highlight! link rubyRoute NightflyBlue
+    highlight! link rubySharpBang NightflyCadetBlue
+    highlight! link rubyStringDelimiter NightflyTan
+    highlight! link rubySymbol NightflyPurple
+
+    " Rust
+    highlight! link rustAssert NightflyGreen
+    highlight! link rustAttribute NightflyReset
+    highlight! link rustCharacterInvalid NightflyWatermelon
+    highlight! link rustCharacterInvalidUnicode NightflyWatermelon
+    highlight! link rustCommentBlockDoc NightflyCadetBlue
+    highlight! link rustCommentBlockDocError NightflyCadetBlue
+    highlight! link rustCommentLineDoc NightflyCadetBlue
+    highlight! link rustCommentLineDocError NightflyCadetBlue
+    highlight! link rustConstant NightflyOrange
+    highlight! link rustDerive NightflyGreen
+    highlight! link rustEscapeError NightflyWatermelon
+    highlight! link rustFuncName NightflyBlue
+    highlight! link rustIdentifier NightflyBlue
+    highlight! link rustInvalidBareKeyword NightflyWatermelon
+    highlight! link rustKeyword NightflyViolet
+    highlight! link rustLifetime NightflyViolet
+    highlight! link rustMacro NightflyGreen
+    highlight! link rustMacroVariable NightflyViolet
+    highlight! link rustModPath NightflyIndigo
+    highlight! link rustObsoleteExternMod NightflyWatermelon
+    highlight! link rustObsoleteStorage NightflyWatermelon
+    highlight! link rustReservedKeyword NightflyWatermelon
+    highlight! link rustSelf NightflyTurquoise
+    highlight! link rustSigil NightflyTurquoise
+    highlight! link rustStorage NightflyViolet
+    highlight! link rustStructure NightflyViolet
+    highlight! link rustTrait NightflyEmerald
+    highlight! link rustType NightflyEmerald
+
+    " TypeScript (leafgarland/typescript-vim)
+    highlight! link typescriptDOMObjects NightflyBlue
+    highlight! link typescriptFuncComma NightflyWhite
+    highlight! link typescriptFuncKeyword NightflyGreen
+    highlight! link typescriptGlobalObjects NightflyBlue
+    highlight! link typescriptIdentifier NightflyGreen
+    highlight! link typescriptNull NightflyGreen
+    highlight! link typescriptOpSymbols NightflyViolet
+    highlight! link typescriptOperator NightflyWatermelon
+    highlight! link typescriptParens NightflyWhite
+    highlight! link typescriptReserved NightflyViolet
+    highlight! link typescriptStorageClass NightflyGreen
+
+    " TypeScript (HerringtonDarkholme/yats.vim)
+    highlight! link typeScriptModule NightflyBlue
+    highlight! link typescriptAbstract NightflyOrange
+    highlight! link typescriptArrayMethod NightflyBlue
+    highlight! link typescriptArrowFuncArg NightflyWhite
+    highlight! link typescriptBOM NightflyEmerald
+    highlight! link typescriptBOMHistoryMethod NightflyBlue
+    highlight! link typescriptBOMLocationMethod NightflyBlue
+    highlight! link typescriptBOMWindowProp NightflyGreen
+    highlight! link typescriptBraces NightflyWhite
+    highlight! link typescriptCall NightflyWhite
+    highlight! link typescriptClassHeritage NightflyPeach
+    highlight! link typescriptClassKeyword NightflyViolet
+    highlight! link typescriptClassName NightflyEmerald
+    highlight! link typescriptDecorator NightflyGreen
+    highlight! link typescriptDOMDocMethod NightflyBlue
+    highlight! link typescriptDOMEventTargetMethod NightflyBlue
+    highlight! link typescriptDOMNodeMethod NightflyBlue
+    highlight! link typescriptExceptions NightflyWatermelon
+    highlight! link typescriptFuncType NightflyWhite
+    highlight! link typescriptMathStaticMethod NightflyBlue
+    highlight! link typescriptMethodAccessor NightflyViolet
+    highlight! link typescriptObjectLabel NightflyBlue
+    highlight! link typescriptParamImpl NightflyWhite
+    highlight! link typescriptStringMethod NightflyBlue
+    highlight! link typescriptTry NightflyWatermelon
+    highlight! link typescriptVariable NightflyGreen
+    highlight! link typescriptXHRMethod NightflyBlue
+endif
 
 " Clojure
 highlight! link clojureDefine NightflyViolet
@@ -482,24 +707,6 @@ highlight! link elmLetBlockDefinition NightflyGreen
 highlight! link elmTopLevelDecl NightflyOrange
 highlight! link elmType NightflyBlue
 
-" Go
-highlight! link goBuiltins NightflyBlue
-highlight! link goConditional NightflyViolet
-highlight! link goDeclType NightflyGreen
-highlight! link goDirective NightflyWatermelon
-highlight! link goFloats NightflyOrange
-highlight! link goFunction NightflyBlue
-highlight! link goFunctionCall NightflyBlue
-highlight! link goImport NightflyWatermelon
-highlight! link goLabel NightflyYellow
-highlight! link goMethod NightflyBlue
-highlight! link goMethodCall NightflyBlue
-highlight! link goPackage NightflyViolet
-highlight! link goSignedInts NightflyEmerald
-highlight! link goStruct NightflyOrange
-highlight! link goStructDef NightflyOrange
-highlight! link goUnsignedInts NightflyOrange
-
 " Haskell
 highlight! link haskellDecl NightflyOrange
 highlight! link haskellDeclKeyword NightflyOrange
@@ -531,50 +738,6 @@ else
     exec 'highlight htmlUnderlineItalic guibg=' . s:black . ' guifg=' . s:cadet_blue
 endif
 
-" Java
-highlight! link javaAnnotation NightflyGreen
-highlight! link javaBraces NightflyWhite
-highlight! link javaClassDecl NightflyPeach
-highlight! link javaCommentTitle NightflyCadetBlue
-highlight! link javaConstant NightflyBlue
-highlight! link javaDebug NightflyBlue
-highlight! link javaMethodDecl NightflyYellow
-highlight! link javaOperator NightflyWatermelon
-highlight! link javaScopeDecl NightflyViolet
-highlight! link javaStatement NightflyTurquoise
-
-" JavaScript, 'pangloss/vim-javascript' plugin
-highlight! link jsClassDefinition NightflyEmerald
-highlight! link jsClassKeyword NightflyViolet
-highlight! link jsClassMethodType NightflyEmerald
-highlight! link jsExceptions NightflyEmerald
-highlight! link jsFrom NightflyOrange
-highlight! link jsFuncBlock NightflyTurquoise
-highlight! link jsFuncCall NightflyBlue
-highlight! link jsFunction NightflyViolet
-highlight! link jsGlobalObjects NightflyGreen
-highlight! link jsModuleAs NightflyOrange
-highlight! link jsObjectKey NightflyBlue
-highlight! link jsObjectValue NightflyEmerald
-highlight! link jsOperator NightflyViolet
-highlight! link jsStorageClass NightflyGreen
-highlight! link jsTemplateBraces NightflyWatermelon
-highlight! link jsTemplateExpression NightflyTurquoise
-highlight! link jsThis NightflyTurquoise
-
-" JSX, 'MaxMEllon/vim-jsx-pretty' plugin
-highlight! link jsxAttrib NightflyGreen
-highlight! link jsxClosePunct NightflyPurple
-highlight! link jsxComponentName NightflyBlue
-highlight! link jsxOpenPunct NightflyGreen
-highlight! link jsxTagName NightflyBlue
-
-" Lua
-highlight! link luaBraces NightflyWatermelon
-highlight! link luaBuiltin NightflyGreen
-highlight! link luaFuncCall NightflyBlue
-highlight! link luaSpecialTable NightflyBlue
-
 " Markdown, 'tpope/vim-markdown' plugin
 highlight! link markdownBold NightflyPeach
 highlight! link markdownCode NightflyTan
@@ -602,69 +765,6 @@ highlight! link phpType NightflyViolet
 highlight! link purescriptClass NightflyPeach
 highlight! link purescriptModuleParams NightflyOrange
 
-" Python
-highlight! link pythonBuiltin NightflyBlue
-highlight! link pythonClassVar NightflyGreen
-highlight! link pythonCoding NightflyBlue
-highlight! link pythonImport NightflyWatermelon
-highlight! link pythonOperator NightflyViolet
-highlight! link pythonRun NightflyBlue
-highlight! link pythonStatement NightflyViolet
-
-" Ruby
-highlight! link erubyDelimiter NightflyWatermelon
-highlight! link rubyAccess NightflyYellow
-highlight! link rubyAssertion NightflyBlue
-highlight! link rubyAttribute NightflyBlue
-highlight! link rubyBlockParameter NightflyGreen
-highlight! link rubyCallback NightflyBlue
-highlight! link rubyClassName NightflyEmerald
-highlight! link rubyDefine NightflyViolet
-highlight! link rubyEntities NightflyBlue
-highlight! link rubyExceptional NightflyOrange
-highlight! link rubyGemfileMethod NightflyBlue
-highlight! link rubyInstanceVariable NightflyTurquoise
-highlight! link rubyInterpolationDelimiter NightflyWatermelon
-highlight! link rubyMacro NightflyBlue
-highlight! link rubyModule NightflyBlue
-highlight! link rubyModuleName NightflyEmerald
-highlight! link rubyPseudoVariable NightflyGreen
-highlight! link rubyResponse NightflyBlue
-highlight! link rubyRoute NightflyBlue
-highlight! link rubySharpBang NightflyCadetBlue
-highlight! link rubyStringDelimiter NightflyTan
-highlight! link rubySymbol NightflyPurple
-
-" Rust
-highlight! link rustAssert NightflyGreen
-highlight! link rustAttribute NightflyReset
-highlight! link rustCharacterInvalid NightflyWatermelon
-highlight! link rustCharacterInvalidUnicode NightflyWatermelon
-highlight! link rustCommentBlockDoc NightflyCadetBlue
-highlight! link rustCommentBlockDocError NightflyCadetBlue
-highlight! link rustCommentLineDoc NightflyCadetBlue
-highlight! link rustCommentLineDocError NightflyCadetBlue
-highlight! link rustConstant NightflyOrange
-highlight! link rustDerive NightflyGreen
-highlight! link rustEscapeError NightflyWatermelon
-highlight! link rustFuncName NightflyBlue
-highlight! link rustIdentifier NightflyBlue
-highlight! link rustInvalidBareKeyword NightflyWatermelon
-highlight! link rustKeyword NightflyViolet
-highlight! link rustLifetime NightflyViolet
-highlight! link rustMacro NightflyGreen
-highlight! link rustMacroVariable NightflyViolet
-highlight! link rustModPath NightflyIndigo
-highlight! link rustObsoleteExternMod NightflyWatermelon
-highlight! link rustObsoleteStorage NightflyWatermelon
-highlight! link rustReservedKeyword NightflyWatermelon
-highlight! link rustSelf NightflyTurquoise
-highlight! link rustSigil NightflyTurquoise
-highlight! link rustStorage NightflyViolet
-highlight! link rustStructure NightflyViolet
-highlight! link rustTrait NightflyEmerald
-highlight! link rustType NightflyEmerald
-
 " Scala (note, link highlighting does not work, I don't know why)
 exec 'highlight scalaCapitalWord guifg=' . s:blue
 exec 'highlight scalaCommentCodeBlock guifg=' . s:cadet_blue
@@ -679,64 +779,6 @@ highlight! link shLoop NightflyViolet
 highlight! link shSetList NightflyTurquoise
 highlight! link shShellVariables NightflyGreen
 highlight! link shVariable NightflyTurquoise
-
-" TypeScript (leafgarland/typescript-vim)
-highlight! link typescriptDOMObjects NightflyBlue
-highlight! link typescriptFuncComma NightflyWhite
-highlight! link typescriptFuncKeyword NightflyGreen
-highlight! link typescriptGlobalObjects NightflyBlue
-highlight! link typescriptIdentifier NightflyGreen
-highlight! link typescriptNull NightflyGreen
-highlight! link typescriptOpSymbols NightflyViolet
-highlight! link typescriptOperator NightflyWatermelon
-highlight! link typescriptParens NightflyWhite
-highlight! link typescriptReserved NightflyViolet
-highlight! link typescriptStorageClass NightflyGreen
-
-" TypeScript (HerringtonDarkholme/yats.vim)
-highlight! link typeScriptModule NightflyBlue
-highlight! link typescriptAbstract NightflyOrange
-highlight! link typescriptArrayMethod NightflyBlue
-highlight! link typescriptArrowFuncArg NightflyWhite
-highlight! link typescriptBOM NightflyEmerald
-highlight! link typescriptBOMHistoryMethod NightflyBlue
-highlight! link typescriptBOMLocationMethod NightflyBlue
-highlight! link typescriptBOMWindowProp NightflyGreen
-highlight! link typescriptBraces NightflyWhite
-highlight! link typescriptCall NightflyWhite
-highlight! link typescriptClassHeritage NightflyPeach
-highlight! link typescriptClassKeyword NightflyViolet
-highlight! link typescriptClassName NightflyEmerald
-highlight! link typescriptDecorator NightflyGreen
-highlight! link typescriptDOMDocMethod NightflyBlue
-highlight! link typescriptDOMEventTargetMethod NightflyBlue
-highlight! link typescriptDOMNodeMethod NightflyBlue
-highlight! link typescriptExceptions NightflyWatermelon
-highlight! link typescriptFuncType NightflyWhite
-highlight! link typescriptMathStaticMethod NightflyBlue
-highlight! link typescriptMethodAccessor NightflyViolet
-highlight! link typescriptObjectLabel NightflyBlue
-highlight! link typescriptParamImpl NightflyWhite
-highlight! link typescriptStringMethod NightflyBlue
-highlight! link typescriptTry NightflyWatermelon
-highlight! link typescriptVariable NightflyGreen
-highlight! link typescriptXHRMethod NightflyBlue
-
-" Vimscript
-highlight! link vimBracket NightflyBlue
-highlight! link vimCommand NightflyViolet
-highlight! link vimCommentTitle NightflyViolet
-highlight! link vimEnvvar NightflyWatermelon
-highlight! link vimFuncName NightflyBlue
-highlight! link vimFuncSID NightflyBlue
-highlight! link vimFunction NightflyBlue
-highlight! link vimHighlight NightflyBlue
-highlight! link vimNotFunc NightflyViolet
-highlight! link vimNotation NightflyBlue
-highlight! link vimOption NightflyTurquoise
-highlight! link vimParenSep NightflyWhite
-highlight! link vimSep NightflyWhite
-highlight! link vimUserFunc NightflyBlue
 
 " XML
 highlight! link xmlAttrib NightflyGreen
@@ -912,66 +954,7 @@ if !exists('g:indentLine_defaultGroup') && !exists('g:indentLine_color_gui')
     let g:indentLine_color_gui = s:deep_blue
 endif
 
-" Neovim diagnostics
-if has('nvim-0.6')
-    " Neovim 0.6 diagnostic
-    highlight! link DiagnosticError NightflyRed
-    highlight! link DiagnosticWarn NightflyYellow
-    highlight! link DiagnosticInfo NightflyBlue
-    highlight! link DiagnosticHint NightflyWhite
-    if g:nightflyUndercurls
-        exec 'highlight DiagnosticUnderlineError guibg=NONE gui=undercurl guisp=' . s:red
-        exec 'highlight DiagnosticUnderlineWarn guibg=NONE gui=undercurl guisp=' . s:yellow
-        exec 'highlight DiagnosticUnderlineInfo guibg=NONE gui=undercurl guisp=' . s:blue
-        exec 'highlight DiagnosticUnderlineHint guibg=NONE gui=undercurl guisp=' . s:white
-    else
-        exec 'highlight DiagnosticUnderlineError guibg=NONE gui=underline guisp=' . s:red
-        exec 'highlight DiagnosticUnderlineWarn guibg=NONE gui=underline guisp=' . s:yellow
-        exec 'highlight DiagnosticUnderlineInfo guibg=NONE gui=underline guisp=' . s:blue
-        exec 'highlight DiagnosticUnderlineHint guibg=NONE gui=underline guisp=' . s:white
-    endif
-    highlight! link DiagnosticVirtualTextError NightflySteelBlue
-    highlight! link DiagnosticVirtualTextWarn NightflySteelBlue
-    highlight! link DiagnosticVirtualTextInfo NightflySteelBlue
-    highlight! link DiagnosticVirtualTextHint NightflySteelBlue
-    highlight! link DiagnosticSignError NightflyRedAlert
-    highlight! link DiagnosticSignWarn NightflyYellowAlert
-    highlight! link DiagnosticSignInfo NightflyBlueAlert
-    highlight! link DiagnosticSignHint NightflyWhiteAlert
-    highlight! link DiagnosticFloatingError NightflyRed
-    highlight! link DiagnosticFloatingWarn NightflyYellow
-    highlight! link DiagnosticFloatingInfo NightflyBlue
-    highlight! link DiagnosticFloatingHint NightflyWhite
-    highlight! link LspSignatureActiveParameter NightflyVisual
-elseif has('nvim-0.5')
-    " Neovim 0.5 LSP diagnostics
-    if g:nightflyUndercurls
-        exec 'highlight LspDiagnosticsUnderlineError guibg=NONE gui=undercurl guisp=' . s:red
-        exec 'highlight LspDiagnosticsUnderlineWarning guibg=NONE gui=undercurl guisp=' . s:yellow
-        exec 'highlight LspDiagnosticsUnderlineInformation guibg=NONE gui=undercurl guisp=' . s:blue
-        exec 'highlight LspDiagnosticsUnderlineHint guibg=NONE gui=undercurl guisp=' . s:white
-    else
-        exec 'highlight LspDiagnosticsUnderlineError guibg=NONE gui=underline guisp=' . s:red
-        exec 'highlight LspDiagnosticsUnderlineWarning guibg=NONE gui=underline guisp=' . s:yellow
-        exec 'highlight LspDiagnosticsUnderlineInformation guibg=NONE gui=underline guisp=' . s:blue
-        exec 'highlight LspDiagnosticsUnderlineHint guibg=NONE gui=underline guisp=' . s:white
-    endif
-    highlight! link LspDiagnosticsVirtualTextError NightflySteelBlue
-    highlight! link LspDiagnosticsVirtualTextWarning NightflySteelBlue
-    highlight! link LspDiagnosticsVirtualTextInformation NightflySteelBlue
-    highlight! link LspDiagnosticsVirtualTextHint NightflySteelBlue
-    highlight! link LspDiagnosticsSignError NightflyRedAlert
-    highlight! link LspDiagnosticsSignWarning NightflyYellowAlert
-    highlight! link LspDiagnosticsSignInformation NightflyBlueAlert
-    highlight! link LspDiagnosticsSignHint NightflyWhiteAlert
-    highlight! link LspDiagnosticsFloatingError NightflyRed
-    highlight! link LspDiagnosticsFloatingWarning NightflyYellow
-    highlight! link LspDiagnosticsFloatingInformation NightflyBlue
-    highlight! link LspDiagnosticsFloatingHint NightflyWhite
-    highlight! link LspSignatureActiveParameter NightflyVisual
-endif
-
-" Neovim only plugins
+" Neovim only plugins 
 if has('nvim')
     " NvimTree plugin
     highlight! link NvimTreeFolderIcon NightflyBlue
