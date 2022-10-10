@@ -328,6 +328,12 @@ exec 'highlight ColorColumn guibg=' . s:black_blue
 " Conceal color
 exec 'highlight Conceal guibg=NONE guifg=' . s:ash_blue
 
+" vimdiff/nvim -d
+exec 'highlight DiffAdd guibg=' . s:emerald . ' guifg=' . s:black
+exec 'highlight DiffChange guibg=' . s:slate_blue
+exec 'highlight DiffDelete guibg=' . s:slate_blue . ' guifg=' . s:steel_blue ' gui=none'
+exec 'highlight DiffText guibg=' . s:blue . ' guifg=' . s:black . ' gui=none'
+
 " Neovim only highlight groups
 if has('nvim')
     exec 'highlight Whitespace guifg=' . s:regal_blue
@@ -881,12 +887,6 @@ else
 endif
 exec 'highlight snipLeadingSpaces guibg=bg guifg=fg'
 exec 'highlight MatchWordCur guibg=bg'
-
-" vimdiff/nvim -d
-exec 'highlight DiffAdd guibg=' . s:emerald . ' guifg=' . s:black
-exec 'highlight DiffChange guibg=' . s:slate_blue
-exec 'highlight DiffDelete guibg=' . s:slate_blue . ' guifg=' . s:steel_blue ' gui=none'
-exec 'highlight DiffText guibg=' . s:blue . ' guifg=' . s:black . ' gui=none'
 
 " ALE plugin
 if g:nightflyUndercurls
