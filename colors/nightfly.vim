@@ -177,6 +177,10 @@ exec 'highlight NightflyTanLine guibg=' . s:dark_blue . '  guifg=' . s:tan
 exec 'highlight NightflyTanLineActive guibg=' . s:regal_blue . '  guifg=' . s:tan
 exec 'highlight NightflyWhiteLineActive guibg=' . s:regal_blue . '  guifg=' . s:white_blue
 
+"----------------------------------------------------------------------- 
+" Core styling
+"----------------------------------------------------------------------- 
+
 " Color of mode text, -- INSERT --
 exec 'highlight ModeMsg guifg=' . s:cadet_blue . ' gui=none'
 
@@ -422,9 +426,15 @@ if has('nvim')
     highlight! link LspSignatureActiveParameter NightflyVisual
 endif
 
-" Neovim 0.8 provides builtin Treesitter support for C, Lua and Vimscript,
-" hence, only setup old-school regex highlight groups for Vim and Neovim
-" versions prior to 0.8.
+"----------------------------------------------------------------------- 
+" Language styling
+"----------------------------------------------------------------------- 
+
+" Neovim 0.8 provides builtin Treesitter support for C, Lua and Vimscript.
+" Likewise, common languages, such as C++, JavaScript, Python and others, now
+" have mature Treesitter support via the nvim-treesitter plugin. Hence, only
+" setup old-school regex highlight groups for Vim and Neovim versions prior to
+" 0.8.
 if !has('nvim-0.8')
     " C
     highlight! link cDefine NightflyViolet
@@ -432,33 +442,6 @@ if !has('nvim-0.8')
     highlight! link cStatement NightflyViolet
     highlight! link cStructure NightflyOrange
 
-    " Lua
-    highlight! link luaBraces NightflyWatermelon
-    highlight! link luaBuiltin NightflyGreen
-    highlight! link luaFuncCall NightflyBlue
-    highlight! link luaSpecialTable NightflyBlue
-
-    " Vimscript
-    highlight! link vimBracket NightflyBlue
-    highlight! link vimCommand NightflyViolet
-    highlight! link vimCommentTitle NightflyViolet
-    highlight! link vimEnvvar NightflyWatermelon
-    highlight! link vimFuncName NightflyBlue
-    highlight! link vimFuncSID NightflyBlue
-    highlight! link vimFunction NightflyBlue
-    highlight! link vimHighlight NightflyBlue
-    highlight! link vimNotFunc NightflyViolet
-    highlight! link vimNotation NightflyBlue
-    highlight! link vimOption NightflyTurquoise
-    highlight! link vimParenSep NightflyWhite
-    highlight! link vimSep NightflyWhite
-    highlight! link vimUserFunc NightflyBlue
-endif
-
-" With Neovim 0.6 (and later) it is best to use the Nvim Treesitter plugin to
-" style the most common languages, hence, only setup old-school regex highlight
-" groups for Vim and Neovim versions prior to 0.6.
-if !has('nvim-0.6')
     " C++
     highlight! link cppAccess NightflyGreen
     highlight! link cppCast NightflyTurquoise
@@ -532,6 +515,12 @@ if !has('nvim-0.6')
     highlight! link jsxComponentName NightflyBlue
     highlight! link jsxOpenPunct NightflyGreen
     highlight! link jsxTagName NightflyBlue
+
+    " Lua
+    highlight! link luaBraces NightflyWatermelon
+    highlight! link luaBuiltin NightflyGreen
+    highlight! link luaFuncCall NightflyBlue
+    highlight! link luaSpecialTable NightflyBlue
 
     " Python
     highlight! link pythonBuiltin NightflyBlue
@@ -637,6 +626,22 @@ if !has('nvim-0.6')
     highlight! link typescriptTry NightflyWatermelon
     highlight! link typescriptVariable NightflyGreen
     highlight! link typescriptXHRMethod NightflyBlue
+
+    " Vimscript
+    highlight! link vimBracket NightflyBlue
+    highlight! link vimCommand NightflyViolet
+    highlight! link vimCommentTitle NightflyViolet
+    highlight! link vimEnvvar NightflyWatermelon
+    highlight! link vimFuncName NightflyBlue
+    highlight! link vimFuncSID NightflyBlue
+    highlight! link vimFunction NightflyBlue
+    highlight! link vimHighlight NightflyBlue
+    highlight! link vimNotFunc NightflyViolet
+    highlight! link vimNotation NightflyBlue
+    highlight! link vimOption NightflyTurquoise
+    highlight! link vimParenSep NightflyWhite
+    highlight! link vimSep NightflyWhite
+    highlight! link vimUserFunc NightflyBlue
 endif
 
 " Clojure
@@ -792,6 +797,10 @@ highlight! link xmlEndTag NightflyBlue
 highlight! link xmlTag NightflyGreen
 highlight! link xmlTagName NightflyBlue
 
+"----------------------------------------------------------------------- 
+" Plugin styling
+"----------------------------------------------------------------------- 
+
 " Git commits
 highlight! link gitCommitBranch NightflyBlue
 highlight! link gitCommitDiscardedFile NightflyWatermelon
@@ -863,7 +872,7 @@ highlight! link GlyphPalette6 NightflyTurquoise
 highlight! link GlyphPalette7 NightflyWhite
 highlight! link GlyphPalette9 NightflyWatermelon
 
-" Misc languages and plugins
+" Misc items
 highlight! link bufExplorerHelp NightflyCadetBlue
 highlight! link bufExplorerSortBy NightflyCadetBlue
 highlight! link CleverFDefaultLabel NightflyWatermelon
@@ -883,7 +892,7 @@ highlight! link yamlFlowMappingKey NightflyBlue
 if g:nightflyUnderlineMatchParen
     exec 'highlight MatchWord gui=underline guisp=' . s:orange
 else
-    highlight! link highlight NightflyOrange
+    highlight! link MatchWord NightflyOrange
 endif
 exec 'highlight snipLeadingSpaces guibg=bg guifg=fg'
 exec 'highlight MatchWordCur guibg=bg'
