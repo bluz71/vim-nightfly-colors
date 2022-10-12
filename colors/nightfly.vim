@@ -166,16 +166,14 @@ exec 'highlight NightflyPurpleMode guibg=' . s:purple . ' guifg=' . s:dark_blue
 exec 'highlight NightflyWatermelonMode guibg=' . s:watermelon . ' guifg=' . s:dark_blue
 exec 'highlight NightflyTanMode guibg=' . s:tan . ' guifg=' . s:dark_blue
 exec 'highlight NightflyTurquoiseMode guibg=' . s:turquoise . ' guifg=' . s:dark_blue
-" Tabline helper colors.
+" Generic line helper colors.
 exec 'highlight NightflyBlueLine guibg=' . s:slate_blue . ' guifg=' . s:blue
-exec 'highlight NightflyBlueLineActive guibg=' . s:regal_blue . '  guifg=' . s:blue
-exec 'highlight NightflyCadetBlueLine guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue
 exec 'highlight NightflyEmeraldLine guibg=' . s:slate_blue . ' guifg=' . s:emerald
-exec 'highlight NightflyEmeraldLineActive guibg=' . s:regal_blue . ' guifg=' . s:emerald
 exec 'highlight NightflyGreyBlueLine guibg=' . s:dark_blue . '  guifg=' . s:grey_blue
 exec 'highlight NightflyTanLine guibg=' . s:dark_blue . '  guifg=' . s:tan
 exec 'highlight NightflyTanLineActive guibg=' . s:regal_blue . '  guifg=' . s:tan
 exec 'highlight NightflyWhiteLineActive guibg=' . s:regal_blue . '  guifg=' . s:white_blue
+exec 'highlight NightflyWatermelonLine guibg=' . s:slate_blue . ' guifg=' . s:watermelon
 
 "----------------------------------------------------------------------- 
 " Core styling
@@ -1019,6 +1017,8 @@ if has('nvim')
     highlight! link GitSignsChangeNr NightflyYellowAlert
     highlight! link GitSignsDelete NightflyRedAlert
     highlight! link GitSignsDeleteLn NightflyRed
+    highlight! link GitSignsDeletePreview NightflyWatermelonLine
+    highlight! link GitSignsDeleteVirtLn NightflyWatermelonLine
     exec 'highlight GitSignsAddInline guibg=' . s:green . ' guifg=' . s:black
     exec 'highlight GitSignsChangeInline guibg=' . s:yellow . ' guifg=' . s:black
     exec 'highlight GitSignsDeleteInline guibg=' . s:red . ' guifg=' . s:black
