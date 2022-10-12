@@ -1002,6 +1002,7 @@ if has('nvim')
     highlight! link TelescopePromptPrefix NightflyBlue
     highlight! link TelescopeResultsDiffAdd NightflyGreen
     highlight! link TelescopeResultsDiffChange NightflyRed
+    highlight! link TelescopeResultsDiffDelete NightflyWatermelonLine
     highlight! link TelescopeResultsSpecialComment NightflySteelBlue
     highlight! link TelescopeSelectionCaret NightflyWatermelon
     highlight! link TelescopeTitle NightflySteelBlue
