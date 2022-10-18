@@ -351,27 +351,28 @@ if has('nvim')
     highlight! link WinSeparator VertSplit
 
     " Neovim Treesitter
-    highlight! link TSAnnotation NightflyViolet
-    highlight! link TSAttribute NightflyBlue
-    highlight! link TSConstant NightflyTurquoise
-    highlight! link TSConstBuiltin NightflyGreen
-    highlight! link TSConstMacro NightflyViolet
-    highlight! link TSConstructor NightflyEmerald
-    highlight! link TSDanger Todo
-    highlight! link TSFuncBuiltin NightflyBlue
-    highlight! link TSFuncMacro NightflyBlue
-    highlight! link TSInclude NightflyWatermelon
-    highlight! link TSKeywordOperator NightflyViolet
-    highlight! link TSNamespace NightflyTurquoise
-    highlight! link TSParameter NightflyWhite
-    highlight! link TSPunctSpecial NightflyWatermelon
-    highlight! link TSSymbol NightflyPurple
-    highlight! link TSTag NightflyBlue
-    highlight! link TSTagDelimiter NightflyGreen
-    highlight! link TSVariableBuiltin NightflyGreen
     if has('nvim-0.8')
+        highlight! link @annotation NightflyViolet
+        highlight! link @attribute NightflyBlue
+        highlight! link @constant NightflyTurquoise
+        highlight! link @constant.builtin NightflyGreen
+        highlight! link @constant.macro NightflyViolet
+        highlight! link @constructor NightflyEmerald
+        highlight! link @danger Todo
+        highlight! link @function.builtin NightflyBlue
+        highlight! link @function.macro NightflyBlue
+        highlight! link @include NightflyWatermelon
+        highlight! link @keyword.operator NightflyViolet
+        highlight! link @namespace NightflyTurquoise
+        highlight! link @parameter NightflyWhite
+        highlight! link @punctuation.special NightflyWatermelon
+        highlight! link @symbol NightflyPurple
+        highlight! link @tag NightflyBlue
+        highlight! link @tag.delimiter NightflyGreen
+        highlight! link @variable.builtin NightflyGreen
+        " Language specific overrides.
         highlight! link @parameter.bash NightflyTurquoise
-        highlight! link @punctDelimiter.css NightflyWatermelon
+        highlight! link @punctuation.delimiter.css NightflyWatermelon
         highlight! link @type.css NightflyBlue
         highlight! link @punctuation.delimiter.scss NightflyWatermelon
         highlight! link @type.scss NightflyBlue
@@ -381,6 +382,25 @@ if has('nvim')
         highlight! link @field.yaml NightflyBlue
         highlight! link @punctuation.delimiter.yaml NightflyWatermelon
     else
+        highlight! link TSAnnotation NightflyViolet
+        highlight! link TSAttribute NightflyBlue
+        highlight! link TSConstant NightflyTurquoise
+        highlight! link TSConstBuiltin NightflyGreen
+        highlight! link TSConstMacro NightflyViolet
+        highlight! link TSConstructor NightflyEmerald
+        highlight! link TSDanger Todo
+        highlight! link TSFuncBuiltin NightflyBlue
+        highlight! link TSFuncMacro NightflyBlue
+        highlight! link TSInclude NightflyWatermelon
+        highlight! link TSKeywordOperator NightflyViolet
+        highlight! link TSNamespace NightflyTurquoise
+        highlight! link TSParameter NightflyWhite
+        highlight! link TSPunctSpecial NightflyWatermelon
+        highlight! link TSSymbol NightflyPurple
+        highlight! link TSTag NightflyBlue
+        highlight! link TSTagDelimiter NightflyGreen
+        highlight! link TSVariableBuiltin NightflyGreen
+        " Language specific overrides.
         highlight! link bashTSParameter NightflyTurquoise
         highlight! link cssTSPunctDelimiter NightflyWatermelon
         highlight! link cssTSType NightflyBlue
