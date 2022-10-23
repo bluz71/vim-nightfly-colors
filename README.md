@@ -55,8 +55,9 @@ Neovim-only:
 _nightfly_ is a **GUI-only** colorscheme.
 
 A GUI client, such as Gvim, or a modern terminal version of Vim or Neovim with
-`termguicolors` enabled in a true-color terminal, is required. Details about
-true-color terminals are listed below.
+the `termguicolors` option enabled in a true-color terminal, is required.
+Details about true-color terminals are [listed
+here](https://github.com/bluz71/vim-nightfly-guicolors#true-color-terminals).
 
 _nightfly_ explicitly does **not** support the 256 color `cterm` version of Vim
 due to the number of custom colors required. 256 color terminals only allow 16

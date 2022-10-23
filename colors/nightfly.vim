@@ -346,8 +346,8 @@ if has('nvim')
         exec 'highlight NormalFloat guibg=' . s:dark_blue . ' guifg=fg'
     endif
     exec 'highlight FloatBorder guibg=bg guifg=' . s:slate_blue
-    exec 'highlight WinBar cterm=none guibg=' . s:deep_blue . ' guifg=' . s:white . ' gui=none'
-    exec 'highlight WinBarNC cterm=none guibg=' . s:deep_blue . ' guifg=' . s:cadet_blue . ' gui=none'
+    exec 'highlight WinBar guibg=' . s:deep_blue . ' guifg=' . s:white . ' gui=none'
+    exec 'highlight WinBarNC guibg=' . s:deep_blue . ' guifg=' . s:cadet_blue . ' gui=none'
     highlight! link WinSeparator VertSplit
 
     " Neovim Treesitter
