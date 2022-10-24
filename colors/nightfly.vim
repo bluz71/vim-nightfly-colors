@@ -175,9 +175,9 @@ exec 'highlight NightflyTanLineActive guibg=' . s:regal_blue . '  guifg=' . s:ta
 exec 'highlight NightflyWhiteLineActive guibg=' . s:regal_blue . '  guifg=' . s:white_blue
 exec 'highlight NightflyWatermelonLine guibg=' . s:slate_blue . ' guifg=' . s:watermelon
 
-"----------------------------------------------------------------------- 
+"-----------------------------------------------------------------------
 " Core styling
-"----------------------------------------------------------------------- 
+"-----------------------------------------------------------------------
 
 " Color of mode text, -- INSERT --
 exec 'highlight ModeMsg guifg=' . s:cadet_blue . ' gui=none'
@@ -444,9 +444,9 @@ if has('nvim')
     highlight! link LspSignatureActiveParameter NightflyVisual
 endif
 
-"----------------------------------------------------------------------- 
+"-----------------------------------------------------------------------
 " Language styling
-"----------------------------------------------------------------------- 
+"-----------------------------------------------------------------------
 
 " Neovim 0.8 provides builtin Treesitter support for C, Lua and Vimscript.
 " Likewise, common languages, such as C++, JavaScript, Python and others, now
@@ -815,9 +815,9 @@ highlight! link xmlEndTag NightflyBlue
 highlight! link xmlTag NightflyGreen
 highlight! link xmlTagName NightflyBlue
 
-"----------------------------------------------------------------------- 
+"-----------------------------------------------------------------------
 " Plugin styling
-"----------------------------------------------------------------------- 
+"-----------------------------------------------------------------------
 
 " Git commits
 highlight! link gitCommitBranch NightflyBlue
