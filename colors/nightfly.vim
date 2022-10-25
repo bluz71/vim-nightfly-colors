@@ -159,14 +159,14 @@ exec 'highlight NightflyBlueAlert guibg=bg guifg=' . s:blue
 exec 'highlight NightflyEmeraldAlert guibg=bg guifg=' . s:emerald
 exec 'highlight NightflyUnderline gui=underline'
 exec 'highlight NightflyNoCombine gui=nocombine'
-" Statusline helper colors.
+" Statusline helper colors
 exec 'highlight NightflyBlueMode guibg=' . s:blue . ' guifg=' . s:dark_blue
 exec 'highlight NightflyEmeraldMode guibg=' . s:emerald . ' guifg=' . s:dark_blue
 exec 'highlight NightflyPurpleMode guibg=' . s:purple . ' guifg=' . s:dark_blue
 exec 'highlight NightflyWatermelonMode guibg=' . s:watermelon . ' guifg=' . s:dark_blue
 exec 'highlight NightflyTanMode guibg=' . s:tan . ' guifg=' . s:dark_blue
 exec 'highlight NightflyTurquoiseMode guibg=' . s:turquoise . ' guifg=' . s:dark_blue
-" Generic line helper colors.
+" Generic line helper colors
 exec 'highlight NightflyBlueLine guibg=' . s:slate_blue . ' guifg=' . s:blue
 exec 'highlight NightflyEmeraldLine guibg=' . s:slate_blue . ' guifg=' . s:emerald
 exec 'highlight NightflyGreyBlueLine guibg=' . s:dark_blue . '  guifg=' . s:grey_blue
@@ -174,6 +174,15 @@ exec 'highlight NightflyTanLine guibg=' . s:dark_blue . '  guifg=' . s:tan
 exec 'highlight NightflyTanLineActive guibg=' . s:regal_blue . '  guifg=' . s:tan
 exec 'highlight NightflyWhiteLineActive guibg=' . s:regal_blue . '  guifg=' . s:white_blue
 exec 'highlight NightflyWatermelonLine guibg=' . s:slate_blue . ' guifg=' . s:watermelon
+" Diagnostic helper colors
+exec 'highlight NightflyDiagnosticUndercurlError gui=undercurl guisp=' . s:red
+exec 'highlight NightflyDiagnosticUndercurlWarn gui=undercurl guisp=' . s:yellow
+exec 'highlight NightflyDiagnosticUndercurlInfo gui=undercurl guisp=' . s:blue
+exec 'highlight NightflyDiagnosticUndercurlHint gui=undercurl guisp=' . s:white
+exec 'highlight NightflyDiagnosticUnderlineError gui=underline guisp=' . s:red
+exec 'highlight NightflyDiagnosticUnderlineWarn gui=underline guisp=' . s:yellow
+exec 'highlight NightflyDiagnosticUnderlineInfo gui=underline guisp=' . s:blue
+exec 'highlight NightflyDiagnosticUnderlineHint gui=underline guisp=' . s:white
 
 "-----------------------------------------------------------------------
 " Core styling
@@ -336,112 +345,9 @@ exec 'highlight DiffChange guibg=' . s:slate_blue
 exec 'highlight DiffDelete guibg=' . s:slate_blue . ' guifg=' . s:steel_blue ' gui=none'
 exec 'highlight DiffText guibg=' . s:blue . ' guifg=' . s:black . ' gui=none'
 
-" Neovim only highlight groups
+" Neovim-only core highlight groups
 if has('nvim')
-    exec 'highlight Whitespace guifg=' . s:regal_blue
-    exec 'highlight TermCursor guibg=' . s:cadet_blue . ' guifg=bg gui=none'
-    if g:nightflyNormalFloat
-        exec 'highlight NormalFloat guibg=bg guifg=' . s:cadet_blue
-    else
-        exec 'highlight NormalFloat guibg=' . s:dark_blue . ' guifg=fg'
-    endif
-    exec 'highlight FloatBorder guibg=bg guifg=' . s:slate_blue
-    exec 'highlight WinBar guibg=' . s:deep_blue . ' guifg=' . s:white . ' gui=none'
-    exec 'highlight WinBarNC guibg=' . s:deep_blue . ' guifg=' . s:cadet_blue . ' gui=none'
-    highlight! link WinSeparator VertSplit
-
-    " Neovim Treesitter
-    if has('nvim-0.8')
-        highlight! link @annotation NightflyViolet
-        highlight! link @attribute NightflyBlue
-        highlight! link @constant NightflyTurquoise
-        highlight! link @constant.builtin NightflyGreen
-        highlight! link @constant.macro NightflyViolet
-        highlight! link @constructor NightflyEmerald
-        highlight! link @danger Todo
-        highlight! link @function.builtin NightflyBlue
-        highlight! link @function.macro NightflyBlue
-        highlight! link @include NightflyWatermelon
-        highlight! link @keyword.operator NightflyViolet
-        highlight! link @namespace NightflyTurquoise
-        highlight! link @parameter NightflyWhite
-        highlight! link @punctuation.special NightflyWatermelon
-        highlight! link @symbol NightflyPurple
-        highlight! link @tag NightflyBlue
-        highlight! link @tag.delimiter NightflyGreen
-        highlight! link @variable.builtin NightflyGreen
-        " Language specific overrides.
-        highlight! link @parameter.bash NightflyTurquoise
-        highlight! link @punctuation.delimiter.css NightflyWatermelon
-        highlight! link @type.css NightflyBlue
-        highlight! link @punctuation.delimiter.scss NightflyWatermelon
-        highlight! link @type.scss NightflyBlue
-        highlight! link @variable.scss NightflyTurquoise
-        highlight! link @variable.vim NightflyTurquoise
-        highlight! link @variable.builtin.vim NightflyEmerald
-        highlight! link @field.yaml NightflyBlue
-        highlight! link @punctuation.delimiter.yaml NightflyWatermelon
-    else
-        highlight! link TSAnnotation NightflyViolet
-        highlight! link TSAttribute NightflyBlue
-        highlight! link TSConstant NightflyTurquoise
-        highlight! link TSConstBuiltin NightflyGreen
-        highlight! link TSConstMacro NightflyViolet
-        highlight! link TSConstructor NightflyEmerald
-        highlight! link TSDanger Todo
-        highlight! link TSFuncBuiltin NightflyBlue
-        highlight! link TSFuncMacro NightflyBlue
-        highlight! link TSInclude NightflyWatermelon
-        highlight! link TSKeywordOperator NightflyViolet
-        highlight! link TSNamespace NightflyTurquoise
-        highlight! link TSParameter NightflyWhite
-        highlight! link TSPunctSpecial NightflyWatermelon
-        highlight! link TSSymbol NightflyPurple
-        highlight! link TSTag NightflyBlue
-        highlight! link TSTagDelimiter NightflyGreen
-        highlight! link TSVariableBuiltin NightflyGreen
-        " Language specific overrides.
-        highlight! link bashTSParameter NightflyTurquoise
-        highlight! link cssTSPunctDelimiter NightflyWatermelon
-        highlight! link cssTSType NightflyBlue
-        highlight! link scssTSPunctDelimiter NightflyWatermelon
-        highlight! link scssTSType NightflyBlue
-        highlight! link scssTSVariable NightflyTurquoise
-        highlight! link vimTSVariable NightflyTurquoise
-        highlight! link vimTSVariableBuiltin NightflyEmerald
-        highlight! link yamlTSField NightflyBlue
-        highlight! link yamlTSPunctDelimiter NightflyWatermelon
-    endif
-
-    " Neovim Diagnostic
-    highlight! link DiagnosticError NightflyRed
-    highlight! link DiagnosticWarn NightflyYellow
-    highlight! link DiagnosticInfo NightflyBlue
-    highlight! link DiagnosticHint NightflyWhite
-    if g:nightflyUndercurls
-        exec 'highlight DiagnosticUnderlineError guibg=NONE gui=undercurl guisp=' . s:red
-        exec 'highlight DiagnosticUnderlineWarn guibg=NONE gui=undercurl guisp=' . s:yellow
-        exec 'highlight DiagnosticUnderlineInfo guibg=NONE gui=undercurl guisp=' . s:blue
-        exec 'highlight DiagnosticUnderlineHint guibg=NONE gui=undercurl guisp=' . s:white
-    else
-        exec 'highlight DiagnosticUnderlineError guibg=NONE gui=underline guisp=' . s:red
-        exec 'highlight DiagnosticUnderlineWarn guibg=NONE gui=underline guisp=' . s:yellow
-        exec 'highlight DiagnosticUnderlineInfo guibg=NONE gui=underline guisp=' . s:blue
-        exec 'highlight DiagnosticUnderlineHint guibg=NONE gui=underline guisp=' . s:white
-    endif
-    highlight! link DiagnosticVirtualTextError NightflySteelBlue
-    highlight! link DiagnosticVirtualTextWarn NightflySteelBlue
-    highlight! link DiagnosticVirtualTextInfo NightflySteelBlue
-    highlight! link DiagnosticVirtualTextHint NightflySteelBlue
-    highlight! link DiagnosticSignError NightflyRedAlert
-    highlight! link DiagnosticSignWarn NightflyYellowAlert
-    highlight! link DiagnosticSignInfo NightflyBlueAlert
-    highlight! link DiagnosticSignHint NightflyWhiteAlert
-    highlight! link DiagnosticFloatingError NightflyRed
-    highlight! link DiagnosticFloatingWarn NightflyYellow
-    highlight! link DiagnosticFloatingInfo NightflyBlue
-    highlight! link DiagnosticFloatingHint NightflyWhite
-    highlight! link LspSignatureActiveParameter NightflyVisual
+    lua require("nightfly").core()
 endif
 
 "-----------------------------------------------------------------------
@@ -917,13 +823,13 @@ exec 'highlight MatchWordCur guibg=bg'
 
 " ALE plugin
 if g:nightflyUndercurls
-    exec 'highlight ALEError guibg=NONE gui=undercurl guisp=' . s:red
-    exec 'highlight ALEWarning guibg=NONE gui=undercurl guisp=' . s:yellow
-    exec 'highlight ALEInfo guibg=NONE gui=undercurl guisp=' . s:blue
+    highlight! link ALEError NightflyDiagnosticUndercurlError
+    highlight! link ALEWarning NightflyDiagnosticUndercurlWarn
+    highlight! link ALEInfo NightflyDiagnosticUndercurlInfo
 else
-    exec 'highlight ALEError guibg=NONE'
-    exec 'highlight ALEWarning guibg=NONE'
-    exec 'highlight ALEInfo guibg=NONE'
+    highlight! link ALEError NightflyDiagnosticUnderlineError
+    highlight! link ALEWarning NightflyDiagnosticUnderlineWarn
+    highlight! link ALEInfo NightflyDiagnosticUnderlineInfo
 endif
 highlight! link ALEVirtualTextError NightflySteelBlue
 highlight! link ALEErrorSign NightflyRedAlert
