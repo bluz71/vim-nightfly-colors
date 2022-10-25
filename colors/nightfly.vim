@@ -905,6 +905,7 @@ if has('nvim')
     " Neo-tree plugin
     highlight! link NeoTreeDimText NightflyDeepBlue
     highlight! link NeoTreeDotfile NightflySlateBlue
+    highlight! link NeoTreeGitAdded NightflyGreen
     highlight! link NeoTreeGitConflict NightflyWatermelon
     highlight! link NeoTreeGitModified NightflyViolet
     highlight! link NeoTreeGitUntracked NightflySteelBlue
