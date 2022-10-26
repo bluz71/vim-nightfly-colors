@@ -37,13 +37,13 @@ local M = {}
 
 M.core = function()
   highlight(0, "Whitespace", { fg = regal_blue })
-  highlight(0, "TermCursor", { bg = cadet_blue, fg = "bg" })
+  highlight(0, "TermCursor", { bg = cadet_blue, fg = black })
   if g.nightflyNormalFloat then
-    highlight(0, "NormalFloat", { bg = "bg", fg = cadet_blue })
+    highlight(0, "NormalFloat", { bg = black, fg = cadet_blue })
   else
-    highlight(0, "NormalFloat", { bg = dark_blue, fg = "fg" })
+    highlight(0, "NormalFloat", { bg = dark_blue, fg = white })
   end
-  highlight(0, "FloatBorder", { bg = "bg", fg = slate_blue })
+  highlight(0, "FloatBorder", { bg = black, fg = slate_blue })
   highlight(0, "WinBar", { bg = deep_blue, fg = white })
   highlight(0, "WinBarNC", { bg = deep_blue, fg = cadet_blue })
   highlight(0, "WinSeparator", { link = "VertSplit" })
