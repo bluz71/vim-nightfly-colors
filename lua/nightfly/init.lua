@@ -41,7 +41,7 @@ local M = {}
 
 M.core = function()
   highlight(0, "Whitespace", { fg = regal_blue })
-  highlight(0, "TermCursor", { bg = cadet_blue, fg = bg })
+  highlight(0, "TermCursor", { bg = cadet_blue, fg = black })
   if g.nightflyNormalFloat then
     highlight(0, "NormalFloat", { bg = bg, fg = cadet_blue })
   else
