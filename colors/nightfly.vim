@@ -346,8 +346,79 @@ exec 'highlight DiffDelete guibg=' . s:slate_blue . ' guifg=' . s:steel_blue ' g
 exec 'highlight DiffText guibg=' . s:blue . ' guifg=' . s:black . ' gui=none'
 
 " Neovim-only core highlight groups
-if has('nvim')
+if has('nvim-0.8')
     lua require("nightfly").core()
+elseif has('nvim-0.7')
+    exec 'highlight Whitespace guifg=' . s:regal_blue
+    exec 'highlight TermCursor guibg=' . s:cadet_blue . ' guifg=bg gui=none'
+    if g:nightflyNormalFloat
+        exec 'highlight NormalFloat guibg=bg guifg=' . s:cadet_blue
+    else
+        exec 'highlight NormalFloat guibg=' . s:dark_blue . ' guifg=fg'
+    endif
+    exec 'highlight FloatBorder guibg=bg guifg=' . s:slate_blue
+    highlight! link WinSeparator VertSplit
+
+    " Neovim Treesitter
+    highlight! link TSAnnotation NightflyViolet
+    highlight! link TSAttribute NightflyBlue
+    highlight! link TSConstant NightflyTurquoise
+    highlight! link TSConstBuiltin NightflyGreen
+    highlight! link TSConstMacro NightflyViolet
+    highlight! link TSConstructor NightflyEmerald
+    highlight! link TSDanger Todo
+    highlight! link TSFuncBuiltin NightflyBlue
+    highlight! link TSFuncMacro NightflyBlue
+    highlight! link TSInclude NightflyWatermelon
+    highlight! link TSKeywordOperator NightflyViolet
+    highlight! link TSNamespace NightflyTurquoise
+    highlight! link TSParameter NightflyWhite
+    highlight! link TSPunctSpecial NightflyWatermelon
+    highlight! link TSSymbol NightflyPurple
+    highlight! link TSTag NightflyBlue
+    highlight! link TSTagDelimiter NightflyGreen
+    highlight! link TSVariableBuiltin NightflyGreen
+    " Language specific overrides.
+    highlight! link bashTSParameter NightflyTurquoise
+    highlight! link cssTSPunctDelimiter NightflyWatermelon
+    highlight! link cssTSType NightflyBlue
+    highlight! link scssTSPunctDelimiter NightflyWatermelon
+    highlight! link scssTSType NightflyBlue
+    highlight! link scssTSVariable NightflyTurquoise
+    highlight! link vimTSVariable NightflyTurquoise
+    highlight! link vimTSVariableBuiltin NightflyEmerald
+    highlight! link yamlTSField NightflyBlue
+    highlight! link yamlTSPunctDelimiter NightflyWatermelon
+
+    " Neovim Diagnostic
+    highlight! link DiagnosticError NightflyRed
+    highlight! link DiagnosticWarn NightflyYellow
+    highlight! link DiagnosticInfo NightflyBlue
+    highlight! link DiagnosticHint NightflyWhite
+    if g:nightflyUndercurls
+        highlight! link DiagnosticUnderlineError NightflyDiagnosticUndercurlError
+        highlight! link DiagnosticUnderlineWarn NightflyDiagnosticUndercurlWarn
+        highlight! link DiagnosticUnderlineInfo NightflyDiagnosticUndercurlInfo
+        highlight! link DiagnosticUnderlineHint NightflyDiagnosticUndercurlHint
+    else
+        highlight! link DiagnosticUnderlineError NightflyDiagnosticUnderlineError
+        highlight! link DiagnosticUnderlineWarn NightflyDiagnosticUnderlineWarn
+        highlight! link DiagnosticUnderlineInfo NightflyDiagnosticUnderlineInfo
+        highlight! link DiagnosticUnderlineHint NightflyDiagnosticUnderlineHint
+    endif
+    highlight! link DiagnosticVirtualTextError NightflySteelBlue
+    highlight! link DiagnosticVirtualTextWarn NightflySteelBlue
+    highlight! link DiagnosticVirtualTextInfo NightflySteelBlue
+    highlight! link DiagnosticVirtualTextHint NightflySteelBlue
+    highlight! link DiagnosticSignError NightflyRedAlert
+    highlight! link DiagnosticSignWarn NightflyYellowAlert
+    highlight! link DiagnosticSignInfo NightflyBlueAlert
+    highlight! link DiagnosticSignHint NightflyWhiteAlert
+    highlight! link DiagnosticFloatingError NightflyRed
+    highlight! link DiagnosticFloatingWarn NightflyYellow
+    highlight! link DiagnosticFloatingInfo NightflyBlue
+    highlight! link DiagnosticFloatingHint NightflyWhite
+    highlight! link LspSignatureActiveParameter NightflyVisual
 endif
 
 "-----------------------------------------------------------------------
