@@ -1,6 +1,6 @@
 " nightfly color scheme for airline (https://github.com/vim-airline/vim-airline).
 "
-" URL:     github.com/bluz71/vim-nightfly-guicolors
+" URL:     github.com/bluz71/vim-nightfly-colors
 " License: MIT (https://opensource.org/licenses/MIT)
 
 let s:white      = ['#c3ccdc', 251]

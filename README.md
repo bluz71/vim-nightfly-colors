@@ -57,7 +57,7 @@ _nightfly_ is a **GUI-only** colorscheme.
 A GUI client, such as Gvim, or a modern terminal version of Vim or Neovim with
 the `termguicolors` option enabled in a true-color terminal, is required.
 Details about true-color terminals are [listed
-here](https://github.com/bluz71/vim-nightfly-guicolors#true-color-terminals).
+here](https://github.com/bluz71/vim-nightfly-colors#true-color-terminals).
 
 _nightfly_ explicitly does **not** support the 256 color `cterm` version of Vim
 due to the number of custom colors required. 256 color terminals only allow 16
@@ -71,19 +71,19 @@ custom colors. I encourage terminal users to use a true-color terminal, such as:
 Installation
 ------------
 
-Install the **bluz71/vim-nightfly-guicolors** colorscheme with your preferred
+Install the **bluz71/vim-nightfly-colors** colorscheme with your preferred
 plugin manager.
 
 [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```viml
-Plug 'bluz71/vim-nightfly-guicolors'
+Plug 'bluz71/vim-nightfly-colors'
 ```
 
 [packer.nvim](https://github.com/wbthomason/packer.nvim):
 
 ```lua
-use 'bluz71/vim-nightfly-guicolors'
+use 'bluz71/vim-nightfly-colors'
 ```
 
 Usage
@@ -130,14 +130,14 @@ let g:lightline = { 'colorscheme': 'nightfly' }
 
 | Option | Default State
 |--------|--------------
-| [nightflyCursorColor](https://github.com/bluz71/vim-nightfly-guicolors#nightflycursorcolor)                 | Disabled
-| [nightflyItalics](https://github.com/bluz71/vim-nightfly-guicolors#nightflyitalics)                         | Enabled
-| [nightflyNormalFloat](https://github.com/bluz71/vim-nightfly-guicolors#nightflynormalfloat)                 | Disabled
-| [nightflyTerminalColors](https://github.com/bluz71/vim-nightfly-guicolors#nightflyterminalcolors)           | Enabled
-| [nightflyTransparent](https://github.com/bluz71/vim-nightfly-guicolors#nightflytransparent)                 | Disabled
-| [nightflyUndercurls](https://github.com/bluz71/vim-nightfly-guicolors#nightflyundercurls)                   | Enabled
-| [nightflyUnderlineMatchParen](https://github.com/bluz71/vim-nightfly-guicolors#nightflyunderlinematchparen) | Disabled
-| [nightflyWinSeparator](https://github.com/bluz71/vim-nightfly-guicolors#nightflywinseparator)               | `1`
+| [nightflyCursorColor](https://github.com/bluz71/vim-nightfly-colors#nightflycursorcolor)                 | Disabled
+| [nightflyItalics](https://github.com/bluz71/vim-nightfly-colors#nightflyitalics)                         | Enabled
+| [nightflyNormalFloat](https://github.com/bluz71/vim-nightfly-colors#nightflynormalfloat)                 | Disabled
+| [nightflyTerminalColors](https://github.com/bluz71/vim-nightfly-colors#nightflyterminalcolors)           | Enabled
+| [nightflyTransparent](https://github.com/bluz71/vim-nightfly-colors#nightflytransparent)                 | Disabled
+| [nightflyUndercurls](https://github.com/bluz71/vim-nightfly-colors#nightflyundercurls)                   | Enabled
+| [nightflyUnderlineMatchParen](https://github.com/bluz71/vim-nightfly-colors#nightflyunderlinematchparen) | Disabled
+| [nightflyWinSeparator](https://github.com/bluz71/vim-nightfly-colors#nightflywinseparator)               | `1`
 
 ---
 

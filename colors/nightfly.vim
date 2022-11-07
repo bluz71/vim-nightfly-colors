@@ -1,6 +1,6 @@
 " Dark Vim/Neovim color scheme.
 "
-" URL:     github.com/bluz71/vim-nightfly-guicolors
+" URL:     github.com/bluz71/vim-nightfly-colors
 " License: MIT (https://opensource.org/licenses/MIT)
 
 " Clear highlights and reset syntax.
@@ -950,7 +950,7 @@ highlight! link MistflyVisual NightflyPurpleMode
 highlight! link MistflyCommand NightflyTanMode
 highlight! link MistflyReplace NightflyWatermelonMode
 
-" Coc plugin (see issue: https://github.com/bluz71/vim-nightfly-guicolors/issues/31)
+" Coc plugin (see issue: https://github.com/bluz71/vim-nightfly-colors/issues/31)
 highlight! link CocUnusedHighlight NightflyAshBlue
 
 " indentLine plugin
