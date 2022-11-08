@@ -1,9 +1,12 @@
 ![nightfly](https://raw.githubusercontent.com/bluz71/misc-binaries/master/headings/nightfly.png)
 ==========
 
-_nightfly_ is a dark GUI colorscheme for Vim & Neovim.
+_nightfly_ is a dark midnight theme for classic Vim & modern Neovim.
 
-:point_right: I maintain another dark Vim theme named
+This theme uses a hybrid implementation style; Vimscript is used for common Vim
+and Neovim highlights whilst Lua is used for Neovim exclusive highlights.
+
+:point_right: I maintain another dark theme named
 [moonfly](https://github.com/bluz71/vim-moonfly-colors) which may be of
 interest.
 
@@ -59,14 +62,7 @@ the `termguicolors` option enabled in a true-color terminal, is required.
 Details about true-color terminals are [listed
 here](https://github.com/bluz71/vim-nightfly-colors#true-color-terminals).
 
-_nightfly_ explicitly does **not** support the 256 color `cterm` version of Vim
-due to the number of custom colors required. 256 color terminals only allow 16
-custom colors. I encourage terminal users to use a true-color terminal, such as:
-[iTerm2](https://iterm2.com),
-[Alacritty](https://github.com/alacritty/alacritty),
-[Windows Terminal](https://github.com/microsoft/terminal), or
-[kitty](https://sw.kovidgoyal.net/kitty/index.html) and enable the
-`termguicolors` option.
+_nightfly_ explicitly does **not** support the 256 color `cterm` version of Vim.
 
 Installation
 ------------
@@ -379,6 +375,35 @@ be added to the `~/.vimrc` file:
 ```viml
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+```
+
+Overriding Highlights
+---------------------
+
+If a certain highlight of this theme does not suit then it is recommended to use
+an `autocmd` to override that desired highlight.
+
+For example, if one wishes to highlight functions in bold then simply add the
+following to your initialization file:
+
+```viml
+" Vimscript initialization file
+augroup CustomHighlight
+    autocmd!
+    autocmd ColorScheme moonfly highlight Function guifg=#82aaff gui=bold
+augroup END
+```
+
+```lua
+-- Lua initialization file
+local custom_highlight = vim.api.nvim_create_augroup("CustomHighlight", {})
+vim.api.nvim_create_autocmd("ColorScheme", {
+  pattern = "moonfly",
+  callback = function()
+    vim.api.nvim_set_hl(0, "Function", { fg = "#82aaff", bold = true })
+  end,
+  group = custom_highlight,
+})
 ```
 
 Terminal Themes
