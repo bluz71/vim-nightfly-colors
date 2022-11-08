@@ -353,7 +353,7 @@ following to your initialization file:
 " Vimscript initialization file
 augroup CustomHighlight
     autocmd!
-    autocmd ColorScheme moonfly highlight Function guifg=#82aaff gui=bold
+    autocmd ColorScheme nightfly highlight Function guifg=#82aaff gui=bold
 augroup END
 ```
 
@@ -361,7 +361,7 @@ augroup END
 -- Lua initialization file
 local custom_highlight = vim.api.nvim_create_augroup("CustomHighlight", {})
 vim.api.nvim_create_autocmd("ColorScheme", {
-  pattern = "moonfly",
+  pattern = "nightfly",
   callback = function()
     vim.api.nvim_set_hl(0, "Function", { fg = "#82aaff", bold = true })
   end,
