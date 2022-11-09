@@ -10,27 +10,6 @@ if exists('syntax_on')
 endif
 let g:colors_name='nightfly'
 
-" Check that Vim/Neovim is able to run this true-color only theme.
-"
-" If running in a terminal make sure 'termguicolors' exists and is set.
-if has('nvim')
-    if has('nvim-0.4') && len(nvim_list_uis()) > 0 && nvim_list_uis()[0]['ext_termcolors'] && !&termguicolors
-        " The nvim_list_uis test indicates terminal Neovim vs GUI Neovim.
-        " Note, versions prior to Neovim 0.4 did not set 'ext_termcolors'.
-        echomsg 'The termguicolors option must be set'
-        finish
-    endif
-else " Vim
-    if !has('gui_running') && !exists('&termguicolors')
-        echomsg 'A modern version of Vim with termguicolors is required'
-        finish
-    elseif !has('gui_running') && !&termguicolors
-        echomsg 'The termguicolors option must be set'
-        echomsg 'Be aware macOS default Vim is broken, use Homebrew Vim instead'
-        finish
-    endif
-endif
-
 " By default do not color the cursor.
 let g:nightflyCursorColor = get(g:, 'nightflyCursorColor', v:false)
 
