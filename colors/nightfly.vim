@@ -801,7 +801,7 @@ highlight! link TagbarVisibilityPrivate NightflyGreen
 highlight! link TagbarKind NightflyEmerald
 
 " NERDTree plugin
-highlight! link NERDTreeClosable NightflyEmerald
+highlight! link NERDTreeClosable NightflyCadetBlue
 highlight! link NERDTreeCWD NightflyPurple
 highlight! link NERDTreeDir NightflyBlue
 highlight! link NERDTreeDirSlash NightflyWatermelon
@@ -812,7 +812,7 @@ highlight! link NERDTreeHelp NightflyCadetBlue
 highlight! link NERDTreeLinkDir NightflyBlue
 highlight! link NERDTreeLinkFile NightflyBlue
 highlight! link NERDTreeLinkTarget NightflyTurquoise
-highlight! link NERDTreeOpenable NightflyEmerald
+highlight! link NERDTreeOpenable NightflyCadetBlue
 highlight! link NERDTreePart NightflyRegalBlue
 highlight! link NERDTreePartFile NightflyRegalBlue
 highlight! link NERDTreeUp NightflyBlue
@@ -825,7 +825,7 @@ highlight! link NERDTreeGitStatusStaged NightflyBlue
 highlight! link NERDTreeGitStatusUntracked NightflyRed
 
 " fern.vim plugin
-highlight! link FernBranchSymbol NightflyEmerald
+highlight! link FernBranchSymbol NightflyCadetBlue
 highlight! link FernBranchText NightflyBlue
 highlight! link FernMarkedLine NightflyVisual
 highlight! link FernMarkedText NightflyWatermelon
