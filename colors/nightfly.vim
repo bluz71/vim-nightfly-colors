@@ -506,7 +506,6 @@ if !has('nvim-0.8')
     highlight! link pythonStatement NightflyViolet
 
     " Ruby
-    highlight! link erubyDelimiter NightflyWatermelon
     highlight! link rubyAccess NightflyYellow
     highlight! link rubyAssertion NightflyBlue
     highlight! link rubyAttribute NightflyBlue
@@ -852,6 +851,7 @@ highlight! link bufExplorerSortBy NightflyCadetBlue
 highlight! link CleverFDefaultLabel NightflyWatermelon
 highlight! link CtrlPMatch NightflyOrange
 highlight! link Directory NightflyBlue
+highlight! link erubyDelimiter NightflyWatermelon
 highlight! link HighlightedyankRegion NightflyRegalBlue
 highlight! link jsonKeyword NightflyBlue
 highlight! link jsonBoolean NightflyTurquoise
