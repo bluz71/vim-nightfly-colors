@@ -140,7 +140,7 @@ M.plugins = function()
   -- NvimTree plugin
   highlight(0, "NvimTreeFolderIcon", { link = "NightflyBlue" })
   highlight(0, "NvimTreeFolderName", { link = "NightflyBlue" })
-  highlight(0, "NvimTreeIndentMarker", { link = "NightflySlateBlue" })
+  highlight(0, "NvimTreeIndentMarker", { link = "NightflyCadetBlue" })
   highlight(0, "NvimTreeOpenedFolderName", { link = "NightflyBlue" })
   highlight(0, "NvimTreeRootFolder", { link = "NightflyPurple" })
   highlight(0, "NvimTreeSpecialFile", { link = "NightflyYellow" })
