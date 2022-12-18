@@ -37,35 +37,36 @@ let g:nightflyUnderlineMatchParen = get(g:, 'nightflyUnderlineMatchParen', v:fal
 let g:nightflyWinSeparator = get(g:, 'nightflyWinSeparator', 1)
 
 " Background and foreground
-let s:black      = '#011627'
-let s:white      = '#c3ccdc'
+let s:black       = '#011627'
+let s:white       = '#c3ccdc'
 " Variations of blue-grey
-let s:black_blue = '#081e2f'
-let s:dark_blue  = '#092236'
-let s:deep_blue  = '#0e293f'
-let s:slate_blue = '#2c3043'
-let s:regal_blue = '#1d3b53'
-let s:steel_blue = '#4b6479'
-let s:grey_blue  = '#7c8f8f'
-let s:cadet_blue = '#a1aab8'
-let s:ash_blue   = '#acb4c2'
-let s:white_blue = '#d6deeb'
+let s:black_blue  = '#081e2f'
+let s:dark_blue   = '#092236'
+let s:deep_blue   = '#0e293f'
+let s:slate_blue  = '#2c3043'
+let s:pickle_blue = '#36445e'
+let s:regal_blue  = '#1d3b53'
+let s:steel_blue  = '#4b6479'
+let s:grey_blue   = '#7c8f8f'
+let s:cadet_blue  = '#a1aab8'
+let s:ash_blue    = '#acb4c2'
+let s:white_blue  = '#d6deeb'
 " Core theme colors
-let s:yellow     = '#e3d18a'
-let s:peach      = '#ffcb8b'
-let s:tan        = '#ecc48d'
-let s:orange     = '#f78c6c'
-let s:red        = '#fc514e'
-let s:watermelon = '#ff5874'
-let s:violet     = '#c792ea'
-let s:purple     = '#ae81ff'
-let s:indigo     = '#5e97ec'
-let s:blue       = '#82aaff'
-let s:turquoise  = '#7fdbca'
-let s:emerald    = '#21c7a8'
-let s:green      = '#a1cd5e'
+let s:yellow      = '#e3d18a'
+let s:peach       = '#ffcb8b'
+let s:tan         = '#ecc48d'
+let s:orange      = '#f78c6c'
+let s:red         = '#fc514e'
+let s:watermelon  = '#ff5874'
+let s:violet      = '#c792ea'
+let s:purple      = '#ae81ff'
+let s:indigo      = '#5e97ec'
+let s:blue        = '#82aaff'
+let s:turquoise   = '#7fdbca'
+let s:emerald     = '#21c7a8'
+let s:green       = '#a1cd5e'
 " Extra colors
-let s:cyan_blue  = '#296596'
+let s:cyan_blue   = '#296596'
 
 " Specify the colors used by the inbuilt terminal of Neovim and Vim
 if g:nightflyTerminalColors
@@ -108,6 +109,7 @@ exec 'highlight NightflyReset guifg=fg'
 exec 'highlight NightflyVisual guibg=' . s:regal_blue
 exec 'highlight NightflyWhite guifg=' . s:white
 exec 'highlight NightflyDeepBlue guifg=' . s:deep_blue
+exec 'highlight NightflyPickleBlue guifg=' . s:pickle_blue
 exec 'highlight NightflySlateBlue guifg=' . s:slate_blue
 exec 'highlight NightflyRegalBlue guifg=' . s:regal_blue
 exec 'highlight NightflySteelBlue guifg=' . s:steel_blue
@@ -944,7 +946,7 @@ elseif has('nvim-0.6')
     " NvimTree plugin
     highlight! link NvimTreeFolderIcon NightflyBlue
     highlight! link NvimTreeFolderName NightflyBlue
-    highlight! link NvimTreeIndentMarker NightflySlateBlue
+    highlight! link NvimTreeIndentMarker NightflyPickleBlue
     highlight! link NvimTreeOpenedFolderName NightflyBlue
     highlight! link NvimTreeRootFolder NightflyPurple
     highlight! link NvimTreeSpecialFile NightflyYellow
@@ -955,11 +957,11 @@ elseif has('nvim-0.6')
     exec 'highlight NvimTreeSymlink guifg=' . s:turquoise . ' gui=none'
 
     " Neo-tree plugin
-    highlight! link NeoTreeDimText NightflyDeepBlue
+    highlight! link NeoTreeDimText NightflyPickleBlue
     highlight! link NeoTreeDotfile NightflySlateBlue
     highlight! link NeoTreeGitAdded NightflyGreen
     highlight! link NeoTreeGitConflict NightflyWatermelon
-    highlight! link NeoTreeGitModified NightflyViolet
+    highlight! link NeoTreeGitModified NightflyYellow
     highlight! link NeoTreeGitUntracked NightflySteelBlue
     highlight! link NeoTreeMessage NightflyCadetBlue
     highlight! link NeoTreeModified NightflyYellow
