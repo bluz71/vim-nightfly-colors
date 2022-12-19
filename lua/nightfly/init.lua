@@ -25,6 +25,7 @@ local yellow = "#e3d18a"
 local peach = "#ffcb8b"
 local tan = "#ecc48d"
 local orange = "#f78c6c"
+local orchid = '#e39aa6'
 local red = "#fc514e"
 local watermelon = "#ff5874"
 local violet = "#c792ea"
@@ -68,7 +69,7 @@ M.core = function()
   highlight(0, "@keyword.operator", { link = "NightflyViolet" })
   highlight(0, "@namespace", { link = "NightflyTurquoise" })
   highlight(0, "@none", {})
-  highlight(0, "@parameter", { link = "NightflyWhite" })
+  highlight(0, "@parameter", { link = "NightflyOrchid" })
   highlight(0, "@punctuation.special", { link = "NightflyWatermelon" })
   highlight(0, "@string.regex", { link = "NightflyTurquoise" })
   highlight(0, "@symbol", { link = "NightflyPurple" })
@@ -92,6 +93,7 @@ M.core = function()
   highlight(0, "@text.underline", { underline = true })
   highlight(0, "@text.uri", { link = "NightflyPurple" })
   highlight(0, "@text.warning", { link = "NightflyYellowAlert" })
+  highlight(0, "@variable", { link = "NightflyWhite" })
   highlight(0, "@variable.builtin", { link = "NightflyGreen" })
   -- Language specific overrides.
   highlight(0, "@parameter.bash", { link = "NightflyTurquoise" })
