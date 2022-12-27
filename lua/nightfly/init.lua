@@ -37,6 +37,7 @@ local emerald = "#21c7a8"
 local green = "#a1cd5e"
 -- Extra colors
 local cyan_blue = "#296596"
+local bay_blue = '#24567F'
 
 local M = {}
 
@@ -330,6 +331,22 @@ M.plugins = function()
   highlight(0, "NotifyINFOTitle", { link = "NightflyBlue" })
   highlight(0, "NotifyDEBUGTitle", { link = "NightflyGreyBlue" })
   highlight(0, "NotifyTRACETitle", { link = "NightflyPurple" })
+
+  -- lazy.nvim
+  highlight(0, "LazyCommit", { link = "NightflyEmerald" })
+  highlight(0, "LazyCommitType", { link = "NightflyViolet" })
+  highlight(0, "LazyH1", { link = "NightflyBlueMode" })
+  highlight(0, "LazyProgressDone", { link = "NightflyBlue" })
+  highlight(0, "LazyProgressTodo", { link = "NightflyRegalBlue" })
+  highlight(0, "LazyReasonCmd", { link = "NightflyGreen" })
+  highlight(0, "LazyReasonPlugin", { link = "NightflyOrchid" })
+  highlight(0, "LazyReasonRuntime", { link = "NightflyViolet" })
+  highlight(0, "LazySpecial", { link = "NightflyBlue" })
+  highlight(0, "LazyButton", { bg = deep_blue, fg = white })
+  highlight(0, "LazyButtonActive", { bg = bay_blue, fg = white_blue })
+  if g.moonflyNormalFloat ~= true then
+    highlight(0, "LazyNormal", { bg = black_blue, fg = white })
+  end
 end
 
 return M
