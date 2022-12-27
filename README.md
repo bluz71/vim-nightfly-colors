@@ -83,6 +83,12 @@ Plug 'bluz71/vim-nightfly-colors'
 use 'bluz71/vim-nightfly-colors'
 ```
 
+[lazy.nvim](https://github.com/folke/lazy.nvim):
+
+```lua
+{ 'bluz71/vim-nightfly-colors', lazy = true },
+```
+
 Usage
 -----
 
