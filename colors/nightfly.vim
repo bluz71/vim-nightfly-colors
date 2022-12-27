@@ -902,6 +902,7 @@ highlight! link GitGutterDelete NightflyRedAlert
 " Signify plugin
 highlight! link SignifySignAdd NightflyEmeraldAlert
 highlight! link SignifySignChange NightflyYellowAlert
+highlight! link SignifySignChangeDelete NightflyOrangeAlert
 highlight! link SignifySignDelete NightflyRedAlert
 
 " FZF plugin
