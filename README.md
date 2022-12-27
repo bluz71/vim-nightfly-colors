@@ -3,8 +3,8 @@
 
 _nightfly_ is a dark midnight theme for classic Vim & modern Neovim.
 
-Note, this theme is hybridly implemented; Vimscript is used for common Vim and
-Neovim highlights whilst Lua is used for Neovim exclusive highlights.
+Note, _nightfly_ is a hybrid theme; Vimscript is used for common Vim and Neovim
+highlights whilst Lua is used for Neovim exclusive highlights.
 
 :point_right: I maintain another dark theme named
 [moonfly](https://github.com/bluz71/vim-moonfly-colors) which may be of
