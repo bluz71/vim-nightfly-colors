@@ -86,7 +86,7 @@ use 'bluz71/vim-nightfly-colors'
 [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
-{ 'bluz71/vim-nightfly-colors', lazy = true },
+{ 'bluz71/vim-nightfly-colors', lazy = true, priority = 1000 },
 ```
 
 Usage
