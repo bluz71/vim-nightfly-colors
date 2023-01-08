@@ -363,6 +363,13 @@ M.plugins = function()
   highlight(0, "MasonMuted", { link = "NightflySteelBlue" })
   highlight(0, "MasonMutedBlock", { bg = deep_blue, fg = white })
   highlight(0, "MasonMutedBlockBold", { bg = deep_blue, fg = white_blue })
+
+  -- linefly plugin
+  highlight(0, "LineflyNormal", { link = "NightflyBlueMode" })
+  highlight(0, "LineflyInsert", { link = "NightflyEmeraldMode" })
+  highlight(0, "LineflyVisual", { link = "NightflyPurpleMode" })
+  highlight(0, "LineflyCommand", { link = "NightflyTanMode" })
+  highlight(0, "LineflyReplace", { link = "NightflyWatermelonMode" })
 end
 
 return M
