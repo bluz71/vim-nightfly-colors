@@ -1,0 +1,145 @@
+*nightfly* A dark midnight theme for classic Vim & modern Neovim
+
+OPTIONS                                                      *nightfly-options*
+
+Default option values:
+>
+  let g:nightflyCursorColor = v:false
+  let g:nightflyItalics = v:true
+  let g:nightflyNormalFloat = v:false
+  let g:nightflyTerminalColors = v:true
+  let g:nightflyTransparent = v:false
+  let g:nightflyUndercurls = v:true
+  let g:nightflyUnderlineMatchParen = v:false
+  let g:nightflyWinSeparator = 1
+<
+------------------------------------------------------------------------------
+nightflyCursorColor~                                   *g:nightflyCursorColor*
+
+The `nightflyCursorColor` option specifies whether to color the cursor or not.
+By default the cursor will NOT be colored. If you prefer a colored cursor then
+add the following to your initialization file:
+
+>
+  " Vimscript initialization file
+  let g:nightflyCursorColor = v:true
+
+  -- Lua initialization file
+  vim.g.nightflyCursorColor = true
+<
+------------------------------------------------------------------------------
+nightflyitalics~                                           *g:nightflyitalics*
+
+The `nightflyItalics` option specifies whether to use italics for comments and
+certain HTML elements in GUI versions of Vim. By default this option is
+enabled. If you do not like the appearance of italics then add the following
+to your initialization file:
+
+>
+  " Vimscript initialization file
+  let g:nightflyItalics = v:false
+
+  -- Lua initialization file
+  vim.g.nightflyItalics = false
+<
+------------------------------------------------------------------------------
+### nightflyNormalFloat                                *g:nightflyNormalFloat*
+
+The `nightflyNormalFloat` option specifies whether to use nightfly background
+and foreground colors in Neovim floating windows. By default this option is
+disabled, hence, Neovim floating windows will usually be styled with popup
+menu colors. If you would like to use nightfly colors instead then add the
+following to your configuration:
+
+>
+  " Vimscript initialization file
+  let g:nightflyNormalFloat = v:true
+
+  -- Lua initialization file
+  vim.g.nightflyNormalFloat = true
+<
+------------------------------------------------------------------------------
+nightflyTerminalColors~                             *g:nightflyTerminalColors*
+
+The `nightflyTerminalColors` option specifies whether to use the nightfly
+color palette in `:terminal` windows when `termguicolors` is set. By default
+this option is **enabled**. If you prefer not to use the nightfly color
+palette for the first 16 terminal colors then add the following to your
+initialization file:
+
+>
+  " Vimscript initialization file
+  let g:nightflyTerminalColors = v:false
+
+  -- Lua initialization file
+  vim.g.nightflyTerminalColors = false
+<
+------------------------------------------------------------------------------
+nightflyTransparent~                                   *g:nightflyTransparent*
+
+The `nightflyTransparent` option specifies whether to use an opaque or
+transparent background in GUI versions of Vim. By default this option is
+disabled. If you would like a transparent background then add the following to
+your initialization file:
+
+>
+  " Vimscript initialization file
+  let g:nightflyTransparent = v:true
+
+  -- Lua initialization file
+  vim.g.nightflyTransparent = true
+<
+------------------------------------------------------------------------------
+nightflyUndercurls~                                     *g:nightflyUndercurls*
+
+The `nightflyUndercurls` option specifies whether to use undercurls for
+spelling and linting errors in GUI versions of Vim, including terminal Vim
+with `termguicolors` set. By default this option is enabled. If you do not
+like the appearance of undercurls then add the following to your
+initialization file:
+
+>
+  " Vimscript initialization file
+  let g:nightflyUndercurls = v:false
+
+  -- Lua initialization file
+  vim.g.nightflyUndercurls = false
+<
+------------------------------------------------------------------------------
+nightflyUnderlineMatchParen~                   *g:nightflyUnderlineMatchParen*
+
+The `nightflyUnderlineMatchParen` option specifies whether to underline
+matching parentheses. By default this option is disabled. If you want to
+underline matching parentheses then add the following to your initialization
+file:
+
+>
+  " Vimscript initialization file
+  let g:nightflyUnderlineMatchParen = v:true
+
+  -- Lua initialization file
+  vim.g.nightflyUnderlineMatchParen = true
+<
+------------------------------------------------------------------------------
+nightflyWinSeparator~                                 *g:nightflyWinSeparator*
+
+The `nightflyWinSeparator` option specifies the style of window separators:
+
+- `0` will display no window separators
+
+- `1` will display block separators; this is the default
+
+- `2` will diplay line separators
+
+For example, if line separators are desired then add the following to your
+configuration:
+
+>
+  " Vimscript initialization file
+  let g:nightflyWinSeparator = 2
+
+  -- Lua initialization file
+  vim.g.nightflyWinSeparator = 2
+<
+
+vim:tw=78:ts=8:noet:ft=help:norl:
