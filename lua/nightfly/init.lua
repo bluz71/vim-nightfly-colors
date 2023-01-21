@@ -108,6 +108,10 @@ M.core = function()
   highlight(0, "@field.yaml", { link = "NightflyBlue" })
   highlight(0, "@punctuation.delimiter.yaml", { link = "NightflyWatermelon" })
 
+  -- Neovim LSP semantic tokens.
+  highlight(0, "@class", { link = "NightflyEmerald" })
+  highlight(0, "@struct", { link = "NightflyEmerald" })
+
   -- Neovim Diagnostic
   highlight(0, "DiagnosticError", { link = "NightflyRed" })
   highlight(0, "DiagnosticWarn", { link = "NightflyYellow" })
