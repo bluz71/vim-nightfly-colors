@@ -858,6 +858,8 @@ highlight! link CleverFDefaultLabel NightflyWatermelon
 highlight! link CtrlPMatch NightflyOrange
 highlight! link Directory NightflyBlue
 highlight! link erubyDelimiter NightflyWatermelon
+highlight! link helpHeadline NightflyBlue
+highlight! link helpSectionDelim NightflyBlue
 highlight! link HighlightedyankRegion NightflyRegalBlue
 highlight! link jsonKeyword NightflyBlue
 highlight! link jsonBoolean NightflyTurquoise

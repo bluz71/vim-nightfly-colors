@@ -54,6 +54,11 @@ M.core = function()
   highlight(0, "WinBarNC", { bg = deep_blue, fg = cadet_blue })
   highlight(0, "WinSeparator", { link = "VertSplit" })
 
+  -- Neovim check-health
+  highlight(0, "healthSuccess", { link = "DiffAdd" })
+  highlight(0, "healthHeadingChar", { link = "NightflyBlue" })
+  highlight(0, "helpHeader", { link = "NightflyTurquoise" })
+
   -- Neovim Treesitter
   highlight(0, "@annotation", { link = "NightflyViolet" })
   highlight(0, "@attribute", { link = "NightflyBlue" })
