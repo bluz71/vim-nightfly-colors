@@ -324,7 +324,7 @@ M.plugins = function()
   highlight(0, "DashboardHeader", { link = "NightflyBlue" })
   highlight(0, "DashboardShortCut", { link = "NightflyTurquoise" })
 
-  -- nvim-notify
+  -- nvim-notify plugin
   highlight(0, "NotifyERRORBorder", { link = "FloatBorder" })
   highlight(0, "NotifyWARNBorder", { link = "FloatBorder" })
   highlight(0, "NotifyINFOBorder", { link = "FloatBorder" })
@@ -341,7 +341,7 @@ M.plugins = function()
   highlight(0, "NotifyDEBUGTitle", { link = "NightflyGreyBlue" })
   highlight(0, "NotifyTRACETitle", { link = "NightflyPurple" })
 
-  -- lazy.nvim
+  -- lazy.nvim plugin
   highlight(0, "LazyCommit", { link = "NightflyEmerald" })
   highlight(0, "LazyCommitType", { link = "NightflyViolet" })
   highlight(0, "LazyH1", { link = "NightflyBlueMode" })
@@ -357,7 +357,7 @@ M.plugins = function()
     highlight(0, "LazyNormal", { bg = black_blue, fg = white })
   end
 
-  -- mason.nvim
+  -- mason.nvim plugin
   highlight(0, "MasonError", { link = "NightflyRed" })
   highlight(0, "MasonHeader", { link = "NightflyBlueMode" })
   highlight(0, "MasonHeaderSecondary", { link = "NightflyBlueMode" })
@@ -379,6 +379,33 @@ M.plugins = function()
   highlight(0, "LineflyVisual", { link = "NightflyPurpleMode" })
   highlight(0, "LineflyCommand", { link = "NightflyTanMode" })
   highlight(0, "LineflyReplace", { link = "NightflyWatermelonMode" })
+
+  -- lspsaga.nvim plugin
+  highlight(0, "TitleString", { link = "NightflyBlue" })
+  highlight(0, "TitleIcon", { link = "NightflyBlue" })
+  highlight(0, "TitleSymbol", { link = "NightflyBlue" })
+  highlight(0, "SagaBorder", { link = "FloatBorder" })
+  highlight(0, "SagaNormal", { link = "Normal" })
+  highlight(0, "SagaExpand", { link = "NightflyWatermelon" })
+  highlight(0, "SagaCollapse", { link = "NightflyWatermelon" })
+  highlight(0, "SagaBeacon", { link = "NightflyPurpleMode" })
+  highlight(0, "ActionPreviewTitle", { link = "NightflyBlue" })
+  highlight(0, "CodeActionText", { link = "NightflyYellow" })
+  highlight(0, "CodeActionConceal", { link = "NightflyGreen" })
+  highlight(0, "FinderSelection", { link = "NightflyTurquoise" })
+  highlight(0, "FinderFileName", { link = "NightflyWhite" })
+  highlight(0, "FinderIcon", { link = "NightflyTurquoise" })
+  highlight(0, "FinderType", { link = "NightflyViolet" })
+  highlight(0, "FinderSpinnerTitle", { link = "NightflyPurple" })
+  highlight(0, "FinderSpinner", { link = "NightflyPurple" })
+  highlight(0, "FinderVirtText", { link = "NightflyRed" })
+  highlight(0, "RenameNormal", { link = "NightflyOrange" })
+  highlight(0, "DiagnosticSource", { link = "NightflySteelBlue" })
+  highlight(0, "DiagnosticPos", { link = "NightflyBlue" })
+  highlight(0, "CallHierarchyIcon", { link = "NightflyViolet" })
+  highlight(0, "CallHierarchyTitle", { link = "NightflyWatermelon" })
+  highlight(0, "SagaShadow", { link = "Normal" })
+  highlight(0, "OutlineIndent", { link = "NightflyPurple" })
 end
 
 return M
