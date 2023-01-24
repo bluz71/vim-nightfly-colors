@@ -151,7 +151,6 @@ exec 'highlight NightflyWatermelonMode guibg=' . s:watermelon . ' guifg=' . s:da
 exec 'highlight NightflyTanMode guibg=' . s:tan . ' guifg=' . s:dark_blue
 exec 'highlight NightflyTurquoiseMode guibg=' . s:turquoise . ' guifg=' . s:dark_blue
 " Generic line helper colors
-exec 'highlight NightflyBlueLine guibg=' . s:slate_blue . ' guifg=' . s:blue
 exec 'highlight NightflyEmeraldLine guibg=' . s:slate_blue . ' guifg=' . s:emerald
 exec 'highlight NightflyGreyBlueLine guibg=' . s:dark_blue . '  guifg=' . s:grey_blue
 exec 'highlight NightflyTanLine guibg=' . s:dark_blue . '  guifg=' . s:tan
