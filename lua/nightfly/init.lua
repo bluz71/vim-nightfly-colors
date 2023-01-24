@@ -24,7 +24,7 @@ local yellow = "#e3d18a"
 local peach = "#ffcb8b"
 local tan = "#ecc48d"
 local orange = "#f78c6c"
-local orchid = '#e39aa6'
+local orchid = "#e39aa6"
 local red = "#fc514e"
 local watermelon = "#ff5874"
 local violet = "#c792ea"
@@ -36,7 +36,7 @@ local emerald = "#21c7a8"
 local green = "#a1cd5e"
 -- Extra colors
 local cyan_blue = "#296596"
-local bay_blue = '#24567F'
+local bay_blue = "#24567F"
 
 local M = {}
 
@@ -236,17 +236,17 @@ M.plugins = function()
   highlight(0, "BufferVisibleIndex", { link = "NightflyGreyBlueLine" })
   highlight(0, "BufferVisibleMod", { link = "NightflyTanLine" })
   highlight(0, "BufferVisibleSign", { link = "NightflyGreyBlueLine" })
-  highlight(0, "BufferVisibleERROR", { link = "NightflyRedLine" })
-  highlight(0, "BufferVisibleWARN", { link = "NightflyYellowLine" })
-  highlight(0, "BufferVisibleINFO", { link = "NightflyBlueLine" })
-  highlight(0, "BufferVisibleHINT", { link = "NightflyWhiteLine" })
+  highlight(0, "BufferVisibleERROR", { bg = dark_blue, fg = red })
+  highlight(0, "BufferVisibleWARN", { bg = dark_blue, fg = yellow })
+  highlight(0, "BufferVisibleINFO", { bg = dark_blue, fg = blue })
+  highlight(0, "BufferVisibleHINT", { bg = dark_blue, fg = white })
   highlight(0, "BufferInactive", { bg = slate_blue, fg = grey_blue })
   highlight(0, "BufferInactiveMod", { bg = slate_blue, fg = tan })
   highlight(0, "BufferInactiveSign", { bg = slate_blue, fg = cadet_blue })
-  highlight(0, "BufferInactiveERROR", {bg = slate_blue,  fg = red})
-  highlight(0, "BufferInactiveWARN", {bg = slate_blue, fg = yellow})
-  highlight(0, "BufferInactiveINFO", {bg = slate_blue, fg = blue})
-  highlight(0, "BufferInactiveHINT", {bg = slate_blue, fg = white})
+  highlight(0, "BufferInactiveERROR", { bg = slate_blue, fg = red })
+  highlight(0, "BufferInactiveWARN", { bg = slate_blue, fg = yellow })
+  highlight(0, "BufferInactiveINFO", { bg = slate_blue, fg = blue })
+  highlight(0, "BufferInactiveHINT", { bg = slate_blue, fg = white })
   highlight(0, "BufferAlternate", { link = "BufferCurrent" })
   highlight(0, "BufferAlternateIndex", { link = "BufferCurrentIndex" })
   highlight(0, "BufferAlternateMod", { link = "BufferCurrentMod" })
