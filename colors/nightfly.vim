@@ -950,19 +950,6 @@ endif
 if has('nvim-0.7')
     lua require("nightfly").plugins()
 elseif has('nvim-0.6')
-    " NvimTree plugin
-    highlight! link NvimTreeFolderIcon NightflyBlue
-    highlight! link NvimTreeFolderName NightflyBlue
-    highlight! link NvimTreeIndentMarker NightflyPickleBlue
-    highlight! link NvimTreeOpenedFolderName NightflyBlue
-    highlight! link NvimTreeRootFolder NightflyPurple
-    highlight! link NvimTreeSpecialFile NightflyYellow
-    highlight! link NvimTreeWindowPicker DiffChange
-    exec 'highlight NvimTreeExecFile guifg=' . s:green . ' gui=none'
-    exec 'highlight NvimTreeImageFile guifg=' . s:violet . ' gui=none'
-    exec 'highlight NvimTreeOpenedFile guifg=' . s:yellow . ' gui=none'
-    exec 'highlight NvimTreeSymlink guifg=' . s:turquoise . ' gui=none'
-
     " Neo-tree plugin
     highlight! link NeoTreeDimText NightflyPickleBlue
     highlight! link NeoTreeDotfile NightflySlateBlue
@@ -974,68 +961,12 @@ elseif has('nvim-0.6')
     highlight! link NeoTreeModified NightflyYellow
     highlight! link NeoTreeRootName NightflyPurple
 
-    " Telescope plugin
-    highlight! link TelescopeBorder NightflySlateBlue
-    highlight! link TelescopeMatching NightflyOrange
-    highlight! link TelescopeMultiIcon NightflyWatermelon
-    highlight! link TelescopeMultiSelection NightflyEmerald
-    highlight! link TelescopeNormal NightflyAshBlue
-    highlight! link TelescopePreviewDate NightflyGreyBlue
-    highlight! link TelescopePreviewGroup NightflyGreyBlue
-    highlight! link TelescopePreviewLink NightflyTurquoise
-    highlight! link TelescopePreviewMatch NightflyVisual
-    highlight! link TelescopePreviewRead NightflyOrange
-    highlight! link TelescopePreviewSize NightflyEmerald
-    highlight! link TelescopePreviewUser NightflyGreyBlue
-    highlight! link TelescopePromptPrefix NightflyBlue
-    highlight! link TelescopeResultsDiffAdd NightflyGreen
-    highlight! link TelescopeResultsDiffChange NightflyRed
-    highlight! link TelescopeResultsDiffDelete NightflyWatermelonLine
-    highlight! link TelescopeResultsSpecialComment NightflySteelBlue
-    highlight! link TelescopeSelectionCaret NightflyWatermelon
-    highlight! link TelescopeTitle NightflySteelBlue
-    exec 'highlight TelescopeSelection guibg=' . s:regal_blue . ' guifg=' . s:white_blue
-
-    " gitsigns.nvim plugin
-    highlight! link GitSignsAdd NightflyEmeraldAlert
-    highlight! link GitSignsAddLn NightflyGreen
-    highlight! link GitSignsAddPreview NightflyEmeraldLine
-    highlight! link GitSignsChange NightflyYellowAlert
-    highlight! link GitSignsChangeDelete NightflyOrangeAlert
-    highlight! link GitSignsChangeLn NightflyYellow
-    highlight! link GitSignsChangeNr NightflyYellowAlert
-    highlight! link GitSignsDelete NightflyRedAlert
-    highlight! link GitSignsDeleteLn NightflyRed
-    highlight! link GitSignsDeletePreview NightflyWatermelonLine
-    highlight! link GitSignsDeleteVirtLn NightflyWatermelonLine
-    exec 'highlight GitSignsAddInline guibg=' . s:green . ' guifg=' . s:black
-    exec 'highlight GitSignsChangeInline guibg=' . s:yellow . ' guifg=' . s:black
-    exec 'highlight GitSignsDeleteInline guibg=' . s:red . ' guifg=' . s:black
-
     " Hop plugin
     highlight! link HopCursor IncSearch
     highlight! link HopNextKey NightflyYellow
     highlight! link HopNextKey1 NightflyBlue
     highlight! link HopNextKey2 NightflyWatermelon
     highlight! link HopUnmatched NightflyGreyBlue
-
-    " Barbar plugin
-    highlight! link BufferCurrent NightflyWhiteLineActive
-    highlight! link BufferCurrentIndex NightflyWhiteLineActive
-    highlight! link BufferCurrentMod NightflyTanLineActive
-    highlight! link BufferTabpages NightflyBlueLine
-    highlight! link BufferVisible NightflyGreyBlueLine
-    highlight! link BufferVisibleIndex NightflyGreyBlueLine
-    highlight! link BufferVisibleMod NightflyTanLine
-    highlight! link BufferVisibleSign NightflyGreyBlueLine
-    exec 'highlight BufferCurrentSign  guibg=' . s:regal_blue . '  guifg=' . s:blue
-    exec 'highlight BufferInactive     guibg=' . s:slate_blue . ' guifg=' . s:grey_blue
-    exec 'highlight BufferInactiveMod  guibg=' . s:slate_blue . ' guifg=' . s:tan
-    exec 'highlight BufferInactiveSign guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue
-
-    " Bufferline plugin
-    exec 'highlight BufferLineTabSelected guifg=' . s:blue
-    exec 'highlight BufferLineIndicatorSelected guifg=' . s:blue
 
     " nvim-cmp plugin
     highlight! link CmpItemAbbrMatch NightflyTan
@@ -1072,70 +1003,6 @@ elseif has('nvim-0.6')
     exec 'highlight IndentBlanklineChar guifg=' . s:deep_blue  . ' gui=nocombine'
     exec 'highlight IndentBlanklineSpaceChar guifg=' . s:deep_blue  . ' gui=nocombine'
     exec 'highlight IndentBlanklineSpaceCharBlankline guifg=' . s:deep_blue  . ' gui=nocombine'
-
-    " Mini.nvim plugin
-    highlight! link MiniCompletionActiveParameter NightflyVisual
-    highlight! link MiniCursorword NightflyUnderline
-    highlight! link MiniCursorwordCurrent NightflyUnderline
-    highlight! link MiniIndentscopePrefix NightflyNoCombine
-    highlight! link MiniIndentscopeSymbol NightflyWhite
-    highlight! link MiniJump SpellRare
-    highlight! link MiniStarterCurrent NightflyNoCombine
-    highlight! link MiniStarterFooter Title
-    highlight! link MiniStarterHeader NightflyViolet
-    highlight! link MiniStarterInactive Comment
-    highlight! link MiniStarterItem Normal
-    highlight! link MiniStarterItemBullet Delimiter
-    highlight! link MiniStarterItemPrefix NightflyYellow
-    highlight! link MiniStarterQuery NightflyBlue
-    highlight! link MiniStarterSection NightflyWatermelon
-    highlight! link MiniStatuslineDevinfo NightflyVisual
-    highlight! link MiniStatuslineFileinfo NightflyVisual
-    highlight! link MiniStatuslineModeCommand NightflyTanMode
-    highlight! link MiniStatuslineModeInsert NightflyEmeraldMode
-    highlight! link MiniStatuslineModeNormal NightflyBlueMode
-    highlight! link MiniStatuslineModeOther NightflyTurquoiseMode
-    highlight! link MiniStatuslineModeReplace NightflyWatermelonMode
-    highlight! link MiniStatuslineModeVisual NightflyPurpleMode
-    highlight! link MiniSurround IncSearch
-    highlight! link MiniTablineCurrent NightflyWhiteLineActive
-    highlight! link MiniTablineFill TabLineFill
-    highlight! link MiniTablineModifiedCurrent NightflyTanLineActive
-    highlight! link MiniTablineModifiedVisible NightflyTanLine
-    highlight! link MiniTablineTabpagesection NightflyBlueMode
-    highlight! link MiniTablineVisible NightflyGreyBlueLine
-    highlight! link MiniTestEmphasis NightflyUnderline
-    highlight! link MiniTestFail NightflyRed
-    highlight! link MiniTestPass NightflyGreen
-    highlight! link MiniTrailspace NightflyWatermelonMode
-    exec 'highlight MiniJump2dSpot guifg=' . s:yellow . ' gui=underline,nocombine'
-    exec 'highlight MiniStatuslineFilename guibg=' . s:slate_blue . ' guifg=' . s:white
-    exec 'highlight MiniStatuslineInactive guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue
-    exec 'highlight MiniTablineHidden guibg=' . s:slate_blue . ' guifg=' . s:grey_blue
-    exec 'highlight MiniTablineModifiedHidden guibg=' . s:slate_blue . ' guifg=' . s:tan
-
-    " Dashboard plugin
-    highlight! link DashboardCenter NightflyViolet
-    highlight! link DashboardFooter NightflyOrange
-    highlight! link DashboardHeader NightflyBlue
-    highlight! link DashboardShortCut NightflyTurquoise
-
-    " nvim-notify
-    highlight! link NotifyERRORBorder FloatBorder
-    highlight! link NotifyWARNBorder FloatBorder
-    highlight! link NotifyINFOBorder FloatBorder
-    highlight! link NotifyDEBUGBorder FloatBorder
-    highlight! link NotifyTRACEBorder FloatBorder
-    highlight! link NotifyERRORIcon NightflyRed
-    highlight! link NotifyWARNIcon NightflyYellow
-    highlight! link NotifyINFOIcon NightflyBlue
-    highlight! link NotifyDEBUGIcon NightflyGreyBlue
-    highlight! link NotifyTRACEIcon NightflyPurple
-    highlight! link NotifyERRORTitle NightflyRed
-    highlight! link NotifyWARNTitle NightflyYellow
-    highlight! link NotifyINFOTitle NightflyBlue
-    highlight! link NotifyDEBUGTitle NightflyGreyBlue
-    highlight! link NotifyTRACETitle NightflyPurple
 endif
 
 set background=dark
