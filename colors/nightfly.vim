@@ -439,6 +439,21 @@ if !has('nvim-0.8')
     highlight! link csStorage NightflyViolet
     highlight! link csXmlTag NightflyBlue
 
+    " Elixir
+    highlight! link eelixirDelimiter NightflyWatermelon
+    highlight! link elixirAtom NightflyPurple
+    highlight! link elixirBlockDefinition NightflyViolet
+    highlight! link elixirDefine NightflyViolet
+    highlight! link elixirDocTest NightflyCadetBlue
+    highlight! link elixirExUnitAssert NightflyGreen
+    highlight! link elixirExUnitMacro NightflyBlue
+    highlight! link elixirKernelFunction NightflyGreen
+    highlight! link elixirKeyword NightflyOrange
+    highlight! link elixirModuleDefine NightflyBlue
+    highlight! link elixirPrivateDefine NightflyViolet
+    highlight! link elixirStringDelimiter NightflyTan
+    highlight! link elixirVariable NightflyTurquoise
+
     " Go
     highlight! link goBuiltins NightflyBlue
     highlight! link goConditional NightflyViolet
@@ -563,6 +578,13 @@ if !has('nvim-0.8')
     highlight! link rustTrait NightflyEmerald
     highlight! link rustType NightflyEmerald
 
+    " Scala (note, link highlighting does not work, I don't know why)
+    exec 'highlight scalaCapitalWord guifg=' . s:blue
+    exec 'highlight scalaCommentCodeBlock guifg=' . s:cadet_blue
+    exec 'highlight scalaInstanceDeclaration guifg=' . s:turquoise
+    exec 'highlight scalaKeywordModifier guifg=' . s:green
+    exec 'highlight scalaSpecial guifg=' . s:watermelon
+
     " TypeScript (leafgarland/typescript-vim)
     highlight! link typescriptDOMObjects NightflyBlue
     highlight! link typescriptFuncComma NightflyWhite
@@ -676,21 +698,6 @@ highlight! link dartMetadata NightflyGreen
 highlight! link dartStorageClass NightflyViolet
 highlight! link dartTypedef NightflyViolet
 
-" Elixir
-highlight! link eelixirDelimiter NightflyWatermelon
-highlight! link elixirAtom NightflyPurple
-highlight! link elixirBlockDefinition NightflyViolet
-highlight! link elixirDefine NightflyViolet
-highlight! link elixirDocTest NightflyCadetBlue
-highlight! link elixirExUnitAssert NightflyGreen
-highlight! link elixirExUnitMacro NightflyBlue
-highlight! link elixirKernelFunction NightflyGreen
-highlight! link elixirKeyword NightflyOrange
-highlight! link elixirModuleDefine NightflyBlue
-highlight! link elixirPrivateDefine NightflyViolet
-highlight! link elixirStringDelimiter NightflyTan
-highlight! link elixirVariable NightflyTurquoise
-
 " Elm
 highlight! link elmLetBlockDefinition NightflyGreen
 highlight! link elmTopLevelDecl NightflyOrange
@@ -753,13 +760,6 @@ highlight! link phpType NightflyViolet
 " PureScript
 highlight! link purescriptClass NightflyPeach
 highlight! link purescriptModuleParams NightflyOrange
-
-" Scala (note, link highlighting does not work, I don't know why)
-exec 'highlight scalaCapitalWord guifg=' . s:blue
-exec 'highlight scalaCommentCodeBlock guifg=' . s:cadet_blue
-exec 'highlight scalaInstanceDeclaration guifg=' . s:turquoise
-exec 'highlight scalaKeywordModifier guifg=' . s:green
-exec 'highlight scalaSpecial guifg=' . s:watermelon
 
 " Shell scripts
 highlight! link shAlias NightflyTurquoise
