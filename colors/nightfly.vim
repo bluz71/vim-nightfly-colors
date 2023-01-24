@@ -154,10 +154,16 @@ exec 'highlight NightflyTurquoiseMode guibg=' . s:turquoise . ' guifg=' . s:dark
 exec 'highlight NightflyBlueLine guibg=' . s:slate_blue . ' guifg=' . s:blue
 exec 'highlight NightflyEmeraldLine guibg=' . s:slate_blue . ' guifg=' . s:emerald
 exec 'highlight NightflyGreyBlueLine guibg=' . s:dark_blue . '  guifg=' . s:grey_blue
+exec 'highlight NightflyRedLine guibg=' . s:slate_blue . ' guifg=' . s:red
 exec 'highlight NightflyTanLine guibg=' . s:dark_blue . '  guifg=' . s:tan
+exec 'highlight NightflyWatermelonLine guibg=' . s:slate_blue . ' guifg=' . s:watermelon
+exec 'highlight NightflyWhiteLine guibg=' . s:slate_blue . ' guifg=' . s:white
+exec 'highlight NightflyYellowLine guibg=' . s:slate_blue . ' guifg=' . s:yellow
+exec 'highlight NightflyBlueLineActive guibg=' . s:regal_blue . '  guifg=' . s:blue
+exec 'highlight NightflyRedLineActive guibg=' . s:regal_blue . '  guifg=' . s:red
 exec 'highlight NightflyTanLineActive guibg=' . s:regal_blue . '  guifg=' . s:tan
 exec 'highlight NightflyWhiteLineActive guibg=' . s:regal_blue . '  guifg=' . s:white_blue
-exec 'highlight NightflyWatermelonLine guibg=' . s:slate_blue . ' guifg=' . s:watermelon
+exec 'highlight NightflyYellowLineActive guibg=' . s:regal_blue . '  guifg=' . s:yellow
 " Diagnostic helper colors
 exec 'highlight NightflyDiagnosticUndercurlError gui=undercurl guisp=' . s:red
 exec 'highlight NightflyDiagnosticUndercurlWarn gui=undercurl guisp=' . s:yellow
