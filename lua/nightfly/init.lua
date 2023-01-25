@@ -144,7 +144,14 @@ M.core = function()
   highlight(0, "DiagnosticFloatingWarn", { link = "NightflyYellow" })
   highlight(0, "DiagnosticFloatingInfo", { link = "NightflyBlue" })
   highlight(0, "DiagnosticFloatingHint", { link = "NightflyWhite" })
-  highlight(0, "LspSignatureActiveParameter", { link = "NightflyVisual" })
+
+  -- Neovim LSP
+  highlight(0, "LspCodeLens", { link = "NightflySteelBlue" })
+  highlight(0, "LspCodeLensSeparator", { link = "NightflySteelBlue" })
+  highlight(0, "LspReferenceText", { link = "NightflyVisual" })
+  highlight(0, "LspReferenceRead", { link = "NightflyVisual" })
+  highlight(0, "LspReferenceWrite", { link = "NightflyVisual" })
+  highlight(0, "LspSignatureActiveParameter", { bg = slate_blue })
 end
 
 M.plugins = function()
