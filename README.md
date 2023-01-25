@@ -82,13 +82,13 @@ Plug 'bluz71/vim-nightfly-colors'
 [packer.nvim](https://github.com/wbthomason/packer.nvim):
 
 ```lua
-use 'bluz71/vim-nightfly-colors'
+use { "bluz71/vim-nightfly-colors", as = "nightfly" }
 ```
 
 [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
-{ 'bluz71/vim-nightfly-colors', lazy = true, priority = 1000 },
+{ "bluz71/vim-nightfly-colors", name = "nightfly", lazy = true, priority = 1000 },
 ```
 
 Usage
