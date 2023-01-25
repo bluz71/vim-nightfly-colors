@@ -231,8 +231,8 @@ highlight! link Repeat NightflyViolet
 
 " Search
 exec 'highlight Search cterm=none guibg=' . s:steel_blue . ' guifg=' . s:white_blue . ' gui=none'
-exec 'highlight CurSearch cterm=none guibg=' . s:orange . ' guifg=bg gui=none'
-exec 'highlight IncSearch cterm=none guibg=' . s:peach . ' guifg=bg gui=none'
+exec 'highlight CurSearch cterm=none guibg=' . s:orange . ' guifg=' . s:black . ' gui=none'
+exec 'highlight IncSearch cterm=none guibg=' . s:peach . ' guifg=' . s:black . ' gui=none'
 
 " '\n' sequences
 highlight! link Special NightflyWatermelon
