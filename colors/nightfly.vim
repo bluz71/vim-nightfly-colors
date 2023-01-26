@@ -134,11 +134,9 @@ exec 'highlight NightflyTurquoise guifg=' . s:turquoise
 exec 'highlight NightflyEmerald guifg=' . s:emerald
 exec 'highlight NightflyGreen guifg=' . s:green
 exec 'highlight NightflyWhiteAlert guibg=bg guifg=' . s:white
-exec 'highlight NightflyCadetBlueAlert guibg=bg guifg=' . s:cadet_blue
 exec 'highlight NightflyYellowAlert guibg=bg guifg=' . s:yellow
 exec 'highlight NightflyOrangeAlert guibg=bg guifg=' . s:orange
 exec 'highlight NightflyRedAlert guibg=bg guifg=' . s:red
-exec 'highlight NightflyPurpleAlert guibg=bg guifg=' . s:purple
 exec 'highlight NightflyBlueAlert guibg=bg guifg=' . s:blue
 exec 'highlight NightflyEmeraldAlert guibg=bg guifg=' . s:emerald
 exec 'highlight NightflyUnderline gui=underline'
@@ -900,13 +898,13 @@ highlight! link ALEInfoSign NightflyBlueAlert
 
 " GitGutter plugin
 highlight! link GitGutterAdd NightflyEmeraldAlert
-highlight! link GitGutterChange NightflyYellowAlert
+highlight! link GitGutterChange NightflyBlueAlert
 highlight! link GitGutterChangeDelete NightflyOrangeAlert
 highlight! link GitGutterDelete NightflyRedAlert
 
 " Signify plugin
 highlight! link SignifySignAdd NightflyEmeraldAlert
-highlight! link SignifySignChange NightflyYellowAlert
+highlight! link SignifySignChange NightflyBlueAlert
 highlight! link SignifySignChangeDelete NightflyOrangeAlert
 highlight! link SignifySignDelete NightflyRedAlert
 
