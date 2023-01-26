@@ -110,6 +110,7 @@ endif
 " Custom nightfly highlight groups
 exec 'highlight NightflyReset guifg=fg'
 exec 'highlight NightflyVisual guibg=' . s:regal_blue
+exec 'highlight NightflyVisualPickleBlue guibg=' . s:pickle_blue
 exec 'highlight NightflyWhite guifg=' . s:white
 exec 'highlight NightflyDeepBlue guifg=' . s:deep_blue
 exec 'highlight NightflyPickleBlue guifg=' . s:pickle_blue
