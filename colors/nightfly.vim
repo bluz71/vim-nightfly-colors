@@ -63,6 +63,7 @@ let s:violet      = '#c792ea'
 let s:purple      = '#ae81ff'
 let s:indigo      = '#5e97ec'
 let s:blue        = '#82aaff'
+let s:malibu      = '#87bcff'
 let s:turquoise   = '#7fdbca'
 let s:emerald     = '#21c7a8'
 let s:green       = '#a1cd5e'
@@ -128,8 +129,9 @@ exec 'highlight NightflyRed guifg=' . s:red
 exec 'highlight NightflyWatermelon guifg=' . s:watermelon
 exec 'highlight NightflyViolet guifg=' . s:violet
 exec 'highlight NightflyPurple guifg=' . s:purple
-exec 'highlight NightflyBlue guifg=' . s:blue
 exec 'highlight NightflyIndigo guifg=' . s:indigo
+exec 'highlight NightflyBlue guifg=' . s:blue
+exec 'highlight NightflyMalibu guifg=' . s:malibu
 exec 'highlight NightflyTurquoise guifg=' . s:turquoise
 exec 'highlight NightflyEmerald guifg=' . s:emerald
 exec 'highlight NightflyGreen guifg=' . s:green
@@ -137,7 +139,7 @@ exec 'highlight NightflyWhiteAlert guibg=bg guifg=' . s:white
 exec 'highlight NightflyYellowAlert guibg=bg guifg=' . s:yellow
 exec 'highlight NightflyOrangeAlert guibg=bg guifg=' . s:orange
 exec 'highlight NightflyRedAlert guibg=bg guifg=' . s:red
-exec 'highlight NightflyBlueAlert guibg=bg guifg=' . s:blue
+exec 'highlight NightflyMalibuAlert guibg=bg guifg=' . s:malibu
 exec 'highlight NightflyEmeraldAlert guibg=bg guifg=' . s:emerald
 exec 'highlight NightflyUnderline gui=underline'
 exec 'highlight NightflyNoCombine gui=nocombine'
@@ -898,13 +900,13 @@ highlight! link ALEInfoSign NightflyBlueAlert
 
 " GitGutter plugin
 highlight! link GitGutterAdd NightflyEmeraldAlert
-highlight! link GitGutterChange NightflyBlueAlert
+highlight! link GitGutterChange NightflyMalibuAlert
 highlight! link GitGutterChangeDelete NightflyOrangeAlert
 highlight! link GitGutterDelete NightflyRedAlert
 
 " Signify plugin
 highlight! link SignifySignAdd NightflyEmeraldAlert
-highlight! link SignifySignChange NightflyBlueAlert
+highlight! link SignifySignChange NightflyMalibuAlert
 highlight! link SignifySignChangeDelete NightflyOrangeAlert
 highlight! link SignifySignDelete NightflyRedAlert
 
