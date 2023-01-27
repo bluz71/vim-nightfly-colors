@@ -13,6 +13,7 @@ local black_blue = "#081e2f"
 local dark_blue = "#092236"
 local deep_blue = "#0e293f"
 local slate_blue = "#2c3043"
+local pickle_blue = "#38507a"
 local regal_blue = "#1d3b53"
 local steel_blue = "#4b6479"
 local grey_blue = "#7c8f8f"
@@ -207,21 +208,26 @@ M.plugins = function()
   highlight(0, "TelescopeSelection", { bg = regal_blue, fg = white_blue })
 
   -- gitsigns.nvim plugin
+  --   sign column
   highlight(0, "GitSignsAdd", { link = "NightflyEmeraldAlert" })
-  highlight(0, "GitSignsAddLn", { link = "NightflyGreen" })
-  highlight(0, "GitSignsAddPreview", { link = "NightflyEmeraldLine" })
   highlight(0, "GitSignsChange", { link = "NightflyMalibuAlert" })
   highlight(0, "GitSignsChangeDelete", { link = "NightflyOrangeAlert" })
-  highlight(0, "GitSignsChangeLn", { link = "NightflyMalibu" })
-  highlight(0, "GitSignsChangeNr", { link = "NightflyMalibuAlert" })
   highlight(0, "GitSignsDelete", { link = "NightflyRedAlert" })
-  highlight(0, "GitSignsDeleteLn", { link = "NightflyRed" })
+  highlight(0, "GitSignsUntracked", { link = "NightflySteelBlue" })
+  --   line highlights
+  highlight(0, "GitSignsAddLn", { bg = deep_blue })
+  highlight(0, "GitSignsChangeLn", { bg = dark_blue })
+  --   word diff
+  highlight(0, "GitSignsAddLnInline", { bg = pickle_blue })
+  highlight(0, "GitSignsChangeLnInline", { bg = pickle_blue })
+  --   word diff in preview
+  highlight(0, "GitSignsAddInline", { bg = green, fg = black })
+  highlight(0, "GitSignsChangeInline", { bg = yellow, fg = black })
+  highlight(0, "GitSignsDeleteInline", { bg = red, fg = black })
+  --   misc
+  highlight(0, "GitSignsAddPreview", { link = "NightflyEmeraldLine" })
   highlight(0, "GitSignsDeletePreview", { link = "NightflyWatermelonLine" })
   highlight(0, "GitSignsDeleteVirtLn", { link = "NightflyWatermelonLine" })
-  highlight(0, "GitSignsUntracked", { link = "NightflySteelBlue" })
-  highlight(0, "GitSignsAddInline", { link = "NightflyVisualPickleBlue" })
-  highlight(0, "GitSignsChangeInline", { link = "NightflyVisualPickleBlue" })
-  highlight(0, "GitSignsDeleteInline", { link = "NightflyVisualPickleBlue" })
 
   -- Hop plugin
   highlight(0, "HopCursor", { link = "IncSearch" })
