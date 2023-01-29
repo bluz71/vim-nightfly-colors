@@ -142,6 +142,7 @@ let g:lightline = { 'colorscheme': 'nightfly' }
 | [nightflyTransparent](https://github.com/bluz71/vim-nightfly-colors#nightflytransparent)                 | Disabled
 | [nightflyUndercurls](https://github.com/bluz71/vim-nightfly-colors#nightflyundercurls)                   | Enabled
 | [nightflyUnderlineMatchParen](https://github.com/bluz71/vim-nightfly-colors#nightflyunderlinematchparen) | Disabled
+| [nightflyVirtualTextColor](https://github.com/bluz71/vim-nightfly-colors#nightflyvirtualtextcolor)       | Disabled
 | [nightflyWinSeparator](https://github.com/bluz71/vim-nightfly-colors#nightflywinseparator)               | `1`
 
 ---
@@ -308,6 +309,25 @@ let g:nightflyUnderlineMatchParen = v:true
 ```lua
 -- Lua initialization file
 vim.g.nightflyUnderlineMatchParen = true
+```
+
+---
+
+### nightflyVirtualTextColor
+
+The `nightflyVirtualTextColor` option specifies whether to display diagnostic
+virtual text in color. By default this option is **disabled**. If you want to
+display diagnostic virtual text in color then add the following to your
+initialization file:
+
+```viml
+" Vimscript initialization file
+let g:nightflyVirtualTextColor = v:true
+```
+
+```lua
+-- Lua initialization file
+vim.g.nightflyVirtualTextColor = true
 ```
 
 ---

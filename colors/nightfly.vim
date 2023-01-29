@@ -10,30 +10,14 @@ if exists('syntax_on')
 endif
 let g:colors_name='nightfly'
 
-" By default do not color the cursor.
 let g:nightflyCursorColor = get(g:, 'nightflyCursorColor', v:false)
-
-" By default do use italics in GUI versions of Vim.
 let g:nightflyItalics = get(g:, 'nightflyItalics', v:true)
-
-" By default do not use a customized 'NormalFloat' highlight group (for Neovim
-" floating windows).
 let g:nightflyNormalFloat = get(g:, 'nightflyNormalFloat', v:false)
-
-" By default use the nightly color palette in the `:terminal`
 let g:nightflyTerminalColors = get(g:, 'nightflyTerminalColors', v:true)
-
-" By default do not use a transparent background in GUI versions of Vim.
 let g:nightflyTransparent = get(g:, 'nightflyTransparent', v:false)
-
-" By default do use undercurls in GUI versions of Vim, including terminal Vim
-" with termguicolors set.
 let g:nightflyUndercurls = get(g:, 'nightflyUndercurls', v:true)
-
-" By default do not underline matching parentheses.
 let g:nightflyUnderlineMatchParen = get(g:, 'nightflyUnderlineMatchParen', v:false)
-
-" By default do display vertical split columns.
+let g:nightflyVirtualTextColor =  get(g:, 'nightflyVirtualTextColor', v:false)
 let g:nightflyWinSeparator = get(g:, 'nightflyWinSeparator', 1)
 
 " Background and foreground
@@ -135,6 +119,7 @@ exec 'highlight NightflyMalibu guifg=' . s:malibu
 exec 'highlight NightflyTurquoise guifg=' . s:turquoise
 exec 'highlight NightflyEmerald guifg=' . s:emerald
 exec 'highlight NightflyGreen guifg=' . s:green
+" Misc helpers
 exec 'highlight NightflyWhiteAlert guibg=bg guifg=' . s:white
 exec 'highlight NightflyYellowAlert guibg=bg guifg=' . s:yellow
 exec 'highlight NightflyOrangeAlert guibg=bg guifg=' . s:orange
@@ -169,6 +154,10 @@ exec 'highlight NightflyDiagnosticUnderlineError gui=underline guisp=' . s:red
 exec 'highlight NightflyDiagnosticUnderlineWarn gui=underline guisp=' . s:yellow
 exec 'highlight NightflyDiagnosticUnderlineInfo gui=underline guisp=' . s:blue
 exec 'highlight NightflyDiagnosticUnderlineHint gui=underline guisp=' . s:white
+exec 'highlight NightflyDiagnosticVirtualTextError guibg=' . s:dark_blue . ' guifg=' . s:red
+exec 'highlight NightflyDiagnosticVirtualTextWarn guibg=' . s:dark_blue . ' guifg=' . s:yellow
+exec 'highlight NightflyDiagnosticVirtualTextInfo guibg=' . s:dark_blue . ' guifg=' . s:blue
+exec 'highlight NightflyDiagnosticVirtualTextHint guibg=' . s:dark_blue . ' guifg=' . s:white
 
 "-----------------------------------------------------------------------
 " Core styling
@@ -831,8 +820,9 @@ highlight! link NERDTreeGitStatusStaged NightflyBlue
 highlight! link NERDTreeGitStatusUntracked NightflyRed
 
 " fern.vim plugin
-highlight! link FernBranchSymbol NightflyPickleBlue
-highlight! link FernLeafSymbol NightflyPickleBlue
+highlight! link FernBranchSymbol NightflySteelBlue
+highlight! link FernLeafSymbol NightflyBlue
+highlight! link FernLeaderSymbol NightflyPickleBlue
 highlight! link FernBranchText NightflyBlue
 highlight! link FernMarkedLine NightflyVisual
 highlight! link FernMarkedText NightflyWatermelon
@@ -891,12 +881,18 @@ else
     highlight! link ALEWarning NightflyDiagnosticUnderlineWarn
     highlight! link ALEInfo NightflyDiagnosticUnderlineInfo
 endif
-highlight! link ALEVirtualTextError NightflySteelBlue
 highlight! link ALEErrorSign NightflyRedAlert
-highlight! link ALEVirtualTextWarning NightflySteelBlue
 highlight! link ALEWarningSign NightflyYellowAlert
-highlight! link ALEVirtualTextInfo NightflySteelBlue
 highlight! link ALEInfoSign NightflyBlueAlert
+if g:nightflyVirtualTextColor
+    highlight! link ALEVirtualTextError NightflyDiagnosticVirtualTextError
+    highlight! link ALEVirtualTextWarning NightflyDiagnosticVirtualTextWarn
+    highlight! link ALEVirtualTextInfo NightflyDiagnosticVirtualTextInfo
+else
+    highlight! link ALEVirtualTextError NightflySteelBlue
+    highlight! link ALEVirtualTextWarning NightflySteelBlue
+    highlight! link ALEVirtualTextInfo NightflySteelBlue
+endif
 
 " GitGutter plugin
 highlight! link GitGutterAdd NightflyEmeraldAlert

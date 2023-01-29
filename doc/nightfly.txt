@@ -121,6 +121,21 @@ file:
   vim.g.nightflyUnderlineMatchParen = true
 <
 ------------------------------------------------------------------------------
+nightflyVirtualTextColor~                         *g:nightflyVirtualTextColor*
+
+The `nightflyVirtualTextColor` option specifies whether to display diagnostic
+virtual text in color. By default this option is **disabled**. If you want to
+display diagnostic virtual text in color then add the following to your
+initialization file:
+
+>
+  " Vimscript initialization file
+  let g:nightflyVirtualTextColor = v:true
+
+  -- Lua initialization file
+  vim.g.nightflyVirtualTextColor = true
+<
+------------------------------------------------------------------------------
 nightflyWinSeparator~                                 *g:nightflyWinSeparator*
 
 The `nightflyWinSeparator` option specifies the style of window separators:

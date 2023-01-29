@@ -134,10 +134,17 @@ M.core = function()
     highlight(0, "DiagnosticUnderlineInfo", { link = "NightflyDiagnosticUnderlineInfo" })
     highlight(0, "DiagnosticUnderlineHint", { link = "NightflyDiagnosticUnderlineHint" })
   end
-  highlight(0, "DiagnosticVirtualTextError", { link = "NightflySteelBlue" })
-  highlight(0, "DiagnosticVirtualTextWarn", { link = "NightflySteelBlue" })
-  highlight(0, "DiagnosticVirtualTextInfo", { link = "NightflySteelBlue" })
-  highlight(0, "DiagnosticVirtualTextHint", { link = "NightflySteelBlue" })
+  if g.nightflyVirtualTextColor then
+    highlight(0, "DiagnosticVirtualTextError", { link = "NightflyDiagnosticVirtualTextError" })
+    highlight(0, "DiagnosticVirtualTextWarn", { link = "NightflyDiagnosticVirtualTextWarn" })
+    highlight(0, "DiagnosticVirtualTextInfo", { link = "NightflyDiagnosticVirtualTextInfo" })
+    highlight(0, "DiagnosticVirtualTextHint", { link = "NightflyDiagnosticVirtualTextHint" })
+  else
+    highlight(0, "DiagnosticVirtualTextError", { link = "NightflySteelBlue" })
+    highlight(0, "DiagnosticVirtualTextWarn", { link = "NightflySteelBlue" })
+    highlight(0, "DiagnosticVirtualTextInfo", { link = "NightflySteelBlue" })
+    highlight(0, "DiagnosticVirtualTextHint", { link = "NightflySteelBlue" })
+  end
   highlight(0, "DiagnosticSignError", { link = "NightflyRedAlert" })
   highlight(0, "DiagnosticSignWarn", { link = "NightflyYellowAlert" })
   highlight(0, "DiagnosticSignInfo", { link = "NightflyBlueAlert" })
