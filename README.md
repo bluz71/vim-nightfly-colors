@@ -76,7 +76,7 @@ plugin manager.
 [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```viml
-Plug 'bluz71/vim-nightfly-colors'
+Plug 'bluz71/vim-nightfly-colors', { 'as': 'nightfly' }
 ```
 
 [packer.nvim](https://github.com/wbthomason/packer.nvim):
