@@ -147,7 +147,7 @@ M.core = function()
   end
   highlight(0, "DiagnosticSignError", { link = "NightflyRedAlert" })
   highlight(0, "DiagnosticSignWarn", { link = "NightflyYellowAlert" })
-  highlight(0, "DiagnosticSignInfo", { link = "NightflyBlueAlert" })
+  highlight(0, "DiagnosticSignInfo", { link = "NightflyMalibuAlert" })
   highlight(0, "DiagnosticSignHint", { link = "NightflyWhiteAlert" })
   highlight(0, "DiagnosticFloatingError", { link = "NightflyRed" })
   highlight(0, "DiagnosticFloatingWarn", { link = "NightflyYellow" })
@@ -193,7 +193,7 @@ M.plugins = function()
   highlight(0, "NeoTreeNormal", { bg = black_blue, fg = white })
 
   -- Telescope plugin
-  highlight(0, "TelescopeBorder", { link = "NightflySlateBlue" })
+  highlight(0, "TelescopeBorder", { link = "FloatBorder" })
   highlight(0, "TelescopeMatching", { link = "NightflyOrange" })
   highlight(0, "TelescopeMultiIcon", { link = "NightflyWatermelon" })
   highlight(0, "TelescopeMultiSelection", { link = "NightflyEmerald" })
@@ -446,6 +446,15 @@ M.plugins = function()
   highlight(0, "CallHierarchyTitle", { link = "NightflyWatermelon" })
   highlight(0, "SagaShadow", { link = "Normal" })
   highlight(0, "OutlineIndent", { link = "NightflyPurple" })
+
+  -- Noice plugin
+  highlight(0, "NoiceCmdlinePopup", { link = "NightflyCadetBlue" })
+  highlight(0, "NoiceCmdlinePopupBorder", { link = "NightflyPickleBlue" })
+  highlight(0, "NoiceCmdlinePopupBorderSearch", { link = "NightflyPickleBlue" })
+  highlight(0, "NoiceCmdlinePrompt", { link = "NightflyBlue" })
+  highlight(0, "NoiceCompletionItemKindDefault", { link = "NightflyTurquoise" })
+  highlight(0, "NoiceConfirmBorder", { link = "NightflyBlue" })
+  highlight(0, "NoiceFormatTitle", { link = "NightflyWatermelon" })
 end
 
 return M

@@ -387,7 +387,7 @@ elseif has('nvim-0.7')
     highlight! link DiagnosticVirtualTextHint NightflySteelBlue
     highlight! link DiagnosticSignError NightflyRedAlert
     highlight! link DiagnosticSignWarn NightflyYellowAlert
-    highlight! link DiagnosticSignInfo NightflyBlueAlert
+    highlight! link DiagnosticSignInfo NightflyMalibuAlert
     highlight! link DiagnosticSignHint NightflyWhiteAlert
     highlight! link DiagnosticFloatingError NightflyRed
     highlight! link DiagnosticFloatingWarn NightflyYellow
@@ -885,7 +885,7 @@ else
 endif
 highlight! link ALEErrorSign NightflyRedAlert
 highlight! link ALEWarningSign NightflyYellowAlert
-highlight! link ALEInfoSign NightflyBlueAlert
+highlight! link ALEInfoSign NightflyMalibuAlert
 if g:nightflyVirtualTextColor
     highlight! link ALEVirtualTextError NightflyDiagnosticVirtualTextError
     highlight! link ALEVirtualTextWarning NightflyDiagnosticVirtualTextWarn
