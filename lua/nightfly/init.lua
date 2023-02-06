@@ -121,7 +121,7 @@ M.core = function()
   -- Neovim Diagnostic
   highlight(0, "DiagnosticError", { link = "NightflyRed" })
   highlight(0, "DiagnosticWarn", { link = "NightflyYellow" })
-  highlight(0, "DiagnosticInfo", { link = "NightflyBlue" })
+  highlight(0, "DiagnosticInfo", { link = "NightflyMalibu" })
   highlight(0, "DiagnosticHint", { link = "NightflyWhite" })
   if g.nightflyUndercurls then
     highlight(0, "DiagnosticUnderlineError", { link = "NightflyDiagnosticUndercurlError" })
@@ -151,7 +151,7 @@ M.core = function()
   highlight(0, "DiagnosticSignHint", { link = "NightflyWhiteAlert" })
   highlight(0, "DiagnosticFloatingError", { link = "NightflyRed" })
   highlight(0, "DiagnosticFloatingWarn", { link = "NightflyYellow" })
-  highlight(0, "DiagnosticFloatingInfo", { link = "NightflyBlue" })
+  highlight(0, "DiagnosticFloatingInfo", { link = "NightflyMalibu" })
   highlight(0, "DiagnosticFloatingHint", { link = "NightflyWhite" })
 
   -- Neovim LSP

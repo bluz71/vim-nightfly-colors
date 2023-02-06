@@ -148,15 +148,15 @@ exec 'highlight NightflyYellowLineActive guibg=' . s:regal_blue . '  guifg=' . s
 " Diagnostic helper colors
 exec 'highlight NightflyDiagnosticUndercurlError gui=undercurl guisp=' . s:red
 exec 'highlight NightflyDiagnosticUndercurlWarn gui=undercurl guisp=' . s:yellow
-exec 'highlight NightflyDiagnosticUndercurlInfo gui=undercurl guisp=' . s:blue
+exec 'highlight NightflyDiagnosticUndercurlInfo gui=undercurl guisp=' . s:malibu
 exec 'highlight NightflyDiagnosticUndercurlHint gui=undercurl guisp=' . s:white
 exec 'highlight NightflyDiagnosticUnderlineError gui=underline guisp=' . s:red
 exec 'highlight NightflyDiagnosticUnderlineWarn gui=underline guisp=' . s:yellow
-exec 'highlight NightflyDiagnosticUnderlineInfo gui=underline guisp=' . s:blue
+exec 'highlight NightflyDiagnosticUnderlineInfo gui=underline guisp=' . s:malibu
 exec 'highlight NightflyDiagnosticUnderlineHint gui=underline guisp=' . s:white
 exec 'highlight NightflyDiagnosticVirtualTextError guibg=' . s:dark_blue . ' guifg=' . s:red
 exec 'highlight NightflyDiagnosticVirtualTextWarn guibg=' . s:dark_blue . ' guifg=' . s:yellow
-exec 'highlight NightflyDiagnosticVirtualTextInfo guibg=' . s:dark_blue . ' guifg=' . s:blue
+exec 'highlight NightflyDiagnosticVirtualTextInfo guibg=' . s:dark_blue . ' guifg=' . s:malibu
 exec 'highlight NightflyDiagnosticVirtualTextHint guibg=' . s:dark_blue . ' guifg=' . s:white
 
 "-----------------------------------------------------------------------
@@ -368,7 +368,7 @@ elseif has('nvim-0.7')
     " Neovim Diagnostic
     highlight! link DiagnosticError NightflyRed
     highlight! link DiagnosticWarn NightflyYellow
-    highlight! link DiagnosticInfo NightflyBlue
+    highlight! link DiagnosticInfo NightflyMalibu
     highlight! link DiagnosticHint NightflyWhite
     if g:nightflyUndercurls
         highlight! link DiagnosticUnderlineError NightflyDiagnosticUndercurlError
@@ -391,7 +391,7 @@ elseif has('nvim-0.7')
     highlight! link DiagnosticSignHint NightflyWhiteAlert
     highlight! link DiagnosticFloatingError NightflyRed
     highlight! link DiagnosticFloatingWarn NightflyYellow
-    highlight! link DiagnosticFloatingInfo NightflyBlue
+    highlight! link DiagnosticFloatingInfo NightflyMalibu
     highlight! link DiagnosticFloatingHint NightflyWhite
     highlight! link LspSignatureActiveParameter NightflyVisual
 endif
