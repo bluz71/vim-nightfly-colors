@@ -1,4 +1,5 @@
 <template>
+  <title>Vue Example</title>
   <div>
     <button @click="getNewIntent" :class="{ disabled: uiState === 'listening' }"></button>
   </div>

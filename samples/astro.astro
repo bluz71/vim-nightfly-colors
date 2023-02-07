@@ -1,0 +1,68 @@
+---
+import "~styles/styles.css";
+import ReactVideo from "~components/Video.jsx";
+import SvelteVideo from "~components/Video.svelte";
+import { Content as MarkdownVideoContent } from '~content/video.md';
+---
+
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Astro Example</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Astro JS Tutorial Site</h1>
+      <p>
+        This demo is not endorsed by Ben Awad, just thought the video content
+        was fitting!
+      </p>
+      <ReactVideo client:load />
+      <SvelteVideo client:load />
+      <section class="mdx-container">
+				<MarkdownVideoContent />
+      </section>
+    </main>
+  </body>
+</html>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    background: hsl(
+      var(--colour-dark-hue) var(--colour-dark-saturation)
+        var(--colour-dark-luminance)
+    );
+    color: hsl(
+      var(--colour-light-text-hue) var(--colour-light-text-saturation)
+        var(--colour-light-text-luminance)
+    );
+    padding: var(--spacing-8) var(--spacing-0) var(--spacing-32);
+  }
+
+  .container a {
+    color: hsl(
+      var(--colour-secondary-hue) var(--colour-secondary-saturation)
+        var(--colour-secondary-luminance)
+    );
+  }
+  .mdx-container {
+    display: flex;
+    flex-direction: column;
+    background: hsl(
+      var(--colour-alternative-hue) var(--colour-alternative-saturation)
+        var(--colour-alternative-luminance)
+    );
+    align-items: center;
+    width: 100%;
+    padding: var(--spacing-8) var(--spacing-0) var(--spacing-12);
+    color: hsl(
+      var(--colour-light-text-hue) var(--colour-light-text-saturation)
+        var(--colour-light-text-luminance)
+    );
+  }
+</style>
