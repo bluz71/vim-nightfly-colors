@@ -111,26 +111,30 @@ vim.cmd [[colorscheme nightfly]]
 Statusline
 ----------
 
-- The _nightfly_ colorscheme supports
+- The _nightfly_ theme supports
   [lightline](https://github.com/itchyny/lightline.vim). To enable the
-  _nightfly_ lightline colorscheme please add the following to your
+  _nightfly_ lightline theme please add the following to your
   initialization file:
 
 ```viml
 let g:lightline = { 'colorscheme': 'nightfly' }
 ```
 
-- The _nightfly_ colorscheme supports
+- The _nightfly_ theme supports
   [vim-airline](https://github.com/vim-airline/vim-airline). The _nightfly_
   theme will load once vim-airline starts.
 
-- The _nightfly_ colorscheme supports
+- The _nightfly_ theme supports
   [Lualine](https://github.com/nvim-lualine/lualine.nvim). The
   _nightfly_ theme will automatically load once Lualine starts.
 
-- Lastly, my own
-  [mistfly-statusline](https://github.com/bluz71/vim-mistfly-statusline) is
-  available for those that want a simple, fast and informative status line.
+- My [linefly](https://github.com/bluz71/nvim-linefly) `statusline` plugin
+  supports the _nightfly_ theme.
+
+- Lastly, my other
+  [mistfly-statusline](https://github.com/bluz71/vim-mistfly-statusline) plugin
+  is available for those that want a simple, fast and informative statusline for
+  Vim or legacy Neovim.
 
 :wrench: Options
 ----------------
