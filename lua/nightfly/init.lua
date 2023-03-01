@@ -166,6 +166,7 @@ M.core = function()
   -- Neovim LSP
   highlight(0, "LspCodeLens", { link = "NightflySteelBlue" })
   highlight(0, "LspCodeLensSeparator", { link = "NightflySteelBlue" })
+  highlight(0, "LspInfoBorder", { link = "FloatBorder" })
   highlight(0, "LspReferenceText", { link = "NightflyVisual" })
   highlight(0, "LspReferenceRead", { link = "NightflyVisual" })
   highlight(0, "LspReferenceWrite", { link = "NightflyVisual" })
