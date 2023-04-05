@@ -42,6 +42,40 @@ local bay_blue = "#24567F"
 
 local M = {}
 
+M.palette = {
+  black = black,
+  white = white,
+  bg = bg,
+  black_blue = black_blue,
+  dark_blue = dark_blue,
+  deep_blue = deep_blue,
+  slate_blue = slate_blue,
+  pickle_blue = pickle_blue,
+  regal_blue = regal_blue,
+  steel_blue = steel_blue,
+  grey_blue = grey_blue,
+  cadet_blue = cadet_blue,
+  ash_blue = ash_blue,
+  white_blue = white_blue,
+  yellow = yellow,
+  peach = peach,
+  tan = tan,
+  orange = orange,
+  orchid = orchid,
+  red = red,
+  watermelon = watermelon,
+  violet = violet,
+  purple = purple,
+  indigo = indigo,
+  blue = blue,
+  malibu = malibu,
+  turquoise = turquoise,
+  emerald = emerald,
+  green = green,
+  cyan_blue = cyan_blue,
+  bay_blue = bay_blue,
+}
+
 M.core = function()
   highlight(0, "Whitespace", { fg = regal_blue })
   highlight(0, "TermCursor", { bg = cadet_blue, fg = black })

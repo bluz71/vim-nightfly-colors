@@ -156,5 +156,46 @@ configuration:
   -- Lua initialization file
   vim.g.nightflyWinSeparator = 2
 <
+------------------------------------------------------------------------------
+nightflyPalette~                                            *nightfly.palette*
+
+This is the palette of colors used internally, useful for things like
+statusline.
+>lua
+	vim.print(require("nightfly").palette)
+	-- {
+	--   ash_blue = "#acb4c2",
+	--   bay_blue = "#24567F",
+	--   bg = "#011627",
+	--   black = "#011627",
+	--   black_blue = "#081e2f",
+	--   blue = "#82aaff",
+	--   cadet_blue = "#a1aab8",
+	--   cyan_blue = "#296596",
+	--   dark_blue = "#092236",
+	--   deep_blue = "#0e293f",
+	--   emerald = "#21c7a8",
+	--   green = "#a1cd5e",
+	--   grey_blue = "#7c8f8f",
+	--   indigo = "#5e97ec",
+	--   malibu = "#87bcff",
+	--   orange = "#f78c6c",
+	--   orchid = "#e39aa6",
+	--   peach = "#ffcb8b",
+	--   pickle_blue = "#38507a",
+	--   purple = "#ae81ff",
+	--   red = "#fc514e",
+	--   regal_blue = "#1d3b53",
+	--   slate_blue = "#2c3043",
+	--   steel_blue = "#4b6479",
+	--   tan = "#ecc48d",
+	--   turquoise = "#7fdbca",
+	--   violet = "#c792ea",
+	--   watermelon = "#ff5874",
+	--   white = "#c3ccdc",
+	--   white_blue = "#d6deeb",
+	--   yellow = "#e3d18a"
+	-- }
+<
 
 vim:tw=78:ts=8:noet:ft=help:norl:
