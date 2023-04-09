@@ -1,10 +1,10 @@
 ![nightfly](https://raw.githubusercontent.com/bluz71/misc-binaries/master/headings/nightfly.png)
 ==========
 
-_nightfly_ is a dark midnight theme for classic Vim & modern Neovim.
+_nightfly_ is a dark midnight theme for modern Neovim and classic Vim.
 
-Note, _nightfly_ is a hybrid theme; Vimscript is used for common Vim and Neovim
-highlights whilst Lua is used for Neovim exclusive highlights.
+Note, _nightfly_ is a multi-implemented theme; native Lua is used for all Neovim
+highlights whilst legacy Vimscript is used for Vim highlights.
 
 :point_right: I maintain another dark theme named
 [moonfly](https://github.com/bluz71/vim-moonfly-colors) which may be of
@@ -18,19 +18,14 @@ Screenshot
 Styled Features & Plugins
 -------------------------
 
-Vim & Neovim compatible:
+Neovim & Vim compatible:
 
-- [ALE](https://github.com/dense-analysis/ale)
 - [BufExplorer](https://github.com/jlanzarotta/bufexplorer)
 - [clever-f](https://github.com/rhysd/clever-f.vim)
 - [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
 - [Fern](https://github.com/lambdalisue/fern.vim)
 - [fzf.vim](https://github.com/junegunn/fzf.vim) (works best with matching [fly16](https://github.com/bluz71/fly16-bat) [bat](https://github.com/sharkdp/bat) theme)
-- [GitGutter](https://github.com/airblade/vim-gitgutter)
-- [indentLine](https://github.com/Yggdroot/indentLine)
 - [lightline](https://github.com/itchyny/lightline.vim)
-- [NERDTree](https://github.com/scrooloose/nerdtree)
-- [Signify](https://github.com/mhinz/vim-signify)
 - [Tagbar](https://github.com/majutsushi/tagbar)
 - [vim-airline](https://github.com/vim-airline/vim-airline)
 
@@ -57,14 +52,21 @@ Neovim-only:
 - [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 
+Vim-only:
+
+- [ALE](https://github.com/dense-analysis/ale)
+- [GitGutter](https://github.com/airblade/vim-gitgutter)
+- [indentLine](https://github.com/Yggdroot/indentLine)
+- [NERDTree](https://github.com/preservim/nerdtree)
+- [Signify](https://github.com/mhinz/vim-signify)
+
 :zap: Requirements
 ------------------
 
 _nightfly_ is a **GUI-only** colorscheme.
 
-A GUI client, such as Gvim, or a modern terminal version of Vim or Neovim with
-the `termguicolors` option enabled in a true-color terminal, is required.
-Details about true-color terminals are [listed
+A GUI client or a modern terminal version of Vim or Neovim in a true-color
+terminal is required. Details about true-color terminals are [listed
 here](https://github.com/bluz71/vim-nightfly-colors#true-color-terminals).
 
 _nightfly_ explicitly does **not** support the 256 color `cterm` version of Vim.
