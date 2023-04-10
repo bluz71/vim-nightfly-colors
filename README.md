@@ -3,8 +3,8 @@
 
 _nightfly_ is a dark midnight theme for modern Neovim and classic Vim.
 
-Note, _nightfly_ is a multi-implemented theme; native Lua is used for all Neovim
-highlights whilst legacy Vimscript is used for Vim highlights.
+Note, all _nightfly_ highlights in Neovim are implemented in Lua, whilst
+highlights in Vim are implemented in legacy Vimscript.
 
 :point_right: I maintain another dark theme named
 [moonfly](https://github.com/bluz71/vim-moonfly-colors) which may be of
@@ -135,7 +135,7 @@ let g:lightline = { 'colorscheme': 'nightfly' }
 
 - Lastly, my legacy
   [mistfly-statusline](https://github.com/bluz71/vim-mistfly-statusline) plugin
-  also supports the _nightfl_ theme.
+  also supports the _nightfly_ theme.
 
 :wrench: Options
 ----------------
