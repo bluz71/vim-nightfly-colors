@@ -451,9 +451,10 @@ function! nightfly#Style() abort
     highlight! link markdownCode NightflyTan
     highlight! link markdownCodeDelimiter NightflyTan
     highlight! link markdownError NormalNC
-    highlight! link markdownH1 NightflyOrange
-    highlight! link markdownHeadingRule NightflyBlue
-    highlight! link markdownItalic NightflyViolet
+    highlight! link markdownH1 NightflyBlue
+    highlight! link markdownH2 NightflyBlue
+    highlight! link markdownHeadingRule NightflyWatermelon
+    highlight! link markdownItalic NightflyOrchid
     highlight! link markdownUrl NightflyPurple
 
     " Markdown, 'plasticboy/vim-markdown' plugin
