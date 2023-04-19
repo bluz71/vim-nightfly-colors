@@ -398,7 +398,7 @@ M.style = function()
   highlight(0, "@type.qualifier", { link = "NightflyViolet" })
   highlight(0, "@variable", { link = "NightflyWhite" })
   highlight(0, "@variable.builtin", { link = "NightflyGreen" })
-  -- Language specific overrides.
+  -- Language specific Tree-sitter overrides.
   highlight(0, "@punctuation.delimiter.astro", { link = "NightflyWatermelon" })
   highlight(0, "@text.title.astro", { link = "NightflyViolet" })
   highlight(0, "@parameter.bash", { link = "NightflyTurquoise" })
@@ -409,6 +409,7 @@ M.style = function()
   highlight(0, "@text.uri.gitcommit", { link = "NightflyEmerald" })
   highlight(0, "@text.title.help", { link = "NightflyMalibu" })
   highlight(0, "@text.title.html", { link = "NightflyViolet" })
+  highlight(0, "@storageclass.rust", { link = "NightflyViolet" })
   highlight(0, "@punctuation.delimiter.scss", { link = "NightflyWatermelon" })
   highlight(0, "@variable.scss", { link = "NightflyTurquoise" })
   highlight(0, "@text.title.svelte", { link = "NightflyViolet" })
@@ -444,6 +445,8 @@ M.style = function()
   highlight(0, "@lsp.typemod.variable.injected", { link = "@variable" })
   highlight(0, "@lsp.typemod.variable.readonly", { link = "@constant" })
   highlight(0, "@lsp.typemod.variable.static", { link = "@constant" })
+  -- Language specific LSP semantic overrides.
+  highlight(0, "@lsp.type.macro.rust", { link = "@function" })
 
   -- Neovim Diagnostic
   highlight(0, "DiagnosticError", { link = "NightflyRed" })
