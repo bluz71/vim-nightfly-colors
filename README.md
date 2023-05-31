@@ -449,21 +449,21 @@ Terminal Themes
 A collection of _nightfly_-flavoured terminal themes are provided:
 
 - _iTerm2_ users on macOS can import
-  [this](terminal_themes/nightfly.itermcolors) colorscheme
+  [this](extras/nightfly.itermcolors) colorscheme
 
 - [Alacritty](https://github.com/alacritty/alacritty) users can copy
-  [this](terminal_themes/alacritty.yml) theme into their `alacritty.yml`
+  [this](extras/alacritty.yml) theme into their `alacritty.yml`
   configuration.
 
 - [Windows Terminal](https://github.com/microsoft/terminal) users can copy
-  [this](terminal_themes/windows-terminal-settings.json) theme into their `settings.json`
+  [this](extras/windows-terminal-settings.json) theme into their `settings.json`
   configuration.
 
 - [kitty](https://sw.kovidgoyal.net/kitty) users can use
-  [this](terminal_themes/kitty-theme.conf) theme
+  [this](extras/kitty-theme.conf) theme
 
 - _GNOME Terminal_ users can run
-  [this](terminal_themes/gnome-terminal-nightfly.sh) script to create a
+  [this](extras/gnome-terminal-nightfly.sh) script to create a
   _Nightfly_ profile. Before executing the script, please install the
   `dconf-cli` command line utility for modern versions of Gnome (3.28 and
   later), for example `sudo apt install dconf-cli`. After executing the script,
