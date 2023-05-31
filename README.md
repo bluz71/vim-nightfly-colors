@@ -446,7 +446,7 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 Extra Themes
 ------------
 
-A collection of _nightfly_-flavoured terminal themes are provided:
+A collection of _nightfly_-flavoured themes are provided:
 
 - [Alacritty](https://github.com/alacritty/alacritty) users can copy
   [this](extras/alacritty.yml) theme into their `alacritty.yml`
@@ -465,9 +465,7 @@ A collection of _nightfly_-flavoured terminal themes are provided:
   configuration
 
 - _GNOME Terminal_ users can run [this](extras/gnome-terminal-nightfly.sh)
-  script to create a _Nightfly_ profile. After executing the script, please set
-  the _cursor_ and _selection_ colors by hand, with the appropriate color values
-  listed below, in `Preferences` / `Nightfly` / `Colors`.
+  script to create a _Nightfly_ profile.
 
 For other terminals please configure appropriately with the following colors:
 
