@@ -2,7 +2,7 @@
 set -g fish_color_autosuggestion 4b6479
 set -g fish_color_cancel 4b6479
 set -g fish_color_command 7cb3ff
-set -g fish_color_comment 7c8f8f
+set -g fish_color_comment 7c8f8f --italics
 set -g fish_color_cwd 87d787
 set -g fish_color_cwd_root ff5874
 set -g fish_color_end 7c8f8f
