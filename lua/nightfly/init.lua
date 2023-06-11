@@ -527,6 +527,16 @@ M.style = function()
   highlight(0, "mkdListItem", { link = "NightflyBlue" })
   highlight(0, "mkdURL", { link = "NightflyPurple" })
 
+  -- Shell
+  highlight(0, "shAlias", { link = "NightflyTurquoise" })
+  highlight(0, "shCommandSub", { link = "NightflyWhite" })
+  highlight(0, "shCtrlSeq", { link = "NightflyTan" })
+  highlight(0, "shLoop", { link = "NightflyViolet" })
+  highlight(0, "shRange", { link = "NightflyWhite" })
+  highlight(0, "shSetList", { link = "NightflyTurquoise" })
+  highlight(0, "shShellVariables", { link = "NightflyTurquoise" })
+  highlight(0, "shVariable", { link = "NightflyTurquoise" })
+
   -- XML
   highlight(0, "xmlAttrib", { link = "NightflyGreen" })
   highlight(0, "xmlEndTag", { link = "NightflyBlue" })

@@ -539,12 +539,14 @@ function! nightfly#Style() abort
     exec 'highlight scalaKeywordModifier guifg=' . s:green
     exec 'highlight scalaSpecial guifg=' . s:watermelon
 
-    " Shell scripts
+    " Shell
     highlight! link shAlias NightflyTurquoise
     highlight! link shCommandSub NightflyWhite
+    highlight! link shCtrlSeq NightflyTan
     highlight! link shLoop NightflyViolet
+    highlight! link shRange NightflyWhite
     highlight! link shSetList NightflyTurquoise
-    highlight! link shShellVariables NightflyGreen
+    highlight! link shShellVariables NightflyTurquoise
     highlight! link shVariable NightflyTurquoise
 
     " TypeScript (leafgarland/typescript-vim)
