@@ -622,6 +622,8 @@ M.style = function()
   end
   highlight(0, "snipLeadingSpaces", { bg = bg, fg = white })
   highlight(0, "MatchWordCur", { bg = bg })
+  highlight(0, "fishVariable", { link = "NightflyTurquoise" })
+  highlight(0, "fishInnerVariable", { link = "NightflyTurquoise" })
 
   -- FZF plugin
   highlight(0, "fzf1", { fg = watermelon, bg = slate_blue })

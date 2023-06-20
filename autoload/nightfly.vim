@@ -717,6 +717,8 @@ function! nightfly#Style() abort
     endif
     exec 'highlight snipLeadingSpaces guibg=bg guifg=fg'
     exec 'highlight MatchWordCur guibg=bg'
+    highlight! link fishVariable NightflyTurquoise
+    highlight! link fishInnerVariable NightflyTurquoise
 
     " ALE plugin
     if g:nightflyUndercurls
