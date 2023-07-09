@@ -418,7 +418,6 @@ enabled.
 A list of popular terminals that support true colors:
 
 - [iTerm2](http://www.iterm2.com)
-- [GNOME Terminal](https://wiki.gnome.org/Apps/Terminal)
 - [Windows Terminal](https://github.com/Microsoft/Terminal)
 - [Alacritty](https://github.com/alacritty/alacritty)
 - [kitty](https://sw.kovidgoyal.net/kitty/index.html)
@@ -464,9 +463,6 @@ A collection of _nightfly_-flavoured themes are provided:
 - [Windows Terminal](https://github.com/microsoft/terminal) users can copy
   [this](extras/windows-terminal-settings.json) theme into their `settings.json`
   configuration
-
-- _GNOME Terminal_ users can run [this](extras/gnome-terminal-nightfly.sh)
-  script to create a _Nightfly_ profile.
 
 For other terminals please configure appropriately with the following colors:
 
