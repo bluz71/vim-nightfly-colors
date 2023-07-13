@@ -23,7 +23,6 @@ let s:red         = '#fc514e'
 let s:watermelon  = '#ff5874'
 let s:violet      = '#c792ea'
 let s:purple      = '#ae81ff'
-let s:indigo      = '#5e97ec'
 let s:blue        = '#82aaff'
 let s:malibu      = '#87bcff'
 let s:turquoise   = '#7fdbca'
@@ -58,7 +57,6 @@ function! nightfly#Style() abort
     exec 'highlight NightflyWatermelon guifg=' . s:watermelon
     exec 'highlight NightflyViolet guifg=' . s:violet
     exec 'highlight NightflyPurple guifg=' . s:purple
-    exec 'highlight NightflyIndigo guifg=' . s:indigo
     exec 'highlight NightflyBlue guifg=' . s:blue
     exec 'highlight NightflyMalibu guifg=' . s:malibu
     exec 'highlight NightflyTurquoise guifg=' . s:turquoise

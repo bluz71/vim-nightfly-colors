@@ -31,7 +31,6 @@ local red = "#fc514e"
 local watermelon = "#ff5874"
 local violet = "#c792ea"
 local purple = "#ae81ff"
-local indigo = "#5e97ec"
 local blue = "#82aaff"
 local malibu = "#87bcff"
 local turquoise = "#7fdbca"
@@ -67,7 +66,6 @@ M.palette = {
   watermelon = watermelon,
   violet = violet,
   purple = purple,
-  indigo = indigo,
   blue = blue,
   malibu = malibu,
   turquoise = turquoise,
@@ -102,7 +100,6 @@ M.style = function()
   highlight(0, "NightflyWatermelon", { fg = watermelon })
   highlight(0, "NightflyViolet", { fg = violet })
   highlight(0, "NightflyPurple", { fg = purple })
-  highlight(0, "NightflyIndigo", { fg = indigo })
   highlight(0, "NightflyBlue", { fg = blue })
   highlight(0, "NightflyMalibu", { fg = malibu })
   highlight(0, "NightflyTurquoise", { fg = turquoise })
@@ -410,6 +407,11 @@ M.style = function()
   highlight(0, "@text.uri.gitcommit", { link = "NightflyEmerald" })
   highlight(0, "@text.title.help", { link = "NightflyMalibu" })
   highlight(0, "@text.title.html", { link = "NightflyViolet" })
+  if g.nightflyItalics then
+    highlight(0, "@text.uri.html", { fg = violet, italic = true })
+  else
+    highlight(0, "@text.uri.html", { link = "NightflyViolet" })
+  end
   highlight(0, "@storageclass.rust", { link = "NightflyViolet" })
   highlight(0, "@punctuation.delimiter.scss", { link = "NightflyWatermelon" })
   highlight(0, "@variable.scss", { link = "NightflyTurquoise" })
