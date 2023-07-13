@@ -399,6 +399,11 @@ M.style = function()
   -- Language specific Tree-sitter overrides.
   highlight(0, "@punctuation.delimiter.astro", { link = "NightflyWatermelon" })
   highlight(0, "@text.title.astro", { link = "NightflyViolet" })
+  if g.nightflyItalics then
+    highlight(0, "@text.uri.astro", { fg = violet, italic = true })
+  else
+    highlight(0, "@text.uri.astro", { link = "NightflyViolet" })
+  end
   highlight(0, "@parameter.bash", { link = "NightflyTurquoise" })
   highlight(0, "@punctuation.delimiter.css", { link = "NightflyWatermelon" })
   highlight(0, "@keyword.gitcommit", { link = "NightflyBlue" })
@@ -416,9 +421,19 @@ M.style = function()
   highlight(0, "@punctuation.delimiter.scss", { link = "NightflyWatermelon" })
   highlight(0, "@variable.scss", { link = "NightflyTurquoise" })
   highlight(0, "@text.title.svelte", { link = "NightflyViolet" })
+  if g.nightflyItalics then
+    highlight(0, "@text.uri.svelte", { fg = violet, italic = true })
+  else
+    highlight(0, "@text.uri.svelte", { link = "NightflyViolet" })
+  end
   highlight(0, "@variable.vim", { link = "NightflyTurquoise" })
   highlight(0, "@variable.builtin.vim", { link = "NightflyEmerald" })
   highlight(0, "@text.title.vue", { link = "NightflyViolet" })
+  if g.nightflyItalics then
+    highlight(0, "@text.uri.vue", { fg = violet, italic = true })
+  else
+    highlight(0, "@text.uri.vue", { link = "NightflyViolet" })
+  end
   highlight(0, "@field.yaml", { link = "NightflyBlue" })
   highlight(0, "@punctuation.delimiter.yaml", { link = "NightflyWatermelon" })
 
