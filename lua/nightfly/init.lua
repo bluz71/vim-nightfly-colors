@@ -397,45 +397,36 @@ M.style = function()
   highlight(0, "@variable", { link = "NightflyWhite" })
   highlight(0, "@variable.builtin", { link = "NightflyGreen" })
   -- Language specific Tree-sitter overrides.
-  highlight(0, "@punctuation.delimiter.astro", { link = "NightflyWatermelon" })
-  highlight(0, "@text.title.astro", { link = "NightflyViolet" })
-  if g.nightflyItalics then
-    highlight(0, "@text.uri.astro", { fg = violet, italic = true })
-  else
-    highlight(0, "@text.uri.astro", { link = "NightflyViolet" })
-  end
-  highlight(0, "@parameter.bash", { link = "NightflyTurquoise" })
-  highlight(0, "@punctuation.delimiter.css", { link = "NightflyWatermelon" })
+  highlight(0, "@field.yaml", { link = "NightflyBlue" })
   highlight(0, "@keyword.gitcommit", { link = "NightflyBlue" })
+  highlight(0, "@parameter.bash", { link = "NightflyTurquoise" })
+  highlight(0, "@punctuation.delimiter.astro", { link = "NightflyWatermelon" })
+  highlight(0, "@punctuation.delimiter.css", { link = "NightflyWatermelon" })
+  highlight(0, "@punctuation.delimiter.scss", { link = "NightflyWatermelon" })
+  highlight(0, "@punctuation.delimiter.yaml", { link = "NightflyWatermelon" })
+  highlight(0, "@storageclass.rust", { link = "NightflyViolet" })
   highlight(0, "@text.reference.gitcommit", { link = "NightflyBlue" })
+  highlight(0, "@text.title.astro", { link = "NightflyViolet" })
   highlight(0, "@text.title.gitcommit", { link = "NightflyViolet" })
-  highlight(0, "@text.uri.gitcommit", { link = "NightflyEmerald" })
   highlight(0, "@text.title.help", { link = "NightflyMalibu" })
   highlight(0, "@text.title.html", { link = "NightflyViolet" })
-  if g.nightflyItalics then
-    highlight(0, "@text.uri.html", { fg = violet, italic = true })
-  else
-    highlight(0, "@text.uri.html", { link = "NightflyViolet" })
-  end
-  highlight(0, "@storageclass.rust", { link = "NightflyViolet" })
-  highlight(0, "@punctuation.delimiter.scss", { link = "NightflyWatermelon" })
-  highlight(0, "@variable.scss", { link = "NightflyTurquoise" })
   highlight(0, "@text.title.svelte", { link = "NightflyViolet" })
-  if g.nightflyItalics then
-    highlight(0, "@text.uri.svelte", { fg = violet, italic = true })
-  else
-    highlight(0, "@text.uri.svelte", { link = "NightflyViolet" })
-  end
-  highlight(0, "@variable.vim", { link = "NightflyTurquoise" })
-  highlight(0, "@variable.builtin.vim", { link = "NightflyEmerald" })
   highlight(0, "@text.title.vue", { link = "NightflyViolet" })
+  highlight(0, "@text.uri.gitcommit", { link = "NightflyEmerald" })
   if g.nightflyItalics then
+    highlight(0, "@text.uri.astro", { fg = violet, italic = true })
+    highlight(0, "@text.uri.html", { fg = violet, italic = true })
+    highlight(0, "@text.uri.svelte", { fg = violet, italic = true })
     highlight(0, "@text.uri.vue", { fg = violet, italic = true })
   else
+    highlight(0, "@text.uri.astro", { link = "NightflyViolet" })
+    highlight(0, "@text.uri.html", { link = "NightflyViolet" })
+    highlight(0, "@text.uri.svelte", { link = "NightflyViolet" })
     highlight(0, "@text.uri.vue", { link = "NightflyViolet" })
   end
-  highlight(0, "@field.yaml", { link = "NightflyBlue" })
-  highlight(0, "@punctuation.delimiter.yaml", { link = "NightflyWatermelon" })
+  highlight(0, "@variable.scss", { link = "NightflyTurquoise" })
+  highlight(0, "@variable.vim", { link = "NightflyTurquoise" })
+  highlight(0, "@variable.builtin.vim", { link = "NightflyEmerald" })
 
   -- Neovim LSP semantic highlights.
   highlight(0, "@lsp.mod.deprecated", { link = "@constant" })
