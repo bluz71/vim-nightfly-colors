@@ -1002,6 +1002,15 @@ M.style = function()
   highlight(0, "RainbowDelimiterGreen", { link = "NightflyGreen" })
   highlight(0, "RainbowDelimiterViolet", { link = "NightflyViolet" })
   highlight(0, "RainbowDelimiterCyan", { link = "NightflyTurquoise" })
+
+  -- Neogit
+  highlight(0, "NeogitBranch", { link = "NightflyBlue" })
+  highlight(0, "NeogitDiffAddHighlight", { link = "NightflyEmeraldLine" })
+  highlight(0, "NeogitDiffContextHighlight", { bg = dark_blue })
+  highlight(0, "NeogitDiffDeleteHighlight", { link = "NightflyWatermelonLine" })
+  highlight(0, "NeogitHunkHeader", { link = "Pmenu" })
+  highlight(0, "NeogitHunkHeaderHighlight", { link = "NightflyBlueLineActive" })
+  highlight(0, "NeogitRemote", { link = "NightflyPurple" })
 end
 
 return M
