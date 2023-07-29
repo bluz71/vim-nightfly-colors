@@ -686,7 +686,9 @@ M.style = function()
   highlight(0, "NvimTreeCursorLine", { bg = deep_blue })
   highlight(0, "NvimTreeExecFile", { fg = green })
   highlight(0, "NvimTreeImageFile", { fg = violet })
-  highlight(0, "NvimTreeNormal", { bg = black_blue, fg = white })
+  if g.nightflyTransparent ~= true then
+    highlight(0, "NvimTreeNormal", { bg = black_blue, fg = white })
+  end
   highlight(0, "NvimTreeOpenedFile", { fg = yellow })
   highlight(0, "NvimTreeSymlink", { fg = turquoise })
 
@@ -701,7 +703,9 @@ M.style = function()
   highlight(0, "NeoTreeModified", { link = "NightflyYellow" })
   highlight(0, "NeoTreeRootName", { link = "NightflyPurple" })
   highlight(0, "NeoTreeCursorLine", { bg = deep_blue })
-  highlight(0, "NeoTreeNormal", { bg = black_blue, fg = white })
+  if g.nightflyTransparent ~= true then
+    highlight(0, "NeoTreeNormal", { bg = black_blue, fg = white })
+  end
 
   -- Telescope plugin
   highlight(0, "TelescopeBorder", { link = "FloatBorder" })
