@@ -62,12 +62,6 @@ function! nightfly#Style() abort
     exec 'highlight NightflyTurquoise guifg=' . s:turquoise
     exec 'highlight NightflyEmerald guifg=' . s:emerald
     exec 'highlight NightflyGreen guifg=' . s:green
-    " Misc helpers
-    exec 'highlight NightflyYellowAlert guibg=bg guifg=' . s:yellow
-    exec 'highlight NightflyOrangeAlert guibg=bg guifg=' . s:orange
-    exec 'highlight NightflyRedAlert guibg=bg guifg=' . s:red
-    exec 'highlight NightflyMalibuAlert guibg=bg guifg=' . s:malibu
-    exec 'highlight NightflyEmeraldAlert guibg=bg guifg=' . s:emerald
     " Statusline helper colors
     exec 'highlight NightflyBlueMode guibg=' . s:blue . ' guifg=' . s:dark_blue
     exec 'highlight NightflyEmeraldMode guibg=' . s:emerald . ' guifg=' . s:dark_blue
@@ -728,9 +722,9 @@ function! nightfly#Style() abort
         highlight! link ALEWarning NightflyDiagnosticUnderlineWarn
         highlight! link ALEInfo NightflyDiagnosticUnderlineInfo
     endif
-    highlight! link ALEErrorSign NightflyRedAlert
-    highlight! link ALEWarningSign NightflyYellowAlert
-    highlight! link ALEInfoSign NightflyMalibuAlert
+    highlight! link ALEErrorSign NightflyRed
+    highlight! link ALEWarningSign NightflyYellow
+    highlight! link ALEInfoSign NightflyMalibu
     if g:nightflyVirtualTextColor
         highlight! link ALEVirtualTextError NightflyDiagnosticVirtualTextError
         highlight! link ALEVirtualTextWarning NightflyDiagnosticVirtualTextWarn
@@ -742,16 +736,16 @@ function! nightfly#Style() abort
     endif
 
     " GitGutter plugin
-    highlight! link GitGutterAdd NightflyEmeraldAlert
-    highlight! link GitGutterChange NightflyMalibuAlert
-    highlight! link GitGutterChangeDelete NightflyOrangeAlert
-    highlight! link GitGutterDelete NightflyRedAlert
+    highlight! link GitGutterAdd NightflyEmerald
+    highlight! link GitGutterChange NightflyMalibu
+    highlight! link GitGutterChangeDelete NightflyOrange
+    highlight! link GitGutterDelete NightflyRed
 
     " Signify plugin
-    highlight! link SignifySignAdd NightflyEmeraldAlert
-    highlight! link SignifySignChange NightflyMalibuAlert
-    highlight! link SignifySignChangeDelete NightflyOrangeAlert
-    highlight! link SignifySignDelete NightflyRedAlert
+    highlight! link SignifySignAdd NightflyEmerald
+    highlight! link SignifySignChange NightflyMalibu
+    highlight! link SignifySignChangeDelete NightflyOrange
+    highlight! link SignifySignDelete NightflyRed
 
     " FZF plugin
     exec 'highlight fzf1 guifg=' . s:watermelon . ' guibg=' . s:slate_blue
