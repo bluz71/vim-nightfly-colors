@@ -680,6 +680,9 @@ M.style = function()
   highlight(0, "NvimTreeCursorLine", { bg = deep_blue })
   highlight(0, "NvimTreeExecFile", { fg = green })
   highlight(0, "NvimTreeImageFile", { fg = violet })
+  if g.nightflyTransparent ~= true and g.nightflyNormalFloat ~= true then
+    highlight(0, "NvimTreeNormalFloat", { bg = bg, fg = cadet_blue })
+  end
   highlight(0, "NvimTreeOpenedFile", { fg = yellow })
   highlight(0, "NvimTreeSymlink", { fg = turquoise })
 
