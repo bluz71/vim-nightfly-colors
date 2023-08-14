@@ -994,7 +994,7 @@ M.style = function()
   highlight(0, "NavicIconsTypeParameter", { link = "NavicIconsEnumMember" })
   highlight(0, "NavicIconsVariable", { link = "NavicIconsEnumMember" })
 
-  -- Rainbow Delimiters
+  -- Rainbow Delimiters plugin
   highlight(0, "RainbowDelimiterRed", { link = "NightflyRed" })
   highlight(0, "RainbowDelimiterYellow", { link = "NightflyYellow" })
   highlight(0, "RainbowDelimiterBlue", { link = "NightflyBlue" })
@@ -1003,7 +1003,7 @@ M.style = function()
   highlight(0, "RainbowDelimiterViolet", { link = "NightflyViolet" })
   highlight(0, "RainbowDelimiterCyan", { link = "NightflyTurquoise" })
 
-  -- Neogit
+  -- Neogit plugin
   highlight(0, "NeogitBranch", { link = "NightflyBlue" })
   highlight(0, "NeogitDiffAddHighlight", { link = "NightflyEmeraldLine" })
   highlight(0, "NeogitDiffContextHighlight", { bg = dark_blue })
@@ -1011,6 +1011,12 @@ M.style = function()
   highlight(0, "NeogitHunkHeader", { link = "Pmenu" })
   highlight(0, "NeogitHunkHeaderHighlight", { link = "NightflyBlueLineActive" })
   highlight(0, "NeogitRemote", { link = "NightflyPurple" })
+
+  -- nvim-window-picker plugin
+  highlight(0, "WindowPickerStatusLine", { link = "WinBar" })
+  highlight(0, "WindowPickerStatusLineNC", { link = "WinBar" })
+  highlight(0, "WindowPickerWinBar", { link = "WinBar" })
+  highlight(0, "WindowPickerWinBarNC", { link = "WinBar" })
 end
 
 return M
