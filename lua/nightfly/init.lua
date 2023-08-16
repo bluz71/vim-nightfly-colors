@@ -579,7 +579,7 @@ M.style = function()
   highlight(0, "TagbarKind", { link = "NightflyEmerald" })
 
   -- fern.vim plugin
-  highlight(0, "FernBranchSymbol", { link = "NightflySteelBlue" })
+  highlight(0, "FernBranchSymbol", { link = "NightflyGreyBlue" })
   highlight(0, "FernLeafSymbol", { link = "NightflyBlue" })
   highlight(0, "FernLeaderSymbol", { link = "NightflyPickleBlue" })
   highlight(0, "FernBranchText", { link = "NightflyBlue" })
@@ -670,7 +670,7 @@ M.style = function()
   -------------------------------------------------------------------------
 
   -- NvimTree plugin
-  highlight(0, "NvimTreeFolderIcon", { link = "NightflyPickleBlue" })
+  highlight(0, "NvimTreeFolderIcon", { link = "NightflyGreyBlue" })
   highlight(0, "NvimTreeFolderName", { link = "NightflyBlue" })
   highlight(0, "NvimTreeIndentMarker", { link = "NightflyPickleBlue" })
   highlight(0, "NvimTreeOpenedFolderName", { link = "NightflyBlue" })
@@ -689,7 +689,7 @@ M.style = function()
   -- Neo-tree plugin
   highlight(0, "NeoTreeCursorLine", { bg = deep_blue })
   highlight(0, "NeoTreeDimText", { link = "NightflyPickleBlue" })
-  highlight(0, "NeoTreeDirectoryIcon", { link = "NightflyPickleBlue" })
+  highlight(0, "NeoTreeDirectoryIcon", { link = "NightflyGreyBlue" })
   highlight(0, "NeoTreeDotfile", { link = "NightflyGreyBlue" })
   highlight(0, "NeoTreeFloatTitle", { bg = slate_blue, fg = white })
   highlight(0, "NeoTreeGitAdded", { link = "NightflyGreen" })

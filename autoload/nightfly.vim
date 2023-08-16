@@ -635,7 +635,7 @@ function! nightfly#Style() abort
     highlight! link TagbarKind NightflyEmerald
 
     " NERDTree plugin
-    highlight! link NERDTreeClosable NightflyCadetBlue
+    highlight! link NERDTreeClosable NightflyGreyBlue
     highlight! link NERDTreeCWD NightflyPurple
     highlight! link NERDTreeDir NightflyBlue
     highlight! link NERDTreeDirSlash NightflyWatermelon
@@ -646,7 +646,7 @@ function! nightfly#Style() abort
     highlight! link NERDTreeLinkDir NightflyBlue
     highlight! link NERDTreeLinkFile NightflyBlue
     highlight! link NERDTreeLinkTarget NightflyTurquoise
-    highlight! link NERDTreeOpenable NightflyCadetBlue
+    highlight! link NERDTreeOpenable NightflyGreyBlue
     highlight! link NERDTreePart NightflyRegalBlue
     highlight! link NERDTreePartFile NightflyRegalBlue
     highlight! link NERDTreeUp NightflyBlue
@@ -659,7 +659,7 @@ function! nightfly#Style() abort
     highlight! link NERDTreeGitStatusUntracked NightflyRed
 
     " fern.vim plugin
-    highlight! link FernBranchSymbol NightflySteelBlue
+    highlight! link FernBranchSymbol NightflyGreyBlue
     highlight! link FernLeafSymbol NightflyBlue
     highlight! link FernLeaderSymbol NightflyPickleBlue
     highlight! link FernBranchText NightflyBlue
