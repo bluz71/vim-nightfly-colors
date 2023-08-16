@@ -7,6 +7,7 @@ let s:dark_blue   = '#092236'
 let s:deep_blue   = '#0e293f'
 let s:slate_blue  = '#2c3043'
 let s:pickle_blue = '#38507a'
+let s:cello_blue   = '#1f4462'
 let s:regal_blue  = '#1d3b53'
 let s:steel_blue  = '#4b6479'
 let s:grey_blue   = '#7c8f8f'
@@ -40,8 +41,9 @@ function! nightfly#Style() abort
     exec 'highlight NightflyVisual guibg=' . s:regal_blue
     exec 'highlight NightflyWhite guifg=' . s:white
     exec 'highlight NightflyDeepBlue guifg=' . s:deep_blue
-    exec 'highlight NightflyPickleBlue guifg=' . s:pickle_blue
     exec 'highlight NightflySlateBlue guifg=' . s:slate_blue
+    exec 'highlight NightflyPickleBlue guifg=' . s:pickle_blue
+    exec 'highlight NightflyCelloBlue guifg=' . s:cello_blue
     exec 'highlight NightflyRegalBlue guifg=' . s:regal_blue
     exec 'highlight NightflySteelBlue guifg=' . s:steel_blue
     exec 'highlight NightflyGreyBlue guifg=' . s:grey_blue
@@ -661,7 +663,7 @@ function! nightfly#Style() abort
     " fern.vim plugin
     highlight! link FernBranchSymbol NightflyGreyBlue
     highlight! link FernLeafSymbol NightflyBlue
-    highlight! link FernLeaderSymbol NightflyPickleBlue
+    highlight! link FernLeaderSymbol NightflyCelloBlue
     highlight! link FernBranchText NightflyBlue
     highlight! link FernMarkedLine NightflyVisual
     highlight! link FernMarkedText NightflyWatermelon
