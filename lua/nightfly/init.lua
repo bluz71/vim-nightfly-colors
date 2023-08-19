@@ -829,6 +829,12 @@ M.style = function()
   highlight(0, "IndentBlanklineChar", { fg = deep_blue, nocombine = true })
   highlight(0, "IndentBlanklineSpaceChar", { fg = deep_blue, nocombine = true })
   highlight(0, "IndentBlanklineSpaceCharBlankline", { fg = deep_blue, nocombine = true })
+  highlight(0, "IndentBlanklineIndent6", { link = "NightflyOrchid" })
+  highlight(0, "IndentBlanklineIndent5", { link = "NightflyViolet" })
+  highlight(0, "IndentBlanklineIndent4", { link = "NightflyBlue" })
+  highlight(0, "IndentBlanklineIndent3", { link = "NightflyTurquoise" })
+  highlight(0, "IndentBlanklineIndent2", { link = "NightflyTan" })
+  highlight(0, "IndentBlanklineIndent1", { link = "NightflyWatermelon" })
 
   -- Mini.nvim plugin
   highlight(0, "MiniCompletionActiveParameter", { link = "NightflyVisual" })
