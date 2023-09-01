@@ -40,6 +40,8 @@ local green = "#a1cd5e"
 -- Extra colors
 local cyan_blue = "#296596"
 local bay_blue = "#24567F"
+local kashmir_blue = "#4d618e"
+local plant_green = "#2a4e57"
 
 local M = {}
 
@@ -257,7 +259,6 @@ M.style = function()
   -- Visual selection
   highlight(0, "Visual", { link = "NightflyVisual" })
   highlight(0, "VisualNOS", { bg = regal_blue, fg = white })
-  highlight(0, "VisualInDiff", { bg = regal_blue, fg = white })
 
   -- Errors, warnings and whitespace-eol
   highlight(0, "Error", { bg = bg, fg = red })
@@ -320,10 +321,10 @@ M.style = function()
   highlight(0, "Conceal", { bg = none, fg = ash_blue })
 
   -- nvim -d
-  highlight(0, "DiffAdd", { bg = emerald, fg = black })
+  highlight(0, "DiffAdd", { bg = plant_green })
   highlight(0, "DiffChange", { bg = slate_blue })
   highlight(0, "DiffDelete", { bg = slate_blue, fg = steel_blue })
-  highlight(0, "DiffText", { bg = blue, fg = black })
+  highlight(0, "DiffText", { bg = kashmir_blue })
 
   -------------------------------------------------------------------------
   -- Neovim standard styling

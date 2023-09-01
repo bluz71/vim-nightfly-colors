@@ -1,37 +1,39 @@
 " Background and foreground
-let s:black       = '#011627'
-let s:white       = '#c3ccdc'
+let s:black        = '#011627'
+let s:white        = '#c3ccdc'
 " Variations of midnight-blue
-let s:black_blue  = '#081e2f'
-let s:dark_blue   = '#092236'
-let s:deep_blue   = '#0e293f'
-let s:slate_blue  = '#2c3043'
-let s:pickle_blue = '#38507a'
+let s:black_blue   = '#081e2f'
+let s:dark_blue    = '#092236'
+let s:deep_blue    = '#0e293f'
+let s:slate_blue   = '#2c3043'
+let s:pickle_blue  = '#38507a'
 let s:cello_blue   = '#1f4462'
-let s:regal_blue  = '#1d3b53'
-let s:steel_blue  = '#4b6479'
-let s:grey_blue   = '#7c8f8f'
-let s:cadet_blue  = '#a1aab8'
-let s:ash_blue    = '#acb4c2'
-let s:white_blue  = '#d6deeb'
+let s:regal_blue   = '#1d3b53'
+let s:steel_blue   = '#4b6479'
+let s:grey_blue    = '#7c8f8f'
+let s:cadet_blue   = '#a1aab8'
+let s:ash_blue     = '#acb4c2'
+let s:white_blue   = '#d6deeb'
 " Core theme colors
-let s:yellow      = '#e3d18a'
-let s:peach       = '#ffcb8b'
-let s:tan         = '#ecc48d'
-let s:orange      = '#f78c6c'
-let s:orchid      = '#e39aa6'
-let s:red         = '#fc514e'
-let s:watermelon  = '#ff5874'
-let s:violet      = '#c792ea'
-let s:purple      = '#ae81ff'
-let s:blue        = '#82aaff'
-let s:malibu      = '#87bcff'
-let s:turquoise   = '#7fdbca'
-let s:emerald     = '#21c7a8'
-let s:green       = '#a1cd5e'
+let s:yellow       = '#e3d18a'
+let s:peach        = '#ffcb8b'
+let s:tan          = '#ecc48d'
+let s:orange       = '#f78c6c'
+let s:orchid       = '#e39aa6'
+let s:red          = '#fc514e'
+let s:watermelon   = '#ff5874'
+let s:violet       = '#c792ea'
+let s:purple       = '#ae81ff'
+let s:blue         = '#82aaff'
+let s:malibu       = '#87bcff'
+let s:turquoise    = '#7fdbca'
+let s:emerald      = '#21c7a8'
+let s:green        = '#a1cd5e'
 " Extra colors
-let s:cyan_blue   = '#296596'
-let s:bay_blue    = '#24567F'
+let s:cyan_blue    = '#296596'
+let s:bay_blue     = '#24567F'
+let s:kashmir_blue = '#4d618e'
+let s:plant_green  = '#2a4e57'
 
 function! nightfly#Style() abort
     "-----------------------------------------------------------------------
@@ -191,7 +193,6 @@ function! nightfly#Style() abort
     " Visual selection
     highlight! link Visual NightflyVisual
     exec 'highlight VisualNOS guibg=' . s:regal_blue . ' guifg=fg gui=none'
-    exec 'highlight VisualInDiff guibg=' . s:regal_blue . ' guifg=' . s:white
 
     " Errors, warnings and whitespace-eol
     exec 'highlight Error guibg=bg guifg=' . s:red
@@ -254,10 +255,10 @@ function! nightfly#Style() abort
     exec 'highlight Conceal guibg=NONE guifg=' . s:ash_blue
 
     " vimdiff/nvim -d
-    exec 'highlight DiffAdd guibg=' . s:emerald . ' guifg=' . s:black
+    exec 'highlight DiffAdd guibg=' . s:plant_green
     exec 'highlight DiffChange guibg=' . s:slate_blue
     exec 'highlight DiffDelete guibg=' . s:slate_blue . ' guifg=' . s:steel_blue . ' gui=none'
-    exec 'highlight DiffText guibg=' . s:blue . ' guifg=' . s:black . ' gui=none'
+    exec 'highlight DiffText guibg=' . s:kashmir_blue
 
     "-----------------------------------------------------------------------
     " Language styling
