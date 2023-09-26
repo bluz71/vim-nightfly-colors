@@ -446,8 +446,16 @@ function! nightfly#Style() abort
     highlight! link markdownCode NightflyTan
     highlight! link markdownCodeDelimiter NightflyTan
     highlight! link markdownError NormalNC
-    highlight! link markdownH1 NightflyBlue
+    highlight! link markdownH1 NightflyEmerald
     highlight! link markdownH2 NightflyBlue
+    highlight! link markdownH3 NightflyTurquoise
+    highlight! link markdownH3Delimiter NightflyBlue
+    highlight! link markdownH4 NightflyOrange
+    highlight! link markdownH4Delimiter NightflyBlue
+    highlight! link markdownH5 NightflyMalibu
+    highlight! link markdownH5Delimiter NightflyBlue
+    highlight! link markdownH6 NightflyWatermelon
+    highlight! link markdownH6Delimiter NightflyBlue
     highlight! link markdownHeadingRule NightflyWatermelon
     highlight! link markdownItalic NightflyOrchid
     highlight! link markdownUrl NightflyPurple
