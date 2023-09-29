@@ -840,7 +840,7 @@ M.style = function()
   highlight(0, "CmpItemKindVariable", { link = "NightflyTurquoise" })
   highlight(0, "CmpItemMenu", { link = "NightflyCadetBlue" })
 
-  -- Indent Blankline plugin
+  -- Indent Blankline plugin v2 & earlier
   highlight(0, "IndentBlanklineChar", { fg = deep_blue, nocombine = true })
   highlight(0, "IndentBlanklineSpaceChar", { fg = deep_blue, nocombine = true })
   highlight(0, "IndentBlanklineSpaceCharBlankline", { fg = deep_blue, nocombine = true })
@@ -850,6 +850,9 @@ M.style = function()
   highlight(0, "IndentBlanklineIndent3", { link = "NightflyTurquoise" })
   highlight(0, "IndentBlanklineIndent2", { link = "NightflyTan" })
   highlight(0, "IndentBlanklineIndent1", { link = "NightflyWatermelon" })
+  -- Indent Blankline plugin v3 & later
+  highlight(0, "IblIndent", { fg = deep_blue, nocombine = true })
+  highlight(0, "IblWhitespace", { fg = deep_blue, nocombine = true })
 
   -- Mini.nvim plugin
   highlight(0, "MiniCompletionActiveParameter", { link = "NightflyVisual" })
