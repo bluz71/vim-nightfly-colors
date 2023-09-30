@@ -700,6 +700,8 @@ function! nightfly#Style() abort
     highlight! link CtrlPMatch NightflyOrange
     highlight! link Directory NightflyBlue
     highlight! link erubyDelimiter NightflyWatermelon
+    highlight! link helpCommand NightflyMalibu
+    highlight! link helpExample NightflyGreen
     highlight! link helpHeadline NightflyBlue
     highlight! link helpSectionDelim NightflyBlue
     highlight! link HighlightedyankRegion NightflyRegalBlue
