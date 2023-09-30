@@ -840,19 +840,14 @@ M.style = function()
   highlight(0, "CmpItemKindVariable", { link = "NightflyTurquoise" })
   highlight(0, "CmpItemMenu", { link = "NightflyCadetBlue" })
 
-  -- Indent Blankline plugin v2 & earlier
-  highlight(0, "IndentBlanklineChar", { fg = deep_blue, nocombine = true })
-  highlight(0, "IndentBlanklineSpaceChar", { fg = deep_blue, nocombine = true })
-  highlight(0, "IndentBlanklineSpaceCharBlankline", { fg = deep_blue, nocombine = true })
-  highlight(0, "IndentBlanklineIndent6", { link = "NightflyOrchid" })
-  highlight(0, "IndentBlanklineIndent5", { link = "NightflyViolet" })
-  highlight(0, "IndentBlanklineIndent4", { link = "NightflyBlue" })
-  highlight(0, "IndentBlanklineIndent3", { link = "NightflyTurquoise" })
-  highlight(0, "IndentBlanklineIndent2", { link = "NightflyTan" })
-  highlight(0, "IndentBlanklineIndent1", { link = "NightflyWatermelon" })
   -- Indent Blankline plugin v3 & later
   highlight(0, "IblIndent", { fg = deep_blue, nocombine = true })
+  highlight(0, "IblScope", { fg = violet, nocombine = true })
   highlight(0, "IblWhitespace", { fg = deep_blue, nocombine = true })
+  -- Indent Blankline plugin v2 & earlier
+  highlight(0, "IndentBlanklineChar", { link = "IblIndent" })
+  highlight(0, "IndentBlanklineSpaceChar", { link = "IblWhitespace" })
+  highlight(0, "IndentBlanklineSpaceCharBlankline", { link = "IblWhitespace" })
 
   -- Mini.nvim plugin
   highlight(0, "MiniCompletionActiveParameter", { link = "NightflyVisual" })
