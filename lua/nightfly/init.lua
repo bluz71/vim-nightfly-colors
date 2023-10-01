@@ -392,6 +392,7 @@ M.style = function()
   highlight(0, "@punctuation.delimiter.yaml", { link = "NightflyWatermelon" })
   highlight(0, "@punctuation.special.markdown", { link = "NightflyMalibu" })
   highlight(0, "@storageclass.rust", { link = "NightflyViolet" })
+  highlight(0, "@text.literal.vimdoc", { link = "NightflyOrchid" })
   highlight(0, "@text.literal.block.vimdoc", { link = "NightflyGreen" })
   highlight(0, "@text.reference.gitcommit", { link = "NightflyBlue" })
   highlight(0, "@text.title.1.markdown", { link = "NightflyEmerald" })
@@ -534,6 +535,13 @@ M.style = function()
   -- Legacy language styling
   -------------------------------------------------------------------------
 
+  -- Help
+  highlight(0, "helpCommand", { link = "NightflyMalibu" })
+  highlight(0, "helpExample", { link = "NightflyGreen" })
+  highlight(0, "helpHeadline", { link = "NightflyBlue" })
+  highlight(0, "helpHyperTextEntry", { link = "NightflyTurquoise" })
+  highlight(0, "helpSectionDelim", { link = "NightflyBlue" })
+
   -- Markdown, 'tpope/vim-markdown' plugin
   highlight(0, "markdownBold", { link = "NightflyPeach" })
   highlight(0, "markdownCode", { link = "NightflyTan" })
@@ -627,10 +635,6 @@ M.style = function()
   highlight(0, "CtrlPMatch", { link = "NightflyOrange" })
   highlight(0, "Directory", { link = "NightflyBlue" })
   highlight(0, "erubyDelimiter", { link = "NightflyWatermelon" })
-  highlight(0, "helpCommand", { link = "NightflyMalibu" })
-  highlight(0, "helpExample", { link = "NightflyGreen" })
-  highlight(0, "helpHeadline", { link = "NightflyBlue" })
-  highlight(0, "helpSectionDelim", { link = "NightflyBlue" })
   highlight(0, "jsonKeyword", { link = "NightflyBlue" })
   highlight(0, "jsonBoolean", { link = "NightflyTurquoise" })
   highlight(0, "jsonQuote", { link = "NightflyWhite" })

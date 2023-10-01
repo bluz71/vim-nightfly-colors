@@ -375,6 +375,13 @@ function! nightfly#Style() abort
     highlight! link haskellType NightflyBlue
     highlight! link haskellWhere NightflyViolet
 
+    " Help
+    highlight! link helpCommand NightflyMalibu
+    highlight! link helpExample NightflyGreen
+    highlight! link helpHeadline NightflyBlue
+    highlight! link helpHyperTextEntry NightflyTurquoise
+    highlight! link helpSectionDelim NightflyBlue
+
     " HTML
     highlight! link htmlArg NightflyTurquoise
     highlight! link htmlLink NightflyGreen
@@ -700,10 +707,6 @@ function! nightfly#Style() abort
     highlight! link CtrlPMatch NightflyOrange
     highlight! link Directory NightflyBlue
     highlight! link erubyDelimiter NightflyWatermelon
-    highlight! link helpCommand NightflyMalibu
-    highlight! link helpExample NightflyGreen
-    highlight! link helpHeadline NightflyBlue
-    highlight! link helpSectionDelim NightflyBlue
     highlight! link HighlightedyankRegion NightflyRegalBlue
     highlight! link jsonKeyword NightflyBlue
     highlight! link jsonBoolean NightflyTurquoise
