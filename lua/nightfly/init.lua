@@ -536,7 +536,7 @@ M.style = function()
   -------------------------------------------------------------------------
 
   -- Help
-  highlight(0, "helpCommand", { link = "NightflyMalibu" })
+  highlight(0, "helpCommand", { link = "NightflyOrchid" })
   highlight(0, "helpExample", { link = "NightflyGreen" })
   highlight(0, "helpHeadline", { link = "NightflyBlue" })
   highlight(0, "helpHyperTextEntry", { link = "NightflyTurquoise" })

@@ -376,7 +376,7 @@ function! nightfly#Style() abort
     highlight! link haskellWhere NightflyViolet
 
     " Help
-    highlight! link helpCommand NightflyMalibu
+    highlight! link helpCommand NightflyOrchid
     highlight! link helpExample NightflyGreen
     highlight! link helpHeadline NightflyBlue
     highlight! link helpHyperTextEntry NightflyTurquoise
