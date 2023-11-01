@@ -685,8 +685,9 @@ M.style = function()
   highlight(0, "MistflyCommand", { link = "NightflyTanMode" })
   highlight(0, "MistflyReplace", { link = "NightflyWatermelonMode" })
 
-  -- Coc plugin (see issue: https://github.com/bluz71/vim-nightfly-colors/issues/31)
+  -- Coc plugin
   highlight(0, "CocUnusedHighlight", { link = "NightflyAshBlue" })
+  highlight(0, "CocInlayHint", { link = "LspInlayHint" })
 
   -------------------------------------------------------------------------
   -- Neovim plugin styling

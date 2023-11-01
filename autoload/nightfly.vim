@@ -794,8 +794,9 @@ function! nightfly#Style() abort
     highlight! link MistflyCommand NightflyTanMode
     highlight! link MistflyReplace NightflyWatermelonMode
 
-    " Coc plugin (see issue: https://github.com/bluz71/vim-nightfly-colors/issues/31)
+    " Coc plugin
     highlight! link CocUnusedHighlight NightflyAshBlue
+    exec 'highlight CocInlayHint guibg=' . s:dark_blue . ' guifg=' . s:grey_blue
 
     " indentLine plugin
     if !exists('g:indentLine_defaultGroup') && !exists('g:indentLine_color_gui')
