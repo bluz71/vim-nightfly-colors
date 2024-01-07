@@ -444,7 +444,7 @@ Extra Themes
 A collection of _nightfly_-flavoured themes are provided:
 
 - [Alacritty](https://github.com/alacritty/alacritty) users can copy
-  [this](extras/alacritty.yml) theme into their `alacritty.yml`
+  [this](extras/nightfly-alacritty.toml) theme into their `alacritty.toml`
   configuration
 
 - [kitty](https://sw.kovidgoyal.net/kitty) users can use
