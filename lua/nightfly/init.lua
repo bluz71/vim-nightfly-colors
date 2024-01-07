@@ -423,6 +423,7 @@ M.style = function()
     highlight(0, "@text.uri.svelte", { link = "NightflyViolet" })
     highlight(0, "@text.uri.vue", { link = "NightflyViolet" })
   end
+  highlight(0, "@type.toml", { link = "NightflyBlue" })
   highlight(0, "@variable.scss", { link = "NightflyTurquoise" })
   highlight(0, "@variable.vim", { link = "NightflyTurquoise" })
   highlight(0, "@variable.builtin.vim", { link = "NightflyEmerald" })
