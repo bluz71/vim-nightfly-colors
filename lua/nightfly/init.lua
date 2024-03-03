@@ -1152,6 +1152,9 @@ M.style = function()
   highlight(0, "DapUIWatchesError", { link = "NightflyRed" })
   highlight(0, "DapUIWatchesValue", { link = "NightflyGreen" })
   highlight(0, "DapUIWinSelect", { link = "NightflyBlue" })
+
+  -- arrow.nvim
+  highlight(0, "ArrowCurrentFile", { link = "NightflyEmerald" })
 end
 
 return M
