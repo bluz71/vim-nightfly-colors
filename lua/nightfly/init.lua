@@ -42,6 +42,7 @@ local cyan_blue = "#296596"
 local bay_blue = "#24567F"
 local kashmir_blue = "#4d618e"
 local plant_green = "#2a4e57"
+local haze_blue = "#b3b6f5"
 
 local M = {}
 
@@ -76,6 +77,9 @@ M.palette = {
   green = green,
   cyan_blue = cyan_blue,
   bay_blue = bay_blue,
+  kashmir_blue = kashmir_blue,
+  plant_green = plant_green,
+  haze_blue = haze_blue,
 }
 
 M.style = function()
@@ -392,6 +396,7 @@ M.style = function()
   highlight(0, "@type.qualifier", { link = "NightflyViolet" })
   highlight(0, "@variable", { link = "NightflyWhite" })
   highlight(0, "@variable.builtin", { link = "NightflyGreen" })
+  highlight(0, "@variable.member", { fg = haze_blue })
   highlight(0, "@variable.parameter", { link = "NightflyOrchid" })
 
   -- Neovim LEGACY Tree-sitter (Neovim 0.8, 0.9)
