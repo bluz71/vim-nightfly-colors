@@ -56,12 +56,13 @@ function! nightfly#Style() abort
     exec 'highlight NightflyYellow guifg=' . s:yellow
     exec 'highlight NightflyPeach guifg=' . s:peach
     exec 'highlight NightflyTan guifg=' . s:tan
-    exec 'highlight NightflyOrchid guifg=' . s:orchid
     exec 'highlight NightflyOrange guifg=' . s:orange
+    exec 'highlight NightflyOrchid guifg=' . s:orchid
     exec 'highlight NightflyRed guifg=' . s:red
     exec 'highlight NightflyWatermelon guifg=' . s:watermelon
-    exec 'highlight NightflyViolet guifg=' . s:violet
     exec 'highlight NightflyPurple guifg=' . s:purple
+    exec 'highlight NightflyViolet guifg=' . s:violet
+    exec 'highlight NightflyLavender guifg=' . s:lavender
     exec 'highlight NightflyBlue guifg=' . s:blue
     exec 'highlight NightflyMalibu guifg=' . s:malibu
     exec 'highlight NightflyTurquoise guifg=' . s:turquoise
