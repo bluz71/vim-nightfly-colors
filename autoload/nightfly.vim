@@ -132,7 +132,7 @@ function! nightfly#Style() abort
     exec 'highlight Title guifg=' . s:orange . ' gui=none'
 
     " const, static
-    highlight! link StorageClass NightflyOrange
+    highlight! link StorageClass NightflyViolet
 
     " void, intptr_t
     exec 'highlight Type guifg=' . s:emerald . ' gui=none'
@@ -266,14 +266,8 @@ function! nightfly#Style() abort
     " Language styling
     "-----------------------------------------------------------------------
 
-    " C
-    highlight! link cDefine NightflyViolet
-    highlight! link cPreCondit NightflyViolet
-    highlight! link cStatement NightflyViolet
-    highlight! link cStructure NightflyOrange
-
     " C++
-    highlight! link cppAccess NightflyGreen
+    highlight! link cppAccess NightflyViolet
     highlight! link cppCast NightflyTurquoise
     highlight! link cppCustomClass NightflyTurquoise
     highlight! link cppExceptions NightflyGreen
@@ -285,8 +279,7 @@ function! nightfly#Style() abort
     highlight! link cppStructure NightflyViolet
 
     " C#
-    highlight! link csModifier NightflyGreen
-    highlight! link csPrecondit NightflyViolet
+    highlight! link csModifier NightflyViolet
     highlight! link csStorage NightflyViolet
     highlight! link csXmlTag NightflyBlue
 
@@ -309,19 +302,17 @@ function! nightfly#Style() abort
 
     " CSS/SCSS
     highlight! link cssAtRule NightflyViolet
-    highlight! link cssAttr NightflyTurquoise
+    highlight! link cssAttr NightflyGreen
     highlight! link cssBraces NightflyWhite
     highlight! link cssClassName NightflyEmerald
     highlight! link cssClassNameDot NightflyViolet
     highlight! link cssColor NightflyTurquoise
     highlight! link cssIdentifier NightflyBlue
-    highlight! link cssProp NightflyTurquoise
+    highlight! link cssProp NightflyLavender
     highlight! link cssTagName NightflyBlue
     highlight! link cssUnitDecorators NightflyTan
-    highlight! link cssValueLength NightflyPurple
-    highlight! link cssValueNumber NightflyPurple
-    highlight! link sassId NightflyBlue
-    highlight! link sassIdChar NightflyViolet
+    highlight! link sassId NightflyEmerald
+    highlight! link sassIdChar NightflyWatermelon
     highlight! link sassMedia NightflyViolet
     highlight! link scssSelectorName NightflyBlue
 
@@ -390,6 +381,7 @@ function! nightfly#Style() abort
     highlight! link htmlEndTag NightflyPurple
     highlight! link htmlH1 NightflyWatermelon
     highlight! link htmlH2 NightflyOrange
+    highlight! link htmlSpecialTagName MoonflyBlue
     highlight! link htmlTag NightflyGreen
     highlight! link htmlTagN NightflyBlue
     highlight! link htmlTagName NightflyBlue
@@ -409,7 +401,6 @@ function! nightfly#Style() abort
     " Java
     highlight! link javaAnnotation NightflyGreen
     highlight! link javaBraces NightflyWhite
-    highlight! link javaClassDecl NightflyPeach
     highlight! link javaCommentTitle NightflyCadetBlue
     highlight! link javaConstant NightflyBlue
     highlight! link javaDebug NightflyBlue
@@ -515,7 +506,7 @@ function! nightfly#Style() abort
     highlight! link rubySymbol NightflyPurple
 
     " Rust
-    highlight! link rustAssert NightflyGreen
+    highlight! link rustAssert NightflyTurquoise
     highlight! link rustAttribute NightflyWhite
     highlight! link rustCharacterInvalid NightflyWatermelon
     highlight! link rustCharacterInvalidUnicode NightflyWatermelon
@@ -537,7 +528,7 @@ function! nightfly#Style() abort
     highlight! link rustObsoleteExternMod NightflyWatermelon
     highlight! link rustObsoleteStorage NightflyWatermelon
     highlight! link rustReservedKeyword NightflyWatermelon
-    highlight! link rustSelf NightflyTurquoise
+    highlight! link rustSelf NightflyGreen
     highlight! link rustSigil NightflyTurquoise
     highlight! link rustStorage NightflyViolet
     highlight! link rustStructure NightflyViolet
@@ -614,7 +605,7 @@ function! nightfly#Style() abort
     highlight! link vimHighlight NightflyBlue
     highlight! link vimNotFunc NightflyViolet
     highlight! link vimNotation NightflyBlue
-    highlight! link vimOption NightflyTurquoise
+    highlight! link vimOption NightflyEmerald
     highlight! link vimParenSep NightflyWhite
     highlight! link vimSep NightflyWhite
     highlight! link vimUserFunc NightflyBlue
