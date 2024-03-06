@@ -30,8 +30,9 @@ local orange = "#f78c6c"
 local orchid = "#e39aa6"
 local red = "#fc514e"
 local watermelon = "#ff5874"
-local violet = "#c792ea"
 local purple = "#ae81ff"
+local violet = "#c792ea"
+local lavender = "#b0b2f4"
 local blue = "#82aaff"
 local malibu = "#87bcff"
 local turquoise = "#7fdbca"
@@ -42,7 +43,6 @@ local cyan_blue = "#296596"
 local bay_blue = "#24567F"
 local kashmir_blue = "#4d618e"
 local plant_green = "#2a4e57"
-local haze_blue = "#b3b6f5"
 
 local M = {}
 
@@ -68,8 +68,9 @@ M.palette = {
   orchid = orchid,
   red = red,
   watermelon = watermelon,
-  violet = violet,
   purple = purple,
+  violet = violet,
+  lavender = lavender,
   blue = blue,
   malibu = malibu,
   turquoise = turquoise,
@@ -79,7 +80,6 @@ M.palette = {
   bay_blue = bay_blue,
   kashmir_blue = kashmir_blue,
   plant_green = plant_green,
-  haze_blue = haze_blue,
 }
 
 M.style = function()
@@ -396,7 +396,7 @@ M.style = function()
   highlight(0, "@type.qualifier", { link = "NightflyViolet" })
   highlight(0, "@variable", { link = "NightflyWhite" })
   highlight(0, "@variable.builtin", { link = "NightflyGreen" })
-  highlight(0, "@variable.member", { fg = haze_blue })
+  highlight(0, "@variable.member", { fg = lavender })
   highlight(0, "@variable.parameter", { link = "NightflyOrchid" })
 
   -- Neovim LEGACY Tree-sitter (Neovim 0.8, 0.9)
