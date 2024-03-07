@@ -1,75 +1,123 @@
--------------------------------------------------------------------------------
--- 
--- Comment
---
--------------------------------------------------------------------------------
+-- Bootstrap and install lazy.nvim as the Neovim plugin manager.
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  print("Bootstrapping lazy.nvim, please wait until installation is finished")
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable",
+    lazypath,
+  })
+end
+vim.opt.rtp:prepend(lazypath)
 
--- import the fellas
-local lpeg = require 'lpeg'
+local lazy = require("lazy")
 
-local leg     = require 'leg'
-local parser  = leg.parser
+-- Configuration.
+local configuration = {
+  install = {
+    colorscheme = { "nightfly" },
+  },
+  performance = {
+    rtp = {
+      disabled_plugins = {
+        "gzip", "netrwPlugin", "rplugin", "tarPlugin", "tohtml", "tutor",
+        "zipPlugin",
+      },
+    },
+  },
+  ui = {
+    border = "single",
+  },
+}
 
--- aliasing...
-local Cs, V, P = lpeg.Cs, lpeg.V, lpeg.P
+-- Plugins.
+lazy.setup({
+  -----------------------------
+  -- Colorscheme plugins
+  -----------------------------
+  { "catppuccin/nvim", name = "catppuccin", lazy = true },
+  { "rebelot/kanagawa.nvim", lazy = true },
+  { "EdenEast/nightfox.nvim", lazy = true },
+  { "folke/tokyonight.nvim", lazy = true },
 
--- arguments
-local args = { ... }
-
--- the code to parse
-subject = args[1] or [==[
-  local a, b = x'BOOM, baby!' + 2
-  
-  function hit_it(t) -- and quit it
-    local points = 0
-    
-    for i, v in ipairs(t) do
-      print "time!"
-      
-      points = points + (math.random() < 0.5) and 3 or 2
+  -----------------------------
+  -- Style plugins
+  -----------------------------
+  {
+    "nvim-tree/nvim-web-devicons",
+    event = "VeryLazy",
+    config = function()
+      require("config.devicons")
     end
-    
-    return points
-  end
-]==]
+  },
 
--- now the magic happens....
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    event = "BufReadPre",
+    config = function()
+      require("config.indent-blankline")
+    end,
+  },
 
--- the colors...
-local commentColor  = '#808080' -- gray
-local stringColor   = '#008000' -- dark green
-local numberColor   = '#B00000' -- red
-local keywordColor  = '#0000FF' -- blue
+  -----------------------------
+  -- Fuzzy finding plugins
+  -----------------------------
+  {
+    "nvim-telescope/telescope.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+    },
+    keys = { "<Space>" },
+    config = function()
+      require("config.telescope")
+    end,
+  },
 
--- the patterns...
-local COMMENT = parser.COMMENT / function (c) 
-  return '<font color="'..commentColor..'"> '..c..'</font>' 
-end
+  -----------------------------
+  -- Filesystem plugins
+  -----------------------------
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "MunifTanjim/nui.nvim",
+      {
+        "s1n7ax/nvim-window-picker",
+        version = "2.*",
+        config = function()
+          require("config.window-picker")
+        end,
+      },
+    },
+    event = "VeryLazy",
+    config = function()
+      require("config.neo-tree")
+    end,
+  },
 
-local STRING = parser.STRING / function (c) 
-  return '<font color="'..stringColor..'">'..c..'</font>' 
-end
+  -----------------------------
+  -- Treesitter plugins
+  -----------------------------
+  {
+    "nvim-treesitter/nvim-treesitter",
+    tag = "v0.9.1",
+    -- commit = "f2778bd",
+    build = ":TSUpdate",
+    dependencies = {
+      "windwp/nvim-ts-autotag",
+      "JoosepAlviste/nvim-ts-context-commentstring",
+      { "RRethy/nvim-treesitter-endwise", name = "nvim-ts-endwise" },
+    },
+    event = "BufReadPost",
+    config = function()
+      require("config.treesitter")
+    end,
+  },
 
-local NUMBER = parser.NUMBER / function (c)
-  return '<i><font color="'..numberColor..'">'..c..'</font></i>' 
-end
-
-local KEYWORD = parser.KEYWORD / function (c) 
-  return '<b><font color="'..keywordColor..'">'..c..'</font></b>' 
-end
-
--- opening tags
-local BOF = parser.BOF / function () return '<html><body><pre>' end
-
--- closing tags
-local EOF = parser.EOF / function () return '</pre></body></html>' end
-
--- this is here just to keep identifiers like bin2c from being parsed by NUMBER
-local ID = parser.IDENTIFIER
-
--- the substitution pattern. BOF and EOF are there to ensure that the
--- opening and closing tags are there to make the result a valid HTML page.
-local patt = Cs( BOF* (COMMENT + STRING + ID + NUMBER + KEYWORD + 1)^0 *EOF )
-
--- voil!
-print(patt:match(subject))
+}, configuration)
