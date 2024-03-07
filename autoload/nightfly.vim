@@ -173,7 +173,7 @@ function! nightfly#Style() abort
     exec 'highlight Statement guifg=' . s:violet . ' gui=none'
 
     " struct, union, enum, typedef
-    highlight! link Structure NightflyIndigo
+    highlight! link Structure NightflyBlue
 
     " Statusline, splits and tab lines
     exec 'highlight StatusLine cterm=none guibg=' . s:slate_blue . ' guifg=' . s:white . ' gui=none'
@@ -266,6 +266,9 @@ function! nightfly#Style() abort
     " Language styling
     "-----------------------------------------------------------------------
 
+    " C
+    highlight! link cTypedef NightflyViolet
+
     " C++
     highlight! link cppAccess NightflyViolet
     highlight! link cppCast NightflyTurquoise
@@ -273,8 +276,8 @@ function! nightfly#Style() abort
     highlight! link cppExceptions NightflyGreen
     highlight! link cppModifier NightflyViolet
     highlight! link cppOperator NightflyGreen
-    highlight! link cppSTLconstant NightflyIndigo
-    highlight! link cppSTLnamespace NightflyIndigo
+    highlight! link cppSTLconstant NightflyBlue
+    highlight! link cppSTLnamespace NightflyTurquoise
     highlight! link cppStatement NightflyTurquoise
     highlight! link cppStructure NightflyViolet
 
@@ -285,20 +288,20 @@ function! nightfly#Style() abort
 
     " Clojure
     highlight! link clojureDefine NightflyViolet
-    highlight! link clojureKeyword NightflyTurquoise
-    highlight! link clojureMacro NightflyOrange
-    highlight! link clojureParen NightflyBlue
-    highlight! link clojureSpecial NightflyViolet
+    highlight! link clojureKeyword NightflyPurple
+    highlight! link clojureSpecial NightflyTurquoise
 
     " CoffeeScript
-    highlight! link coffeeConstant NightflyOrange
-    highlight! link coffeeGlobal NightflyWatermelon
-    highlight! link coffeeKeyword NightflyOrange
+    highlight! link coffeeConstant NightflyEmerald
+    highlight! link coffeeGlobal NightflyTurquoise
     highlight! link coffeeObject NightflyEmerald
     highlight! link coffeeObjAssign NightflyBlue
     highlight! link coffeeSpecialIdent NightflyTurquoise
     highlight! link coffeeSpecialVar NightflyBlue
-    highlight! link coffeeStatement NightflyOrange
+
+    " Crystal
+    highlight! link crystalDefine NightflyViolet
+    highlight! link crystalPseudoVariable NightflyGreen
 
     " CSS/SCSS
     highlight! link cssAtRule NightflyViolet
@@ -306,8 +309,8 @@ function! nightfly#Style() abort
     highlight! link cssBraces NightflyWhite
     highlight! link cssClassName NightflyEmerald
     highlight! link cssClassNameDot NightflyViolet
-    highlight! link cssColor NightflyTurquoise
-    highlight! link cssIdentifier NightflyBlue
+    highlight! link cssColor NightflyGreen
+    highlight! link cssIdentifier NightflyEmerald
     highlight! link cssProp NightflyLavender
     highlight! link cssTagName NightflyBlue
     highlight! link cssUnitDecorators NightflyTan
@@ -317,8 +320,6 @@ function! nightfly#Style() abort
     highlight! link scssSelectorName NightflyBlue
 
     " Dart
-    highlight! link dartMetadata NightflyGreen
-    highlight! link dartStorageClass NightflyViolet
     highlight! link dartTypedef NightflyViolet
 
     " Elixir
@@ -330,8 +331,8 @@ function! nightfly#Style() abort
     highlight! link elixirExUnitAssert NightflyGreen
     highlight! link elixirExUnitMacro NightflyBlue
     highlight! link elixirKernelFunction NightflyGreen
-    highlight! link elixirKeyword NightflyOrange
-    highlight! link elixirModuleDefine NightflyBlue
+    highlight! link elixirKeyword NightflyViolet
+    highlight! link elixirModuleDefine NightflyViolet
     highlight! link elixirPrivateDefine NightflyViolet
     highlight! link elixirStringDelimiter NightflyTan
     highlight! link elixirVariable NightflyTurquoise
@@ -339,7 +340,7 @@ function! nightfly#Style() abort
     " Elm
     highlight! link elmLetBlockDefinition NightflyGreen
     highlight! link elmTopLevelDecl NightflyOrange
-    highlight! link elmType NightflyBlue
+    highlight! link elmTypedef NightflyViolet
 
     " Go
     highlight! link goBuiltins NightflyBlue
@@ -360,12 +361,10 @@ function! nightfly#Style() abort
     highlight! link goUnsignedInts NightflyOrange
 
     " Haskell
-    highlight! link haskellDecl NightflyOrange
-    highlight! link haskellDeclKeyword NightflyOrange
-    highlight! link haskellIdentifier NightflyTurquoise
+    highlight! link haskellDecl NightflyViolet
+    highlight! link haskellDeclKeyword NightflyViolet
     highlight! link haskellLet NightflyBlue
-    highlight! link haskellOperators NightflyWatermelon
-    highlight! link haskellType NightflyBlue
+    highlight! link haskellOperators NightflyCranberry
     highlight! link haskellWhere NightflyViolet
 
     " Help
@@ -381,10 +380,11 @@ function! nightfly#Style() abort
     highlight! link htmlEndTag NightflyPurple
     highlight! link htmlH1 NightflyWatermelon
     highlight! link htmlH2 NightflyOrange
-    highlight! link htmlSpecialTagName MoonflyBlue
+    highlight! link htmlSpecialTagName NightflyBlue
     highlight! link htmlTag NightflyGreen
     highlight! link htmlTagN NightflyBlue
     highlight! link htmlTagName NightflyBlue
+    highlight! link htmlTitle NightflyViolet
     highlight! link htmlUnderline NightflyWhite
     if g:nightflyItalics
         exec 'highlight htmlBoldItalic guibg=' . s:black . ' guifg=' . s:orange . ' gui=italic'
@@ -414,32 +414,36 @@ function! nightfly#Style() abort
     highlight! link jsClassKeyword NightflyViolet
     highlight! link jsClassMethodType NightflyEmerald
     highlight! link jsExceptions NightflyEmerald
-    highlight! link jsFrom NightflyOrange
+    highlight! link jsFrom NightflyCranberry
     highlight! link jsFuncBlock NightflyTurquoise
     highlight! link jsFuncCall NightflyBlue
     highlight! link jsFunction NightflyViolet
     highlight! link jsGlobalObjects NightflyGreen
     highlight! link jsModuleAs NightflyOrange
-    highlight! link jsObjectKey NightflyBlue
+    highlight! link jsObjectKey NightflyLavender
     highlight! link jsObjectValue NightflyEmerald
     highlight! link jsOperator NightflyViolet
-    highlight! link jsStorageClass NightflyGreen
+    highlight! link jsStorageClass NightflyViolet
     highlight! link jsTemplateBraces NightflyWatermelon
     highlight! link jsTemplateExpression NightflyTurquoise
     highlight! link jsThis NightflyTurquoise
 
     " JSX, 'MaxMEllon/vim-jsx-pretty' plugin
-    highlight! link jsxAttrib NightflyGreen
+    highlight! link jsxAttrib NightflyTurquoise
     highlight! link jsxClosePunct NightflyPurple
-    highlight! link jsxComponentName NightflyBlue
+    highlight! link jsxComponentName NightflyEmerald
     highlight! link jsxOpenPunct NightflyGreen
     highlight! link jsxTagName NightflyBlue
 
     " Lua
-    highlight! link luaBraces NightflyWatermelon
+    highlight! link luaBraces NightflyEmerald
     highlight! link luaBuiltin NightflyGreen
+    highlight! link luaConstant NightflyWatermelon
     highlight! link luaFuncCall NightflyBlue
+    highlight! link luaFuncKeyword NightflyViolet
+    highlight! link luaLocal NightflyViolet
     highlight! link luaSpecialTable NightflyBlue
+    highlight! link luaSpecialValue NightflyBlue
 
     " Markdown, 'tpope/vim-markdown' plugin
     highlight! link markdownBold NightflyPeach
@@ -468,13 +472,14 @@ function! nightfly#Style() abort
 
     " PHP
     highlight! link phpClass NightflyEmerald
-    highlight! link phpClasses NightflyIndigo
+    highlight! link phpClasses NightflyBlue
     highlight! link phpFunction NightflyBlue
     highlight! link phpParent NightflyWhite
     highlight! link phpType NightflyViolet
 
     " Python
     highlight! link pythonBuiltin NightflyBlue
+    highlight! link pythonClass NightflyEmerald
     highlight! link pythonClassVar NightflyGreen
     highlight! link pythonCoding NightflyBlue
     highlight! link pythonImport NightflyWatermelon
@@ -483,7 +488,7 @@ function! nightfly#Style() abort
     highlight! link pythonStatement NightflyViolet
 
     " Ruby
-    highlight! link rubyAccess NightflyYellow
+    highlight! link rubyAccess NightflyViolet
     highlight! link rubyAssertion NightflyBlue
     highlight! link rubyAttribute NightflyBlue
     highlight! link rubyBlockParameter NightflyGreen
@@ -522,9 +527,10 @@ function! nightfly#Style() abort
     highlight! link rustInvalidBareKeyword NightflyWatermelon
     highlight! link rustKeyword NightflyViolet
     highlight! link rustLifetime NightflyViolet
-    highlight! link rustMacro NightflyGreen
+    highlight! link rustMacro NightflyTurquoise
     highlight! link rustMacroVariable NightflyViolet
-    highlight! link rustModPath NightflyIndigo
+    highlight! link rustModPath NightflyTurquoise
+    highlight! link rustModPathSep NightflyWatermelon
     highlight! link rustObsoleteExternMod NightflyWatermelon
     highlight! link rustObsoleteStorage NightflyWatermelon
     highlight! link rustReservedKeyword NightflyWatermelon
@@ -536,10 +542,10 @@ function! nightfly#Style() abort
     highlight! link rustType NightflyEmerald
 
     " Scala (note, link highlighting does not work, I don't know why)
-    exec 'highlight scalaCapitalWord guifg=' . s:blue
+    exec 'highlight scalaCapitalWord guifg=' . s:emerald
     exec 'highlight scalaCommentCodeBlock guifg=' . s:cadet_blue
-    exec 'highlight scalaInstanceDeclaration guifg=' . s:turquoise
-    exec 'highlight scalaKeywordModifier guifg=' . s:green
+    exec 'highlight scalaInstanceDeclaration guifg=' . s:emerald
+    exec 'highlight scalaKeywordModifier guifg=' . s:violet
     exec 'highlight scalaSpecial guifg=' . s:watermelon
 
     " Shell
@@ -563,7 +569,7 @@ function! nightfly#Style() abort
     highlight! link typescriptOperator NightflyWatermelon
     highlight! link typescriptParens NightflyWhite
     highlight! link typescriptReserved NightflyViolet
-    highlight! link typescriptStorageClass NightflyGreen
+    highlight! link typescriptStorageClass NightflyViolet
 
     " TypeScript (HerringtonDarkholme/yats.vim)
     highlight! link typeScriptModule NightflyBlue
@@ -591,6 +597,7 @@ function! nightfly#Style() abort
     highlight! link typescriptParamImpl NightflyWhite
     highlight! link typescriptStringMethod NightflyBlue
     highlight! link typescriptTry NightflyWatermelon
+    highlight! link typescriptTypeReference NightflyEmerald
     highlight! link typescriptVariable NightflyGreen
     highlight! link typescriptXHRMethod NightflyBlue
 
@@ -615,6 +622,10 @@ function! nightfly#Style() abort
     highlight! link xmlEndTag NightflyBlue
     highlight! link xmlTag NightflyGreen
     highlight! link xmlTagName NightflyBlue
+
+    " Zig
+    highlight! link zigVarDecl NightflyViolet
+    highlight! link zigNull NightflyGreen
 
     "-----------------------------------------------------------------------
     " Plugin styling

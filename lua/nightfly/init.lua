@@ -230,7 +230,7 @@ M.style = function()
   highlight(0, "Statement", { fg = violet })
 
   -- struct, union, enum, typedef
-  highlight(0, "Structure", { link = "NightflyIndigo" })
+  highlight(0, "Structure", { link = "NightflyBlue" })
 
   -- Status, split and tab lines
   highlight(0, "StatusLine", { bg = slate_blue, fg = white })
@@ -631,8 +631,9 @@ M.style = function()
   highlight(0, "markdownCode", { link = "NightflyTan" })
   highlight(0, "markdownCodeDelimiter", { link = "NightflyTan" })
   highlight(0, "markdownError", { link = "NormalNC" })
-  highlight(0, "markdownH1", { link = "NightflyBlue" })
+  highlight(0, "markdownH1", { link = "NightflyEmerald" })
   highlight(0, "markdownH2", { link = "NightflyBlue" })
+  highlight(0, "markdownH3", { link = "NightflyTurquoise" })
   highlight(0, "markdownHeadingRule", { link = "NightflyWatermelon" })
   highlight(0, "markdownItalic", { link = "NightflyOrchid" })
   highlight(0, "markdownUrl", { link = "NightflyPurple" })
