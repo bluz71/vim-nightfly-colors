@@ -493,7 +493,6 @@ function! nightfly#Style() abort
     highlight! link rubyAttribute NightflyBlue
     highlight! link rubyBlockParameter NightflyGreen
     highlight! link rubyCallback NightflyBlue
-    highlight! link rubyClassName NightflyEmerald
     highlight! link rubyDefine NightflyViolet
     highlight! link rubyEntities NightflyBlue
     highlight! link rubyExceptional NightflyOrange
