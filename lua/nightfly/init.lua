@@ -627,6 +627,13 @@ M.style = function()
   highlight(0, "helpHyperTextEntry", { link = "NightflyTurquoise" })
   highlight(0, "helpSectionDelim", { link = "NightflyBlue" })
 
+  -- Man
+  highlight(0, "manHeader", { link = "NightflyEmerald" })
+  highlight(0, "manOptionDesc", { link = "NightflyOrchid" })
+  highlight(0, "manReference", { link = "NightflyGreen" })
+  highlight(0, "manSectionHeading", { link = "NightflyBlue" })
+  highlight(0, "manSubHeading", { link = "NightflyTurquoise" })
+
   -- Markdown, 'tpope/vim-markdown' plugin
   highlight(0, "markdownBold", { link = "NightflyPeach" })
   highlight(0, "markdownCode", { link = "NightflyTan" })

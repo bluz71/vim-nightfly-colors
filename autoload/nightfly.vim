@@ -445,6 +445,13 @@ function! nightfly#Style() abort
     highlight! link luaSpecialTable NightflyBlue
     highlight! link luaSpecialValue NightflyBlue
 
+    " Man
+    highlight! link manHeader NightflyEmerald
+    highlight! link manOptionDesc NightflyOrchid
+    highlight! link manReference NightflyGreen
+    highlight! link manSectionHeading NightflyBlue
+    highlight! link manSubHeading NightflyTurquoise
+
     " Markdown, 'tpope/vim-markdown' plugin
     highlight! link markdownBold NightflyPeach
     highlight! link markdownCode NightflyTan
