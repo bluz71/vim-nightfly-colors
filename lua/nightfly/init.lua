@@ -643,7 +643,11 @@ M.style = function()
   highlight(0, "markdownH2", { link = "NightflyBlue" })
   highlight(0, "markdownH3", { link = "NightflyTurquoise" })
   highlight(0, "markdownHeadingRule", { link = "NightflyWatermelon" })
-  highlight(0, "markdownItalic", { link = "NightflyOrchid" })
+  if g.nightflyItalics then
+    highlight(0, "markdownItalic", { fg = orchid, italic = true })
+  else
+    highlight(0, "markdownItalic", { link = "NightflyOrchid" })
+  end
   highlight(0, "markdownUrl", { link = "NightflyPurple" })
 
   -- Markdown, 'plasticboy/vim-markdown' plugin

@@ -468,7 +468,11 @@ function! nightfly#Style() abort
     highlight! link markdownH6 NightflyViolet
     highlight! link markdownH6Delimiter NightflyWatermelon
     highlight! link markdownHeadingRule NightflyWatermelon
-    highlight! link markdownItalic NightflyOrchid
+    if g:nightflyItalics
+        exec 'highlight markdownItalic guifg=' . s:orchid . ' gui=italic'
+    else
+        highlight! link markdownItalic NightflyOrchid
+    endif
     highlight! link markdownUrl NightflyPurple
 
     " Markdown, 'plasticboy/vim-markdown' plugin
