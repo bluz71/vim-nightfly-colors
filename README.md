@@ -449,7 +449,7 @@ A collection of _nightfly_-flavoured themes are provided:
   configuration
 
 - [kitty](https://sw.kovidgoyal.net/kitty) users can use
-  [this](extras/kitty-theme.conf) theme
+  [this](extras/nightly-kitty.conf) theme
 
 - [WezTerm](https://wezfurlong.org/wezterm) users can copy
   [this](extras/nightfly-wezterm.toml) theme into the
@@ -461,7 +461,7 @@ A collection of _nightfly_-flavoured themes are provided:
   [this](extras/nightfly.itermcolors) colorscheme
 
 - [Windows Terminal](https://github.com/microsoft/terminal) users can copy
-  [this](extras/windows-terminal-settings.json) theme into their `settings.json`
+  [this](extras/nightfly-windows-terminal.json) theme into their `settings.json`
   configuration
 
 - [fish](https://fishshell.com) shell users can use [this](extras/nightfly.fish) theme
