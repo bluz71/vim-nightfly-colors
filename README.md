@@ -411,16 +411,6 @@ colors](https://gist.github.com/XVilka/8346728). Current versions of Vim &
 Neovim on such terminals support true colors when `set termguicolors` is
 enabled.
 
-A list of popular terminals that support true colors:
-
-- [iTerm2](http://www.iterm2.com)
-- [Windows Terminal](https://github.com/Microsoft/Terminal)
-- [Alacritty](https://github.com/alacritty/alacritty)
-- [kitty](https://sw.kovidgoyal.net/kitty/index.html)
-- [konsole](https://konsole.kde.org)
-- [PuTTY](https://putty.org)
-- [mintty](https://mintty.github.io)
-
 On terminals that support true colors, and when `termguicolors` is set, the
 _nightfly_ colorscheme will emit the correct theme colors.
 
@@ -449,7 +439,7 @@ A collection of _nightfly_-flavoured themes are provided:
   configuration
 
 - [kitty](https://sw.kovidgoyal.net/kitty) users can use
-  [this](extras/nightly-kitty.conf) theme
+  [this](extras/nightfly-kitty.conf) theme
 
 - [WezTerm](https://wezfurlong.org/wezterm) users can copy
   [this](extras/nightfly-wezterm.toml) theme into the
