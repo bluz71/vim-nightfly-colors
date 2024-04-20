@@ -753,7 +753,7 @@ M.style = function()
   highlight(0, "snipLeadingSpaces", { bg = bg, fg = white })
   highlight(0, "MatchWordCur", { bg = bg })
   highlight(0, "fishInnerVariable", { link = "NightflyTurquoise" })
-  highlight(0, "fishParameter", { link = "NightflyLavender" })
+  highlight(0, "fishParameter", { link = "NightflyTurquoise" })
   highlight(0, "fishVariable", { link = "NightflyTurquoise" })
 
   -- FZF plugin
