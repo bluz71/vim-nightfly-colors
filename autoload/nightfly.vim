@@ -473,13 +473,13 @@ function! nightfly#Style() abort
     else
         highlight! link markdownItalic NightflyOrchid
     endif
-    highlight! link markdownUrl NightflyPurple
+    exec 'highlight markdownUrl guifg=' . s:purple. ' cterm=underline gui=underline guisp=' . s:grey_blue
 
     " Markdown, 'plasticboy/vim-markdown' plugin
     highlight! link mkdDelimiter NightflyWhite
     highlight! link mkdLineBreak NormalNC
     highlight! link mkdListItem NightflyBlue
-    highlight! link mkdURL NightflyPurple
+    highlight! link mkdURL markdownUrl
 
     " PHP
     highlight! link phpClass NightflyEmerald
