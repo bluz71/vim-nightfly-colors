@@ -435,6 +435,19 @@ function! nightfly#Style() abort
     highlight! link jsxOpenPunct NightflyGreen
     highlight! link jsxTagName NightflyBlue
 
+    " LaTeX
+    highlight! link texBeginEndName NightflyEmerald
+    highlight! link texCite NightflyGreen
+    highlight! link texDocType NightflyWatermelon
+    highlight! link texDocTypeArgs NightflyOrchid
+    highlight! link texInputFile String
+    highlight! link texMathZoneC NightflyMalibu
+    highlight! link texMathZoneX NightflyMalibu
+    highlight! link texRefZone NightflyGreen
+    highlight! link texSection NightflyLavender
+    highlight! link texTypeStyle NightflyYellow
+    highlight! link texZone NightflyLavender
+
     " Lua
     highlight! link luaBraces NightflyEmerald
     highlight! link luaBuiltin NightflyGreen
