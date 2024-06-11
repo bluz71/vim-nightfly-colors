@@ -792,25 +792,23 @@ function! nightfly#Style() abort
     highlight! link SignifySignDelete NightflyRed
 
     " FZF plugin
-    exec 'highlight fzf1 guifg=' . s:watermelon . ' guibg=' . s:slate_blue
-    exec 'highlight fzf2 guifg=' . s:blue . ' guibg=' . s:slate_blue
-    exec 'highlight fzf3 guifg=' . s:green . ' guibg=' . s:slate_blue
-    exec 'highlight fzfNormal guifg=' . s:ash_blue
-    exec 'highlight fzfFgPlus guifg=' . s:white_blue
-    exec 'highlight fzfBorder guifg=' . s:slate_blue
-    exec 'highlight fzfSubstring guifg=' . s:orange
+    exec 'highlight FzfBorder guifg=' . s:slate_blue
+    exec 'highlight FzfFgPlus guifg=' . s:white_blue
+    exec 'highlight FzfNormal guifg=' . s:ash_blue
+    exec 'highlight FzfPrompt guifg=' . s:blue . ' guibg=' . s:slate_blue
+    exec 'highlight FzfSubstring guifg=' . s:orange
     let g:fzf_colors = {
-      \  'fg':      ['fg', 'fzfNormal'],
+      \  'fg':      ['fg', 'FzfNormal'],
       \  'bg':      ['bg', 'Normal'],
-      \  'hl':      ['fg', 'fzfSubstring'],
-      \  'fg+':     ['fg', 'fzfFgPlus'],
+      \  'hl':      ['fg', 'FzfSubstring'],
+      \  'fg+':     ['fg', 'FzfFgPlus'],
       \  'bg+':     ['bg', 'Pmenu'],
-      \  'hl+':     ['fg', 'fzfSubstring'],
+      \  'hl+':     ['fg', 'FzfSubstring'],
       \  'info':    ['fg', 'String'],
-      \  'border':  ['fg', 'fzfBorder'],
-      \  'prompt':  ['fg', 'fzf2'],
+      \  'border':  ['fg', 'FzfBorder'],
+      \  'prompt':  ['fg', 'FzfPrompt'],
       \  'pointer': ['fg', 'Exception'],
-      \  'marker':  ['fg', 'StorageClass'],
+      \  'marker':  ['fg', 'FzfSubstring'],
       \  'spinner': ['fg', 'Type'],
       \  'header':  ['fg', 'CursorLineNr']
       \}
