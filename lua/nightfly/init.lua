@@ -757,25 +757,23 @@ M.style = function()
     highlight(0, "fishVariable", { link = "NightflyTurquoise" })
 
     -- FZF plugin
-    highlight(0, "fzf1", { fg = M.palette.watermelon, bg = M.palette.slate_blue })
-    highlight(0, "fzf2", { fg = M.palette.blue, bg = M.palette.slate_blue })
-    highlight(0, "fzf3", { fg = M.palette.green, bg = M.palette.slate_blue })
-    highlight(0, "fzfNormal", { fg = M.palette.ash_blue })
-    highlight(0, "fzfFgPlus", { fg = M.palette.white_blue })
-    highlight(0, "fzfBorder", { fg = M.palette.slate_blue })
-    highlight(0, "fzfSubstring", { fg = M.palette.orange })
+    highlight(0, "FzfBorder", { fg = M.palette.slate_blue })
+    highlight(0, "FzfFgPlus", { fg = M.palette.white_blue })
+    highlight(0, "FzfNormal", { fg = M.palette.ash_blue })
+    highlight(0, "FzfPrompt", { fg = M.palette.blue, bg = M.palette.slate_blue })
+    highlight(0, "FzfSubstring", { fg = M.palette.orange })
     g.fzf_colors = {
-        ["fg"] = { "fg", "fzfNormal" },
+        ["fg"] = { "fg", "FzfNormal" },
         ["bg"] = { "bg", "Normal" },
-        ["hl"] = { "fg", "fzfSubstring" },
-        ["fg+"] = { "fg", "fzfFgPlus" },
+        ["hl"] = { "fg", "FzfSubstring" },
+        ["fg+"] = { "fg", "FzfFgPlus" },
         ["bg+"] = { "bg", "Pmenu" },
-        ["hl+"] = { "fg", "fzfSubstring" },
+        ["hl+"] = { "fg", "FzfSubstring" },
         ["info"] = { "fg", "String" },
-        ["border"] = { "fg", "fzfBorder" },
-        ["prompt"] = { "fg", "fzf2" },
+        ["border"] = { "fg", "FzfBorder" },
+        ["prompt"] = { "fg", "FzfPrompt" },
         ["pointer"] = { "fg", "Exception" },
-        ["marker"] = { "fg", "StorageClass" },
+        ["marker"] = { "fg", "FzfSubstring" },
         ["spinner"] = { "fg", "Type" },
         ["header"] = { "fg", "CursorLineNr" },
     }
@@ -1194,6 +1192,25 @@ M.style = function()
     highlight(0, "NvCheatsheetOrange", { bg = M.palette.orange, fg = M.palette.dark_blue })
     highlight(0, "NvCheatsheetPurple", { link = "NightflyPurpleMode" })
     highlight(0, "NvCheatsheetMagenta", { bg = M.palette.violet, fg = M.palette.dark_blue })
+    
+    -- fzf-lua
+    highlight(0, "FzfLuaBorder", { link = "FloatBorder" })
+    highlight(0, "FzfLuaBufFlagAlt", { link = "NightflyTurquoise" })
+    highlight(0, "FzfLuaBufFlagCur", { link = "NightflyOrange" })
+    highlight(0, "FzfLuaBufNr", { link = "NightflyTan" })
+    highlight(0, "FzfLuaFzfHeader", { link = "NightflyBlue" })
+    highlight(0, "FzfLuaFzfInfo", { link = "String" })
+    highlight(0, "FzfLuaFzfMarker", { link = "NightflyOrange" })
+    highlight(0, "FzfLuaFzfPointer", { link = "NightflyWatermelon" })
+    highlight(0, "FzfLuaFzfPrompt", { link = "NightflyBlue" })
+    highlight(0, "FzfLuaFzfSpinner", { link = "NightflyEmerald" })
+    highlight(0, "FzfLuaHeaderBind", { link = "NightflyGreen" })
+    highlight(0, "FzfLuaHeaderText", { link = "NightflyTurquoise" })
+    highlight(0, "FzfLuaLiveSym", { link = "NightflyGreen" })
+    highlight(0, "FzfLuaPathColNr", { link = "NightflyMalibu" })
+    highlight(0, "FzfLuaTabMarker", { link = "NightflyTan" })
+    highlight(0, "FzfLuaTabTitle", { link = "NightflyMalibu" })
+    highlight(0, "FzfLuaTitle", { link = "FloatTitle" })
 end
 
 return M
