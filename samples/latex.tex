@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{csquotes}
+\usepackage{natbib}
+\title{Sample Document}
+\author{Author Name}
+\begin{document}
+\maketitle
+\section{Introduction}
+This is a sample document to illustrate the issue. You can use \textit{italic} and \textbf{bold} text. Here is a quote: \enquote{This is an example quote.}
+
+\begin{equation}
+E = mc^2
+\end{equation}
+
+Here is a citation: \cite[23]{einstein1935can} and an autocite: ~\autocite[23]{einstein1935can}.
+
+\begin{itemize}
+    \item First item
+    \item Second item
+\end{itemize}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Column 1 & Column 2 \\
+        \hline
+        Data 1 & Data 2 \\
+        Data 3 & Data 4 \\
+        \hline
+    \end{tabular}
+    \caption{Sample Table}
+    \label{tab:sample}
+\end{table}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{example-image}
+    \caption{Sample Figure}
+    \label{fig:sample}
+\end{figure}
+
+\end{document}
