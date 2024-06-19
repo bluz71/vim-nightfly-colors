@@ -810,7 +810,8 @@ function! nightfly#Style() abort
       \  'pointer': ['fg', 'Exception'],
       \  'marker':  ['fg', 'FzfSubstring'],
       \  'spinner': ['fg', 'Type'],
-      \  'header':  ['fg', 'CursorLineNr']
+      \  'header':  ['fg', 'CursorLineNr'],
+      \  'gutter':  ['bg', 'Normal']
       \}
 
     " mistfly-statusline plugin

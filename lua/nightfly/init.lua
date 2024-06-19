@@ -792,6 +792,7 @@ M.style = function()
     ["marker"] = { "fg", "FzfSubstring" },
     ["spinner"] = { "fg", "Type" },
     ["header"] = { "fg", "CursorLineNr" },
+    ["gutter"] = { "bg", "Normal" },
   }
 
   -- mistfly-statusline plugin
