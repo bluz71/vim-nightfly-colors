@@ -870,8 +870,9 @@ M.style = function()
   --   sign column
   highlight(0, "GitSignsAdd", { link = "NightflyEmerald" })
   highlight(0, "GitSignsChange", { link = "NightflyMalibu" })
-  highlight(0, "GitSignsChangeDelete", { link = "NightflyOrange" })
+  highlight(0, "GitSignsChangedelete", { link = "NightflyOrange" })
   highlight(0, "GitSignsDelete", { link = "NightflyRed" })
+  highlight(0, "GitSignsTopdelete", { link = "NightflyRed" })
   highlight(0, "GitSignsUntracked", { link = "NightflySteelBlue" })
   --   line highlights
   highlight(0, "GitSignsAddLn", { bg = deep_blue })
