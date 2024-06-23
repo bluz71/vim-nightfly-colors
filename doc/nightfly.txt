@@ -160,11 +160,29 @@ configuration:
 nightflyPalette~                                            *nightfly.palette*
 
 The `palette` field returns a table of internal theme colors; useful for
-constructing custom statuslines and the like. Note, this is only available in
-Neovim.
+constructing custom statuslines and the like.
+
+Note, this field is only available in Neovim.
 
 >lua
   require("nightfly").palette
+<
+
+------------------------------------------------------------------------------
+custom_colors~                                        *nightfly.custom_colors*
+
+The `custom_colors` function allows customization of individual theme colors.
+This needs to occur prior to invoking the colorscheme. The full list of
+available theme colors is provided by the `palette` field.
+
+Note, this function is only available in Neovim.
+
+>lua
+  require("nightfly").custom_colors({
+    bg = "#161616",
+    violet = "#ff74b8",
+  })
+  vim.cmd([[colorscheme nightfly]])
 <
 
 vim:tw=78:ts=8:noet:ft=help:norl:

@@ -1230,4 +1230,42 @@ M.style = function()
   highlight(0, "FzfLuaTitle", { link = "FloatTitle" })
 end
 
+-- User customization of theme colors.
+--
+M.custom_colors = function(colors)
+  black = colors.black and colors.black or M.palette.black
+  white = colors.white and colors.white or M.palette.white
+  bg = colors.bg and colors.bg or M.palette.bg
+  black_blue = colors.black_blue and colors.black_blue or M.palette.black_blue
+  dark_blue = colors.dark_blue and colors.dark_blue or M.palette.dark_blue
+  deep_blue = colors.deep_blue and colors.deep_blue or M.palette.deep_blue
+  slate_blue = colors.slate_blue and colors.slate_blue or M.palette.slate_blue
+  pickle_blue = colors.pickle_blue and colors.pickle_blue or M.palette.pickle_blue
+  regal_blue = colors.regal_blue and colors.regal_blue or M.palette.regal_blue
+  steel_blue = colors.steel_blue and colors.steel_blue or M.palette.steel_blue
+  grey_blue = colors.grey_blue and colors.grey_blue or M.palette.grey_blue
+  cadet_blue = colors.cadet_blue and colors.cadet_blue or M.palette.cadet_blue
+  ash_blue = colors.ash_blue and colors.ash_blue or M.palette.ash_blue
+  white_blue = colors.white_blue and colors.white_blue or M.palette.white_blue
+  yellow = colors.yellow and colors.yellow or M.palette.yellow
+  peach = colors.peach and colors.peach or M.palette.peach
+  tan = colors.tan and colors.tan or M.palette.tan
+  orange = colors.orange and colors.orange or M.palette.orange
+  orchid = colors.orchid and colors.orchid or M.palette.orchid
+  red = colors.red and colors.red or M.palette.red
+  watermelon = colors.watermelon and colors.watermelon or M.palette.watermelon
+  purple = colors.purple and colors.purple or M.palette.purple
+  violet = colors.violet and colors.violet or M.palette.violet
+  lavender = colors.lavender and colors.lavender or M.palette.lavender
+  blue = colors.blue and colors.blue or M.palette.blue
+  malibu = colors.malibu and colors.malibu or M.palette.malibu
+  turquoise = colors.turquoise and colors.turquoise or M.palette.turquoise
+  emerald = colors.emerald and colors.emerald or M.palette.emerald
+  green = colors.green and colors.green or M.palette.green
+  cyan_blue = colors.cyan_blue and colors.cyan_blue or M.palette.cyan_blue
+  bay_blue = colors.bay_blue and colors.bay_blue or M.palette.bay_blue
+  kashmir_blue = colors.kashmir_blue and colors.kashmir_blue or M.palette.kashmir_blue
+  plant_green = colors.plant_green and colors.plant_green or M.palette.plant_green
+end
+
 return M
