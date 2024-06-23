@@ -626,6 +626,17 @@ M.style = function()
   -- Legacy language styling
   -------------------------------------------------------------------------
 
+  -- CSV
+  highlight(0, "csvCol0", { link = "NightflyRed" })
+  highlight(0, "csvCol1", { link = "NightflyOrange" })
+  highlight(0, "csvCol2", { link = "NightflyYellow" })
+  highlight(0, "csvCol3", { link = "NightflyGreen" })
+  highlight(0, "csvCol4", { link = "NightflyTurquoise" })
+  highlight(0, "csvCol5", { link = "NightflyBlue" })
+  highlight(0, "csvCol6", { link = "NightflyPurple" })
+  highlight(0, "csvCol7", { link = "NightflyViolet" })
+  highlight(0, "csvCol8", { link = "NightflyLavender" })
+
   -- Help
   highlight(0, "helpCommand", { link = "NightflyOrchid" })
   highlight(0, "helpExample", { link = "NightflyGreen" })

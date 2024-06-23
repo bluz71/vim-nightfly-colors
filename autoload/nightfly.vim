@@ -319,6 +319,17 @@ function! nightfly#Style() abort
     highlight! link sassMedia NightflyViolet
     highlight! link scssSelectorName NightflyBlue
 
+    " CSV
+    highlight! link csvCol0 NightflyRed
+    highlight! link csvCol1 NightflyOrange
+    highlight! link csvCol2 NightflyYellow
+    highlight! link csvCol3 NightflyGreen
+    highlight! link csvCol4 NightflyTurquoise
+    highlight! link csvCol5 NightflyBlue
+    highlight! link csvCol6 NightflyPurple
+    highlight! link csvCol7 NightflyViolet
+    highlight! link csvCol8 NightflyLavender
+
     " Dart
     highlight! link dartTypedef NightflyViolet
 
