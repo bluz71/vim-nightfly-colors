@@ -815,6 +815,7 @@ M.style = function()
 
   -- Coc plugin
   highlight(0, "CocInlayHint", { link = "LspInlayHint" })
+  highlight(0, "CocSemTypeBuiltin", { link = "NightflyWatermelon" })
   highlight(0, "CocSemTypeClass", { link = "NightflyEmerald" })
   highlight(0, "CocSemTypeEnumMember", { link = "NightflyTurquoise" })
   highlight(0, "CocSemTypeNamespace", { link = "NightflyTurquoise" })

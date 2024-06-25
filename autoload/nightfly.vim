@@ -666,6 +666,7 @@ function! nightfly#Style() abort
     "-----------------------------------------------------------------------
 
     " Coc
+    highlight! link CocSemTypeBuiltin NightflyWatermelon
     highlight! link CocSemTypeClass NightflyEmerald
     highlight! link CocSemTypeEnumMember NightflyTurquoise
     highlight! link CocSemTypeNamespace NightflyTurquoise
