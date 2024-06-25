@@ -821,6 +821,10 @@ M.style = function()
   -- Neovim plugin styling
   -------------------------------------------------------------------------
 
+  -- nvim-treesitter-context
+  highlight(0, "TreesitterContext", { bg = black_blue })
+  highlight(0, "TreesitterContextBottom", { underline = true, sp = slate_blue })
+
   -- NvimTree plugin
   highlight(0, "NvimTreeFolderIcon", { link = "NightflyGreyBlue" })
   highlight(0, "NvimTreeFolderName", { link = "NightflyBlue" })
