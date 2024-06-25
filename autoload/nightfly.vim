@@ -665,6 +665,18 @@ function! nightfly#Style() abort
     " Plugin styling
     "-----------------------------------------------------------------------
 
+    " Coc
+    highlight! link CocSemTypeClass NightflyEmerald
+    highlight! link CocSemTypeEnumMember NightflyTurquoise
+    highlight! link CocSemTypeNamespace NightflyTurquoise
+    highlight! link CocSemTypeParameter NightflyOrchid
+    highlight! link CocSemTypeProperty NightflyLavender
+    highlight! link CocSemTypeRegexp NightflyTurquoise
+    highlight! link CocSemTypeStruct NightflyEmerald
+    highlight! link CocSemTypeTypeParameter NightflyOrchid
+    highlight! link CocUnusedHighlight NightflyAshBlue
+    exec 'highlight CocInlayHint guibg=' . s:dark_blue . ' guifg=' . s:grey_blue
+
     " Git commits
     highlight! link gitCommitBranch NightflyBlue
     highlight! link gitCommitDiscardedFile NightflyWatermelon

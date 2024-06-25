@@ -814,8 +814,16 @@ M.style = function()
   highlight(0, "MistflyReplace", { link = "NightflyWatermelonMode" })
 
   -- Coc plugin
-  highlight(0, "CocUnusedHighlight", { link = "NightflyAshBlue" })
   highlight(0, "CocInlayHint", { link = "LspInlayHint" })
+  highlight(0, "CocSemTypeClass", { link = "NightflyEmerald" })
+  highlight(0, "CocSemTypeEnumMember", { link = "NightflyTurquoise" })
+  highlight(0, "CocSemTypeNamespace", { link = "NightflyTurquoise" })
+  highlight(0, "CocSemTypeParameter", { link = "NightflyOrchid" })
+  highlight(0, "CocSemTypeProperty", { link = "NightflyLavender" })
+  highlight(0, "CocSemTypeRegexp", { link = "NightflyTurquoise" })
+  highlight(0, "CocSemTypeStruct", { link = "NightflyEmerald" })
+  highlight(0, "CocSemTypeTypeParameter", { link = "NightflyOrchid" })
+  highlight(0, "CocUnusedHighlight", { link = "NightflyAshBlue" })
 
   -------------------------------------------------------------------------
   -- Neovim plugin styling
