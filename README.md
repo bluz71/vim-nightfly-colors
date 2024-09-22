@@ -455,16 +455,17 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 Extra Themes
 ------------
 
-A collection of _moonfly_-flavoured extra themes are provided:
+A collection of _nightfly_-flavoured extra themes are provided:
 
-| Program                                                   | Extra
-|-----------------------------------------------------------|----------------------------------------------------------------
-| [Alacritty](https://github.com/alacritty/alacritty)       | [extras/alacritty](extras/nightfly-alacritty.toml)
-| [kitty](https://sw.kovidgoyal.net/kitty)                  | [extras/kitty](extras/nightfly-kitty.conf)
-| [WezTerm](https://wezfurlong.org/wezterm)                 | [extras/wezterm](extras/nightfly-wezterm.toml)
-| [iTerm2](https://iterm2.com)                              | [extras/iterm2](extras/nightfly.itermcolors)
-| [Windows Terminal](https://github.com/microsoft/terminal) | [extras/windows-terminal](extras/nightfly-windows-terminal.json)
-| [fish](https://fishshell.com)                             | [extras/fish](extras/nightfly.fish)
+| Program                                                    | Extra
+|------------------------------------------------------------|----------------------------------------------------------------
+| [Alacritty](https://github.com/alacritty/alacritty)        | [extras/alacritty](extras/nightfly-alacritty.toml)
+| [fish](https://fishshell.com)                              | [extras/fish](extras/nightfly.fish)
+| [iTerm2](https://iterm2.com)                               | [extras/iterm2](extras/nightfly.itermcolors)
+| [kitty](https://sw.kovidgoyal.net/kitty)                   | [extras/kitty](extras/nightfly-kitty.conf)
+| [WezTerm](https://wezfurlong.org/wezterm)                  | [extras/wezterm](extras/nightfly-wezterm.toml)
+| [Windows Terminal](https://github.com/microsoft/terminal)  | [extras/windows-terminal](extras/nightfly-windows-terminal.json)
+| [Xresources](https://wiki.archlinux.org/title/X_resources) | [extras/Xresources](extras/nightfly.Xresources)
 
 Terminal Colors
 ---------------
