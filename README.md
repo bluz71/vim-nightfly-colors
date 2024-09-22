@@ -76,8 +76,6 @@ A GUI client or a modern terminal version of Vim or Neovim in a true-color
 terminal is required. Details about true-color terminals are [listed
 here](https://github.com/bluz71/vim-nightfly-colors#true-color-terminals).
 
-_nightfly_ explicitly does **not** support the 256 color `cterm` version of Vim.
-
 Installation
 ------------
 
@@ -457,31 +455,19 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 Extra Themes
 ------------
 
-A collection of _nightfly_-flavoured themes are provided:
+A collection of _moonfly_-flavoured extra themes are provided:
 
-- [Alacritty](https://github.com/alacritty/alacritty) users can copy
-  [this](extras/nightfly-alacritty.toml) theme into their `alacritty.toml`
-  configuration
+| Program                                                   | Extra
+|-----------------------------------------------------------|----------------------------------------------------------------
+| [Alacritty](https://github.com/alacritty/alacritty)       | [extras/alacritty](extras/nightfly-alacritty.toml)
+| [kitty](https://sw.kovidgoyal.net/kitty)                  | [extras/kitty](extras/nightfly-kitty.conf)
+| [WezTerm](https://wezfurlong.org/wezterm)                 | [extras/wezterm](extras/nightfly-wezterm.toml)
+| [iTerm2](https://iterm2.com)                              | [extras/iterm2](extras/nightfly.itermcolors)
+| [Windows Terminal](https://github.com/microsoft/terminal) | [extras/windows-terminal](extras/nightfly-windows-terminal.json)
+| [fish](https://fishshell.com)                             | [extras/fish](extras/nightfly.fish)
 
-- [kitty](https://sw.kovidgoyal.net/kitty) users can use
-  [this](extras/nightfly-kitty.conf) theme
-
-- [WezTerm](https://wezfurlong.org/wezterm) users can copy
-  [this](extras/nightfly-wezterm.toml) theme into the
-  [`colors`](https://wezfurlong.org/wezterm/config/appearance.html#defining-a-color-scheme-in-a-separate-file)
-  directory and then select the _nightfly_ `color_scheme` in their
-  `wezterm.lua` configuration
-
-- _iTerm2_ users on macOS can import
-  [this](extras/nightfly.itermcolors) colorscheme
-
-- [Windows Terminal](https://github.com/microsoft/terminal) users can copy
-  [this](extras/nightfly-windows-terminal.json) theme into their `settings.json`
-  configuration
-
-- [fish](https://fishshell.com) shell users can use [this](extras/nightfly.fish) theme
-
-For other terminals please configure appropriately with the following colors:
+Terminal Colors
+---------------
 
 | Type           | Category        | Value     | Color
 |----------------|-----------------|-----------|------------------------------------------------------
