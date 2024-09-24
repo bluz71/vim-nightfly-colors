@@ -452,10 +452,10 @@ let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 ```
 
-Extra Themes
-------------
+Extras
+------
 
-A collection of _nightfly_-flavoured extra themes:
+A collection of _nightfly_-flavoured extras for various terminals and tools:
 
 | Program                                                    | Extra
 |------------------------------------------------------------|----------------------------------------------------------------

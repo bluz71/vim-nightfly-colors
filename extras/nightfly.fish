@@ -1,3 +1,7 @@
+# nightfly theme for the Fish shell
+#
+# Upstream: github.com/bluz71/vim-nightfly-colors
+
 # Syntax highlighting colors.
 set -g fish_color_autosuggestion 4b6479
 set -g fish_color_cancel 4b6479

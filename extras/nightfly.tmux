@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #
 # nightfly theme
+#
+# Upstream: github.com/bluz71/vim-nightfly-colors
 
 # Set status line, windows, pane and message colors.
 set -g message-style "bg=#092236,fg=#9fa8b6"
