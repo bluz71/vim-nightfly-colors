@@ -463,6 +463,7 @@ A collection of _nightfly_-flavoured extra themes:
 | [fish](https://fishshell.com)                              | [extras/fish](extras/nightfly.fish)
 | [iTerm2](https://iterm2.com)                               | [extras/iterm2](extras/nightfly.itermcolors)
 | [kitty](https://sw.kovidgoyal.net/kitty)                   | [extras/kitty](extras/nightfly-kitty.conf)
+| [tmux](https://github.com/tmux/tmux)                       | [extras/tmux](extras/nightfly.tmux)
 | [WezTerm](https://wezfurlong.org/wezterm)                  | [extras/wezterm](extras/nightfly-wezterm.toml)
 | [Windows Terminal](https://github.com/microsoft/terminal)  | [extras/windows-terminal](extras/nightfly-windows-terminal.json)
 | [Xresources](https://wiki.archlinux.org/title/X_resources) | [extras/Xresources](extras/nightfly.Xresources)
