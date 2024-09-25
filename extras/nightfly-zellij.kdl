@@ -1,0 +1,19 @@
+// nightfly theme for Zellij
+//
+// Upstream: github.com/bluz71/vim-nightfly-colors
+
+themes {
+    nightfly {
+        bg "#011627"
+        fg "#bdc1c6"
+        black "#092236"
+        red "#ff5874"
+        green "#a1cd5e"
+        yellow "#e3d18a"
+        blue "#82aaff"
+        magenta "#c792ea"
+        cyan "#7fdbca"
+        white "#a1aab8"
+        orange "#f09479"
+    }
+}
