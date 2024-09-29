@@ -54,7 +54,7 @@ Neovim & Vim compatible:
 - [Coc.nvim](https://github.com/neoclide/coc.nvim)
 - [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
 - [Fern](https://github.com/lambdalisue/fern.vim)
-- [fzf.vim](https://github.com/junegunn/fzf.vim) (works best with matching [fly16](https://github.com/bluz71/fly16-bat) [bat](https://github.com/sharkdp/bat) theme)
+- [fzf.vim](https://github.com/junegunn/fzf.vim) (works best with matching [fly16](https://github.com/bluz71/fly16-bat) `bat` theme)
 - [lightline](https://github.com/itchyny/lightline.vim)
 - [Tagbar](https://github.com/majutsushi/tagbar)
 - [vim-airline](https://github.com/vim-airline/vim-airline)
@@ -460,10 +460,12 @@ A collection of _nightfly_-flavoured extras for various terminals and tools:
 | Program                                                    | Extra
 |------------------------------------------------------------|----------------------------------------------------------------
 | [Alacritty](https://github.com/alacritty/alacritty)        | [extras/alacritty](extras/nightfly-alacritty.toml)
+| [bat](https://github.com/sharkdp/bat)                      | [fly16](https://github.com/bluz71/fly16-bat)
 | [Fish Shell](https://fishshell.com)                        | [extras/fish](extras/nightfly.fish)
 | [fzf](https://junegunn.github.io/fzf)                      | [extras/fzf](extras/nightfly-fzf.sh)
 | [iTerm2](https://iterm2.com)                               | [extras/iterm2](extras/nightfly.itermcolors)
 | [kitty](https://sw.kovidgoyal.net/kitty)                   | [extras/kitty](extras/nightfly-kitty.conf)
+| [Starship](https://starship.rs/)                           | [extras/starship](extras/nightfly-starship.toml)
 | [tmux](https://github.com/tmux/tmux)                       | [extras/tmux](extras/nightfly.tmux)
 | [WezTerm](https://wezfurlong.org/wezterm)                  | [extras/wezterm](extras/nightfly-wezterm.toml)
 | [Windows Terminal](https://github.com/microsoft/terminal)  | [extras/windows-terminal](extras/nightfly-windows-terminal.json)
