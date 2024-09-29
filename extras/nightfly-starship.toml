@@ -25,12 +25,10 @@ style = "green"
 style = "red"
 
 [terraform]
-style = "violet"
+style = "purple"
 
 [palettes.nightfly]
 fern = "#87d787"
 lavender = "#b0b2f4"
 orange = "#f09479"
 red = "#f07496"
-turquoise = "#7fdbca"
-violet = "#c792ea"
