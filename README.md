@@ -471,6 +471,7 @@ A collection of _nightfly_-flavoured extras for various terminals and tools:
 | [WezTerm](https://wezfurlong.org/wezterm)                  | [extras/wezterm](extras/nightfly-wezterm.toml)
 | [Windows Terminal](https://github.com/microsoft/terminal)  | [extras/windows-terminal](extras/nightfly-windows-terminal.json)
 | [Xresources](https://wiki.archlinux.org/title/X_resources) | [extras/Xresources](extras/nightfly.Xresources)
+| [Yazi](https://yazi-rs.github.io)                          | [nightfly.yazi](https://github.com/tkapias/nightfly.yazi)
 | [Zellij](https://zellij.dev)                               | [extras/zellij](extras/nightfly-zellij.kdl)
 
 Terminal Colors
