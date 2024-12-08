@@ -9,6 +9,9 @@
   <div>
     <button @click="getNewIntent" :class="{ disabled: uiState === 'listening' }"></button>
   </div>
+  <div>
+    <h1 v-text="greeting"></h1>
+  </div>
 </template>
 
 <script>

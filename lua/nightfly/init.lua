@@ -443,6 +443,9 @@ M.style = function()
   highlight(0, "@text.warning", { link = "@comment.warning" })
 
   -- Language specific Tree-sitter overrides.
+  highlight(0, "@attribute.bind.html", { link = "NightflyMalibu" })
+  highlight(0, "@attribute.directive.value.html", { link = "NightflyLavender" })
+  highlight(0, "@attribute.on.html", { link = "NightflyEmerald" })
   highlight(0, "@attribute.zig", { link = "NightflyViolet" })
   highlight(0, "@character.special.vim", { link = "NightflyBlue" })
   highlight(0, "@function.macro.vim", { link = "NightflyBlue" })
