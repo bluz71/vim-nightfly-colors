@@ -465,6 +465,7 @@ A collection of _nightfly_-flavoured extras for various terminals and tools:
 | [bat](https://github.com/sharkdp/bat)                      | [fly16](https://github.com/bluz71/fly16-bat)
 | [Fish Shell](https://fishshell.com)                        | [extras/fish](extras/nightfly.fish)
 | [fzf](https://junegunn.github.io/fzf)                      | [extras/fzf](extras/nightfly-fzf.sh)
+| [Ghostty](https://mitchellh.com/ghostty)                   | [extras/ghostty](extras/nightfly-ghostty.conf)
 | [iTerm2](https://iterm2.com)                               | [extras/iterm2](extras/nightfly.itermcolors)
 | [kitty](https://sw.kovidgoyal.net/kitty)                   | [extras/kitty](extras/nightfly-kitty.conf)
 | [Starship](https://starship.rs/)                           | [extras/starship](extras/nightfly-starship.toml)
