@@ -1369,6 +1369,40 @@ M.style = function()
   highlight(0, "FzfLuaTabMarker", { link = "NightflyTan" })
   highlight(0, "FzfLuaTabTitle", { link = "NightflyMalibu" })
   highlight(0, "FzfLuaTitle", { link = "FloatTitle" })
+
+  -- snacks.nvim
+  --   misc
+  highlight(0, "SnacksWinBar", { link = "NightflyBlue" })
+  highlight(0, "SnacksScratchKey", { link = "DiagnosticInfo" })
+  --   dashboard
+  highlight(0, "SnacksDashboardDesc", { link = "NightflyTurquoise" })
+  highlight(0, "SnacksDashboardDir", { link = "NightflyEmerald" })
+  highlight(0, "SnacksDashboardFile", { link = "NightflyGreen" })
+  highlight(0, "SnacksDashboardFooter", { link = "NightflyBlue" })
+  highlight(0, "SnacksDashboardHeader", { link = "NightflyBlue" })
+  highlight(0, "SnacksDashboardIcon", { link = "NightflyMalibu" })
+  highlight(0, "SnacksDashboardSpecial", { link = "NightflyViolet" })
+  --   notifier
+  highlight(0, "SnacksNotifierInfo", { link = "DiagnosticInfo" })
+  highlight(0, "SnacksNotifierWarn", { link = "DiagnosticWarn" })
+  highlight(0, "SnacksNotifierDebug", { link = "DiagnosticHint" })
+  highlight(0, "SnacksNotifierError", { link = "DiagnosticError" })
+  highlight(0, "SnacksNotifierTrace", { link = "DiagnosticHint" })
+  highlight(0, "SnacksNotifierIconInfo", { link = "DiagnosticInfo" })
+  highlight(0, "SnacksNotifierIconWarn", { link = "DiagnosticWarn" })
+  highlight(0, "SnacksNotifierIconDebug", { link = "DiagnosticHint" })
+  highlight(0, "SnacksNotifierIconError", { link = "DiagnosticError" })
+  highlight(0, "SnacksNotifierIconTrace", { link = "DiagnosticHint" })
+  highlight(0, "SnacksNotifierTitleInfo", { link = "DiagnosticInfo" })
+  highlight(0, "SnacksNotifierTitleWarn", { link = "DiagnosticWarn" })
+  highlight(0, "SnacksNotifierTitleDebug", { link = "DiagnosticHint" })
+  highlight(0, "SnacksNotifierTitleError", { link = "DiagnosticError" })
+  highlight(0, "SnacksNotifierTitleTrace", { link = "DiagnosticHint" })
+  highlight(0, "SnacksBorderTitleInfo", { link = "FloatBorder" })
+  highlight(0, "SnacksBorderTitleWarn", { link = "FloatBorder" })
+  highlight(0, "SnacksBorderTitleDebug", { link = "FloatBorder" })
+  highlight(0, "SnacksBorderTitleError", { link = "FloatBorder" })
+  highlight(0, "SnacksBorderTitleTrace", { link = "FloatBorder" })
 end
 
 -- User customization of theme colors.
