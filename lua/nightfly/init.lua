@@ -1002,7 +1002,7 @@ M.style = function()
   highlight(0, "CmpItemKindUnit", { link = "NightflyTurquoise" })
   highlight(0, "CmpItemKindValue", { link = "NightflyTurquoise" })
   highlight(0, "CmpItemKindVariable", { link = "NightflyTurquoise" })
-  highlight(0, "CmpItemMenu", { link = "NightflyCadetBlue" })
+  highlight(0, "CmpItemMenu", { link = "NightflySteelBlue" })
 
   -- blink.cmp
   highlight(0, "BlinkCmpDocCursorLine", { link = "NightflyCurrentLine" })
