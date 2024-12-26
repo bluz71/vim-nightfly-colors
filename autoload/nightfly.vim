@@ -665,6 +665,29 @@ function! nightfly#Style() abort
     " Plugin styling
     "-----------------------------------------------------------------------
 
+    " ALE plugin
+    if g:nightflyUndercurls
+        highlight! link ALEError NightflyDiagnosticUndercurlError
+        highlight! link ALEWarning NightflyDiagnosticUndercurlWarn
+        highlight! link ALEInfo NightflyDiagnosticUndercurlInfo
+    else
+        highlight! link ALEError NightflyDiagnosticUnderlineError
+        highlight! link ALEWarning NightflyDiagnosticUnderlineWarn
+        highlight! link ALEInfo NightflyDiagnosticUnderlineInfo
+    endif
+    highlight! link ALEErrorSign NightflyRed
+    highlight! link ALEWarningSign NightflyYellow
+    highlight! link ALEInfoSign NightflyMalibu
+    if g:nightflyVirtualTextColor
+        highlight! link ALEVirtualTextError NightflyDiagnosticVirtualTextError
+        highlight! link ALEVirtualTextWarning NightflyDiagnosticVirtualTextWarn
+        highlight! link ALEVirtualTextInfo NightflyDiagnosticVirtualTextInfo
+    else
+        highlight! link ALEVirtualTextError NightflySteelBlue
+        highlight! link ALEVirtualTextWarning NightflySteelBlue
+        highlight! link ALEVirtualTextInfo NightflySteelBlue
+    endif
+
     " Coc
     highlight! link CocSemTypeBuiltin NightflyWatermelon
     highlight! link CocSemTypeClass NightflyEmerald
@@ -677,6 +700,21 @@ function! nightfly#Style() abort
     highlight! link CocSemTypeTypeParameter NightflyOrchid
     highlight! link CocUnusedHighlight NightflyAshBlue
     exec 'highlight CocInlayHint guibg=' . s:dark_blue . ' guifg=' . s:grey_blue
+
+    " fern.vim plugin
+    highlight! link FernBranchSymbol NightflyGreyBlue
+    highlight! link FernLeafSymbol NightflyBlue
+    highlight! link FernLeaderSymbol NightflyCelloBlue
+    highlight! link FernBranchText NightflyBlue
+    highlight! link FernMarkedLine NightflyVisual
+    highlight! link FernMarkedText NightflyWatermelon
+    highlight! link FernRootSymbol NightflyPurple
+    highlight! link FernRootText NightflyPurple
+
+    " fern-git-status.vim plugin
+    highlight! link FernGitStatusBracket NightflyGreyBlue
+    highlight! link FernGitStatusIndex NightflyEmerald
+    highlight! link FernGitStatusWorktree NightflyWatermelon
 
     " Git commits
     highlight! link gitCommitBranch NightflyBlue
@@ -696,12 +734,32 @@ function! nightfly#Style() abort
     highlight! link diffRemoved NightflyRed
     highlight! link diffSubname NightflyBlue
 
-    " Tagbar plugin
-    highlight! link TagbarFoldIcon NightflyCadetBlue
-    highlight! link TagbarVisibilityPublic NightflyGreen
-    highlight! link TagbarVisibilityProtected NightflyGreen
-    highlight! link TagbarVisibilityPrivate NightflyGreen
-    highlight! link TagbarKind NightflyEmerald
+    " GitGutter plugin
+    highlight! link GitGutterAdd NightflyEmerald
+    highlight! link GitGutterChange NightflyMalibu
+    highlight! link GitGutterChangeDelete NightflyOrange
+    highlight! link GitGutterDelete NightflyRed
+
+    " Glyph palette
+    highlight! link GlyphPalette1 NightflyWatermelon
+    highlight! link GlyphPalette2 NightflyEmerald
+    highlight! link GlyphPalette3 NightflyYellow
+    highlight! link GlyphPalette4 NightflyBlue
+    highlight! link GlyphPalette6 NightflyTurquoise
+    highlight! link GlyphPalette7 NightflyWhite
+    highlight! link GlyphPalette9 NightflyWatermelon
+
+    " indentLine plugin
+    if !exists('g:indentLine_defaultGroup') && !exists('g:indentLine_color_gui')
+        let g:indentLine_color_gui = s:deep_blue
+    endif
+
+    " mistfly-statusline plugin
+    highlight! link MistflyNormal NightflyBlueMode
+    highlight! link MistflyInsert NightflyEmeraldMode
+    highlight! link MistflyVisual NightflyPurpleMode
+    highlight! link MistflyCommand NightflyTanMode
+    highlight! link MistflyReplace NightflyWatermelonMode
 
     " NERDTree plugin
     highlight! link NERDTreeClosable NightflyGreyBlue
@@ -726,30 +784,6 @@ function! nightfly#Style() abort
     highlight! link NERDTreeGitStatusRenamed NightflyBlue
     highlight! link NERDTreeGitStatusStaged NightflyBlue
     highlight! link NERDTreeGitStatusUntracked NightflyRed
-
-    " fern.vim plugin
-    highlight! link FernBranchSymbol NightflyGreyBlue
-    highlight! link FernLeafSymbol NightflyBlue
-    highlight! link FernLeaderSymbol NightflyCelloBlue
-    highlight! link FernBranchText NightflyBlue
-    highlight! link FernMarkedLine NightflyVisual
-    highlight! link FernMarkedText NightflyWatermelon
-    highlight! link FernRootSymbol NightflyPurple
-    highlight! link FernRootText NightflyPurple
-
-    " fern-git-status.vim plugin
-    highlight! link FernGitStatusBracket NightflyGreyBlue
-    highlight! link FernGitStatusIndex NightflyEmerald
-    highlight! link FernGitStatusWorktree NightflyWatermelon
-
-    " Glyph palette
-    highlight! link GlyphPalette1 NightflyWatermelon
-    highlight! link GlyphPalette2 NightflyEmerald
-    highlight! link GlyphPalette3 NightflyYellow
-    highlight! link GlyphPalette4 NightflyBlue
-    highlight! link GlyphPalette6 NightflyTurquoise
-    highlight! link GlyphPalette7 NightflyWhite
-    highlight! link GlyphPalette9 NightflyWatermelon
 
     " Misc items
     highlight! link bufExplorerHelp NightflyCadetBlue
@@ -780,40 +814,18 @@ function! nightfly#Style() abort
     highlight! link fishParameter NightflyTurquoise
     highlight! link fishVariable NightflyTurquoise
 
-    " ALE plugin
-    if g:nightflyUndercurls
-        highlight! link ALEError NightflyDiagnosticUndercurlError
-        highlight! link ALEWarning NightflyDiagnosticUndercurlWarn
-        highlight! link ALEInfo NightflyDiagnosticUndercurlInfo
-    else
-        highlight! link ALEError NightflyDiagnosticUnderlineError
-        highlight! link ALEWarning NightflyDiagnosticUnderlineWarn
-        highlight! link ALEInfo NightflyDiagnosticUnderlineInfo
-    endif
-    highlight! link ALEErrorSign NightflyRed
-    highlight! link ALEWarningSign NightflyYellow
-    highlight! link ALEInfoSign NightflyMalibu
-    if g:nightflyVirtualTextColor
-        highlight! link ALEVirtualTextError NightflyDiagnosticVirtualTextError
-        highlight! link ALEVirtualTextWarning NightflyDiagnosticVirtualTextWarn
-        highlight! link ALEVirtualTextInfo NightflyDiagnosticVirtualTextInfo
-    else
-        highlight! link ALEVirtualTextError NightflySteelBlue
-        highlight! link ALEVirtualTextWarning NightflySteelBlue
-        highlight! link ALEVirtualTextInfo NightflySteelBlue
-    endif
-
-    " GitGutter plugin
-    highlight! link GitGutterAdd NightflyEmerald
-    highlight! link GitGutterChange NightflyMalibu
-    highlight! link GitGutterChangeDelete NightflyOrange
-    highlight! link GitGutterDelete NightflyRed
-
     " Signify plugin
     highlight! link SignifySignAdd NightflyEmerald
     highlight! link SignifySignChange NightflyMalibu
     highlight! link SignifySignChangeDelete NightflyOrange
     highlight! link SignifySignDelete NightflyRed
+
+    " Tagbar plugin
+    highlight! link TagbarFoldIcon NightflyCadetBlue
+    highlight! link TagbarVisibilityPublic NightflyGreen
+    highlight! link TagbarVisibilityProtected NightflyGreen
+    highlight! link TagbarVisibilityPrivate NightflyGreen
+    highlight! link TagbarKind NightflyEmerald
 
     " FZF plugin
     exec 'highlight FzfBorder guifg=' . s:slate_blue
@@ -837,20 +849,4 @@ function! nightfly#Style() abort
       \  'header':  ['fg', 'CursorLineNr'],
       \  'gutter':  ['bg', 'Normal']
       \}
-
-    " mistfly-statusline plugin
-    highlight! link MistflyNormal NightflyBlueMode
-    highlight! link MistflyInsert NightflyEmeraldMode
-    highlight! link MistflyVisual NightflyPurpleMode
-    highlight! link MistflyCommand NightflyTanMode
-    highlight! link MistflyReplace NightflyWatermelonMode
-
-    " Coc plugin
-    highlight! link CocUnusedHighlight NightflyAshBlue
-    exec 'highlight CocInlayHint guibg=' . s:dark_blue . ' guifg=' . s:grey_blue
-
-    " indentLine plugin
-    if !exists('g:indentLine_defaultGroup') && !exists('g:indentLine_color_gui')
-        let g:indentLine_color_gui = s:deep_blue
-    endif
 endfunction
