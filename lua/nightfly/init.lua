@@ -712,130 +712,6 @@ M.style = function()
   highlight(0, "xmlTagName", { link = "NightflyBlue" })
 
   -------------------------------------------------------------------------
-  -- Legacy plugin styling
-  -------------------------------------------------------------------------
-
-  -- Git commits
-  highlight(0, "gitCommitBranch", { link = "NightflyBlue" })
-  highlight(0, "gitCommitDiscardedFile", { link = "NightflyWatermelon" })
-  highlight(0, "gitCommitDiscardedType", { link = "NightflyBlue" })
-  highlight(0, "gitCommitHeader", { link = "NightflyPurple" })
-  highlight(0, "gitCommitSelectedFile", { link = "NightflyEmerald" })
-  highlight(0, "gitCommitSelectedType", { link = "NightflyBlue" })
-  highlight(0, "gitCommitUntrackedFile", { link = "NightflyWatermelon" })
-  highlight(0, "gitEmail", { link = "NightflyBlue" })
-
-  -- Git commit diffs
-  highlight(0, "diffAdded", { link = "NightflyGreen" })
-  highlight(0, "diffChanged", { link = "NightflyWatermelon" })
-  highlight(0, "diffIndexLine", { link = "NightflyWatermelon" })
-  highlight(0, "diffLine", { link = "NightflyBlue" })
-  highlight(0, "diffRemoved", { link = "NightflyRed" })
-  highlight(0, "diffSubname", { link = "NightflyBlue" })
-
-  -- Tagbar plugin
-  highlight(0, "TagbarFoldIcon", { link = "NightflyCadetBlue" })
-  highlight(0, "TagbarVisibilityPublic", { link = "NightflyGreen" })
-  highlight(0, "TagbarVisibilityProtected", { link = "NightflyGreen" })
-  highlight(0, "TagbarVisibilityPrivate", { link = "NightflyGreen" })
-  highlight(0, "TagbarKind", { link = "NightflyEmerald" })
-
-  -- fern.vim plugin
-  highlight(0, "FernBranchSymbol", { link = "NightflyGreyBlue" })
-  highlight(0, "FernLeafSymbol", { link = "NightflyBlue" })
-  highlight(0, "FernLeaderSymbol", { link = "NightflyCelloBlue" })
-  highlight(0, "FernBranchText", { link = "NightflyBlue" })
-  highlight(0, "FernMarkedLine", { link = "NightflyVisual" })
-  highlight(0, "FernMarkedText", { link = "NightflyWatermelon" })
-  highlight(0, "FernRootSymbol", { link = "NightflyPurple" })
-  highlight(0, "FernRootText", { link = "NightflyPurple" })
-
-  -- fern-git-status.vim plugin
-  highlight(0, "FernGitStatusBracket", { link = "NightflyGreyBlue" })
-  highlight(0, "FernGitStatusIndex", { link = "NightflyEmerald" })
-  highlight(0, "FernGitStatusWorktree", { link = "NightflyWatermelon" })
-
-  -- Glyph palette
-  highlight(0, "GlyphPalette1", { link = "NightflyWatermelon" })
-  highlight(0, "GlyphPalette2", { link = "NightflyEmerald" })
-  highlight(0, "GlyphPalette3", { link = "NightflyYellow" })
-  highlight(0, "GlyphPalette4", { link = "NightflyBlue" })
-  highlight(0, "GlyphPalette6", { link = "NightflyTurquoise" })
-  highlight(0, "GlyphPalette7", { link = "NightflyWhite" })
-  highlight(0, "GlyphPalette9", { link = "NightflyWatermelon" })
-
-  -- Misc items
-  highlight(0, "bufExplorerHelp", { link = "NightflyCadetBlue" })
-  highlight(0, "bufExplorerSortBy", { link = "NightflyCadetBlue" })
-  highlight(0, "CleverFDefaultLabel", { link = "NightflyWatermelon" })
-  highlight(0, "CtrlPMatch", { link = "NightflyOrange" })
-  highlight(0, "Directory", { link = "NightflyBlue" })
-  highlight(0, "erubyDelimiter", { link = "NightflyWatermelon" })
-  highlight(0, "jsonKeyword", { link = "NightflyBlue" })
-  highlight(0, "jsonBoolean", { link = "NightflyTurquoise" })
-  highlight(0, "jsonQuote", { link = "NightflyWhite" })
-  highlight(0, "netrwClassify", { link = "NightflyWatermelon" })
-  highlight(0, "netrwDir", { link = "NightflyBlue" })
-  highlight(0, "netrwExe", { link = "NightflyTan" })
-  highlight(0, "tagName", { link = "NightflyTurquoise" })
-  highlight(0, "Cheat40Header", { link = "NightflyBlue" })
-  highlight(0, "yamlBlockMappingKey", { link = "NightflyBlue" })
-  highlight(0, "yamlFlowMappingKey", { link = "NightflyBlue" })
-  if g.nightflyUnderlineMatchParen then
-    highlight(0, "MatchWord", { underline = true, sp = orange })
-  else
-    highlight(0, "MatchWord", { link = "NightflyOrange" })
-  end
-  highlight(0, "snipLeadingSpaces", { bg = bg, fg = white })
-  highlight(0, "MatchWordCur", { bg = bg })
-  highlight(0, "fishInnerVariable", { link = "NightflyTurquoise" })
-  highlight(0, "fishParameter", { link = "NightflyTurquoise" })
-  highlight(0, "fishVariable", { link = "NightflyTurquoise" })
-
-  -- FZF plugin
-  highlight(0, "FzfBorder", { fg = slate_blue })
-  highlight(0, "FzfFgPlus", { fg = white_blue })
-  highlight(0, "FzfNormal", { fg = ash_blue })
-  highlight(0, "FzfPrompt", { fg = blue, bg = slate_blue })
-  highlight(0, "FzfSubstring", { fg = orange })
-  g.fzf_colors = {
-    ["fg"] = { "fg", "FzfNormal" },
-    ["bg"] = { "bg", "Normal" },
-    ["hl"] = { "fg", "FzfSubstring" },
-    ["fg+"] = { "fg", "FzfFgPlus" },
-    ["bg+"] = { "bg", "Pmenu" },
-    ["hl+"] = { "fg", "FzfSubstring" },
-    ["info"] = { "fg", "String" },
-    ["border"] = { "fg", "FzfBorder" },
-    ["prompt"] = { "fg", "FzfPrompt" },
-    ["pointer"] = { "fg", "Exception" },
-    ["marker"] = { "fg", "FzfSubstring" },
-    ["spinner"] = { "fg", "Type" },
-    ["header"] = { "fg", "CursorLineNr" },
-    ["gutter"] = { "bg", "Normal" },
-  }
-
-  -- mistfly-statusline plugin
-  highlight(0, "MistflyNormal", { link = "NightflyBlueMode" })
-  highlight(0, "MistflyInsert", { link = "NightflyEmeraldMode" })
-  highlight(0, "MistflyVisual", { link = "NightflyPurpleMode" })
-  highlight(0, "MistflyCommand", { link = "NightflyTanMode" })
-  highlight(0, "MistflyReplace", { link = "NightflyWatermelonMode" })
-
-  -- Coc plugin
-  highlight(0, "CocInlayHint", { link = "LspInlayHint" })
-  highlight(0, "CocSemTypeBuiltin", { link = "NightflyWatermelon" })
-  highlight(0, "CocSemTypeClass", { link = "NightflyEmerald" })
-  highlight(0, "CocSemTypeEnumMember", { link = "NightflyTurquoise" })
-  highlight(0, "CocSemTypeNamespace", { link = "NightflyTurquoise" })
-  highlight(0, "CocSemTypeParameter", { link = "NightflyOrchid" })
-  highlight(0, "CocSemTypeProperty", { link = "NightflyLavender" })
-  highlight(0, "CocSemTypeRegexp", { link = "NightflyTurquoise" })
-  highlight(0, "CocSemTypeStruct", { link = "NightflyEmerald" })
-  highlight(0, "CocSemTypeTypeParameter", { link = "NightflyOrchid" })
-  highlight(0, "CocUnusedHighlight", { link = "NightflyAshBlue" })
-
-  -------------------------------------------------------------------------
   -- Neovim plugin styling
   -------------------------------------------------------------------------
 
@@ -1403,6 +1279,116 @@ M.style = function()
   highlight(0, "TelescopeSelectionCaret", { link = "NightflyWatermelon" })
   highlight(0, "TelescopeTitle", { link = "NightflySteelBlue" })
   highlight(0, "TelescopeSelection", { bg = regal_blue, fg = white_blue })
+
+  -------------------------------------------------------------------------
+  -- Legacy plugin styling
+  -------------------------------------------------------------------------
+
+  -- Coc plugin
+  highlight(0, "CocInlayHint", { link = "LspInlayHint" })
+  highlight(0, "CocSemTypeBuiltin", { link = "NightflyWatermelon" })
+  highlight(0, "CocSemTypeClass", { link = "NightflyEmerald" })
+  highlight(0, "CocSemTypeEnumMember", { link = "NightflyTurquoise" })
+  highlight(0, "CocSemTypeNamespace", { link = "NightflyTurquoise" })
+  highlight(0, "CocSemTypeParameter", { link = "NightflyOrchid" })
+  highlight(0, "CocSemTypeProperty", { link = "NightflyLavender" })
+  highlight(0, "CocSemTypeRegexp", { link = "NightflyTurquoise" })
+  highlight(0, "CocSemTypeStruct", { link = "NightflyEmerald" })
+  highlight(0, "CocSemTypeTypeParameter", { link = "NightflyOrchid" })
+  highlight(0, "CocUnusedHighlight", { link = "NightflyAshBlue" })
+
+  -- fern.vim plugin
+  highlight(0, "FernBranchSymbol", { link = "NightflyGreyBlue" })
+  highlight(0, "FernLeafSymbol", { link = "NightflyBlue" })
+  highlight(0, "FernLeaderSymbol", { link = "NightflyCelloBlue" })
+  highlight(0, "FernBranchText", { link = "NightflyBlue" })
+  highlight(0, "FernMarkedLine", { link = "NightflyVisual" })
+  highlight(0, "FernMarkedText", { link = "NightflyWatermelon" })
+  highlight(0, "FernRootSymbol", { link = "NightflyPurple" })
+  highlight(0, "FernRootText", { link = "NightflyPurple" })
+
+  -- fern-git-status.vim plugin
+  highlight(0, "FernGitStatusBracket", { link = "NightflyGreyBlue" })
+  highlight(0, "FernGitStatusIndex", { link = "NightflyEmerald" })
+  highlight(0, "FernGitStatusWorktree", { link = "NightflyWatermelon" })
+
+  -- Git commits
+  highlight(0, "gitCommitBranch", { link = "NightflyBlue" })
+  highlight(0, "gitCommitDiscardedFile", { link = "NightflyWatermelon" })
+  highlight(0, "gitCommitDiscardedType", { link = "NightflyBlue" })
+  highlight(0, "gitCommitHeader", { link = "NightflyPurple" })
+  highlight(0, "gitCommitSelectedFile", { link = "NightflyEmerald" })
+  highlight(0, "gitCommitSelectedType", { link = "NightflyBlue" })
+  highlight(0, "gitCommitUntrackedFile", { link = "NightflyWatermelon" })
+  highlight(0, "gitEmail", { link = "NightflyBlue" })
+
+  -- Git commit diffs
+  highlight(0, "diffAdded", { link = "NightflyGreen" })
+  highlight(0, "diffChanged", { link = "NightflyWatermelon" })
+  highlight(0, "diffIndexLine", { link = "NightflyWatermelon" })
+  highlight(0, "diffLine", { link = "NightflyBlue" })
+  highlight(0, "diffRemoved", { link = "NightflyRed" })
+  highlight(0, "diffSubname", { link = "NightflyBlue" })
+
+  -- Glyph palette
+  highlight(0, "GlyphPalette1", { link = "NightflyWatermelon" })
+  highlight(0, "GlyphPalette2", { link = "NightflyEmerald" })
+  highlight(0, "GlyphPalette3", { link = "NightflyYellow" })
+  highlight(0, "GlyphPalette4", { link = "NightflyBlue" })
+  highlight(0, "GlyphPalette6", { link = "NightflyTurquoise" })
+  highlight(0, "GlyphPalette7", { link = "NightflyWhite" })
+  highlight(0, "GlyphPalette9", { link = "NightflyWatermelon" })
+
+  -- Misc items
+  highlight(0, "bufExplorerHelp", { link = "NightflyCadetBlue" })
+  highlight(0, "bufExplorerSortBy", { link = "NightflyCadetBlue" })
+  highlight(0, "CleverFDefaultLabel", { link = "NightflyWatermelon" })
+  highlight(0, "CtrlPMatch", { link = "NightflyOrange" })
+  highlight(0, "Directory", { link = "NightflyBlue" })
+  highlight(0, "erubyDelimiter", { link = "NightflyWatermelon" })
+  highlight(0, "jsonKeyword", { link = "NightflyBlue" })
+  highlight(0, "jsonBoolean", { link = "NightflyTurquoise" })
+  highlight(0, "jsonQuote", { link = "NightflyWhite" })
+  highlight(0, "netrwClassify", { link = "NightflyWatermelon" })
+  highlight(0, "netrwDir", { link = "NightflyBlue" })
+  highlight(0, "netrwExe", { link = "NightflyTan" })
+  highlight(0, "tagName", { link = "NightflyTurquoise" })
+  highlight(0, "Cheat40Header", { link = "NightflyBlue" })
+  highlight(0, "yamlBlockMappingKey", { link = "NightflyBlue" })
+  highlight(0, "yamlFlowMappingKey", { link = "NightflyBlue" })
+  if g.nightflyUnderlineMatchParen then
+    highlight(0, "MatchWord", { underline = true, sp = orange })
+  else
+    highlight(0, "MatchWord", { link = "NightflyOrange" })
+  end
+  highlight(0, "snipLeadingSpaces", { bg = bg, fg = white })
+  highlight(0, "MatchWordCur", { bg = bg })
+  highlight(0, "fishInnerVariable", { link = "NightflyTurquoise" })
+  highlight(0, "fishParameter", { link = "NightflyTurquoise" })
+  highlight(0, "fishVariable", { link = "NightflyTurquoise" })
+
+  -- FZF plugin
+  highlight(0, "FzfBorder", { fg = slate_blue })
+  highlight(0, "FzfFgPlus", { fg = white_blue })
+  highlight(0, "FzfNormal", { fg = ash_blue })
+  highlight(0, "FzfPrompt", { fg = blue, bg = slate_blue })
+  highlight(0, "FzfSubstring", { fg = orange })
+  g.fzf_colors = {
+    ["fg"] = { "fg", "FzfNormal" },
+    ["bg"] = { "bg", "Normal" },
+    ["hl"] = { "fg", "FzfSubstring" },
+    ["fg+"] = { "fg", "FzfFgPlus" },
+    ["bg+"] = { "bg", "Pmenu" },
+    ["hl+"] = { "fg", "FzfSubstring" },
+    ["info"] = { "fg", "String" },
+    ["border"] = { "fg", "FzfBorder" },
+    ["prompt"] = { "fg", "FzfPrompt" },
+    ["pointer"] = { "fg", "Exception" },
+    ["marker"] = { "fg", "FzfSubstring" },
+    ["spinner"] = { "fg", "Type" },
+    ["header"] = { "fg", "CursorLineNr" },
+    ["gutter"] = { "bg", "Normal" },
+  }
 end
 
 -- User customization of theme colors.
