@@ -1038,14 +1038,10 @@ M.style = function()
   highlight(0, "BlinkCmpMenuBorder", { link = "FloatBorder" })
   highlight(0, "BlinkCmpMenuSelection", { link = "PmenuSel" })
 
-  -- Indent Blankline plugin v3 & later
+  -- Indent Blankline plugin
   highlight(0, "IblIndent", { fg = deep_blue, nocombine = true })
   highlight(0, "IblScope", { fg = violet, nocombine = true })
   highlight(0, "IblWhitespace", { fg = deep_blue, nocombine = true })
-  -- Indent Blankline plugin v2 & earlier
-  highlight(0, "IndentBlanklineChar", { link = "IblIndent" })
-  highlight(0, "IndentBlanklineSpaceChar", { link = "IblWhitespace" })
-  highlight(0, "IndentBlanklineSpaceCharBlankline", { link = "IblWhitespace" })
 
   -- Mini.nvim plugin
   highlight(0, "MiniAnimateNormalFloat", { link = "NormalFloat" })
