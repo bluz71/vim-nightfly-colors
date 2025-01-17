@@ -29,6 +29,7 @@ let s:blue         = '#82aaff'
 let s:malibu       = '#87bcff'
 let s:turquoise    = '#7fdbca'
 let s:emerald      = '#21c7a8'
+let s:lime         = '#85dc85'
 let s:green        = '#a1cd5e'
 " Extra colors
 let s:cyan_blue    = '#296596'
@@ -67,6 +68,7 @@ function! nightfly#Style() abort
     exec 'highlight NightflyMalibu guifg=' . s:malibu
     exec 'highlight NightflyTurquoise guifg=' . s:turquoise
     exec 'highlight NightflyEmerald guifg=' . s:emerald
+    exec 'highlight NightflyLime guifg=' . s:lime
     exec 'highlight NightflyGreen guifg=' . s:green
     " Statusline helper colors
     exec 'highlight NightflyBlueMode guibg=' . s:blue . ' guifg=' . s:dark_blue
@@ -793,9 +795,9 @@ function! nightfly#Style() abort
     highlight! link Directory NightflyBlue
     highlight! link erubyDelimiter NightflyWatermelon
     highlight! link HighlightedyankRegion NightflyRegalBlue
-    highlight! link jsonKeyword NightflyBlue
-    highlight! link jsonBoolean NightflyTurquoise
+    highlight! link jsonKeyword NightflyLavender
     highlight! link jsonQuote NightflyWhite
+    highlight! link jsonString NightflyLime
     highlight! link netrwClassify NightflyWatermelon
     highlight! link netrwDir NightflyBlue
     highlight! link netrwExe NightflyTan
