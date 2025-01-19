@@ -228,8 +228,9 @@ Neovim's LSP client, for example:
   vim.diagnostic.config({ float = { border = "single" } })
 ```
 
-:bulb: Likewise, [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) may be
-configured as follows for nicer display when `g:nightflyNormalFloat` is enabled:
+:bulb: The [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) completion plugin may
+be configured as follows for nicer bordered display when `g:nightflyNormalFloat`
+is enabled:
 
 ```lua
 local winhighlight = {
@@ -242,6 +243,18 @@ require('cmp').setup({
   }
 })
 ```
+
+:bulb: Similarly, if using the [blink.cmp](https://github.com/Saghen/blink.cmp)
+completion plugin instead:
+
+```lua
+local winhighlight = "Normal:NormalFloat,FloatBorder:FloatBorder,CursorLine:PmenuSel"
+require("blink.cmp").setup({
+  completion = {
+    menu = { winhighlight = winhighlight },
+    documentation = { window = { winhighlight = winhighlight } },
+  },
+})```
 
 ---
 
