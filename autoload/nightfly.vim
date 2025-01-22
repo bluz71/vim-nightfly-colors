@@ -654,7 +654,7 @@ function! nightfly#Style() abort
     highlight! link vimUserFunc NightflyBlue
 
     " XML
-    highlight! link xmlAttrib NightflyGreen
+    highlight! link xmlAttrib NightflyLime
     highlight! link xmlEndTag NightflyBlue
     highlight! link xmlTag NightflyGreen
     highlight! link xmlTagName NightflyBlue

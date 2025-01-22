@@ -158,9 +158,9 @@ M.style = function()
     g.terminal_color_9 = watermelon
     g.terminal_color_10 = emerald
     g.terminal_color_11 = tan
-    g.terminal_color_12 = blue
+    g.terminal_color_12 = malibu
     g.terminal_color_13 = purple
-    g.terminal_color_14 = turquoise
+    g.terminal_color_14 = lime
     g.terminal_color_15 = white_blue
   end
 
@@ -710,7 +710,7 @@ M.style = function()
   highlight(0, "shVariable", { link = "NightflyTurquoise" })
 
   -- XML
-  highlight(0, "xmlAttrib", { link = "NightflyGreen" })
+  highlight(0, "xmlAttrib", { link = "NightflyLime" })
   highlight(0, "xmlEndTag", { link = "NightflyBlue" })
   highlight(0, "xmlTag", { link = "NightflyGreen" })
   highlight(0, "xmlTagName", { link = "NightflyBlue" })
