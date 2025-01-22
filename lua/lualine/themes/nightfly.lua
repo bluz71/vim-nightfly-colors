@@ -48,6 +48,10 @@ return {
     a = {fg = colors.color6, bg = colors.color5},
     b = {fg = colors.color5, bg = colors.color0}
   },
+  terminal = {
+    a = {fg = colors.color6, bg = colors.color2},
+    b = {fg = colors.color2, bg = colors.color0}
+  },
   inactive = {
     a = {fg = colors.color7, bg = colors.color0},
     b = {fg = colors.color7, bg = colors.color0},
