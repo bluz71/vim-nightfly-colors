@@ -19,6 +19,7 @@ local cello_blue = "#1f4462"
 local regal_blue = "#1d3b53"
 local steel_blue = "#4b6479"
 local grey_blue = "#7c8f8f"
+local graphite_blue = "#768799"
 local cadet_blue = "#a1aab8"
 local ash_blue = "#acb4c2"
 local white_blue = "#d6deeb"
@@ -1248,6 +1249,9 @@ M.style = function()
   highlight(0, "SnacksDashboardHeader", { link = "NightflyBlue" })
   highlight(0, "SnacksDashboardIcon", { link = "NightflyMalibu" })
   highlight(0, "SnacksDashboardSpecial", { link = "NightflyViolet" })
+  --   indent
+  highlight(0, "SnacksIndent", { link = "IblIndent" })
+  highlight(0, "SnacksIndentScope", { link = "IblScope" })
   --   notifier
   highlight(0, "SnacksNotifierInfo", { link = "DiagnosticInfo" })
   highlight(0, "SnacksNotifierWarn", { link = "DiagnosticWarn" })
@@ -1269,6 +1273,13 @@ M.style = function()
   highlight(0, "SnacksBorderTitleDebug", { link = "FloatBorder" })
   highlight(0, "SnacksBorderTitleError", { link = "FloatBorder" })
   highlight(0, "SnacksBorderTitleTrace", { link = "FloatBorder" })
+  --   picker
+  highlight(0, "SnacksPickerCursorLine", { link = "Normal" })
+  highlight(0, "SnacksPickerDir", { fg = graphite_blue })
+  highlight(0, "SnacksPickerInputBorder", { link = "NightflyBlue" })
+  highlight(0, "SnacksPickerListCursorLine", { link = "NightflyVisual" })
+  highlight(0, "SnacksPickerMatch", { link = "NightflyOrange" })
+  highlight(0, "SnacksPickerTitle", { link = "TelescopeTitle" })
 
   -- Telescope plugin
   highlight(0, "TelescopeBorder", { link = "FloatBorder" })
