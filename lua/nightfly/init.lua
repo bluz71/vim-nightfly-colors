@@ -1275,14 +1275,17 @@ M.style = function()
   highlight(0, "SnacksBorderTitleTrace", { link = "FloatBorder" })
   --   picker
   highlight(0, "SnacksPicker", { link = "Normal" })
+  highlight(0, "SnacksPickerCol", { link = "NightflySteelBlue" })
   highlight(0, "SnacksPickerCursorLine", { link = "Normal" })
   highlight(0, "SnacksPickerDir", { fg = graphite_blue })
+  highlight(0, "SnacksPickerGitStatusModified", { link = "NightflyRed" })
   highlight(0, "SnacksPickerInputBorder", { link = "NightflyBlue" })
   highlight(0, "SnacksPickerListCursorLine", { link = "NightflyVisual" })
   highlight(0, "SnacksPickerMatch", { link = "NightflyOrange" })
   highlight(0, "SnacksPickerPrompt", { link = "NightflyBlue" })
   highlight(0, "SnacksPickerSelected", { link = "NightflyWatermelon" })
   highlight(0, "SnacksPickerTitle", { link = "NightflySteelBlue" })
+  highlight(0, "SnacksPickerTree", { link = "NightflySteelBlue" })
 
   -- Telescope plugin
   highlight(0, "TelescopeBorder", { link = "FloatBorder" })
