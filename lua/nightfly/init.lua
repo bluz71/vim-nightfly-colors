@@ -317,6 +317,7 @@ M.style = function()
   highlight(0, "QuickFixLine", { bg = deep_blue })
   highlight(0, "Delimiter", { link = "NightflyWhite" })
   highlight(0, "qfFileName", { link = "NightflyEmerald" })
+  highlight(0, "qfLineNr", { link = "NightflySteelBlue" })
 
   -- Color column (after line 80)
   highlight(0, "ColorColumn", { bg = black_blue })
