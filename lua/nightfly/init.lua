@@ -42,9 +42,10 @@ local lime = "#85dc85"
 local green = "#a1cd5e"
 -- Extra colors
 local cyan_blue = "#296596"
-local bay_blue = "#24567F"
-local kashmir_blue = "#4d618e"
-local plant_green = "#2a4e57"
+local bay_blue = "#24567f"
+local kashmir = "#4d618e"
+local plant = "#2a4e57"
+local bermuda = "#6e8da6"
 
 local M = {}
 
@@ -81,8 +82,9 @@ M.palette = {
   green = green,
   cyan_blue = cyan_blue,
   bay_blue = bay_blue,
-  kashmir_blue = kashmir_blue,
-  plant_green = plant_green,
+  kashmir = kashmir,
+  plant = plant,
+  bermuda = bermuda,
 }
 
 M.style = function()
@@ -326,10 +328,10 @@ M.style = function()
   highlight(0, "Conceal", { bg = none, fg = ash_blue })
 
   -- nvim -d
-  highlight(0, "DiffAdd", { bg = plant_green })
+  highlight(0, "DiffAdd", { bg = plant })
   highlight(0, "DiffChange", { bg = slate_blue })
   highlight(0, "DiffDelete", { bg = slate_blue, fg = steel_blue })
-  highlight(0, "DiffText", { bg = kashmir_blue })
+  highlight(0, "DiffText", { bg = kashmir })
 
   -------------------------------------------------------------------------
   -- Neovim standard styling
@@ -865,7 +867,7 @@ M.style = function()
 
   -- Indent Blankline plugin
   highlight(0, "IblIndent", { fg = deep_blue, nocombine = true })
-  highlight(0, "IblScope", { fg = violet, nocombine = true })
+  highlight(0, "IblScope", { fg = bermuda, nocombine = true })
   highlight(0, "IblWhitespace", { fg = deep_blue, nocombine = true })
 
   -- lazy.nvim plugin
@@ -1464,8 +1466,9 @@ M.custom_colors = function(colors)
   lime = colors.lime and colors.lime or M.palette.lime
   cyan_blue = colors.cyan_blue and colors.cyan_blue or M.palette.cyan_blue
   bay_blue = colors.bay_blue and colors.bay_blue or M.palette.bay_blue
-  kashmir_blue = colors.kashmir_blue and colors.kashmir_blue or M.palette.kashmir_blue
-  plant_green = colors.plant_green and colors.plant_green or M.palette.plant_green
+  kashmir = colors.kashmir and colors.kashmir or M.palette.kashmir
+  plant = colors.plant and colors.plant or M.palette.plant
+  bermuda = colors.bermuda and colors.bermuda or M.palette.bermuda
 end
 
 return M
