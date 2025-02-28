@@ -32,10 +32,10 @@ let s:emerald      = '#21c7a8'
 let s:lime         = '#85dc85'
 let s:green        = '#a1cd5e'
 " Extra colors
-let s:cyan_blue    = '#296596'
+let s:cyan_blue    = '#316394'
 let s:bay_blue     = '#24567F'
-let s:kashmir_blue = '#4d618e'
-let s:plant_green  = '#2a4e57'
+let s:kashmir      = '#4d618e'
+let s:plant        = '#2a4e57'
 
 function! nightfly#Style() abort
     "-----------------------------------------------------------------------
@@ -260,10 +260,10 @@ function! nightfly#Style() abort
     exec 'highlight Conceal guibg=NONE guifg=' . s:ash_blue
 
     " vimdiff/nvim -d
-    exec 'highlight DiffAdd guibg=' . s:plant_green
+    exec 'highlight DiffAdd guibg=' . s:plant
     exec 'highlight DiffChange guibg=' . s:slate_blue
     exec 'highlight DiffDelete guibg=' . s:slate_blue . ' guifg=' . s:steel_blue . ' gui=none'
-    exec 'highlight DiffText guibg=' . s:kashmir_blue
+    exec 'highlight DiffText guibg=' . s:kashmir
 
     "-----------------------------------------------------------------------
     " Language styling

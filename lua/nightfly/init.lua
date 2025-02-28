@@ -41,7 +41,7 @@ local emerald = "#21c7a8"
 local lime = "#85dc85"
 local green = "#a1cd5e"
 -- Extra colors
-local cyan_blue = "#296596"
+local cyan_blue = "#316394"
 local bay_blue = "#24567f"
 local kashmir = "#4d618e"
 local plant = "#2a4e57"
