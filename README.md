@@ -254,7 +254,8 @@ require("blink.cmp").setup({
     menu = { winhighlight = winhighlight },
     documentation = { window = { winhighlight = winhighlight } },
   },
-})```
+})
+```
 
 ---
 
