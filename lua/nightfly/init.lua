@@ -789,7 +789,7 @@ M.style = function()
   highlight(0, "BlinkCmpLabelMatch", { link = "CmpItemAbbrMatch" })
   highlight(0, "BlinkCmpMenu", { link = "NormalFloat" })
   highlight(0, "BlinkCmpMenuBorder", { link = "FloatBorder" })
-  highlight(0, "BlinkCmpMenuSelection", { link = "PmenuSel" })
+  highlight(0, "BlinkCmpMenuSelection", { link = "NightflyVisual" })
 
   -- Bufferline plugin
   highlight(0, "BufferLineTabSelected", { fg = blue })
@@ -1078,8 +1078,8 @@ M.style = function()
   highlight(0, "NoiceFormatTitle", { link = "NightflyWatermelon" })
 
   -- nvim-cmp plugin
-  highlight(0, "CmpItemAbbrMatch", { link = "NightflyTan" })
-  highlight(0, "CmpItemAbbrMatchFuzzy", { link = "NightflyOrange" })
+  highlight(0, "CmpItemAbbrMatch", { link = "NightflyOrchid" })
+  highlight(0, "CmpItemAbbrMatchFuzzy", { link = "CmpItemAbbrMatch" })
   highlight(0, "CmpItemKind", { link = "NightflyWhite" })
   highlight(0, "CmpItemKindClass", { link = "NightflyEmerald" })
   highlight(0, "CmpItemKindColor", { link = "NightflyTurquoise" })
