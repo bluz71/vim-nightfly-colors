@@ -237,8 +237,8 @@ function! nightfly#Style() abort
     exec 'highlight CursorColumn guibg=' . s:dark_blue
     exec 'highlight CursorLine cterm=none guibg=' . s:dark_blue
     highlight! link CursorLineSign CursorLine
-    exec 'highlight Folded guibg=' . s:dark_blue . ' guifg='. s:green
-    exec 'highlight FoldColumn guibg=' . s:slate_blue . ' guifg=' . s:green
+    exec 'highlight Folded guibg=' . s:dark_blue . ' guifg='. s:lime
+    exec 'highlight FoldColumn guibg=' . s:slate_blue . ' guifg=' . s:lime
     exec 'highlight SignColumn guibg=bg guifg=' . s:green
     exec 'highlight Todo guibg=' . s:deep_blue . ' guifg=' . s:yellow
     exec 'highlight SpecialKey guibg=bg guifg=' . s:blue
