@@ -1335,6 +1335,10 @@ M.style = function()
   highlight(0, "CocSemTypeStruct", { link = "NightflyEmerald" })
   highlight(0, "CocSemTypeTypeParameter", { link = "NightflyOrchid" })
   highlight(0, "CocUnusedHighlight", { link = "NightflyAshBlue" })
+  highlight(0, "CocErrorVirtualText", { link = "NightflyRedRow" })
+  highlight(0, "CocWarningVirtualText", { link = "NightflyYellowRow" })
+  highlight(0, "CocInfoVirtualText", { link = "NightflyMalibuRow" })
+  highlight(0, "CocInfoVirtualHint", { link = "NightflyTurquoiseRow" })
 
   -- fern.vim plugin
   highlight(0, "FernBranchSymbol", { link = "NightflyGreyBlue" })
