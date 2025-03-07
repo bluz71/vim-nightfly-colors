@@ -703,6 +703,11 @@ function! nightfly#Style() abort
     highlight! link CocSemTypeTypeParameter NightflyOrchid
     highlight! link CocUnusedHighlight NightflyAshBlue
     exec 'highlight CocInlayHint guibg=' . s:dark_blue . ' guifg=' . s:grey_blue
+    "   Coc virtual text
+    highlight! link CocErrorVirtualText NightflyDiagnosticVirtualTextError
+    highlight! link CocWarningVirtualText NightflyDiagnosticVirtualTextWarn
+    highlight! link CocInfoVirtualText NightflyDiagnosticVirtualTextInfo
+    highlight! link CocHintVirtualText NightflyDiagnosticVirtualTextInfo
 
     " fern.vim plugin
     highlight! link FernBranchSymbol NightflyGreyBlue
