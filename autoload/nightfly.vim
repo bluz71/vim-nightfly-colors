@@ -83,9 +83,17 @@ function! nightfly#Style() abort
     exec 'highlight NightflyDiagnosticUnderlineError gui=underline guisp=' . s:red
     exec 'highlight NightflyDiagnosticUnderlineWarn gui=underline guisp=' . s:yellow
     exec 'highlight NightflyDiagnosticUnderlineInfo gui=underline guisp=' . s:malibu
-    exec 'highlight NightflyDiagnosticVirtualTextError guibg=' . s:dark_blue . ' guifg=' . s:red
-    exec 'highlight NightflyDiagnosticVirtualTextWarn guibg=' . s:dark_blue . ' guifg=' . s:yellow
-    exec 'highlight NightflyDiagnosticVirtualTextInfo guibg=' . s:dark_blue . ' guifg=' . s:malibu
+    if g:nightflyVirtualTextColor
+        exec 'highlight NightflyDiagnosticVirtualTextError guibg=' . s:dark_blue . ' guifg=' . s:red
+        exec 'highlight NightflyDiagnosticVirtualTextWarn guibg=' . s:dark_blue . ' guifg=' . s:yellow
+        exec 'highlight NightflyDiagnosticVirtualTextInfo guibg=' . s:dark_blue . ' guifg=' . s:malibu
+        exec 'highlight NightflyDiagnosticVirtualTextHint guibg=' . s:dark_blue . ' guifg=' . s:turquoise
+    else
+        highlight! link NightflyDiagnosticVirtualTextError NightflySteelBlue
+        highlight! link NightflyDiagnosticVirtualTextWarn NightflySteelBlue
+        highlight! link NightflyDiagnosticVirtualTextInfo NightflySteelBlue
+        highlight! link NightflyDiagnosticVirtualTextHint NightflySteelBlue
+    endif
 
     "-----------------------------------------------------------------------
     " Standard styling
@@ -681,15 +689,9 @@ function! nightfly#Style() abort
     highlight! link ALEErrorSign NightflyRed
     highlight! link ALEWarningSign NightflyYellow
     highlight! link ALEInfoSign NightflyMalibu
-    if g:nightflyVirtualTextColor
-        highlight! link ALEVirtualTextError NightflyDiagnosticVirtualTextError
-        highlight! link ALEVirtualTextWarning NightflyDiagnosticVirtualTextWarn
-        highlight! link ALEVirtualTextInfo NightflyDiagnosticVirtualTextInfo
-    else
-        highlight! link ALEVirtualTextError NightflySteelBlue
-        highlight! link ALEVirtualTextWarning NightflySteelBlue
-        highlight! link ALEVirtualTextInfo NightflySteelBlue
-    endif
+    highlight! link ALEVirtualTextError NightflyDiagnosticVirtualTextError
+    highlight! link ALEVirtualTextWarning NightflyDiagnosticVirtualTextWarn
+    highlight! link ALEVirtualTextInfo NightflyDiagnosticVirtualTextInfo
 
     " Coc
     highlight! link CocSemTypeBuiltin NightflyWatermelon
@@ -707,7 +709,7 @@ function! nightfly#Style() abort
     highlight! link CocErrorVirtualText NightflyDiagnosticVirtualTextError
     highlight! link CocWarningVirtualText NightflyDiagnosticVirtualTextWarn
     highlight! link CocInfoVirtualText NightflyDiagnosticVirtualTextInfo
-    highlight! link CocHintVirtualText NightflyDiagnosticVirtualTextInfo
+    highlight! link CocHintVirtualText NightflyDiagnosticVirtualTextHint
 
     " fern.vim plugin
     highlight! link FernBranchSymbol NightflyGreyBlue
