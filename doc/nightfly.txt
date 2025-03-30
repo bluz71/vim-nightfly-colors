@@ -12,6 +12,7 @@ Default option values:
   let g:nightflyUndercurls = v:true
   let g:nightflyUnderlineMatchParen = v:false
   let g:nightflyVirtualTextColor = v:false
+  let g:nightflySpellErrorColor = v:true
   let g:nightflyWinSeparator = 1
 <
 ------------------------------------------------------------------------------
@@ -127,6 +128,20 @@ initialization file:
 
   " Vimscript initialization file
   let g:nightflyVirtualTextColor = v:true
+<
+------------------------------------------------------------------------------
+nightflySpellErrorColor~                           *g:nightflySpellErrorColor*
+
+The `nightflySpellErrorColor` option specifies whether to display spelling
+errors in color. By default this option is **enabled**. Note, if undercurls
+are enabled, then this option is ignored. If you prefer not to display
+spelling errors in color then add the following to your initialization file:
+>
+  -- Lua initialization file
+  vim.g.nightflySpellErrorColor = false
+
+  " Vimscript initialization file
+  let g:nightflySpellErrorColor = v:false
 <
 ------------------------------------------------------------------------------
 nightflyWinSeparator~                                 *g:nightflyWinSeparator*

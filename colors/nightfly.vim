@@ -29,6 +29,7 @@ let g:nightflyTransparent = get(g:, 'nightflyTransparent', v:false)
 let g:nightflyUndercurls = get(g:, 'nightflyUndercurls', v:true)
 let g:nightflyUnderlineMatchParen = get(g:, 'nightflyUnderlineMatchParen', v:false)
 let g:nightflyVirtualTextColor =  get(g:, 'nightflyVirtualTextColor', v:false)
+let g:nightflySpellErrorColor =  get(g:, 'nightflySpellErrorColor', v:true)
 let g:nightflyWinSeparator = get(g:, 'nightflyWinSeparator', 1)
 
 if has('nvim')

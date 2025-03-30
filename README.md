@@ -151,6 +151,7 @@ let g:lightline = { 'colorscheme': 'nightfly' }
 | [nightflyUndercurls](https://github.com/bluz71/vim-nightfly-colors#nightflyundercurls)                   | Enabled
 | [nightflyUnderlineMatchParen](https://github.com/bluz71/vim-nightfly-colors#nightflyunderlinematchparen) | Disabled
 | [nightflyVirtualTextColor](https://github.com/bluz71/vim-nightfly-colors#nightflyvirtualtextcolor)       | Disabled
+| [nightflySpellErrorColor](https://github.com/bluz71/vim-nightfly-colors#nightflyspellerrorcolor)         | Enabled
 | [nightflyWinSeparator](https://github.com/bluz71/vim-nightfly-colors#nightflywinseparator)               | `1`
 
 ---
@@ -311,6 +312,25 @@ vim.g.nightflyVirtualTextColor = true
 ```vim
 " Vimscript initialization file
 let g:nightflyVirtualTextColor = v:true
+```
+
+---
+
+### nightflySpellErrorColor
+
+The `nightflySpellErrorColor` option specifies whether to display spelling
+errors in color. By default this option is **enabled**. Note, if undercurls are
+enabled, then this option is ignored. If you prefer not to display spelling
+errors in color then add the following to your initialization file:
+
+```lua
+-- Lua initialization file
+vim.g.nightflySpellErrorColor = false
+```
+
+```vim
+" Vimscript initialization file
+let g:nightflySpellErrorColor = v:false
 ```
 
 ---
