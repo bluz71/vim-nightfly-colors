@@ -1,6 +1,6 @@
 *nightfly* A dark midnight theme for classic Vim & modern Neovim
 
-OPTIONS                                                      *nightfly-options*
+OPTIONS                                                     *nightfly-options*
 
 Default option values:
 >
