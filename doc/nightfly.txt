@@ -11,6 +11,7 @@ Default option values:
   let g:nightflyTransparent = v:false
   let g:nightflyUndercurls = v:true
   let g:nightflyUnderlineMatchParen = v:false
+  let g:nightflyVirtualTextColor = v:false
   let g:nightflyWinSeparator = 1
 <
 ------------------------------------------------------------------------------
