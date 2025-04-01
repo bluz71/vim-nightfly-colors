@@ -1,7 +1,7 @@
 " nightfly color scheme for lightline (github.com/itchyny/lightline.vim).
 "
-" URL:     github.com/bluz71/vim-nightfly-colors
-" License: MIT (https://opensource.org/licenses/MIT)
+" URL:      github.com/bluz71/vim-nightfly-colors
+" License:  MIT (https://opensource.org/licenses/MIT)
 
 let s:white      = ['#c3ccdc', 251]
 let s:cadet_blue = ['#a1aab8', 247]
