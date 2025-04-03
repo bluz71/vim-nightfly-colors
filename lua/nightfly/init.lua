@@ -285,12 +285,12 @@ M.style = function()
     highlight(0, "SpellBad", { bg = none, undercurl = true, sp = red })
     highlight(0, "SpellCap", { bg = none, undercurl = true, sp = yellow })
     highlight(0, "SpellRare", { bg = none, undercurl = true, sp = green })
-    highlight(0, "SpellLocal", { bg = none, undercurl = true, sp = blue })
+    highlight(0, "SpellLocal", { bg = none, undercurl = true, sp = malibu })
   else
     highlight(0, "SpellBad", { bg = none, underline = true, sp = red })
     highlight(0, "SpellCap", { bg = none, underline = true, sp = yellow })
     highlight(0, "SpellRare", { bg = none, underline = true, sp = green })
-    highlight(0, "SpellLocal", { bg = none, underline = true, sp = blue })
+    highlight(0, "SpellLocal", { bg = none, underline = true, sp = malibu })
   end
 
   -- Misc

@@ -223,12 +223,12 @@ function! nightfly#Style() abort
         exec 'highlight SpellBad ctermbg=NONE cterm=underline guibg=NONE gui=undercurl guisp=' . s:red
         exec 'highlight SpellCap ctermbg=NONE cterm=underline guibg=NONE gui=undercurl guisp=' . s:yellow
         exec 'highlight SpellRare ctermbg=NONE cterm=underline guibg=NONE gui=undercurl guisp=' . s:green
-        exec 'highlight SpellLocal ctermbg=NONE cterm=underline guibg=NONE gui=undercurl guisp=' . s:blue
+        exec 'highlight SpellLocal ctermbg=NONE cterm=underline guibg=NONE gui=undercurl guisp=' . s:malibu
     else
         exec 'highlight SpellBad ctermbg=NONE cterm=underline guibg=NONE guifg=' . s:red . ' gui=underline guisp=' . s:red
         exec 'highlight SpellCap ctermbg=NONE cterm=underline guibg=NONE guifg=' . s:yellow . ' gui=underline guisp=' . s:yellow
         exec 'highlight SpellRare ctermbg=NONE cterm=underline guibg=NONE guifg=' . s:green . ' gui=underline guisp=' . s:green
-        exec 'highlight SpellLocal ctermbg=NONE cterm=underline guibg=NONE guifg=' . s:blue . ' gui=underline guisp=' . s:blue
+        exec 'highlight SpellLocal ctermbg=NONE cterm=underline guibg=NONE guifg=' . s:malibu . ' gui=underline guisp=' . s:malibu
     endif
 
     " Misc
