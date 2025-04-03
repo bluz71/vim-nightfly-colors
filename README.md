@@ -116,8 +116,8 @@ Statusline
 
 - The _nightfly_ theme supports
   [lightline](https://github.com/itchyny/lightline.vim). To enable the
-  _nightfly_ lightline theme please add the following to your
-  initialization file:
+  _nightfly_ lightline theme please add the following to your initialization
+  file:
 
 ```vim
 let g:lightline = { 'colorscheme': 'nightfly' }
@@ -128,8 +128,8 @@ let g:lightline = { 'colorscheme': 'nightfly' }
   theme will load once vim-airline starts.
 
 - The _nightfly_ theme supports
-  [Lualine](https://github.com/nvim-lualine/lualine.nvim). The
-  _nightfly_ theme will automatically load once Lualine starts.
+  [lualine](https://github.com/nvim-lualine/lualine.nvim). The
+  _nightfly_ theme will load once lualine starts.
 
 - My [linefly](https://github.com/bluz71/nvim-linefly) `statusline` plugin
   supports the _nightfly_ theme.
@@ -409,8 +409,8 @@ True Color Terminals
 
 Many modern terminals support [24-bit true
 colors](https://gist.github.com/XVilka/8346728). Current versions of Vim &
-Neovim on such terminals support true colors when `set termguicolors` is
-enabled.
+Neovim on such terminals support true colors when the `termguicolors` option
+is enabled.
 
 On terminals that support true colors, and when `termguicolors` is set, the
 _nightfly_ colorscheme will emit the correct theme colors.
