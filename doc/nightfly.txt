@@ -28,7 +28,7 @@ add the following to your initialization file:
   let g:nightflyCursorColor = v:true
 <
 ------------------------------------------------------------------------------
-nightflyitalics~                                           *g:nightflyitalics*
+nightflyItalics~                                           *g:nightflyItalics*
 
 The `nightflyItalics` option specifies whether to use italics for comments and
 certain HTML elements in GUI versions of Vim. By default this option is
@@ -42,7 +42,7 @@ to your initialization file:
   let g:nightflyItalics = v:false
 <
 ------------------------------------------------------------------------------
-### nightflyNormalFloat                                *g:nightflyNormalFloat*
+nightflyNormalFloat~                                   *g:nightflyNormalFloat*
 
 The `nightflyNormalFloat` option specifies whether to use nightfly background
 and foreground colors in Neovim floating windows. By default this option is
@@ -61,9 +61,9 @@ nightflyTerminalColors~                             *g:nightflyTerminalColors*
 
 The `nightflyTerminalColors` option specifies whether to use the nightfly
 color palette in `:terminal` windows when `termguicolors` is set. By default
-this option is **enabled**. If you prefer not to use the nightfly color
-palette for the first 16 terminal colors then add the following to your
-initialization file:
+this option is enabled. If you prefer not to use the nightfly color palette
+for the first 16 terminal colors then add the following to your initialization
+file:
 >
   -- Lua initialization file
   vim.g.nightflyTerminalColors = false
@@ -118,7 +118,7 @@ file:
 nightflyVirtualTextColor~                         *g:nightflyVirtualTextColor*
 
 The `nightflyVirtualTextColor` option specifies whether to display diagnostic
-virtual text in color. By default this option is **disabled**. If you want to
+virtual text in color. By default this option is disabled. If you want to
 display diagnostic virtual text in color then add the following to your
 initialization file:
 >
