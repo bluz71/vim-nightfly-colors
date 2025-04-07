@@ -349,6 +349,7 @@ M.style = function()
     highlight(0, "NormalFloat", { bg = dark_blue, fg = white })
   end
   highlight(0, "FloatBorder", { bg = bg, fg = slate_blue })
+  highlight(0, "FloatBorder2", { bg = bg, fg = steel_blue })
   highlight(0, "FloatTitle", { bg = slate_blue, fg = white })
   highlight(0, "WinBar", { bg = deep_blue, fg = white })
   highlight(0, "WinBarNC", { bg = deep_blue, fg = cadet_blue })
