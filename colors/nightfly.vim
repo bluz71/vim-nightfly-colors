@@ -1,26 +1,18 @@
-" Dark Vim/Neovim color scheme.
+" Dark Vim/Neovim colorscheme.
 "
 " URL:      github.com/bluz71/vim-nightfly-colors
 " License:  MIT (https://opensource.org/licenses/MIT)
-
-if has('nvim') && !has('nvim-0.9')
-    lua vim.api.nvim_echo({
-        \ { "nightfly requires Neovim 0.9 or later.\n", "WarningMsg" },
-        \ { "Please use the nightfly 'legacy' branch if you can't upgrade Neovim.\n", "Normal"} },
-        \ false, {})
-    finish
-endif
 
 " Clear highlights and reset syntax.
 highlight clear
 if exists('syntax_on')
     syntax reset
 endif
+
+" Set colorscheme name.
 let g:colors_name='nightfly'
 
-" Enable terminal true-color support.
-set termguicolors
-
+" Define theme options.
 let g:nightflyCursorColor = get(g:, 'nightflyCursorColor', v:false)
 let g:nightflyItalics = get(g:, 'nightflyItalics', v:true)
 let g:nightflyNormalFloat = get(g:, 'nightflyNormalFloat', v:false)
@@ -31,12 +23,12 @@ let g:nightflyUnderlineMatchParen = get(g:, 'nightflyUnderlineMatchParen', v:fal
 let g:nightflyVirtualTextColor =  get(g:, 'nightflyVirtualTextColor', v:false)
 let g:nightflyWinSeparator = get(g:, 'nightflyWinSeparator', 1)
 
+" Load theme style independently for Neovim and Vim.
 if has('nvim')
     lua require("nightfly").style()
 else
+    set termguicolors " Enable Vim true-color support
     call nightfly#Style()
 end
 
-" nightfly is a dark theme. Note, set this at the end for startup performance
-" reasons.
-set background=dark
+set background=dark " nightfly is a dark theme
