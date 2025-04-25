@@ -198,12 +198,12 @@ function! nightfly#Style() abort
         exec 'highlight StatusLineTermNC cterm=none guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue . ' gui=none'
     endif
     exec 'highlight Tabline cterm=none guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue . ' gui=none'
-    exec 'highlight TablineSel cterm=none guibg=' . s:dark_blue . ' guifg=' . s:blue . ' gui=none'
-    exec 'highlight TablineSelSymbol cterm=none guibg=' . s:dark_blue . ' guifg=' . s:emerald . ' gui=none'
+    exec 'highlight TablineSel cterm=none guibg=' . s:black_blue . ' guifg=' . s:blue . ' gui=none'
+    exec 'highlight TablineSelSymbol cterm=none guibg=' . s:black_blue . ' guifg=' . s:emerald . ' gui=none'
     if g:nightflyTransparent
         exec 'highlight TablineFill cterm=none guifg=' . s:slate_blue . ' gui=none'
     else
-        exec 'highlight TablineFill cterm=none guibg=' . s:slate_blue . ' guifg=' . s:slate_blue . ' gui=none'
+        exec 'highlight TablineFill cterm=none guibg=' . s:black_blue . ' guifg=' . s:slate_blue . ' gui=none'
     endif
     if g:nightflyWinSeparator == 0
         exec 'highlight VertSplit cterm=none guibg=' . s:black . ' guifg=' . s:black . ' gui=none'

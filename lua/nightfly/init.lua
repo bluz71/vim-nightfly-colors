@@ -260,12 +260,12 @@ M.style = function()
     highlight(0, "StatusLineTermNC", { bg = slate_blue, fg = cadet_blue })
   end
   highlight(0, "Tabline", { bg = slate_blue, fg = cadet_blue })
-  highlight(0, "TablineSel", { bg = dark_blue, fg = blue })
-  highlight(0, "TablineSelSymbol", { link = "NightflyEmeraldRow" })
+  highlight(0, "TablineSel", { bg = black_blue, fg = blue })
+  highlight(0, "TablineSelSymbol", { bg = black_blue, fg = emerald })
   if g.nightflyTransparent == true then
     highlight(0, "TablineFill", { fg = slate_blue })
   else
-    highlight(0, "TablineFill", { bg = slate_blue, fg = slate_blue })
+    highlight(0, "TablineFill", { bg = black_blue, fg = slate_blue })
   end
   if g.nightflyWinSeparator == 0 then
     highlight(0, "VertSplit", { bg = black, fg = black })
