@@ -13,6 +13,7 @@ end
 local black_blue = "#081e2f"
 local dark_blue = "#092236"
 local deep_blue = "#0e293f"
+local stone_blue = "#252c3f"
 local slate_blue = "#2c3043"
 local pickle_blue = "#38507a"
 local cello_blue = "#1f4462"
@@ -57,6 +58,7 @@ M.palette = {
   black_blue = black_blue,
   dark_blue = dark_blue,
   deep_blue = deep_blue,
+  stone_blue = stone_blue,
   slate_blue = slate_blue,
   pickle_blue = pickle_blue,
   regal_blue = regal_blue,
@@ -254,10 +256,10 @@ M.style = function()
     highlight(0, "StatusLineTerm", { bg = black_blue, fg = white })
     highlight(0, "StatusLineTermNC", { bg = black_blue, fg = cadet_blue })
   else
-    highlight(0, "StatusLine", { bg = slate_blue, fg = white })
-    highlight(0, "StatusLineNC", { bg = slate_blue, fg = cadet_blue })
-    highlight(0, "StatusLineTerm", { bg = slate_blue, fg = white })
-    highlight(0, "StatusLineTermNC", { bg = slate_blue, fg = cadet_blue })
+    highlight(0, "StatusLine", { bg = stone_blue, fg = white })
+    highlight(0, "StatusLineNC", { bg = stone_blue, fg = cadet_blue })
+    highlight(0, "StatusLineTerm", { bg = stone_blue, fg = white })
+    highlight(0, "StatusLineTermNC", { bg = stone_blue, fg = cadet_blue })
   end
   highlight(0, "Tabline", { bg = slate_blue, fg = cadet_blue })
   highlight(0, "TablineSel", { bg = black_blue, fg = blue })
@@ -270,9 +272,9 @@ M.style = function()
   if g.nightflyWinSeparator == 0 then
     highlight(0, "VertSplit", { bg = black, fg = black })
   elseif g.nightflyWinSeparator == 1 then
-    highlight(0, "VertSplit", { bg = slate_blue, fg = slate_blue })
+    highlight(0, "VertSplit", { bg = stone_blue, fg = stone_blue })
   else
-    highlight(0, "VertSplit", { bg = none, fg = slate_blue })
+    highlight(0, "VertSplit", { bg = none, fg = stone_blue })
   end
 
   -- Visual selection
@@ -1389,6 +1391,7 @@ M.custom_colors = function(colors)
   black_blue = colors.black_blue and colors.black_blue or M.palette.black_blue
   dark_blue = colors.dark_blue and colors.dark_blue or M.palette.dark_blue
   deep_blue = colors.deep_blue and colors.deep_blue or M.palette.deep_blue
+  stone_blue = colors.stone_blue and colors.stone_blue or M.palette.stone_blue
   slate_blue = colors.slate_blue and colors.slate_blue or M.palette.slate_blue
   pickle_blue = colors.pickle_blue and colors.pickle_blue or M.palette.pickle_blue
   regal_blue = colors.regal_blue and colors.regal_blue or M.palette.regal_blue
