@@ -46,7 +46,6 @@ function! nightfly#Style() abort
     exec 'highlight NightflyVisual guibg=' . s:regal_blue
     exec 'highlight NightflyWhite guifg=' . s:white
     exec 'highlight NightflyDeepBlue guifg=' . s:deep_blue
-    exec 'highlight NightflySlateBlue guifg=' . s:slate_blue
     exec 'highlight NightflyPickleBlue guifg=' . s:pickle_blue
     exec 'highlight NightflyCelloBlue guifg=' . s:cello_blue
     exec 'highlight NightflyRegalBlue guifg=' . s:regal_blue
