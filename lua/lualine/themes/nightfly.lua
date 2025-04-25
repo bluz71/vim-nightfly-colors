@@ -21,15 +21,16 @@ local colors = {
   -- StatusLineNC foreground.
   color7 = "#a1aab8",
 
-  -- Normal text color.
+  -- Text colors.
   color8 = "#c3ccdc",
+  color9 = "#acb4c2"
 }
 
 return {
   normal = {
     a = { bg = colors.color1, fg = colors.color6 },
     b = { bg = colors.color_bg1, fg = colors.color1 },
-    c = { bg = colors.color_bg2, fg = colors.color8 },
+    c = { bg = colors.color_bg2, fg = colors.color9 },
   },
   insert = {
     a = { bg = colors.color2, fg = colors.color6 },
@@ -54,6 +55,6 @@ return {
   inactive = {
     a = { bg = colors.color_bg1, fg = colors.color7 },
     b = { bg = colors.color_bg1, fg = colors.color7 },
-    c = { bg = colors.color_bg1, fg = colors.color7 },
+    c = { bg = colors.color_bg2, fg = colors.color7 },
   },
 }
