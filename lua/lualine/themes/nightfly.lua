@@ -3,58 +3,57 @@
 -- URL:      github.com/bluz71/vim-nightfly-colors
 -- License:  MIT (https://opensource.org/licenses/MIT)
 
--- LuaFormatter off
 local colors = {
-  -- StatusLine background color.
-  color0 = '#2c3043',
+  -- StatusLine background colors.
+  color_bg1 = "#2c3043",
+  color_bg2 = "#081e2f",
 
   -- Mode colors.
-  color1 = '#82aaff',
-  color2 = '#21c7a8',
-  color3 = '#ae81ff',
-  color4 = '#ecc48d',
-  color5 = '#ff5874',
+  color1 = "#82aaff",
+  color2 = "#21c7a8",
+  color3 = "#ae81ff",
+  color4 = "#ecc48d",
+  color5 = "#ff5874",
 
   -- Mode text color.
-  color6 = '#092236',
+  color6 = "#092236",
 
   -- StatusLineNC foreground.
-  color7 = '#a1aab8',
+  color7 = "#a1aab8",
 
   -- Normal text color.
-  color8 = '#c3ccdc',
+  color8 = "#c3ccdc",
 }
 
--- LuaFormatter on
 return {
   normal = {
-    a = {fg = colors.color6, bg = colors.color1},
-    b = {fg = colors.color1, bg = colors.color0},
-    c = {fg = colors.color8, bg = colors.color0}
+    a = { bg = colors.color1, fg = colors.color6 },
+    b = { bg = colors.color_bg1, fg = colors.color1 },
+    c = { bg = colors.color_bg2, fg = colors.color8 },
   },
   insert = {
-    a = {fg = colors.color6, bg = colors.color2},
-    b = {fg = colors.color2, bg = colors.color0}
+    a = { bg = colors.color2, fg = colors.color6 },
+    b = { bg = colors.color_bg1, fg = colors.color2 },
   },
   visual = {
-    a = {fg = colors.color6, bg = colors.color3},
-    b = {fg = colors.color3, bg = colors.color0}
+    a = { bg = colors.color3, fg = colors.color6 },
+    b = { bg = colors.color_bg1, fg = colors.color3 },
   },
   command = {
-    a = {fg = colors.color6, bg = colors.color4},
-    b = {fg = colors.color4, bg = colors.color0}
+    a = { bg = colors.color4, fg = colors.color6 },
+    b = { bg = colors.color_bg1, fg = colors.color4 },
   },
   replace = {
-    a = {fg = colors.color6, bg = colors.color5},
-    b = {fg = colors.color5, bg = colors.color0}
+    a = { bg = colors.color5, fg = colors.color6 },
+    b = { bg = colors.color_bg1, fg = colors.color5 },
   },
   terminal = {
-    a = {fg = colors.color6, bg = colors.color2},
-    b = {fg = colors.color2, bg = colors.color0}
+    a = { bg = colors.color2, fg = colors.color6 },
+    b = { bg = colors.color_bg1, fg = colors.color2 },
   },
   inactive = {
-    a = {fg = colors.color7, bg = colors.color0},
-    b = {fg = colors.color7, bg = colors.color0},
-    c = {fg = colors.color7, bg = colors.color0}
+    a = { bg = colors.color_bg1, fg = colors.color7 },
+    b = { bg = colors.color_bg1, fg = colors.color7 },
+    c = { bg = colors.color_bg1, fg = colors.color7 },
   },
 }
