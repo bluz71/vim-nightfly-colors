@@ -248,14 +248,25 @@ M.style = function()
   highlight(0, "Structure", { link = "NightflyBlue" })
 
   -- Status, split and tab lines
-  highlight(0, "StatusLine", { bg = slate_blue, fg = white })
-  highlight(0, "StatusLineNC", { bg = slate_blue, fg = cadet_blue })
+  if g.nightflyTransparent == true then
+    highlight(0, "StatusLine", { bg = black_blue, fg = white })
+    highlight(0, "StatusLineNC", { bg = black_blue, fg = cadet_blue })
+    highlight(0, "StatusLineTerm", { bg = black_blue, fg = white })
+    highlight(0, "StatusLineTermNC", { bg = black_blue, fg = cadet_blue })
+  else
+    highlight(0, "StatusLine", { bg = slate_blue, fg = white })
+    highlight(0, "StatusLineNC", { bg = slate_blue, fg = cadet_blue })
+    highlight(0, "StatusLineTerm", { bg = slate_blue, fg = white })
+    highlight(0, "StatusLineTermNC", { bg = slate_blue, fg = cadet_blue })
+  end
   highlight(0, "Tabline", { bg = slate_blue, fg = cadet_blue })
   highlight(0, "TablineSel", { bg = dark_blue, fg = blue })
   highlight(0, "TablineSelSymbol", { link = "NightflyEmeraldRow" })
-  highlight(0, "TablineFill", { bg = slate_blue, fg = slate_blue })
-  highlight(0, "StatusLineTerm", { bg = slate_blue, fg = white })
-  highlight(0, "StatusLineTermNC", { bg = slate_blue, fg = cadet_blue })
+  if g.nightflyTransparent == true then
+    highlight(0, "TablineFill", { fg = slate_blue })
+  else
+    highlight(0, "TablineFill", { bg = slate_blue, fg = slate_blue })
+  end
   if g.nightflyWinSeparator == 0 then
     highlight(0, "VertSplit", { bg = black, fg = black })
   elseif g.nightflyWinSeparator == 1 then
