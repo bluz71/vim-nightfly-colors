@@ -363,8 +363,13 @@ M.style = function()
   highlight(0, "FloatBorder", { bg = bg, fg = slate_blue })
   highlight(0, "FloatBorder2", { bg = bg, fg = steel_blue })
   highlight(0, "FloatTitle", { bg = slate_blue, fg = white })
-  highlight(0, "WinBar", { bg = deep_blue, fg = white })
-  highlight(0, "WinBarNC", { bg = deep_blue, fg = cadet_blue })
+  if g.nightflyTransparent then
+    highlight(0, "WinBar", { fg = white })
+    highlight(0, "WinBarNC", { fg = cadet_blue })
+  else
+    highlight(0, "WinBar", { bg = deep_blue, fg = white })
+    highlight(0, "WinBarNC", { bg = deep_blue, fg = cadet_blue })
+  end
   highlight(0, "WinSeparator", { link = "VertSplit" })
 
   -- Neovim check-health
