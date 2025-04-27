@@ -5,6 +5,7 @@ let s:white        = '#c3ccdc'
 let s:black_blue   = '#081e2f'
 let s:dark_blue    = '#092236'
 let s:deep_blue    = '#0e293f'
+let s:storm_blue   = "#1a2b3f"
 let s:stone_blue   = '#252c3f'
 let s:slate_blue   = '#2c3043'
 let s:pickle_blue  = '#38507a'
@@ -203,7 +204,7 @@ function! nightfly#Style() abort
     if g:nightflyTransparent
         exec 'highlight TablineFill cterm=none guifg=' . s:slate_blue . ' gui=none'
     else
-        exec 'highlight TablineFill cterm=none guibg=' . s:black_blue . ' guifg=' . s:slate_blue . ' gui=none'
+        exec 'highlight TablineFill cterm=none guibg=' . s:storm_blue . ' guifg=' . s:slate_blue . ' gui=none'
     endif
     if g:nightflyWinSeparator == 0
         exec 'highlight VertSplit cterm=none guibg=' . s:black . ' guifg=' . s:black . ' gui=none'

@@ -13,6 +13,7 @@ end
 local black_blue = "#081e2f"
 local dark_blue = "#092236"
 local deep_blue = "#0e293f"
+local storm_blue = "#1a2b3f"
 local stone_blue = "#252c3f"
 local slate_blue = "#2c3043"
 local pickle_blue = "#38507a"
@@ -58,6 +59,7 @@ M.palette = {
   black_blue = black_blue,
   dark_blue = dark_blue,
   deep_blue = deep_blue,
+  storm_blue = storm_blue,
   stone_blue = stone_blue,
   slate_blue = slate_blue,
   pickle_blue = pickle_blue,
@@ -266,7 +268,7 @@ M.style = function()
   if g.nightflyTransparent == true then
     highlight(0, "TablineFill", { fg = slate_blue })
   else
-    highlight(0, "TablineFill", { bg = black_blue, fg = slate_blue })
+    highlight(0, "TablineFill", { bg = storm_blue, fg = slate_blue })
   end
   if g.nightflyWinSeparator == 0 then
     highlight(0, "VertSplit", { bg = black, fg = black })
@@ -1395,6 +1397,7 @@ M.custom_colors = function(colors)
   black_blue = colors.black_blue and colors.black_blue or M.palette.black_blue
   dark_blue = colors.dark_blue and colors.dark_blue or M.palette.dark_blue
   deep_blue = colors.deep_blue and colors.deep_blue or M.palette.deep_blue
+  storm_blue = colors.storm_blue and colors.storm_blue or M.palette.storm_blue
   stone_blue = colors.stone_blue and colors.stone_blue or M.palette.stone_blue
   slate_blue = colors.slate_blue and colors.slate_blue or M.palette.slate_blue
   pickle_blue = colors.pickle_blue and colors.pickle_blue or M.palette.pickle_blue
