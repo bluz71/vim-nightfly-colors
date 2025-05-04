@@ -13,7 +13,7 @@ end
 local black_blue = "#081e2f"
 local dark_blue = "#092236"
 local deep_blue = "#0e293f"
-local storm_blue = "#1a2b3f"
+local storm_blue = "#1b2633"
 local stone_blue = "#252c3f"
 local slate_blue = "#2c3043"
 local pickle_blue = "#38507a"
