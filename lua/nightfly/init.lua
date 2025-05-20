@@ -782,7 +782,7 @@ M.style = function()
   -- gitsigns.nvim plugin
   --   sign column
   highlight(0, "GitSignsAdd", { link = "NightflyEmerald" })
-  highlight(0, "GitSignsAddCul", { link = "TablineSelSymbol" })
+  highlight(0, "GitSignsAddCul", { link = "NightflyEmeraldRow" })
   highlight(0, "GitSignsChange", { link = "NightflyMalibu" })
   highlight(0, "GitSignsChangeCul", { link = "NightflyMalibuRow" })
   highlight(0, "GitSignsChangedelete", { link = "NightflyOrange" })
