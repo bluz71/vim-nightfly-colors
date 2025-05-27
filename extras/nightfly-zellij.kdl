@@ -4,16 +4,121 @@
 
 themes {
     nightfly {
-        bg "#011627"
-        fg "#bdc1c6"
-        black "#092236"
-        red "#ff5874"
-        green "#a1cd5e"
-        yellow "#e3d18a"
-        blue "#82aaff"
-        magenta "#c792ea"
-        cyan "#7fdbca"
-        white "#a1aab8"
-        orange "#f09479"
+        text_unselected {
+            base 189 193 198
+            background 1 22 39
+            emphasis_0 240 148 121
+            emphasis_1 127 219 202
+            emphasis_2 161 205 94
+            emphasis_3 199 146 234
+        }
+        text_selected {
+            base 189 193 198
+            background 29 59 83
+            emphasis_0 240 148 121
+            emphasis_1 127 219 202
+            emphasis_2 161 205 94
+            emphasis_3 199 146 234
+        }
+        ribbon_selected {
+            base 1 22 39
+            background 161 205 94
+            emphasis_0 255 76 106
+            emphasis_1 240 148 121
+            emphasis_2 199 146 234
+            emphasis_3 130 170 255
+        }
+        ribbon_unselected {
+            base 1 22 39
+            background 186 189 193
+            emphasis_0 255 76 106
+            emphasis_1 108 113 121
+            emphasis_2 130 170 255
+            emphasis_3 199 146 234
+        }
+        table_title {
+            base 161 205 94
+            background 0
+            emphasis_0 240 148 121
+            emphasis_1 127 219 202
+            emphasis_2 161 205 94
+            emphasis_3 199 146 234
+        }
+        table_cell_selected {
+            base 189 193 198
+            background 29 59 83
+            emphasis_0 240 148 121
+            emphasis_1 127 219 202
+            emphasis_2 161 205 94
+            emphasis_3 199 146 234
+        }
+        table_cell_unselected {
+            base 189 193 198
+            background 1 22 39
+            emphasis_0 240 148 121
+            emphasis_1 127 219 202
+            emphasis_2 161 205 94
+            emphasis_3 199 146 234
+        }
+        list_selected {
+            base 189 193 198
+            background 29 59 83
+            emphasis_0 240 148 121
+            emphasis_1 127 219 202
+            emphasis_2 161 205 94
+            emphasis_3 199 146 234
+        }
+        list_unselected {
+            base 189 193 198
+            background 1 22 39
+            emphasis_0 240 148 121
+            emphasis_1 127 219 202
+            emphasis_2 161 205 94
+            emphasis_3 199 146 234
+        }
+        frame_selected {
+            base 161 205 94
+            background 0
+            emphasis_0 240 148 121
+            emphasis_1 127 219 202
+            emphasis_2 199 146 234
+            emphasis_3 0
+        }
+        frame_highlight {
+            base 240 148 121
+            background 0
+            emphasis_0 199 146 234
+            emphasis_1 240 148 121
+            emphasis_2 240 148 121
+            emphasis_3 240 148 121
+        }
+        exit_code_success {
+            base 161 205 94
+            background 0
+            emphasis_0 127 219 202
+            emphasis_1 1 22 39
+            emphasis_2 199 146 234
+            emphasis_3 130 170 255
+        }
+        exit_code_error {
+            base 255 76 106
+            background 0
+            emphasis_0 227 209 138
+            emphasis_1 0
+            emphasis_2 0
+            emphasis_3 0
+        }
+        multiplayer_user_colors {
+            player_1 199 146 234
+            player_2 130 170 255
+            player_3 161 205 94
+            player_4 227 209 138
+            player_5 127 219 202
+            player_6 240 148 121
+            player_7 255 76 106
+            player_8 186 189 193
+            player_9 9 34 54
+            player_10 189 193 198
+        }
     }
 }
