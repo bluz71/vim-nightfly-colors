@@ -23,18 +23,18 @@ themes {
         ribbon_selected {
             base 1 22 39
             background 161 205 94
-            emphasis_0 255 76 106
-            emphasis_1 240 148 121
-            emphasis_2 199 146 234
-            emphasis_3 130 170 255
+            emphasis_0 216 51 75
+            emphasis_1 132 105 100
+            emphasis_2 171 101 217
+            emphasis_3 89 138 255
         }
         ribbon_unselected {
             base 1 22 39
-            background 186 189 193
-            emphasis_0 255 76 106
+            background 192 194 196
+            emphasis_0 216 51 75
             emphasis_1 108 113 121
-            emphasis_2 130 170 255
-            emphasis_3 199 146 234
+            emphasis_2 89 138 255
+            emphasis_3 171 101 217
         }
         table_title {
             base 161 205 94
@@ -101,7 +101,7 @@ themes {
             emphasis_3 130 170 255
         }
         exit_code_error {
-            base 255 76 106
+            base 252 81 78
             background 0
             emphasis_0 227 209 138
             emphasis_1 0
@@ -111,14 +111,14 @@ themes {
         multiplayer_user_colors {
             player_1 199 146 234
             player_2 130 170 255
-            player_3 161 205 94
+            player_3 0
             player_4 227 209 138
             player_5 127 219 202
-            player_6 240 148 121
-            player_7 255 76 106
-            player_8 186 189 193
-            player_9 9 34 54
-            player_10 189 193 198
+            player_6 0
+            player_7 252 81 78
+            player_8 0
+            player_9 0
+            player_10 0
         }
     }
 }
