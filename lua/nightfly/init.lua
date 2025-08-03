@@ -50,48 +50,52 @@ local kashmir = "#4d618e"
 local plant = "#2a4e57"
 local bermuda = "#6e8da6"
 
+local nightfly_palette = function()
+  return {
+    black = black,
+    white = white,
+    bg = bg,
+    black_blue = black_blue,
+    dark_blue = dark_blue,
+    deep_blue = deep_blue,
+    storm_blue = storm_blue,
+    stone_blue = stone_blue,
+    slate_blue = slate_blue,
+    pickle_blue = pickle_blue,
+    regal_blue = regal_blue,
+    steel_blue = steel_blue,
+    grey_blue = grey_blue,
+    cadet_blue = cadet_blue,
+    ash_blue = ash_blue,
+    white_blue = white_blue,
+    red = red,
+    watermelon = watermelon,
+    cinnamon = cinnamon,
+    orchid = orchid,
+    orange = orange,
+    peach = peach,
+    tan = tan,
+    yellow = yellow,
+    lime = lime,
+    green = green,
+    emerald = emerald,
+    turquoise = turquoise,
+    malibu = malibu,
+    blue = blue,
+    lavender = lavender,
+    violet = violet,
+    purple = purple,
+    cyan_blue = cyan_blue,
+    bay_blue = bay_blue,
+    kashmir = kashmir,
+    plant = plant,
+    bermuda = bermuda,
+  }
+end
+
 local M = {}
 
-M.palette = {
-  black = black,
-  white = white,
-  bg = bg,
-  black_blue = black_blue,
-  dark_blue = dark_blue,
-  deep_blue = deep_blue,
-  storm_blue = storm_blue,
-  stone_blue = stone_blue,
-  slate_blue = slate_blue,
-  pickle_blue = pickle_blue,
-  regal_blue = regal_blue,
-  steel_blue = steel_blue,
-  grey_blue = grey_blue,
-  cadet_blue = cadet_blue,
-  ash_blue = ash_blue,
-  white_blue = white_blue,
-  red = red,
-  watermelon = watermelon,
-  cinnamon = cinnamon,
-  orchid = orchid,
-  orange = orange,
-  peach = peach,
-  tan = tan,
-  yellow = yellow,
-  lime = lime,
-  green = green,
-  emerald = emerald,
-  turquoise = turquoise,
-  malibu = malibu,
-  blue = blue,
-  lavender = lavender,
-  violet = violet,
-  purple = purple,
-  cyan_blue = cyan_blue,
-  bay_blue = bay_blue,
-  kashmir = kashmir,
-  plant = plant,
-  bermuda = bermuda,
-}
+M.palette = nightfly_palette()
 
 M.style = function()
   -------------------------------------------------------------------------
@@ -1429,6 +1433,9 @@ M.custom_colors = function(colors)
   kashmir = colors.kashmir and colors.kashmir or M.palette.kashmir
   plant = colors.plant and colors.plant or M.palette.plant
   bermuda = colors.bermuda and colors.bermuda or M.palette.bermuda
+
+  -- Rebuild the palette with custom colors.
+  M.palette = nightfly_palette()
 end
 
 return M
