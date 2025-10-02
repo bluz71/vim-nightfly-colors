@@ -223,7 +223,7 @@ function! nightfly#Style() abort
     exec 'highlight ErrorMsg guibg=bg guifg=' . s:red
     exec 'highlight WarningMsg guibg=bg guifg=' . s:orange
 
-    " Auto-text-completion menu
+    " Completions
     exec 'highlight Pmenu guibg=' . s:deep_blue . ' guifg=fg'
     exec 'highlight PmenuSel guibg=' . s:cyan_blue . ' guifg=' . s:white_blue
     exec 'highlight PmenuSbar guibg=' . s:deep_blue

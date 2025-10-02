@@ -292,7 +292,9 @@ M.style = function()
   highlight(0, "ErrorMsg", { bg = bg, fg = red })
   highlight(0, "WarningMsg", { bg = bg, fg = orange })
 
-  -- Auto-text-completion menu
+  -- Completions
+  highlight(0, "ComplHint", { link = "NightflySteelBlue" })
+  highlight(0, "ComplHintMore", { link = "NightflyMalibu" })
   highlight(0, "Pmenu", { bg = deep_blue, fg = white })
   highlight(0, "PmenuSel", { bg = cyan_blue, fg = white_blue })
   highlight(0, "PmenuSbar", { link = "NightflyCurrentLine" })
@@ -342,8 +344,6 @@ M.style = function()
   highlight(0, "Delimiter", { link = "NightflyWhite" })
   highlight(0, "qfFileName", { link = "NightflyEmerald" })
   highlight(0, "qfLineNr", { link = "NightflySteelBlue" })
-  highlight(0, "ComplHint", { link = "NightflySteelBlue" })
-  highlight(0, "ComplHintMore", { link = "NightflyLavender" })
 
   -- Color column (after line 80)
   highlight(0, "ColorColumn", { bg = black_blue })
