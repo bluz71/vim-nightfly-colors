@@ -1197,6 +1197,14 @@ M.style = function()
   highlight(0, "RainbowDelimiterViolet", { link = "NightflyViolet" })
   highlight(0, "RainbowDelimiterCyan", { link = "NightflyTurquoise" })
 
+  -- sidekick.nvim
+  highlight(0, "SidekickDiffAdd", { link = "DiffAdd" })
+  highlight(0, "SidekickDiffContext", { link = "DiffChange" })
+  highlight(0, "SidekickDiffDelete", { link = "DiffDelete" })
+  highlight(0, "SidekickSignAdd", { link = "GitSignsAdd" })
+  highlight(0, "SidekickSignChange", { link = "GitSignsChange" })
+  highlight(0, "SidekickSignDelete", { link = "GitSignsDelete" })
+
   -- snacks.nvim
   --   misc
   highlight(0, "SnacksWinBar", { link = "NightflyBlue" })
