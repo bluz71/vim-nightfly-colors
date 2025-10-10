@@ -227,6 +227,7 @@ function! nightfly#Style() abort
 
     " Completions
     exec 'highlight Pmenu guibg=' . s:ink_blue . ' guifg=fg'
+    exec 'highlight PmenuBorder guibg=' . s:ink_blue . ' guifg=' . s:pickle_blue
     exec 'highlight PmenuSel guibg=' . s:cyan_blue . ' guifg=' . s:white_blue
     exec 'highlight PmenuSbar guibg=' . s:ink_blue
     exec 'highlight PmenuThumb guibg=' . s:steel_blue
