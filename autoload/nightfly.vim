@@ -4,6 +4,7 @@ let s:white        = '#c3ccdc'
 " Variations of midnight-blue
 let s:black_blue   = '#081e2f'
 let s:dark_blue    = '#092236'
+let s:ink_blue     = '#09243a'
 let s:deep_blue    = '#0e293f'
 let s:storm_blue   = "#1b2633"
 let s:stone_blue   = '#252c3f'
@@ -225,9 +226,9 @@ function! nightfly#Style() abort
     exec 'highlight WarningMsg guibg=bg guifg=' . s:orange
 
     " Completions
-    exec 'highlight Pmenu guibg=' . s:deep_blue . ' guifg=fg'
+    exec 'highlight Pmenu guibg=' . s:ink_blue . ' guifg=fg'
     exec 'highlight PmenuSel guibg=' . s:cyan_blue . ' guifg=' . s:white_blue
-    exec 'highlight PmenuSbar guibg=' . s:deep_blue
+    exec 'highlight PmenuSbar guibg=' . s:ink_blue
     exec 'highlight PmenuThumb guibg=' . s:steel_blue
     exec 'highlight WildMenu guibg=' . s:cyan_blue . ' guifg=' . s:white_blue
 

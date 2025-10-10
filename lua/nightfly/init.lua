@@ -12,6 +12,7 @@ end
 -- Variations of midnight-blue
 local black_blue = "#081e2f"
 local dark_blue = "#092236"
+local ink_blue = "#09243a"
 local deep_blue = "#0e293f"
 local storm_blue = "#1b2633"
 local stone_blue = "#252c3f"
@@ -58,6 +59,7 @@ local nightfly_palette = function()
     bg = bg,
     black_blue = black_blue,
     dark_blue = dark_blue,
+    ink_blue = ink_blue,
     deep_blue = deep_blue,
     storm_blue = storm_blue,
     stone_blue = stone_blue,
@@ -297,9 +299,9 @@ M.style = function()
   -- Completions
   highlight(0, "ComplHint", { link = "NightflySteelBlue" })
   highlight(0, "ComplHintMore", { link = "NightflyMalibu" })
-  highlight(0, "Pmenu", { bg = deep_blue, fg = white })
+  highlight(0, "Pmenu", { bg = ink_blue, fg = white })
   highlight(0, "PmenuSel", { bg = cyan_blue, fg = white_blue })
-  highlight(0, "PmenuSbar", { link = "NightflyCurrentLine" })
+  highlight(0, "PmenuSbar", { bg = ink_blue })
   highlight(0, "PmenuThumb", { bg = steel_blue })
   highlight(0, "WildMenu", { bg = cyan_blue, fg = white_blue })
 
@@ -1412,6 +1414,7 @@ M.custom_colors = function(colors)
   bg = colors.bg and colors.bg or M.palette.bg
   black_blue = colors.black_blue and colors.black_blue or M.palette.black_blue
   dark_blue = colors.dark_blue and colors.dark_blue or M.palette.dark_blue
+  ink_blue = colors.ink_blue and colors.ink_blue or M.palette.ink_blue
   deep_blue = colors.deep_blue and colors.deep_blue or M.palette.deep_blue
   storm_blue = colors.storm_blue and colors.storm_blue or M.palette.storm_blue
   stone_blue = colors.stone_blue and colors.stone_blue or M.palette.stone_blue
