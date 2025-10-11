@@ -227,8 +227,13 @@ function! nightfly#Style() abort
     exec 'highlight WarningMsg guibg=bg guifg=' . s:orange
 
     " Completions
-    exec 'highlight Pmenu guibg=' . s:ink_blue . ' guifg=fg'
-    exec 'highlight PmenuBorder guibg=' . s:ink_blue . ' guifg=' . s:carbon_blue
+    if g:nightflyNormalPmenu
+        exec 'highlight Pmenu guibg=bg guifg=' . s:cadet_blue
+        exec 'highlight PmenuBorder guibg=bg guifg=' . s:slate_blue
+    else
+        exec 'highlight Pmenu guibg=' . s:ink_blue . ' guifg=fg'
+        exec 'highlight PmenuBorder guibg=' . s:ink_blue . ' guifg=' . s:carbon_blue
+    endif
     exec 'highlight PmenuSel guibg=' . s:cyan_blue . ' guifg=' . s:white_blue
     exec 'highlight PmenuSbar guibg=' . s:ink_blue
     exec 'highlight PmenuThumb guibg=' . s:steel_blue

@@ -154,6 +154,7 @@ let g:lightline = { 'colorscheme': 'nightfly' }
 |--------|--------------
 | [nightflyCursorColor](https://github.com/bluz71/vim-nightfly-colors#nightflycursorcolor)                 | Disabled
 | [nightflyItalics](https://github.com/bluz71/vim-nightfly-colors#nightflyitalics)                         | Enabled
+| [nightflyNormalPmenu](https://github.com/bluz71/vim-nightfly-colors#nightflynormalpmenu)                 | Disabled
 | [nightflyNormalFloat](https://github.com/bluz71/vim-nightfly-colors#nightflynormalfloat)                 | Disabled
 | [nightflyTerminalColors](https://github.com/bluz71/vim-nightfly-colors#nightflyterminalcolors)           | Enabled
 | [nightflyTransparent](https://github.com/bluz71/vim-nightfly-colors#nightflytransparent)                 | Disabled
@@ -201,6 +202,32 @@ let g:nightflyItalics = v:false
 
 ---
 
+### nightflyNormalPmenu
+
+The `nightflyNormalPmenu` option specifies whether to use nightfly background and
+foreground colors in the popup menu. By default this option is **disabled**,
+hence, the popup menu will usually be styled with contrasting popup menu colors.
+If you would like to use nightfly colors instead then add the following to your
+configuration:
+
+```lua
+-- Lua initialization file
+vim.g.nightflyNormalPmenu = true
+```
+
+```vim
+" Vimscript initialization file
+let g:nightflyNormalPmenu = v:true
+```
+
+:bulb: If the above option is set then it is highly recommended to enable the
+popup menu border to distinguish between the edit window and popup menu:
+
+```lua
+vim.o.pumborder = "single"
+```
+
+---
 ### nightflyNormalFloat
 
 The `nightflyNormalFloat` option specifies whether to use nightfly background

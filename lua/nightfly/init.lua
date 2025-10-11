@@ -301,8 +301,13 @@ M.style = function()
   -- Completions
   highlight(0, "ComplHint", { link = "NightflySteelBlue" })
   highlight(0, "ComplHintMore", { link = "NightflyMalibu" })
-  highlight(0, "Pmenu", { bg = ink_blue, fg = white })
-  highlight(0, "PmenuBorder", { bg = ink_blue, fg = carbon_blue })
+  if g.nightflyNormalPmenu then
+    highlight(0, "Pmenu", { bg = bg, fg = cadet_blue })
+    highlight(0, "PmenuBorder", { bg = bg, fg = slate_blue })
+  else
+    highlight(0, "Pmenu", { bg = ink_blue, fg = white })
+    highlight(0, "PmenuBorder", { bg = ink_blue, fg = carbon_blue })
+  end
   highlight(0, "PmenuSel", { bg = cyan_blue, fg = white_blue })
   highlight(0, "PmenuSbar", { bg = ink_blue })
   highlight(0, "PmenuThumb", { bg = steel_blue })
@@ -371,11 +376,11 @@ M.style = function()
   highlight(0, "Whitespace", { fg = regal_blue })
   highlight(0, "TermCursor", { bg = cadet_blue, fg = black })
   if g.nightflyNormalFloat then
-    highlight(0, "FloatBorder", { bg = bg, fg = slate_blue })
     highlight(0, "NormalFloat", { bg = bg, fg = cadet_blue })
+    highlight(0, "FloatBorder", { bg = bg, fg = slate_blue })
   else
-    highlight(0, "FloatBorder", { bg = ink_blue, fg = carbon_blue })
     highlight(0, "NormalFloat", { bg = ink_blue, fg = white })
+    highlight(0, "FloatBorder", { bg = ink_blue, fg = carbon_blue })
   end
   highlight(0, "FloatBorderTransparent", { bg = bg, fg = slate_blue })
   highlight(0, "FloatTitle", { bg = slate_blue, fg = white })

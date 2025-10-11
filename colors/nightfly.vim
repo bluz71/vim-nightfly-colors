@@ -15,6 +15,7 @@ let g:colors_name='nightfly'
 " Define theme options.
 let g:nightflyCursorColor = get(g:, 'nightflyCursorColor', v:false)
 let g:nightflyItalics = get(g:, 'nightflyItalics', v:true)
+let g:nightflyNormalPmenu = get(g:, 'nightflyNormalPmenu', v:false)
 let g:nightflyNormalFloat = get(g:, 'nightflyNormalFloat', v:false)
 let g:nightflyTerminalColors = get(g:, 'nightflyTerminalColors', v:true)
 let g:nightflyTransparent = get(g:, 'nightflyTransparent', v:false)

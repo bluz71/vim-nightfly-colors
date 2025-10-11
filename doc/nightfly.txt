@@ -6,6 +6,7 @@ Default option values:
 >
   let g:nightflyCursorColor = v:false
   let g:nightflyItalics = v:true
+  let g:nightflyNormalPmenu = v:false
   let g:nightflyNormalFloat = v:false
   let g:nightflyTerminalColors = v:true
   let g:nightflyTransparent = v:false
@@ -40,6 +41,21 @@ to your initialization file:
 
   " Vimscript initialization file
   let g:nightflyItalics = v:false
+<
+------------------------------------------------------------------------------
+nightflyNormalPmenu~                                   *g:nightflyNormalPmenu*
+
+The `nightflyNormalPmenu` option specifies whether to use nightfly background
+and foreground colors in the popup menu. By default this option is disabled,
+hence, the popup menu will usually be styled with contrasting popup menu
+colors. If you would like to use nightfly colors instead then add the
+following to your configuration:
+>
+  -- Lua initialization file
+  vim.g.nightflyNormalPmenu = true
+
+  " Vimscript initialization file
+  let g:nightflyNormalPmenu = v:true
 <
 ------------------------------------------------------------------------------
 nightflyNormalFloat~                                   *g:nightflyNormalFloat*
