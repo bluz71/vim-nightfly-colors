@@ -12,6 +12,7 @@ let s:slate_blue   = '#2c3043'
 let s:pickle_blue  = '#38507a'
 let s:cello_blue   = '#1f4462'
 let s:regal_blue   = '#1d3b53'
+let s:carbon_blue  = '#334e65'
 let s:steel_blue   = '#4b6479'
 let s:grey_blue    = '#7c8f8f'
 let s:cadet_blue   = '#a1aab8'
@@ -227,7 +228,7 @@ function! nightfly#Style() abort
 
     " Completions
     exec 'highlight Pmenu guibg=' . s:ink_blue . ' guifg=fg'
-    exec 'highlight PmenuBorder guibg=' . s:ink_blue . ' guifg=' . s:pickle_blue
+    exec 'highlight PmenuBorder guibg=' . s:ink_blue . ' guifg=' . s:carbon_blue
     exec 'highlight PmenuSel guibg=' . s:cyan_blue . ' guifg=' . s:white_blue
     exec 'highlight PmenuSbar guibg=' . s:ink_blue
     exec 'highlight PmenuThumb guibg=' . s:steel_blue

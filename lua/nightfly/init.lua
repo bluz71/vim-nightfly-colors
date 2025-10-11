@@ -20,6 +20,7 @@ local slate_blue = "#2c3043"
 local pickle_blue = "#38507a"
 local cello_blue = "#1f4462"
 local regal_blue = "#1d3b53"
+local carbon_blue = "#334e65"
 local steel_blue = "#4b6479"
 local grey_blue = "#7c8f8f"
 local graphite_blue = "#768799"
@@ -66,6 +67,7 @@ local nightfly_palette = function()
     slate_blue = slate_blue,
     pickle_blue = pickle_blue,
     regal_blue = regal_blue,
+    carbon_blue = carbon_blue,
     steel_blue = steel_blue,
     grey_blue = grey_blue,
     cadet_blue = cadet_blue,
@@ -300,7 +302,7 @@ M.style = function()
   highlight(0, "ComplHint", { link = "NightflySteelBlue" })
   highlight(0, "ComplHintMore", { link = "NightflyMalibu" })
   highlight(0, "Pmenu", { bg = ink_blue, fg = white })
-  highlight(0, "PmenuBorder", { bg = ink_blue, fg = pickle_blue })
+  highlight(0, "PmenuBorder", { bg = ink_blue, fg = carbon_blue })
   highlight(0, "PmenuSel", { bg = cyan_blue, fg = white_blue })
   highlight(0, "PmenuSbar", { bg = ink_blue })
   highlight(0, "PmenuThumb", { bg = steel_blue })
@@ -1422,6 +1424,7 @@ M.custom_colors = function(colors)
   slate_blue = colors.slate_blue and colors.slate_blue or M.palette.slate_blue
   pickle_blue = colors.pickle_blue and colors.pickle_blue or M.palette.pickle_blue
   regal_blue = colors.regal_blue and colors.regal_blue or M.palette.regal_blue
+  carbon_blue = colors.carbon_blue and colors.carbon_blue or M.palette.carbon_blue
   steel_blue = colors.steel_blue and colors.steel_blue or M.palette.steel_blue
   grey_blue = colors.grey_blue and colors.grey_blue or M.palette.grey_blue
   cadet_blue = colors.cadet_blue and colors.cadet_blue or M.palette.cadet_blue
