@@ -192,7 +192,7 @@ M.style = function()
   highlight(0, "Normal", { bg = bg, fg = white })
 
   -- Color of mode text, -- INSERT --
-  highlight(0, "ModeMsg", { fg = cadet_blue })
+  highlight(0, "ModeMsg", { link = "NightflyCadetBlue" })
 
   -- Comments
   if g.nightflyItalics then
@@ -301,6 +301,7 @@ M.style = function()
   -- Completions
   highlight(0, "ComplHint", { link = "NightflySteelBlue" })
   highlight(0, "ComplHintMore", { link = "NightflyMalibu" })
+  highlight(0, "ComplMatchIns", { link = "NightflyCadetBlue" })
   if g.nightflyNormalPmenu then
     highlight(0, "Pmenu", { bg = bg, fg = cadet_blue })
     highlight(0, "PmenuBorder", { bg = bg, fg = slate_blue })
