@@ -28,8 +28,8 @@ let g:nightflyWinSeparator = get(g:, 'nightflyWinSeparator', 1)
 if has('nvim')
     lua require("nightfly").style()
 else
-    set termguicolors " Enable Vim true-color support
     call nightfly#Style()
 end
 
 set background=dark " nightfly is a dark theme
+set termguicolors   " nightfly is a true-color theme
