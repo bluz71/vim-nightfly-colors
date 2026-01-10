@@ -26,6 +26,7 @@ Neovim-only:
 - [Barbar](https://github.com/romgrk/barbar.nvim)
 - [blink.cmp](https://github.com/Saghen/blink.cmp)
 - [blink.indent](https://github.com/Saghen/blink.indent)
+- [blink.pairs](https://github.com/Saghen/blink.pairs)
 - [Dashboard](https://github.com/glepnir/dashboard-nvim)
 - [fzf.lua](https://github.com/ibhagwan/fzf-lua)
 - [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
