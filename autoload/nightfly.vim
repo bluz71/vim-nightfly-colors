@@ -759,7 +759,7 @@ function! nightfly#Style() abort
 
     " Git commit diffs
     highlight! link diffAdded NightflyGreen
-    highlight! link diffChanged NightflyWatermelon
+    highlight! link diffChanged NightflyMalibu
     highlight! link diffIndexLine NightflyWatermelon
     highlight! link diffLine NightflyBlue
     highlight! link diffRemoved NightflyRed
