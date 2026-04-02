@@ -482,6 +482,7 @@ A collection of _nightfly_-flavoured extras for various terminals and tools:
 | [Ghostty](https://mitchellh.com/ghostty)                   | [extras/ghostty](extras/nightfly-ghostty.conf)
 | [iTerm2](https://iterm2.com)                               | [extras/iterm2](extras/nightfly.itermcolors)
 | [kitty](https://sw.kovidgoyal.net/kitty)                   | [extras/kitty](extras/nightfly-kitty.conf)
+| [OpenCode](https://opencode.ai/)                           | [extras/opencode](extras/nightfly-opencode.json)
 | [Starship](https://starship.rs/)                           | [extras/starship](extras/nightfly-starship.toml)
 | [tmux](https://github.com/tmux/tmux)                       | [extras/tmux](extras/nightfly.tmux)
 | [WezTerm](https://wezfurlong.org/wezterm)                  | [extras/wezterm](extras/nightfly-wezterm.toml)
