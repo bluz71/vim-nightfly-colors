@@ -3,6 +3,7 @@
 " URL:      github.com/bluz71/vim-nightfly-colors
 " License:  MIT (https://opensource.org/licenses/MIT)
 
+
 " Clear highlights and reset syntax.
 highlight clear
 if exists('syntax_on')
@@ -26,10 +27,10 @@ let g:nightflyWinSeparator = get(g:, 'nightflyWinSeparator', 1)
 
 " Load theme style independently for Neovim and Vim.
 if has('nvim')
-    lua require("nightfly").style()
+    lua pcall(function() require("nightfly").style() end)
 else
     call nightfly#Style()
-end
+endif
 
 set background=dark " nightfly is a dark theme
 set termguicolors   " nightfly is a true-color theme
