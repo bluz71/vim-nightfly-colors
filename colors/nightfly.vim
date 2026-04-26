@@ -3,7 +3,6 @@
 " URL:      github.com/bluz71/vim-nightfly-colors
 " License:  MIT (https://opensource.org/licenses/MIT)
 
-
 " Clear highlights and reset syntax.
 highlight clear
 if exists('syntax_on')
