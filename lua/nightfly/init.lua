@@ -217,7 +217,7 @@ M.style = function()
   highlight(0, "Identifier", { link = "NightflyTurquoise" })
 
   -- Color of titles
-  highlight(0, "Title", { fg = orange })
+  highlight(0, "Title", { fg = malibu })
 
   -- const, static
   highlight(0, "StorageClass", { link = "NightflyViolet" })
